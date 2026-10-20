@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -29,11 +27,9 @@ jobs:
       - name: Run Python Script
         run: python update_m3u.py
 
-      - name: Commit and Push Changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add active_m3u/
-          git commit -m "Auto-update active channels" || echo "No changes to commit"
-          git pull --rebase
-          git push
+      # 🌟 ဖြေရှင်းချက် - Git ကို လက်နဲ့ မရေးတော့ဘဲ အလိုအလျောက် သေချာပေါက် Save ပေးမယ့် ပလပ်ဂင် (Plugin) ကို ပြောင်းသုံးလိုက်ပါပြီ
+      - name: Auto Commit and Push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update active channels"
+          file_pattern: "active_m3u/*.m3u"
