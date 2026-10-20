@@ -1,0 +1,9 @@
+#EXTM3U
+#EXTINF:-1,CinemaWorld (720p)
+https://cdn.qd.je/163189/cinemaworld
+#EXTINF:-1,TV1 (1080p) [Geo-blocked]
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/manifest.mpd
+#EXTINF:-1,Maah TV (720p)
+https://hls.maahtv.live/hls/stream.m3u8
+#EXTINF:-1,8TV
+http://cdn6.163189.xyz/163189/8tv

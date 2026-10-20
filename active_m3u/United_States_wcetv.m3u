@@ -1,0 +1,15 @@
+#EXTM3U
+#EXTINF:-1,CCTV-4 America
+https://h5cul1yar48um3t.wcetv.com/hls/cctv4.m3u8
+#EXTINF:-1,WCETV Digital Channel 31.8
+https://h5cul1yar48um3t.wcetv.com/hls/wcetv318.m3u8
+#EXTINF:-1,CGTN Documentary
+https://h5cul1yar48um3t.wcetv.com/hls/cgtnd.m3u8
+#EXTINF:-1,CGTN English
+https://h5cul1yar48um3t.wcetv.com/hls/cgtn.m3u8
+#EXTINF:-1,Guangdong Satellite TV
+https://h5cul1yar48um3t.wcetv.com/hls/gdsatellite.m3u8
+#EXTINF:-1,Guangdong TV America
+https://h5cul1yar48um3t.wcetv.com/hls/gdtv.m3u8
+#EXTINF:-1,Taiwan Indigenous TV
+https://h5cul1yar48um3t.wcetv.com/hls/titv.m3u8

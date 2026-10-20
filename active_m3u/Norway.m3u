@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1,TV Østfold (1080p)
+https://streamnorge.com:8088/hls/tvo.m3u8
+#EXTINF:-1,TV Modum (720p)
+https://cdn010.panaccess.com/5677_streams/TVMODUM/index.m3u8
+#EXTINF:-1,Frikanalen (720p)
+https://frikanalen.no/stream/index.m3u8
