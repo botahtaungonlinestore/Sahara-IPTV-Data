@@ -1,141 +1,131 @@
 import os
 import requests
+import pycountry
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# ============================================================
-# SETTINGS
-# ============================================================
 TIMEOUT = 5
 MAX_THREADS = 50
 OUTPUT_FOLDER = "active_m3u"
-EXTRA_FILE = "extra_myanmar.m3u" # အစ်ကို ကိုယ်တိုင်ထည့်မည့် လိုင်းများ
+EXTRA_FILE = "extra_myanmar.m3u"
+IPTV_ORG_API = "https://api.github.com/repos/iptv-org/iptv/contents/streams"
 
-# iptv-org မှ Myanmar လိုင်းများ ယူမည့် လင့်ခ်အမှန်
-TARGET_URLS = [
-    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/mm.m3u"
-]
+def get_country_name(filename):
+    name = os.path.splitext(filename)[0]
+    lower_name = name.lower()
+    parts = lower_name.split("_", 1)
+    country_code = parts[0]
+    country = pycountry.countries.get(alpha_2=country_code.upper())
+    
+    if country:
+        country_name = country.name.replace(" ", "_")
+        if len(parts) > 1:
+            suffix = parts[1]
+            return f"{country_name}_{suffix}.m3u"
+        else:
+            return f"{country_name}.m3u"
+    return f"{name}.m3u"
 
-def extract_channel_name(line):
-    if "," in line:
-        name = line.split(",", 1)[1].strip()
-        return name if name else "Unknown Channel"
+def extract_channel_name(extinf_line):
+    if "," in extinf_line:
+        channel_name = extinf_line.split(",", 1)[1].strip()
+        if channel_name:
+            return channel_name
     return "Unknown Channel"
 
-def fetch_m3u_online(url):
+def parse_m3u_text(text):
     channels = []
-    try:
-        resp = requests.get(url, timeout=10)
-        if resp.status_code == 200:
-            lines = resp.text.splitlines()
-            current_name = None
-            for line in lines:
-                line = line.strip()
-                if not line: continue
-                if line.startswith("#EXTINF"):
-                    current_name = extract_channel_name(line)
-                elif line.startswith("http"):
-                    channels.append({"name": current_name or "Unknown Channel", "url": line})
-                    current_name = None
-    except Exception as e:
-        print(f"Error fetching {url}: {e}")
-    return channels
-
-def fetch_m3u_local(filepath):
-    channels = []
-    if not os.path.exists(filepath):
-        return channels
-    with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
-        lines = f.readlines()
-        current_name = None
-        for line in lines:
-            line = line.strip()
-            if not line: continue
-            if line.startswith("#EXTINF"):
-                current_name = extract_channel_name(line)
-            elif line.startswith("http"):
-                channels.append({"name": current_name or "Unknown Channel", "url": line})
-                current_name = None
+    lines = text.splitlines()
+    current_channel_name = None
+    for raw_line in lines:
+        line = raw_line.strip()
+        if not line: continue
+        if line.startswith("#EXTINF"):
+            current_channel_name = extract_channel_name(line)
+        elif line.startswith("http"):
+            channels.append({
+                "name": current_channel_name or "Unknown Channel",
+                "url": line
+            })
+            current_channel_name = None
     return channels
 
 def check_link(channel):
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"}
     try:
-        resp = requests.get(channel["url"], headers=headers, timeout=TIMEOUT, stream=True, allow_redirects=True)
-        if resp.status_code == 200:
+        response = requests.get(channel["url"], headers=headers, timeout=TIMEOUT, stream=True, allow_redirects=True)
+        if response.status_code == 200:
             return True
     except:
         pass
     return False
 
-def main():
-    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
-    all_channels = []
-
-    print("=" * 70)
-    print("      SAHARA IPTV - AUTO MERGE & SCANNER")
-    print("=" * 70)
-
-    # 1. iptv-org မှ M3U ကို ယူခြင်း
-    for url in TARGET_URLS:
-        print(f"Fetching from iptv-org: {url}")
-        all_channels.extend(fetch_m3u_online(url))
-
-    # 2. Local မှ ကိုယ်ပိုင်လိုင်းများ (extra_myanmar.m3u) ထပ်ပေါင်းခြင်း
-    if os.path.exists(EXTRA_FILE):
-        print(f"Fetching local extra: {EXTRA_FILE}")
-        all_channels.extend(fetch_m3u_local(EXTRA_FILE))
-    else:
-        print(f"No local extra file found: {EXTRA_FILE}")
-
-    # 3. Duplicate ဖြစ်နေသော URL များ ဖယ်ထုတ်ခြင်း
+def process_and_save(filename, channels):
+    print(f"\n=== Processing: {filename} ===")
+    
     unique_channels = []
-    seen = set()
-    for ch in all_channels:
-        if ch["url"] not in seen:
-            seen.add(ch["url"])
-            unique_channels.append(ch)
+    seen_urls = set()
+    for channel in channels:
+        url = channel["url"]
+        if url not in seen_urls:
+            seen_urls.add(url)
+            unique_channels.append(channel)
 
-    total_channels = len(unique_channels)
-    print(f"\nTotal Unique Channels to Check: {total_channels}")
-
-    # 4. အသေ/အရှင် စစ်ဆေးခြင်း
     active_channels = []
-    completed = 0
-
     with ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
-        future_to_ch = {executor.submit(check_link, ch): ch for ch in unique_channels}
-        for future in as_completed(future_to_ch):
-            ch = future_to_ch[future]
+        future_map = {executor.submit(check_link, ch): ch for ch in unique_channels}
+        for future in as_completed(future_map):
+            ch = future_map[future]
             try:
-                is_active = future.result()
+                if future.result():
+                    active_channels.append(ch)
             except:
-                is_active = False
+                pass
 
-            completed += 1
-            if is_active:
-                active_channels.append(ch)
-                print(f"[ACTIVE] {ch['name']}")
-            else:
-                print(f"[DEAD]   {ch['name']}")
+    if not active_channels:
+        print(f"No active channels for {filename}. Skipping.")
+        return
 
-            print(f"Progress: {completed}/{total_channels}", end="\r")
-
-    print("\n")
-
-    # 5. အရှင်များကိုသာ သိမ်းဆည်းခြင်း
-    output_path = os.path.join(OUTPUT_FOLDER, "Myanmar.m3u")
+    output_filename = get_country_name(filename)
+    output_path = os.path.join(OUTPUT_FOLDER, output_filename)
+    
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for ch in active_channels:
             f.write(f"#EXTINF:-1,{ch['name']}\n{ch['url']}\n")
+    
+    print(f"Saved: {output_path} (Active: {len(active_channels)}/{len(unique_channels)})")
 
-    active_count = len(active_channels)
-    print("=" * 70)
-    print(f"Total Scanned : {total_channels}")
-    print(f"Total Active  : {active_count}")
-    print(f"Total Dead    : {total_channels - active_count}")
-    print(f"Saved to      : {output_path}")
-    print("=" * 70)
+def main():
+    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+    
+    print("Fetching files from iptv-org...")
+    try:
+        response = requests.get(IPTV_ORG_API)
+        files = response.json()
+    except Exception as e:
+        print(f"Failed to fetch API: {e}")
+        return
+
+    for file_info in files:
+        if file_info['name'].endswith('.m3u'):
+            filename = file_info['name']
+            download_url = file_info['download_url']
+            
+            try:
+                res = requests.get(download_url)
+                channels = parse_m3u_text(res.text)
+                
+                # 🌟 Myanmar ဖိုင်ဆိုရင် အစ်ကို့ extra_myanmar ကိုပါ ပေါင်းထည့်မည်
+                if filename.lower() == "mm.m3u" and os.path.exists(EXTRA_FILE):
+                    print("Adding extra_myanmar.m3u to Myanmar list...")
+                    with open(EXTRA_FILE, 'r', encoding='utf-8', errors='ignore') as ef:
+                        extra_channels = parse_m3u_text(ef.read())
+                        channels.extend(extra_channels)
+                
+                process_and_save(filename, channels)
+                
+            except Exception as e:
+                print(f"Failed to process {filename}: {e}")
 
 if __name__ == '__main__':
     main()
