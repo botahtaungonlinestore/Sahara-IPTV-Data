@@ -1,0 +1,127 @@
+#EXTM3U
+#EXTINF:-1 ,MAHAR TV
+https://ygncdn.com/live/mahar/720p/chunks.m3u8
+#EXTINF:-1,5 Plus
+https://5a13fe32ef748.streamlock.net/mmplay/5plus/playlist.m3u8
+#EXTINF:-1,Channel 9
+https://streammain.myanmartvchannels.com:8443/website-channel9-stream/website-channel9-stream/chunks.m3u8?nimblesessionid=360&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTcvMjAyNiA4OjU4OjIwIEFNJmhhc2hfdmFsdWU9em1Hb2xGV1hPOWtIZk1nM2J2SEc5UT09JnZhbGlkbWludXRlcz0xMCZpZD0xNzkyMjI3NTAwNjczMTIyNg==
+#EXTINF:-1,Fortune TV
+https://streammain.myanmartvchannels.com:8443/website-fortune-stream/website-fortune-stream/chunks.m3u8?nimblesessionid=364&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTcvMjAyNiA5OjAwOjUyIEFNJmhhc2hfdmFsdWU9ek1raXRIQWdhdjZNNHU5TVJ0aUhtQT09JnZhbGlkbWludXRlcz0xMCZpZD0xNzkyMjI3NjUyNzQyNDAzMQ==
+#EXTINF:-1 tvg-id="FortuneTV.mm@SD",FORTUNE TV (720p)
+http://103.215.194.93:8282/hls/fortunetv/vmix.m3u8
+#EXTINF:-1 tvg-id="FortuneTV.mm@SD",Fortune TV (720p)
+https://mmtvs.exliatycl.online/fortunetv/stream.m3u8
+#EXTINF:-1 tvg-id="HluttawSD.mm@SD",Hluttaw S & D
+https://mrtvott.com/cache/MRTV-HLUTTAW/master.m3u8
+#EXTINF:-1 tvg-id="MEntertainmentChannel.mm@SD",M Entertainment Channel (720p)
+https://mmtvs.exliatycl.online/mchannel/stream.m3u8
+#EXTINF:-1 tvg-id="",MCS (720p)
+https://l1-xl1.myanmarnet.com/relay2/mcs/ch1/stream.m3u8
+#EXTINF:-1 tvg-id="MRTV.mm@HD",MRTV (720p)
+https://asia.sipradius.net/cache/SEAGames4/master.m3u8
+#EXTINF:-1 tvg-id="MRTV.mm@SD",MRTV
+https://mrtvott.com/cache/MRTV-HD/master.m3u8
+#EXTINF:-1 tvg-id="MRTVEntertainment.mm@SD",MRTV Entertainment
+https://mrtvott.com/cache/MRTV-Ent-HD/master.m3u8
+#EXTINF:-1 tvg-id="MRTVFarmer.mm@SD",MRTV Farmer
+https://mrtvott.com/cache/MRTV-FARMER/master.m3u8
+#EXTINF:-1 tvg-id="MRTVNews.mm@SD",MRTV News
+https://mrtvott.com/cache/MRTV-NEWS-HD/master.m3u8
+#EXTINF:-1 tvg-id="MRTVNRC.mm@SD",MRTV NRC
+https://mrtvott.com/cache/MRTV-NRC-HD/master.m3u8
+#EXTINF:-1 tvg-id="MWDDocumentary.mm@SD",MWD Documentary [Geo-blocked]
+http://203.81.84.130/hls/mwd_document/index.m3u8
+#EXTINF:-1 tvg-id="MWD.mm@SD",MWD (720p) [Not 24/7]
+http://203.81.84.130/hls/mwd/index.m3u8
+#EXTINF:-1 tvg-id="MWDVariety.mm@SD",MWD Variety (720p) [Not 24/7]
+http://203.81.84.130/hls/mwd_variety/index.m3u8
+#EXTINF:-1 tvg-id="MRTVSports.mm@SD",MRTV Sports [Not 24/7]
+https://mrtvott.com/cache/MRTV-SPORT/master.m3u8
+#EXTINF:-1 tvg-id="MWDMovies.mm@SD",MWD Movies [Not 24/7]
+http://203.81.84.130/hls/mwd_movie/index.m3u8
+#EXTINF:-1 tvg-id="MRTV-4",MWD Movies [Not 24/7]
+https://live.pyoneplay.com/live/01m2sn12yc6v2enx392qj2ekqt/video1_stream.m3u8
+#EXTINF:-1,Channel7
+https://live.pyoneplay.com/live/01m2sr3kyn6bztz3xk02w3t7pn/video1_stream.m3u8
+#EXTINF:-1,MRTV4
+https://live.pyoneplay.com/live/01m2sn12yc6v2enx392qj2ekqt/video1_stream.m3u8
+
+
+#EXTINF:-1 tvg-id="5Plus.mm@SD",5 Plus (720p)
+https://live.pyoneplay.com/live/01m2sn12yc6v2enx392qj2ekqt/video1_stream.m3u8
+#EXTINF:-1 tvg-id="Channel9.mm@SD",Channel 9 (720p)
+https://mmtvs.exliatycl.online/channel9/stream.m3u8
+#EXTINF:-1 tvg-id="ChannelK.mm@SD",Channel K (720p)
+https://mmtvs.exliatycl.online/channelk/stream.m3u8
+#EXTINF:-1 tvg-id="DVBTV.mm@SD",DVB TV (720p) [Geo-blocked]
+https://live-stream.dvb.no/hls/stream_src/index.m3u8
+#EXTINF:-1 tvg-id="FortuneTV.mm@SD",FORTUNE TV (720p)
+http://103.215.194.93:8282/hls/fortunetv/vmix.m3u8
+#EXTINF:-1 tvg-id="HluttawSD.mm@SD",Hluttaw S & D
+https://mrtvott.com/cache/MRTV-HLUTTAW/master.m3u8
+#EXTINF:-1 tvg-id="MEntertainmentChannel.mm@SD",M Entertainment Channel (720p)
+https://mmtvs.exliatycl.online/mchannel/stream.m3u8
+#EXTINF:-1 tvg-id="",MCS (720p)
+https://l1-xl1.myanmarnet.com/relay2/mcs/ch1/stream.m3u8
+#EXTINF:-1 tvg-id="MRTV.mm@HD",MRTV (720p)
+https://asia.sipradius.net/cache/SEAGames4/master.m3u8
+#EXTINF:-1 tvg-id="MRTV.mm@SD",MRTV
+https://mrtvott.com/cache/MRTV-HD/master.m3u8
+#EXTINF:-1 tvg-id="MRTVEntertainment.mm@SD",MRTV Entertainment
+https://mrtvott.com/cache/MRTV-Ent-HD/master.m3u8
+#EXTINF:-1 tvg-id="MRTVFarmer.mm@SD",MRTV Farmer
+https://mrtvott.com/cache/MRTV-FARMER/master.m3u8
+#EXTINF:-1 tvg-id="MRTVNews.mm@SD",MRTV News
+https://mrtvott.com/cache/MRTV-NEWS-HD/master.m3u8
+#EXTINF:-1 tvg-id="MRTVNRC.mm@SD",MRTV NRC
+https://mrtvott.com/cache/MRTV-NRC-HD/master.m3u8
+#EXTINF:-1 tvg-id="MWDDocumentary.mm@SD",MWD Documentary [Geo-blocked]
+http://203.81.84.130/hls/mwd_document/index.m3u8
+#EXTINF:-1 tvg-id="MWD.mm@SD",MWD (720p) [Not 24/7]
+http://203.81.84.130/hls/mwd/index.m3u8
+#EXTINF:-1 tvg-id="MWDVariety.mm@SD",MWD Variety (720p) [Not 24/7]
+http://203.81.84.130/hls/mwd_variety/index.m3u8
+#EXTINF:-1 tvg-id="MRTVSports.mm@SD",MRTV Sports [Not 24/7]
+https://mrtvott.com/cache/MRTV-SPORT/master.m3u8
+#EXTINF:-1 tvg-id="MWDMovies.mm@SD",MWD Movies [Not 24/7]
+http://203.81.84.130/hls/mwd_movie/index.m3u8
+#EXTINF:-1 tvg-id="MyanmarInternationalTV.mm@SD",Myanmar International TV
+https://mrtvott.com/cache/MITV/master.m3u8
+#EXTINF:-1 tvg-id="FortuneTV.mm@SD",FORTUNE TV
+http://103.215.194.93:8282/hls/fortunetv/vmix.m3u8
+#EXTINF:-1,TVM
+http://203.81.84.130/hls/mwd_serie/index.m3u8
+#EXTINF:-1,Light
+http://203.81.84.130/hls/mwd_family/index.m3u8
+#EXTINF:-1,Golden Land
+http://203.81.84.130/hls/mwd_document/index.m3u8
+#EXTINF:-1, MWD HD
+http://203.81.84.130/hls/mwd/index.m3u8
+#EXTINF:-1,MWD Variety
+http://203.81.84.130/hls/mwd_variety/index.m3u8
+#EXTINF:-1,MWD School
+http://203.81.84.130/hls/mwd_movie/index.m3u8
+#EXTINF:-1,Channel7
+https://cdn-live-pyone.secureswiftcontent.com/han/PyonePlay/Channel7/LiveOutput/manifest.m3u8
+#EXTINF:-1,MRTV4
+https://cdn-live-pyone.secureswiftcontent.com/han/MRTV4/MRTV4/LiveOutput/manifest.m3u8
+#EXTINF:-1,MRTV HD
+https://mrtvott.com/cache/MRTV-HD/master.m3u8
+#EXTINF:-1,MAHABAWDI
+https://pplive.comquas.com:5443/LiveApp/streams/rHEBIW7pjQLU1677679374164.m3u8
+#EXTINF:-1,MRTV NRC HD
+https://mrtvott.com/cache/MRTV-NRC-HD/master.m3u8
+#EXTINF:-1,MRTV Ent HD
+https://mrtvott.com/cache/MRTV-Ent-HD/master.m3u8
+#EXTINF:-1,master
+https://asia.sipradius.net/cache/SEAGames4/master.m3u8
+#EXTINF:-1,Hluttaw S & D
+https://mrtvott.com/cache/MRTV-HLUTTAW/master.m3u8
+#EXTINF:-1,MRTV Farmer
+https://mrtvott.com/cache/MRTV-FARMER/master.m3u8
+#EXTINF:-1,MRTV News
+https://mrtvott.com/cache/MRTV-NEWS-HD/master.m3u8
+#EXTINF:-1,MRTV Sports 
+https://mrtvott.com/cache/MRTV-SPORT/master.m3u8
+#EXTINF:-1,Myanmar International TV
+https://mrtvott.com/cache/MITV/master.m3u8
