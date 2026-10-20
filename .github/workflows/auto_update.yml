@@ -2,10 +2,9 @@ name: Auto Update IPTV Channels
 
 on:
   schedule:
-    - cron: '0 0 * * *' # နေ့စဉ် ည ၁၂ နာရီတိုင်း အလိုအလျောက် Run မည်
-  workflow_dispatch: # ကိုယ်တိုင် Click နှိပ်ပြီး Run ခွင့်ပေးမည်
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
-# 🌟 ဖြေရှင်းချက် - Bot ကို ဖိုင်ပြန် Save (Write) ခွင့် အတိအလင်း ပေးလိုက်ပါသည်
 permissions:
   contents: write
 
@@ -15,6 +14,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -30,8 +31,8 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "Sahara Bot"
-          git config --global user.email "bot@sahara.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add active_m3u/
           git commit -m "Auto-update active channels" || echo "No changes to commit"
           git push
