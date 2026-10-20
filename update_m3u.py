@@ -1,13 +1,44 @@
 import os
 import requests
 import pycountry
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
+# ============================================================
+# SETTINGS
+# ============================================================
 TIMEOUT = 5
 MAX_THREADS = 50
 OUTPUT_FOLDER = "active_m3u"
-EXTRA_FILE = "extra_myanmar.m3u"
 IPTV_ORG_API = "https://api.github.com/repos/iptv-org/iptv/contents/streams"
+EXTRA_FILE_MYANMAR = "extra_myanmar.m3u"
+
+# ✨ Expert ၏ အဆင့်မြင့် Network Connection စနစ်
+_THREAD_LOCAL = threading.local()
+
+def get_session():
+    """Thread တစ်ခုချင်းစီအတွက် သီးသန့် Connection Pool ဖန်တီးပေးခြင်း (ပိုမြန်၊ ပိုခိုင်မာစေသည်)"""
+    session = getattr(_THREAD_LOCAL, "session", None)
+    if session is None:
+        session = requests.Session()
+        session.headers.update({
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
+            "Accept": "*/*",
+            "Connection": "keep-alive",
+        })
+        retries = Retry(
+            total=2,
+            backoff_factor=0.35,
+            status_forcelist=[429, 500, 502, 503, 504],
+            allowed_methods=["GET", "HEAD"]
+        )
+        adapter = HTTPAdapter(max_retries=retries, pool_connections=8, pool_maxsize=8)
+        session.mount("https://", adapter)
+        session.mount("http://", adapter)
+        _THREAD_LOCAL.session = session
+    return session
 
 def get_country_name(filename):
     name = os.path.splitext(filename)[0]
@@ -23,7 +54,7 @@ def get_country_name(filename):
             return f"{country_name}_{suffix}.m3u"
         else:
             return f"{country_name}.m3u"
-    return f"{name}.m3u"
+    return f"{name.title()}.m3u"
 
 def extract_channel_name(extinf_line):
     if "," in extinf_line:
@@ -50,9 +81,10 @@ def parse_m3u_text(text):
     return channels
 
 def check_link(channel):
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"}
     try:
-        response = requests.get(channel["url"], headers=headers, timeout=TIMEOUT, stream=True, allow_redirects=True)
+        # ✨ Expert ၏ Session ကို အသုံးပြု၍ ချိတ်ဆက်ခြင်း
+        session = get_session()
+        response = session.get(channel["url"], timeout=TIMEOUT, stream=True, allow_redirects=True)
         if response.status_code == 200:
             return True
     except:
@@ -100,32 +132,42 @@ def main():
     
     print("Fetching files from iptv-org...")
     try:
-        response = requests.get(IPTV_ORG_API)
+        session = get_session()
+        response = session.get(IPTV_ORG_API, timeout=15)
         files = response.json()
     except Exception as e:
         print(f"Failed to fetch API: {e}")
         return
 
+    # 1. iptv-org မှ ဖိုင်များကို စီမံခြင်း
     for file_info in files:
-        if file_info['name'].endswith('.m3u'):
+        if isinstance(file_info, dict) and file_info.get('name', '').endswith('.m3u'):
             filename = file_info['name']
             download_url = file_info['download_url']
             
             try:
-                res = requests.get(download_url)
+                res = get_session().get(download_url, timeout=15)
                 channels = parse_m3u_text(res.text)
                 
-                # 🌟 Myanmar ဖိုင်ဆိုရင် အစ်ကို့ extra_myanmar ကိုပါ ပေါင်းထည့်မည်
-                if filename.lower() == "mm.m3u" and os.path.exists(EXTRA_FILE):
-                    print("Adding extra_myanmar.m3u to Myanmar list...")
-                    with open(EXTRA_FILE, 'r', encoding='utf-8', errors='ignore') as ef:
+                # 🌟 Myanmar ဆိုလျှင် extra_myanmar.m3u ကိုပါ ပေါင်းထည့်မည်
+                if filename.lower() == "mm.m3u" and os.path.exists(EXTRA_FILE_MYANMAR):
+                    print(f"Merging {EXTRA_FILE_MYANMAR} into Myanmar list...")
+                    with open(EXTRA_FILE_MYANMAR, 'r', encoding='utf-8', errors='ignore') as ef:
                         extra_channels = parse_m3u_text(ef.read())
                         channels.extend(extra_channels)
                 
                 process_and_save(filename, channels)
-                
             except Exception as e:
                 print(f"Failed to process {filename}: {e}")
+
+    # 2. 🌟 Local မှ အခြား extra_*.m3u ဖိုင်များကို စီမံခြင်း (ဥပမာ extra_adult.m3u -> Adult.m3u)
+    for local_file in os.listdir('.'):
+        if local_file.startswith('extra_') and local_file.endswith('.m3u') and local_file != EXTRA_FILE_MYANMAR:
+            cat_filename = local_file.replace('extra_', '') 
+            print(f"Processing local custom category: {local_file}")
+            with open(local_file, 'r', encoding='utf-8', errors='ignore') as ef:
+                channels = parse_m3u_text(ef.read())
+                process_and_save(cat_filename, channels)
 
 if __name__ == '__main__':
     main()
