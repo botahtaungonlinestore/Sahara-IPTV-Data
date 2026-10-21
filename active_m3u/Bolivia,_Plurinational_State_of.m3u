@@ -1,96 +1,110 @@
 #EXTM3U
+#EXTINF:-1,AYNI TV
+https://59d39900ebfb8.streamlock.net/Aynitv/Aynitv/playlist.m3u8
 #EXTINF:-1,Canal 56 Quiero TV (720p)
 http://45.5.118.152:8000/play/a08z/index.m3u8
-#EXTINF:-1,Cadena A (720p) [Not 24/7]
-https://5fe2654d6127d.streamlock.net/cadenaa/videocadenaa/playlist.m3u8
+#EXTINF:-1,Gigavision (720p)
+https://tv2.bitstreaming.net:3576/multi_live/play.m3u8
+#EXTINF:-1,Gigavision
+https://tv.bitstreaming.net:3348/live/gigavisionlive.m3u8
+#EXTINF:-1,Radio Centro (720p)
+https://streamlov.alsolnet.com/grupocentrobo/live/playlist.m3u8
+#EXTINF:-1,Red ADvenir TV (360p) [Not 24/7]
+http://streamer1.streamhost.org:1935/salive/GMIredadvenirm/playlist.m3u8
+#EXTINF:-1,F10 HD [Geo-blocked]
+https://tv2.bitstreaming.net:3235/multi_live/play.m3u8
+#EXTINF:-1,Imperial TV (720p)
+https://tv.centaurychile.com/imperial/streams/EnCyCiwNLsqEQ2kv2852222720686498.m3u8
+#EXTINF:-1,Palenque TV
+https://tv.bitstreaming.net:3234/live/palenquetvlive.m3u8
+#EXTINF:-1,Red Uno Santa Cruz (1080p)
+http://190.181.18.82:4111/play/a006/index.m3u8
+#EXTINF:-1,Poder de Dios TV (720p)
+https://s3.tvdatta.com:3846/live/poderdedioslive.m3u8
+#EXTINF:-1,Radio Mega TV Amazonia (720p)
+https://ares.disfrutaenlared.com:1936/megatv/megatv/playlist.m3u8
+#EXTINF:-1,PTV (720p)
+https://giatv.bozztv.com/giatv/giatv-PTVonLINE/PTVonLINE/playlist.m3u8
 #EXTINF:-1,FAP TV (720p)
 https://edge.enhdtv.com/faptv/index.m3u8
 #EXTINF:-1,Radio Universitaria San Andres (720p)
 https://edge.enhdtv.com/8054/index.m3u8
-#EXTINF:-1,PTV (720p)
-https://giatv.bozztv.com/giatv/giatv-PTVonLINE/PTVonLINE/playlist.m3u8
-#EXTINF:-1,F10 HD [Geo-blocked]
-https://tv2.bitstreaming.net:3235/multi_live/play.m3u8
-#EXTINF:-1,Gigavision (720p)
-https://tv2.bitstreaming.net:3576/multi_live/play.m3u8
-#EXTINF:-1,Red America TV (1080p)
-https://edge.enhdtv.com/redamerica/index.m3u8
-#EXTINF:-1,Radio Centro (720p)
-https://streamlov.alsolnet.com/grupocentrobo/live/playlist.m3u8
-#EXTINF:-1,Imperial TV (720p)
-https://tv.centaurychile.com/imperial/streams/EnCyCiwNLsqEQ2kv2852222720686498.m3u8
-#EXTINF:-1,Gigavision
-https://tv.bitstreaming.net:3348/live/gigavisionlive.m3u8
 #EXTINF:-1,Red Uno (720p)
 https://tv.centaurychile.com/interactiva/streams/KIgB6QvZ0L8XaSLd3211668845221245.m3u8
-#EXTINF:-1,Radio Kollasuyo (720p)
-https://azura2.bitstreaming.net/hls/kollasuyo3/live.m3u8
-#EXTINF:-1,Poder de Dios TV (720p)
-https://s3.tvdatta.com:3846/live/poderdedioslive.m3u8
-#EXTINF:-1,AYNI TV
-https://59d39900ebfb8.streamlock.net/Aynitv/Aynitv/playlist.m3u8
-#EXTINF:-1,RTP (576p)
-https://rtp.noxun.net/hls720/stream3.m3u8
-#EXTINF:-1,RTP (480p)
-https://rtp.noxun.net/hls480/stream2.m3u8
-#EXTINF:-1,Coral TV (720p)
-https://tv.mediacp.eu:8081/coraltv/index.m3u8
-#EXTINF:-1,RTP
-https://rtp.noxun.net/hls/stream.m3u8
+#EXTINF:-1,Red America TV (1080p)
+https://edge.enhdtv.com/redamerica/index.m3u8
+#EXTINF:-1,Cadena A (720p) [Not 24/7]
+https://5fe2654d6127d.streamlock.net/cadenaa/videocadenaa/playlist.m3u8
 #EXTINF:-1,Red Rubi (720p)
 https://59d39900ebfb8.streamlock.net/asiesmipueblo/asiesmipueblo/playlist.m3u8
-#EXTINF:-1,Radio Clasica TV (720p)
-https://ares.disfrutaenlared.com:1936/clasica/clasica/playlist.m3u8
+#EXTINF:-1,Radio Kollasuyo (720p)
+https://azura2.bitstreaming.net/hls/kollasuyo3/live.m3u8
 #EXTINF:-1,Sucremanta TV (720p)
 https://lbgo.bozztv.com/ssh101/ssh101/ok2026/playlist.m3u8
-#EXTINF:-1,TransMedia (720p)
-https://edge.enhdtv.com/8064/index.m3u8
-#EXTINF:-1,SPC Canal 15 (720p)
-https://tv.centaurychile.com/magicatv/streams/22AdscM3Y6Un17Zo4747081346569358.m3u8
-#EXTINF:-1,Red CCTV
-https://ares.disfrutaenlared.com:1936/redcctv/redcctv/playlist.m3u8
-#EXTINF:-1,TELE 6 (720p)
-https://lbgo.bozztv.com/ssh101/ssh101/tele6/playlist.m3u8
-#EXTINF:-1,TV OFF (1080p)
-https://edge.enhdtv.com/tvoff/index.m3u8
-#EXTINF:-1,FTV (720p)
-https://master.tucableip.com/ftvhd/index.m3u8
-#EXTINF:-1,Delta TV
-https://st.deltaboliviainstitucion.org:3778/hybrid/play.m3u8
-#EXTINF:-1,Unifranz (720p)
-https://edge.enhdtv.com/8192/index.m3u8
-#EXTINF:-1,UMSA TVU LP (720p)
-https://edge.enhdtv.com/8190/index.m3u8
-#EXTINF:-1,Red TV Shop (720p)
-https://master.tucableip.com/redtvshop/index.m3u8
-#EXTINF:-1,As Contenidos (720p)
-https://master.tucableip.com/ascontenido/index.m3u8
-#EXTINF:-1,EL DEBER (1080p)
-https://master.tucableip.com/eldebertv/index.m3u8
-#EXTINF:-1,TV Latina (1080p)
-https://castv10.plugstreaming.com:19360/redtv/redtv.m3u8
-#EXTINF:-1,TL Estrella (720p)
-https://59d39900ebfb8.streamlock.net/teleestrella/teleestrella/playlist.m3u8
 #EXTINF:-1,Tele Fe Bolivia (720p)
 https://59d39900ebfb8.streamlock.net/telefehd/telefehd/playlist.m3u8
+#EXTINF:-1,Red CCTV
+https://ares.disfrutaenlared.com:1936/redcctv/redcctv/playlist.m3u8
+#EXTINF:-1,Radio Clasica TV (720p)
+https://ares.disfrutaenlared.com:1936/clasica/clasica/playlist.m3u8
+#EXTINF:-1,RTP (480p)
+https://rtp.noxun.net/hls480/stream2.m3u8
+#EXTINF:-1,RTP
+https://rtp.noxun.net/hls/stream.m3u8
+#EXTINF:-1,Delta TV
+https://st.deltaboliviainstitucion.org:3778/hybrid/play.m3u8
+#EXTINF:-1,Coral TV (720p)
+https://tv.mediacp.eu:8081/coraltv/index.m3u8
+#EXTINF:-1,RTP (576p)
+https://rtp.noxun.net/hls720/stream3.m3u8
+#EXTINF:-1,TELE 6 (720p)
+https://lbgo.bozztv.com/ssh101/ssh101/tele6/playlist.m3u8
+#EXTINF:-1,As Contenidos (720p)
+https://master.tucableip.com/ascontenido/index.m3u8
+#EXTINF:-1,TransMedia (720p)
+https://edge.enhdtv.com/8064/index.m3u8
+#EXTINF:-1,TVU Sucre (720p)
+https://edge.enhdtv.com/8214/index.m3u8
+#EXTINF:-1,TV OFF (1080p)
+https://edge.enhdtv.com/tvoff/index.m3u8
+#EXTINF:-1,UMSA TVU LP (720p)
+https://edge.enhdtv.com/8190/index.m3u8
 #EXTINF:-1,Audiokiss (1080p)
 https://master.tucableip.com/audiokisstv/index.m3u8
-#EXTINF:-1,UMSA TVU Internacional (720p)
-https://edge.enhdtv.com/8026/index.m3u8
+#EXTINF:-1,Unitel Cochabamba (720p)
+https://mdstrm.com/live-stream-playlist/691f2aeb5ac95d286c49af8d.m3u8
+#EXTINF:-1,EL DEBER (1080p)
+https://master.tucableip.com/eldebertv/index.m3u8
+#EXTINF:-1,Unitel Santa Cruz (720p)
+https://mdstrm.com/live-stream-playlist/692b7e7ac84183fcf9e3462d.m3u8
+#EXTINF:-1,Unifranz (720p)
+https://edge.enhdtv.com/8192/index.m3u8
+#EXTINF:-1,Dmoda Channel (1080p)
+https://master.tucableip.com/dmoda/index.m3u8
 #EXTINF:-1,Amitel TV (720p)
 https://stv2.boliviaplay.com.bo/hls/stream.m3u8
-#EXTINF:-1,Tigo Sports (720p) [Geo-blocked]
-https://dipdxjic51jcl.cloudfront.net/out/v1/81f769d780694be488d85811331c8a4f/index.m3u8
-#EXTINF:-1,ATB La Paz
-https://stream.atb.com.bo/live/daniel/index.m3u8
-#EXTINF:-1,Red Uno Santa Cruz (1080p)
-http://190.181.18.82:4111/play/a006/index.m3u8
+#EXTINF:-1,Unitel La Paz (720p)
+https://mdstrm.com/live-stream-playlist/6928b14aaa768aad947bf65d.m3u8
+#EXTINF:-1,TV Latina (1080p)
+https://castv10.plugstreaming.com:19360/redtv/redtv.m3u8
+#EXTINF:-1,FTV (720p)
+https://master.tucableip.com/ftvhd/index.m3u8
+#EXTINF:-1,UMSA TVU Internacional (720p)
+https://edge.enhdtv.com/8026/index.m3u8
+#EXTINF:-1,Red TV Shop (720p)
+https://master.tucableip.com/redtvshop/index.m3u8
 #EXTINF:-1,CEACOM TV (1080p) [Not 24/7]
 https://eu1.servers10.com:8081/ceacom/index.m3u8
 #EXTINF:-1,Zuraca TV (720p)
 https://tv3.bitstreaming.net:3680/live/zuracatvlive.m3u8
+#EXTINF:-1,Tigo Sports (720p) [Geo-blocked]
+https://dipdxjic51jcl.cloudfront.net/out/v1/81f769d780694be488d85811331c8a4f/index.m3u8
+#EXTINF:-1,TV Latina (1080p)
+https://master.tucableip.com/tvlatina/index.m3u8
 #EXTINF:-1,Bolivia TV (720p) [Not 24/7]
 https://hls.tvabierta.net/hls/boliviatv.m3u8
+#EXTINF:-1,UMSA TVU LP (720p)
+https://live.enhdtv.com:8081/8190/tracks-v1a1/mono.m3u8
 #EXTINF:-1,UMSA TVU Internacional (720p)
 https://live.enhdtv.com:8081/8026/tracks-v1a1/mono.m3u8
 #EXTINF:-1,Unifranz (720p)
@@ -99,31 +113,25 @@ https://live.enhdtv.com:8081/8192/index.m3u8
 http://190.104.15.135/0.ts
 #EXTINF:-1,UniversidadMayordeSanAndres (1080p) [Not 24/7]
 https://live.enhdtv.com:8081/8190/index.m3u8
-#EXTINF:-1,UMSA TVU LP (720p)
-https://live.enhdtv.com:8081/8190/tracks-v1a1/mono.m3u8
-#EXTINF:-1,TV Latina (1080p)
-https://master.tucableip.com/tvlatina/index.m3u8
 #EXTINF:-1,Univalle Televisión (1080p)
 https://master.tucableip.com/univalletv/playlist.m3u8
-#EXTINF:-1,Red ADvenir TV (360p) [Not 24/7]
-http://streamer1.streamhost.org:1935/salive/GMIredadvenirm/playlist.m3u8
-#EXTINF:-1,Vos TV
-https://59d39900ebfb8.streamlock.net/vostv/vostv/playlist.m3u8
-#EXTINF:-1,Bolivia TV (1080p)
-http://190.181.61.93:8000/play/a001/index.m3u8
-#EXTINF:-1,Red Uno La Paz (1080p)
-http://190.181.61.93:8000/play/a003/index.m3u8
 #EXTINF:-1,TDT Multimedia (720p)
 https://video01.brascast.com/juan6318/juan6318/playlist.m3u8
 #EXTINF:-1,Red Uno (1080p)
 http://190.181.61.93:8000/play/a002/index.m3u8
+#EXTINF:-1,Red Uno La Paz (1080p)
+http://190.181.61.93:8000/play/a003/index.m3u8
 #EXTINF:-1,Unitel (1080p)
 http://190.181.61.93:8000/play/1909/index.m3u8
 #EXTINF:-1,RTP (1080p)
 http://190.181.61.93:8000/play/a00n/index.m3u8
+#EXTINF:-1,Bolivia TV (1080p)
+http://190.181.61.93:8000/play/a001/index.m3u8
 #EXTINF:-1,Gigavision (1080p)
 http://158.172.155.130:8000/play/a0e7/index.m3u8
 #EXTINF:-1,UPEA TV (720p)
 https://tvstream.upea.bo/hls/oSs0jSWumTFIIVY97559.m3u8
 #EXTINF:-1,FAP TV (480p)
 https://nd106.republicaservers.com/hls/c7284/index.m3u8
+#EXTINF:-1,ATB La Paz
+https://stream.atb.com.bo/live/daniel/index.m3u8

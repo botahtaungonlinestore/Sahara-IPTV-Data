@@ -1,19 +1,19 @@
 #EXTM3U
-#EXTINF:-1,Haiti News Channel (1080p) [Not 24/7]
-https://cdn.haititivi.com/website/haitinews/index.m3u8
-#EXTINF:-1,Tele Pam (1080p)
-https://watch.haitilive.net/app/2020/telepam/index.fmp4.m3u8
-#EXTINF:-1,RTH-TV1 (1080p)
-https://2-fss-2.streamhoster.com/pl_120/amlst:206708-4203440/playlist.m3u8
-#EXTINF:-1,Radio Tele Planet Compas (720p) [Not 24/7]
-https://5dcab9aed5331.streamlock.net/mrcompas1/livestream/playlist.m3u8
 #EXTINF:-1,TV Panou (720p) [Not 24/7]
 http://tvpanoucom.srfms.com:1935/tvpanoucom/livestream/playlist.m3u8
-#EXTINF:-1,Radio Tele Ginen
-http://teleginen.srfms.com:1935/teleginen/livestream/playlist.m3u8
+#EXTINF:-1,Tele Pam (1080p)
+https://watch.haitilive.net/app/2020/telepam/index.fmp4.m3u8
+#EXTINF:-1,Radio Tele Planet Compas (720p) [Not 24/7]
+https://5dcab9aed5331.streamlock.net/mrcompas1/livestream/playlist.m3u8
 #EXTINF:-1,Tele Louange (1080p)
 https://5790d294af2dc.streamlock.net/8124/8124/playlist.m3u8
 #EXTINF:-1,Radio Télé Hit (480p)
 https://59d39900ebfb8.streamlock.net/RadioTelehit/RadioTelehit/playlist.m3u8
+#EXTINF:-1,RTH-TV1 (1080p)
+https://2-fss-2.streamhoster.com/pl_120/amlst:206708-4203440/playlist.m3u8
 #EXTINF:-1,Radio Télé 4VEH (720p)
 https://uni01rtmp.tulix.tv/4vehtv/4vehtv-firetv/playlist.m3u8
+#EXTINF:-1,Radio Tele Ginen
+http://teleginen.srfms.com:1935/teleginen/livestream/playlist.m3u8
+#EXTINF:-1,Haiti News Channel (1080p) [Not 24/7]
+https://cdn.haititivi.com/website/haitinews/index.m3u8

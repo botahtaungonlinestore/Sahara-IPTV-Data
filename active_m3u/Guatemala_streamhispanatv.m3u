@@ -1,13 +1,15 @@
 #EXTM3U
+#EXTINF:-1,Nim TV (720p) [Not 24/7]
+https://cdn.streamhispanatv.net:3210/live/nimtvgtlive.m3u8
 #EXTINF:-1,Canal 9 Barbe TV (720p) [Not 24/7]
 https://cdn.streamhispanatv.net:3549/live/barbetvlive.m3u8
+#EXTINF:-1,TVS Retro (720p)
+https://cdn.streamhispanatv.net:3531/live/tvsretrogtlive.m3u8
+#EXTINF:-1,TV Florencia (720p)
+https://cdn.streamhispanatv.net:3819/live/tvflorecialive.m3u8
+#EXTINF:-1,Aurora Media Films (720p)
+https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8
 #EXTINF:-1,Visión TV (720p)
 https://cdn.streamhispanatv.net:3076/live/visiontvlive.m3u8
 #EXTINF:-1,Sol TV (720p)
 https://cdn.streamhispanatv.net:3409/live/soltvlive.m3u8
-#EXTINF:-1,TVS Retro (720p)
-https://cdn.streamhispanatv.net:3531/live/tvsretrogtlive.m3u8
-#EXTINF:-1,Aurora Media Films (720p)
-https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8
-#EXTINF:-1,TV Florencia (720p)
-https://cdn.streamhispanatv.net:3819/live/tvflorecialive.m3u8

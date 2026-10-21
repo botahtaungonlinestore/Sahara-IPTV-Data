@@ -1,31 +1,31 @@
 #EXTM3U
+#EXTINF:-1,YLE TV 2 (1080p) [Not 24/7]
+https://yletvworld.akamaized.net/hls/live/622541/yletv2w/index.m3u8
+#EXTINF:-1,Navahang TV (720p)
+https://hls.navahang.live/hls/stream.m3u8
 #EXTINF:-1,YLE TV Teema & Fem (1080p) [Not 24/7]
 https://yletvworld.akamaized.net/hls/live/622547/yletvteemafemw/index.m3u8
 #EXTINF:-1,YLE TV 1 (1080p) [Not 24/7]
 https://yletvworld.akamaized.net/hls/live/622540/yletv1w/index.m3u8
-#EXTINF:-1,Navahang TV (720p)
-https://hls.navahang.live/hls/stream.m3u8
-#EXTINF:-1,YLE TV 2 (1080p) [Not 24/7]
-https://yletvworld.akamaized.net/hls/live/622541/yletv2w/index.m3u8
-#EXTINF:-1,Onni TV (720p)
-https://onnitv.digitacdn.net/live/ott/onnitv/playlist.m3u8
-#EXTINF:-1,JRTV Järviradio (720p)
-https://streamer.radiotaajuus.fi/memfs/47f113bf-04ea-493b-a9d4-52945fd9db31.m3u8
 #EXTINF:-1,NärTV (360p)
 https://streaming.nartv.fi/live/ngrp:NAR_TV.stream_all/playlist.m3u8
+#EXTINF:-1,JRTV Järviradio (720p)
+https://streamer.radiotaajuus.fi/memfs/47f113bf-04ea-493b-a9d4-52945fd9db31.m3u8
+#EXTINF:-1,Onni TV (720p)
+https://onnitv.digitacdn.net/live/ott/onnitv/playlist.m3u8
 #EXTINF:-1,Taivas TV7 (720p)
 https://vod.tv7.fi/tv7-fi/smil:tv7-fi.smil/playlist.m3u8
-#EXTINF:-1,Taevas TV7 (720p)
-https://vod.tv7.fi/tv7-ee/smil:tv7-ee.smil/playlist.m3u8
 #EXTINF:-1,Himlen TV7 (720p)
 https://vod.tv7.fi/tv7-se/smil:tv7-se.smil/playlist.m3u8
-#EXTINF:-1,MTV Sub (720p)
-https://live-fi.tvkaista.net/sub/live.m3u8
-#EXTINF:-1,Liv (720p)
-https://live-fi.tvkaista.net/liv/live.m3u8?hd=true
-#EXTINF:-1,Nelonen (720p)
-https://live-fi.tvkaista.net/nelonen/live.m3u8
-#EXTINF:-1,Jim (720p)
-https://live-fi.tvkaista.net/jim/live.m3u8?hd=true
+#EXTINF:-1,Taevas TV7 (720p)
+https://vod.tv7.fi/tv7-ee/smil:tv7-ee.smil/playlist.m3u8
 #EXTINF:-1,Nopola News (1080p) [Not 24/7]
 https://virta2.nopolanews.fi:8443/live/smil:Stream1.smil/playlist.m3u8
+#EXTINF:-1,Jim (720p)
+https://live-fi.tvkaista.net/jim/live.m3u8?hd=true
+#EXTINF:-1,Liv (720p)
+https://live-fi.tvkaista.net/liv/live.m3u8?hd=true
+#EXTINF:-1,MTV Sub (720p)
+https://live-fi.tvkaista.net/sub/live.m3u8
+#EXTINF:-1,Nelonen (720p)
+https://live-fi.tvkaista.net/nelonen/live.m3u8

@@ -1,23 +1,23 @@
 #EXTM3U
-#EXTINF:-1,RT France (1080p) [Geo-blocked]
-https://rt-fra.rttv.com/dvr/rtfrance/playlist.m3u8
-#EXTINF:-1,RT France (1080p) [Geo-blocked]
-https://rt-fra.rttv.com/live/rtfrance/playlist.m3u8
-#EXTINF:-1,RT Documentary English (1080p) [Geo-blocked]
-https://rt-rtd.rttv.com/live/rtdoc/playlist.m3u8
-#EXTINF:-1,RT Documentary English (1080p) [Geo-blocked]
-https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8
 #EXTINF:-1,RT en Español (1080p) [Geo-blocked]
 https://rt-esp.rttv.com/dvr/rtesp/playlist.m3u8
 #EXTINF:-1,RT en Español (1080p) [Geo-blocked]
 https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
-#EXTINF:-1,RT Arabic (1080p) [Geo-blocked]
-https://rt-arb.rttv.com/dvr/rtarab/playlist.m3u8
-#EXTINF:-1,RT Arabic (1080p) [Geo-blocked]
-https://rt-arb.rttv.com/live/rtarab/playlist.m3u8
 #EXTINF:-1,RT News (1080p) [Not 24/7]
 https://rt-glb.rttv.com/dvr/rtnews/playlist.m3u8
-#EXTINF:-1,RT News (1080p) [Geo-blocked]
-https://rt-glb.rttv.com/live/rtnews/playlist.m3u8
+#EXTINF:-1,RT Documentary English (1080p) [Geo-blocked]
+https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8
+#EXTINF:-1,RT Documentary English (1080p) [Geo-blocked]
+https://rt-rtd.rttv.com/live/rtdoc/playlist.m3u8
 #EXTINF:-1,RT Documentary Russian (1080p)
 https://rt-doc.rttv.com/dvr/rtdru/playlist.m3u8
+#EXTINF:-1,RT France (1080p) [Geo-blocked]
+https://rt-fra.rttv.com/live/rtfrance/playlist.m3u8
+#EXTINF:-1,RT France (1080p) [Geo-blocked]
+https://rt-fra.rttv.com/dvr/rtfrance/playlist.m3u8
+#EXTINF:-1,RT Arabic (1080p) [Geo-blocked]
+https://rt-arb.rttv.com/live/rtarab/playlist.m3u8
+#EXTINF:-1,RT Arabic (1080p) [Geo-blocked]
+https://rt-arb.rttv.com/dvr/rtarab/playlist.m3u8
+#EXTINF:-1,RT News (1080p) [Geo-blocked]
+https://rt-glb.rttv.com/live/rtnews/playlist.m3u8

@@ -1,35 +1,35 @@
 #EXTM3U
 #EXTINF:-1,Победа
 https://streaming.thestream.cyou/live/43.m3u8
-#EXTINF:-1,НТВ Мир
-https://streaming.thestream.cyou/live/213.m3u8
 #EXTINF:-1,Первый канал Европа
 https://streaming.thestream.cyou/live/210.m3u8
-#EXTINF:-1,Дом Кино
-https://streaming.thestream.cyou/live/44.m3u8
 #EXTINF:-1,RT Documentary Russian
 https://streaming.thestream.cyou/live/554.m3u8
-#EXTINF:-1,Россия 24
-https://streaming.televizor-24-tochka.ru/live/30.m3u8
-#EXTINF:-1,Таврия
-https://streaming.televizor-24-tochka.ru/live/24.m3u8
-#EXTINF:-1,Крым 24
-https://streaming.televizor-24-tochka.ru/live/28.m3u8
-#EXTINF:-1,СТС
-https://streaming.televizor-24-tochka.ru/live/296.m3u8
-#EXTINF:-1,МузТВ
-https://streaming.televizor-24-tochka.ru/live/618.m3u8
+#EXTINF:-1,Дом Кино
+https://streaming.thestream.cyou/live/44.m3u8
+#EXTINF:-1,НТВ Мир
+https://streaming.thestream.cyou/live/213.m3u8
 #EXTINF:-1,Первый Республиканский
 https://streaming.televizor-24-tochka.ru/live/27.m3u8
-#EXTINF:-1,Звезда
-https://streaming.televizor-24-tochka.ru/live/748.m3u8
-#EXTINF:-1,Карусель
-https://streaming.televizor-24-tochka.ru/live/232.m3u8
-#EXTINF:-1,Россия-РТР
-https://streaming.televizor-24-tochka.ru/live/211.m3u8
-#EXTINF:-1,ТНТ
-https://streaming.televizor-24-tochka.ru/live/38.m3u8
-#EXTINF:-1,За!ТВ
-https://streaming.televizor-24-tochka.ru/live/25.m3u8
 #EXTINF:-1,Луганск 24
 https://streaming.televizor-24-tochka.ru/live/29.m3u8
+#EXTINF:-1,Таврия
+https://streaming.televizor-24-tochka.ru/live/24.m3u8
+#EXTINF:-1,Карусель
+https://streaming.televizor-24-tochka.ru/live/232.m3u8
+#EXTINF:-1,Звезда
+https://streaming.televizor-24-tochka.ru/live/748.m3u8
+#EXTINF:-1,Россия-РТР
+https://streaming.televizor-24-tochka.ru/live/211.m3u8
+#EXTINF:-1,СТС
+https://streaming.televizor-24-tochka.ru/live/296.m3u8
+#EXTINF:-1,Россия 24
+https://streaming.televizor-24-tochka.ru/live/30.m3u8
+#EXTINF:-1,Крым 24
+https://streaming.televizor-24-tochka.ru/live/28.m3u8
+#EXTINF:-1,ТНТ
+https://streaming.televizor-24-tochka.ru/live/38.m3u8
+#EXTINF:-1,МузТВ
+https://streaming.televizor-24-tochka.ru/live/618.m3u8
+#EXTINF:-1,За!ТВ
+https://streaming.televizor-24-tochka.ru/live/25.m3u8

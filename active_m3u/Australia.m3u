@@ -1,77 +1,77 @@
 #EXTM3U
 #EXTINF:-1,2GB Sydney (1080p)
 https://2gblive.akamaized.net/hls/live/2033805/2GB/index.m3u8
-#EXTINF:-1,6PR Perth (1080p)
-https://6prlive.akamaized.net/hls/live/2033806/6PR/index.m3u8
-#EXTINF:-1,10 Bold Adelaide (1080p)
-https://dce3793146fef017.mediapackage.us-west-2.amazonaws.com/out/v1/55cdf73af7894775ba6de8f57482b66a/CMAF_HLS/index.m3u8
-#EXTINF:-1,News24 (1080p)
-https://skynewsau-live-premium.akamaized.net/hls/live/2105299/skynews/live.m3u8
-#EXTINF:-1,Cricket Gold (1080p)
-https://streams2.sofast.tv/ptnr-yupptv/title-cricketgold/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/b2048bb8-1686-4432-aa50-647245383e0c/manifest.m3u8
-#EXTINF:-1,Expo Channel (360p)
-https://tvsnhlslivetest.akamaized.net/hls/live/2034711/EXPO-MSL4/master.m3u8
-#EXTINF:-1,Bloomberg TV Australia (270p)
-https://bloomberg.com/media-manifest/streams/aus.m3u8
-#EXTINF:-1,Sky News Extra 2 (540p) [Not 24/7]
-https://skynewsau-live.akamaized.net/hls/live/2002690/skynewsau-extra2/master.m3u8
-#EXTINF:-1,ABC News (720p)
-https://c.mjh.nz/abc-news.m3u8
-#EXTINF:-1,Channel 44 (480p)
-https://d1k6kax80wecy5.cloudfront.net/WFqZJc/index.m3u8
-#EXTINF:-1,ABC TV WA (720p)
-https://c.mjh.nz/abc-wa.m3u8
-#EXTINF:-1,C31 Melbourne (240p)
-https://d1k6kax80wecy5.cloudfront.net/RLnAKY/index.m3u8
-#EXTINF:-1,ABC Entertains (720p)
-https://c.mjh.nz/abc-me.m3u8
-#EXTINF:-1,Channel 9 Adelaide (720p) [Geo-blocked]
-https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/adl/ch9/hls/r1/index.m3u8
-#EXTINF:-1,Channel 9 Perth (720p) [Geo-blocked]
-https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/per/ch9/hls/r1/index.m3u8
-#EXTINF:-1,Channel 9 Brisbane (720p) [Geo-blocked]
-https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/bne/ch9/hls/r1/index.m3u8
-#EXTINF:-1,Channel 9 Sydney (720p) [Geo-blocked]
-https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/syd/ch9/hls/r1/index.m3u8
-#EXTINF:-1,ABC News (720p)
-https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8
 #EXTINF:-1,ausbiz TV (720p) [Not 24/7]
 https://d9quh89lh7dtw.cloudfront.net/public-output/index.m3u8
-#EXTINF:-1,JonmoBhumi TV (720p)
-https://jtvs.ncare.live/Gznr84Woj7UEye3OPVeWq2ForboWAgdV/jonmobhumitv.stream/playlist.m3u8
+#EXTINF:-1,6PR Perth (1080p)
+https://6prlive.akamaized.net/hls/live/2033806/6PR/index.m3u8
+#EXTINF:-1,Cricket Gold (1080p)
+https://streams2.sofast.tv/ptnr-yupptv/title-cricketgold/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/b2048bb8-1686-4432-aa50-647245383e0c/manifest.m3u8
+#EXTINF:-1,ABC News (720p)
+https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8
 #EXTINF:-1,3AW Melbourne (1080p)
 https://3awlive.akamaized.net/hls/live/2032295/3AW/index.m3u8
-#EXTINF:-1,Sky News Extra 1 (540p)
-https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8
-#EXTINF:-1,Sky News Weather Channel
-https://skynewsau-live-premium.akamaized.net/hls/live/2105305/skynewsweather/live_540p.m3u8
-#EXTINF:-1,ABC Kids
-https://c.mjh.nz/abc-kids.m3u8
-#EXTINF:-1,Sky News Extra 3 (1080p)
-https://skynewsau-live.akamaized.net/hls/live/2002691/skynewsau-extra3/master.m3u8
-#EXTINF:-1,ABC TV ACT (720p)
-https://c.mjh.nz/abc-act.m3u8
-#EXTINF:-1,ABC TV QLD (720p)
-https://c.mjh.nz/abc-qld.m3u8
-#EXTINF:-1,News24 World
-https://skynewsau-live-premium.akamaized.net/hls/live/2105306/skynewsextra/live_540p.m3u8
-#EXTINF:-1,ABC TV NSW (720p)
-https://c.mjh.nz/abc-nsw.m3u8
-#EXTINF:-1,ABC TV NT (720p)
-https://c.mjh.nz/abc-nt.m3u8
-#EXTINF:-1,Fox Sports News (1080p)
-https://skynewsau-live-premium.akamaized.net/hls/live/2105307/foxsportsnews/live_1080p.m3u8
 #EXTINF:-1,ticker News (1080p)
 https://live-hls-7agy.livepush.io/live_abr_cdn/nsitWAl1pTZtwca/emnmZbKZcO8RfwJR/index.m3u8
-#EXTINF:-1,ABC TV Plus (720p)
-https://c.mjh.nz/abc-tv-plus.m3u8
+#EXTINF:-1,Channel 9 Brisbane (720p) [Geo-blocked]
+https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/bne/ch9/hls/r1/index.m3u8
+#EXTINF:-1,10 Bold Adelaide (1080p)
+https://dce3793146fef017.mediapackage.us-west-2.amazonaws.com/out/v1/55cdf73af7894775ba6de8f57482b66a/CMAF_HLS/index.m3u8
+#EXTINF:-1,Channel 9 Sydney (720p) [Geo-blocked]
+https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/syd/ch9/hls/r1/index.m3u8
+#EXTINF:-1,Expo Channel (360p)
+https://tvsnhlslivetest.akamaized.net/hls/live/2034711/EXPO-MSL4/master.m3u8
+#EXTINF:-1,Channel 9 Perth (720p) [Geo-blocked]
+https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/per/ch9/hls/r1/index.m3u8
+#EXTINF:-1,Channel 9 Adelaide (720p) [Geo-blocked]
+https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/adl/ch9/hls/r1/index.m3u8
+#EXTINF:-1,Bloomberg TV Australia (270p)
+https://bloomberg.com/media-manifest/streams/aus.m3u8
+#EXTINF:-1,ABC Kids
+https://c.mjh.nz/abc-kids.m3u8
 #EXTINF:-1,TVSN (1080p)
 https://tvsnhlslivetest.akamaized.net/hls/live/2034711/TVSN-MSL4/master.m3u8
-#EXTINF:-1,ABC TV TAS (720p)
-https://c.mjh.nz/abc-tas.m3u8
-#EXTINF:-1,Sky Racing 1 (720p)
-https://636ffd31f0e12.streamlock.net/RacingStream1/RacingStream1/playlist.m3u8
-#EXTINF:-1,ABC TV SA (720p)
-https://c.mjh.nz/abc-sa.m3u8
+#EXTINF:-1,ABC TV NT (720p)
+https://c.mjh.nz/abc-nt.m3u8
+#EXTINF:-1,ABC TV NSW (720p)
+https://c.mjh.nz/abc-nsw.m3u8
+#EXTINF:-1,C31 Melbourne (240p)
+https://d1k6kax80wecy5.cloudfront.net/RLnAKY/index.m3u8
+#EXTINF:-1,ABC TV QLD (720p)
+https://c.mjh.nz/abc-qld.m3u8
 #EXTINF:-1,ABC TV VIC (720p)
 https://c.mjh.nz/abc-vic.m3u8
+#EXTINF:-1,Channel 44 (480p)
+https://d1k6kax80wecy5.cloudfront.net/WFqZJc/index.m3u8
+#EXTINF:-1,JonmoBhumi TV (720p)
+https://jtvs.ncare.live/Gznr84Woj7UEye3OPVeWq2ForboWAgdV/jonmobhumitv.stream/playlist.m3u8
+#EXTINF:-1,ABC TV Plus (720p)
+https://c.mjh.nz/abc-tv-plus.m3u8
+#EXTINF:-1,Sky News Extra 2 (540p) [Not 24/7]
+https://skynewsau-live.akamaized.net/hls/live/2002690/skynewsau-extra2/master.m3u8
+#EXTINF:-1,Sky News Extra 3 (1080p)
+https://skynewsau-live.akamaized.net/hls/live/2002691/skynewsau-extra3/master.m3u8
+#EXTINF:-1,News24 (1080p)
+https://skynewsau-live-premium.akamaized.net/hls/live/2105299/skynews/live.m3u8
+#EXTINF:-1,Sky News Extra 1 (540p)
+https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8
+#EXTINF:-1,News24 World
+https://skynewsau-live-premium.akamaized.net/hls/live/2105306/skynewsextra/live_540p.m3u8
+#EXTINF:-1,ABC TV WA (720p)
+https://c.mjh.nz/abc-wa.m3u8
+#EXTINF:-1,ABC News (720p)
+https://c.mjh.nz/abc-news.m3u8
+#EXTINF:-1,Fox Sports News (1080p)
+https://skynewsau-live-premium.akamaized.net/hls/live/2105307/foxsportsnews/live_1080p.m3u8
+#EXTINF:-1,ABC TV TAS (720p)
+https://c.mjh.nz/abc-tas.m3u8
+#EXTINF:-1,News24 Weather
+https://skynewsau-live-premium.akamaized.net/hls/live/2105305/skynewsweather/live_540p.m3u8
+#EXTINF:-1,ABC TV ACT (720p)
+https://c.mjh.nz/abc-act.m3u8
+#EXTINF:-1,ABC TV SA (720p)
+https://c.mjh.nz/abc-sa.m3u8
+#EXTINF:-1,ABC Entertains (720p)
+https://c.mjh.nz/abc-me.m3u8
+#EXTINF:-1,Sky Racing 1 (720p)
+https://636ffd31f0e12.streamlock.net/RacingStream1/RacingStream1/playlist.m3u8

@@ -1,33 +1,33 @@
 #EXTM3U
-#EXTINF:-1,Imedi TV (1080p)
-https://tv.cdn.xsg.ge/imedihd/index.m3u8
-#EXTINF:-1,1TV (720p)
-https://tv.cdn.xsg.ge/gpb-1tv/index.m3u8
 #EXTINF:-1,Formula (1080p)
 https://tv.cdn.xsg.ge/c4635/TVFormula/playlist.m3u8
+#EXTINF:-1,Imedi TV (1080p)
+https://tv.cdn.xsg.ge/imedihd/index.m3u8
 #EXTINF:-1,2TV (720p)
 https://tv.cdn.xsg.ge/gpb-2tv/index.m3u8
-#EXTINF:-1,1TV
-http://nue01-edge01.itdc.ge/gpb/mpegts
-#EXTINF:-1,TV Pirveli
-http://nue01-edge01.itdc.ge/pirvelitv/mpegts
-#EXTINF:-1,Rustavi 2
-http://nue01-edge01.itdc.ge/rustavi2hqnew/mpegts
+#EXTINF:-1,1TV (720p)
+https://tv.cdn.xsg.ge/gpb-1tv/index.m3u8
 #EXTINF:-1,Imedi TV
 http://nue01-edge01.itdc.ge/imedihd/mpegts
+#EXTINF:-1,Rustavi 2
+http://nue01-edge01.itdc.ge/rustavi2hqnew/mpegts
+#EXTINF:-1,TV Pirveli
+http://nue01-edge01.itdc.ge/pirvelitv/mpegts
 #EXTINF:-1,Euronews Georgia
 http://nue01-edge01.itdc.ge/euronewsgeorgia/mpegts
+#EXTINF:-1,1TV
+http://nue01-edge01.itdc.ge/gpb/mpegts
 #EXTINF:-1,Apsua TV
 https://gcmx3v3owcj.a.trbcdn.net/livemaster/ba7pu_fgej0zelpw.smil/playlist.m3u8?blstid=null
 #EXTINF:-1,Formula (1080p)
 https://c4635.cdn.xsg.ge/c4635/TVFormula/index.m3u8
-#EXTINF:-1,Palitra News (480p) [Not 24/7]
-https://livestream.palitra.ge/hls/palitratv/index.m3u8
-#EXTINF:-1,Palitra News (480p) [Not 24/7]
-https://live.palitranews.ge/hls/palitratv/index.m3u8
 #EXTINF:-1,Ertsulovneba
 https://stream.sstv.ge/live/sstv/playlist.m3u8
-#EXTINF:-1,BMG TV
-https://tv.nucast.tv/lb/ge/bmg/index.m3u8
+#EXTINF:-1,Palitra News (480p) [Not 24/7]
+https://live.palitranews.ge/hls/palitratv/index.m3u8
+#EXTINF:-1,Palitra News (480p) [Not 24/7]
+https://livestream.palitra.ge/hls/palitratv/index.m3u8
 #EXTINF:-1,АБАЗА-ТВ (1080p)
 https://public.apsny.camera/tv_abaza_tv_to_site/index.m3u8
+#EXTINF:-1,BMG TV
+https://tv.nucast.tv/lb/ge/bmg/index.m3u8

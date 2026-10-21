@@ -1,71 +1,71 @@
 #EXTM3U
-#EXTINF:-1,BBC Earth (1080p) [Geo-blocked]
-https://amg00793-amg00793c6-firetv-us-4067.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,Estrella Games (1080p) [Geo-blocked]
-https://amg00567-amg00567c1-firetv-us-4124.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,BBC Top Gear (1080p) [Geo-blocked]
-https://amg00793-amg00793c5-firetv-us-4068.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,BYU TV (1080p) [Geo-blocked]
-https://amg02604-byutv-amg02604c2-firetv-us-4981.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,PBS Antiques Roadshow (1080p) [Geo-blocked]
-https://amg02333-pbs-amg02333c8-firetv-us-4239.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,PBS Nature (1080p) [Geo-blocked]
-https://amg02333-pbs-amg02333c11-firetv-us-4242.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,Waypoint TV (1080p)
-https://waypoint-waypointtv-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1,ACCDN (1080p)
-https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1,The Young Turks (1080p) [Geo-blocked]
 https://amg01220-amg01220c1-firetv-us-5111.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,Pac 12 Insider (1080p)
-https://pac12-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1,NBA TV (1080p) [Geo-blocked]
-https://amg00556-amg00556c3-firetv-us-6060.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,BeIN Sports XTRA (1080p)
-https://bein-beinxtrasports-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1,True Crime Network+ (1080p) [Geo-blocked]
-https://amg00979-amg00979c1-firetv-us-3622.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,FGTEEV (1080p) [Geo-blocked]
-https://amg00285-amg00285c3-firetv-us-6596.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,INWONDER (1080p) [Geo-blocked]
-https://amg00861-amg00861c4-firetv-us-4724.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,Fuel TV (1080p) [Geo-blocked]
-https://amg01074-fueltv-amg01074c1-firetv-us-3150.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,Antiques Road Trip (1080p) [Geo-blocked]
-https://amg02333-pbs-amg02333c9-firetv-us-4249.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,NBCU Telemundo Florida (1080p)
-https://nbcu-telemundoflorida-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1,NBCU Telemundo North East (1080p)
-https://nbcu-telemundonortheast-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1,NHL Network (1080p)
-https://nhl-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1,Outside TV (1080p)
-https://outsidetv-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1,TV Blossom (1080p)
-https://amg00437-amg00437c3-firetv-us-5409.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,SportsGrid (1080p)
-https://amg00315-sportsgrid-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1,NBCU Telemundo Texas (1080p)
 https://nbcu-telemundotexas-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1,Vice TV (1080p)
-https://vicetv-vicefast1-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1,PBS Nature (1080p) [Geo-blocked]
+https://amg02333-pbs-amg02333c11-firetv-us-4242.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,Estrella Games (1080p) [Geo-blocked]
+https://amg00567-amg00567c1-firetv-us-4124.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,Antiques Road Trip (1080p) [Geo-blocked]
+https://amg02333-pbs-amg02333c9-firetv-us-4249.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,INWILD (1080p) [Geo-blocked]
+https://amg00861-amg00861c7-firetv-us-4725.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,BYU TV (1080p) [Geo-blocked]
+https://amg02604-byutv-amg02604c2-firetv-us-4981.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,INTRAVEL (1080p) [Geo-blocked]
+https://amg00861-amg00861c10-firetv-us-4726.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,INWONDER (1080p) [Geo-blocked]
+https://amg00861-amg00861c4-firetv-us-4724.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1,T2 Tennis Channel (1080p)
 https://ttc-tennischannelus-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1,NBCU Telemundo West (1080p)
-https://nbcu-telemundowest-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1,FGTEEV (1080p) [Geo-blocked]
+https://amg00285-amg00285c3-firetv-us-6596.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,NHL Network (1080p)
+https://nhl-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1,True Crime Network+ (1080p) [Geo-blocked]
+https://amg00979-amg00979c1-firetv-us-3622.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,NBA TV (1080p) [Geo-blocked]
+https://amg00556-amg00556c3-firetv-us-6060.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,BBC Earth (1080p) [Geo-blocked]
+https://amg00793-amg00793c6-firetv-us-4067.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,BBC Top Gear (1080p) [Geo-blocked]
+https://amg00793-amg00793c5-firetv-us-4068.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,Waypoint TV (1080p)
+https://waypoint-waypointtv-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1,NBC Chicago News (1080p)
 https://nbcu-nbcchicagonews-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1,Yahoo Finance (1080p) [Geo-blocked]
 https://amg00119-amg00119c1-firetv-us-4205.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,SportsGrid (1080p)
+https://amg00315-sportsgrid-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1,Outside TV (1080p)
+https://outsidetv-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1,ACCDN (1080p)
+https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1,PBS Antiques Roadshow (1080p) [Geo-blocked]
+https://amg02333-pbs-amg02333c8-firetv-us-4239.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,Vice TV (1080p)
+https://vicetv-vicefast1-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1,Pac 12 Insider (1080p)
+https://pac12-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1,TV Blossom (1080p)
+https://amg00437-amg00437c3-firetv-us-5409.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1,Gusto (1080p)
 https://amg01077-gusto-gustous-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1,INWILD (1080p) [Geo-blocked]
-https://amg00861-amg00861c7-firetv-us-4725.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,INTRAVEL (1080p) [Geo-blocked]
-https://amg00861-amg00861c10-firetv-us-4726.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,Transformers (1080p) [Geo-blocked]
+https://amg00461-eone-amg00461c1-firetv-us-5209.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,NBCU Telemundo Florida (1080p)
+https://nbcu-telemundoflorida-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1,BeIN Sports XTRA (1080p)
+https://bein-beinxtrasports-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1,NBCU Telemundo North East (1080p)
+https://nbcu-telemundonortheast-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1,Fuel TV (1080p) [Geo-blocked]
+https://amg01074-fueltv-amg01074c1-firetv-us-3150.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1,NBCU Telemundo West (1080p)
+https://nbcu-telemundowest-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1,Dungeons & Dragons Adventures (1080p) [Geo-blocked]
 https://amg00461-eone-amg00461c3-firetv-us-5211.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1,Power Rangers (1080p) [Geo-blocked]
 https://amg00461-eone-amg00461c2-firetv-us-5210.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,Transformers (1080p) [Geo-blocked]
-https://amg00461-eone-amg00461c1-firetv-us-5209.playouts.now.amagi.tv/playlist.m3u8

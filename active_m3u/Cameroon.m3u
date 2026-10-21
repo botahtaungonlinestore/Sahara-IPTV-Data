@@ -3,25 +3,25 @@
 https://live20.bozztv.com/giatv/giatv-pmtv/pmtv/playlist.m3u8
 #EXTINF:-1,PLEX TV
 http://connectiktv.ddns.net:5000/plextv/@plextv/playlist.m3u8
-#EXTINF:-1,Play TV (720p) [Not 24/7]
-http://connectiktv.ddns.net:5000/playtv/@playtv/playlist.m3u8
 #EXTINF:-1,My TV Channel (720p) [Not 24/7]
 http://connectiktv.ddns.net:5000/mytvchannel/@mytvchannel/playlist.m3u8
+#EXTINF:-1,Play TV (720p) [Not 24/7]
+http://connectiktv.ddns.net:5000/playtv/@playtv/playlist.m3u8
 #EXTINF:-1,Allo Cine (1080p)
 https://d1yl6bf4hrzbr0.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5km3zs4zs9sp0/allo.m3u8
 #EXTINF:-1,For You TV
 https://stream.az-multimedia.com:3325/live/foryoutvlive.m3u8
-#EXTINF:-1,CRTV
-https://10gb1.acangroup.org:1929/crtv/crtv_all/playlist.m3u8
-#EXTINF:-1,CRTV Sports and Entertainment (360p)
-https://live1.acangroup.org:1929/publiclive/crtv_sport/playlist.m3u8
-#EXTINF:-1,CRTV News
-https://live1.acangroup.org:1929/publiclive/crtv_news/playlist.m3u8
-#EXTINF:-1,Kemet TV
-https://kemettv.cm/memfs/b6d60ea7-18b4-4afb-b84f-bd082ed7f74f.m3u8
-#EXTINF:-1,Laura Dave Media TV (720p)
-https://streaming.lauradavemedia.com/ldm/index.m3u8
 #EXTINF:-1,CAM 10 TV (720p)
 https://stream.it-innov.com/cam10tv/index.m3u8
 #EXTINF:-1,TR24 (720p)
 https://stream.it-innov.com/tr24/index.m3u8
+#EXTINF:-1,CRTV News
+https://live1.acangroup.org:1929/publiclive/crtv_news/playlist.m3u8
+#EXTINF:-1,CRTV Sports and Entertainment (360p)
+https://live1.acangroup.org:1929/publiclive/crtv_sport/playlist.m3u8
+#EXTINF:-1,CRTV
+https://10gb1.acangroup.org:1929/crtv/crtv_all/playlist.m3u8
+#EXTINF:-1,Kemet TV
+https://kemettv.cm/memfs/b6d60ea7-18b4-4afb-b84f-bd082ed7f74f.m3u8
+#EXTINF:-1,Laura Dave Media TV (720p)
+https://streaming.lauradavemedia.com/ldm/index.m3u8
