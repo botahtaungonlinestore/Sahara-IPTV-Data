@@ -1,68 +1,68 @@
 #EXTM3U
+#EXTINF:-1,Afra Film
+https://afrafhls.wns.live/hls/stream.m3u8
 #EXTINF:-1,Arko TV
 https://arkhls.wns.live/hls/stream.m3u8
 #EXTINF:-1,Arvan TV
 https://arvhls.wns.live/hls/stream.m3u8
-#EXTINF:-1,AVA Series
-https://avaserieshls.wns.live/hls/stream.m3u8
 #EXTINF:-1,Classic TV
 https://clshls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Gold Star
-https://moviethls.wns.live/hls/stream.m3u8
-#EXTINF:-1,MTC TV
-https://mtchls.wns.live/hls/stream.m3u8
-#EXTINF:-1,T2 TV
-https://t2hls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Grand Cinema
-https://gcinemahls.wns.live/hls/stream.m3u8
-#EXTINF:-1,FX TV 2
-https://toonixhls.wns.live/hls/stream.m3u8
-#EXTINF:-1,icnet 3
-https://ic3hls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Kurd Channel
-https://kurdchhls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Dej TV
-https://rdejhls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Setareh TV
-https://setarehhls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Shabakeh 7
-https://sh7hls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Sat7 Pars
-https://sat7phls.wns.live/hls/stream.m3u8
-#EXTINF:-1,PMC
-https://pmchls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Pars TV
-https://parshls.wns.live/hls/stream.m3u8
-#EXTINF:-1,FX TV 1
-https://fxtvhls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Mohabat TV
-https://mohabathls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Meta Film TV
-https://metafilmhls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Afra Film
-https://afrafhls.wns.live/hls/stream.m3u8
-#EXTINF:-1,PMC Royale (1080p)
-https://pmcrohls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Arax TV
-https://araxhls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Kalemeh TV
-https://klmhls.wns.live/hls/stream.m3u8
-#EXTINF:-1,SL 2
-https://sltwohls.wns.live/hls/stream.m3u8
-#EXTINF:-1,icnet 2
-https://icnet2hls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Komala TV
-https://komhls.wns.live/hls/stream.m3u8
-#EXTINF:-1,icnet 1
-https://icnet1hls.wns.live/hls/stream.m3u8
 #EXTINF:-1,Cafe Film
 https://cafefhls.wns.live/hls/stream.m3u8
-#EXTINF:-1,Omide Iran
-https://oitnhls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Meta Film TV
+https://metafilmhls.wns.live/hls/stream.m3u8
+#EXTINF:-1,icnet 1
+https://icnet1hls.wns.live/hls/stream.m3u8
+#EXTINF:-1,FX TV 2
+https://toonixhls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Mohabat TV
+https://mohabathls.wns.live/hls/stream.m3u8
+#EXTINF:-1,icnet 2
+https://icnet2hls.wns.live/hls/stream.m3u8
 #EXTINF:-1,Kanal Jadid
 https://kjhls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Arax TV
+https://araxhls.wns.live/hls/stream.m3u8
+#EXTINF:-1,PMC Royale (1080p)
+https://pmcrohls.wns.live/hls/stream.m3u8
+#EXTINF:-1,SL 2
+https://sltwohls.wns.live/hls/stream.m3u8
+#EXTINF:-1,PMC
+https://pmchls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Grand Cinema
+https://gcinemahls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Omide Iran
+https://oitnhls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Sat7 Pars
+https://sat7phls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Kalemeh TV
+https://klmhls.wns.live/hls/stream.m3u8
 #EXTINF:-1,SL 1
 https://slonehls.wns.live/hls/stream.m3u8
+#EXTINF:-1,MTC TV
+https://mtchls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Pars TV
+https://parshls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Dej TV
+https://rdejhls.wns.live/hls/stream.m3u8
+#EXTINF:-1,AVA Series
+https://avaserieshls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Kurd Channel
+https://kurdchhls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Setareh TV
+https://setarehhls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Komala TV
+https://komhls.wns.live/hls/stream.m3u8
+#EXTINF:-1,T2 TV
+https://t2hls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Shabakeh 7
+https://sh7hls.wns.live/hls/stream.m3u8
+#EXTINF:-1,icnet 3
+https://ic3hls.wns.live/hls/stream.m3u8
+#EXTINF:-1,FX TV 1
+https://fxtvhls.wns.live/hls/stream.m3u8
+#EXTINF:-1,Gold Star
+https://moviethls.wns.live/hls/stream.m3u8
 #EXTINF:-1,TV ITN
 https://itnhls.wns.live/hls/stream.m3u8
 #EXTINF:-1,Zed TV

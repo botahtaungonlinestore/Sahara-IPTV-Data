@@ -1,27 +1,27 @@
 #EXTM3U
-#EXTINF:-1,Ronahi TV (1080p)
-https://hlspackager.akamaized.net/live/DB/RONAHI_TV/HLS/RONAHI_TV.m3u8
-#EXTINF:-1,Rojava TV (1080p)
-https://hlspackager.akamaized.net/live/DB/ROJAVA_HD/HLS/ROJAVA_HD.m3u8
-#EXTINF:-1,Alalam News Channel Syria (1080p)
-http://live2.alalam.ir/alalam.m3u8
-#EXTINF:-1,Alikhbaria Syria (1080p)
-http://185.9.2.18/chid_423/index.m3u8
 #EXTINF:-1,Al-Souriya TV (1080p)
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-souriya-tv/e3150760fa5fd62776225433b8c3d406/index.m3u8
-#EXTINF:-1,Welat TV (1080i)
-https://stream.badinan.xyz/welat/tv/playlist.m3u8
-#EXTINF:-1,Syria TV (1080p)
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=6017
-#EXTINF:-1,Halab Today TV (1080p)
-https://halabtoday-live.lg.mncdn.com/halabtoday/livestream/playlist.m3u8
-#EXTINF:-1,Prime (1080p)
-https://cdn.bestream.io/prime/prime.m3u8
+#EXTINF:-1,Rojava TV (1080p)
+https://hlspackager.akamaized.net/live/DB/ROJAVA_HD/HLS/ROJAVA_HD.m3u8
 #EXTINF:-1,Althania (1080p)
 https://live.kwikmotion.com/syriatv02live/syriatv02.smil/playlist.m3u8
 #EXTINF:-1,Syria TV (1080p)
 https://live.kwikmotion.com/syriatvlive/syriatv.smil/playlist_dvr.m3u8
 #EXTINF:-1,Syria TV (1080p)
 https://svs.itworkscdn.net/syriatvlive/syriatv.smil/playlist_dvr.m3u8
+#EXTINF:-1,Alikhbaria Syria (1080p)
+http://185.9.2.18/chid_423/index.m3u8
+#EXTINF:-1,Ronahi TV (1080p)
+https://hlspackager.akamaized.net/live/DB/RONAHI_TV/HLS/RONAHI_TV.m3u8
+#EXTINF:-1,Welat TV (1080i)
+https://stream.badinan.xyz/welat/tv/playlist.m3u8
+#EXTINF:-1,Prime (1080p)
+https://cdn.bestream.io/prime/prime.m3u8
+#EXTINF:-1,Alalam News Channel Syria (1080p)
+http://live2.alalam.ir/alalam.m3u8
+#EXTINF:-1,Halab Today TV (1080p)
+https://halabtoday-live.lg.mncdn.com/halabtoday/livestream/playlist.m3u8
 #EXTINF:-1,Halab Today TV (1080p)
 https://mn-nl.mncdn.com/halabtoday/livestream/index.m3u8
+#EXTINF:-1,Syria TV (1080p)
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=6017

@@ -11,25 +11,25 @@ https://rp.tactivemedia.com/palestiniantv_source/live/playlist.m3u8
 https://streaming.najah.edu:8443/hls/AlNajah.m3u8
 #EXTINF:-1,Watar TV (720p) [Not 24/7]
 http://htvint.mada.ps:8889/orient/index.m3u8
-#EXTINF:-1,Al Madina (720p)
-https://streaming.zaytonatube.com:8081/AlMadinatv/almadina21/index.m3u8
 #EXTINF:-1,Rajeen TV (1080p) [Not 24/7]
 https://mn-nl.mncdn.com/palabroad/live/playlist.m3u8
-#EXTINF:-1,Radio Albalad TV (576p)
-https://streaming.zaytonatube.com:8081/radioalbalad/radioalbalad/index.m3u8
 #EXTINF:-1,Shabab FM (720p) [Not 24/7]
 https://streaming.zaytonatube.com:8081/ShababFM/shabab/index.m3u8
+#EXTINF:-1,Radio Albalad TV (576p)
+https://streaming.zaytonatube.com:8081/radioalbalad/radioalbalad/index.m3u8
+#EXTINF:-1,Al Madina (720p)
+https://streaming.zaytonatube.com:8081/AlMadinatv/almadina21/index.m3u8
 #EXTINF:-1,Palestine Today (480p) [Geo-blocked]
 https://live.paltodaytv.com/paltv/live/playlist.m3u8
+#EXTINF:-1,Seraj TV (1080i)
+https://43869de4e1a0d641.servers.dvcloud.tv/hls/al_aqsa_channel/6udfi7v8a3eof6nlps6e9ovfrs65c7l7.m3u8
+#EXTINF:-1,Wattan TV
+https://htvmada.mada.ps:4443/wattan/index.m3u8
 #EXTINF:-1,Ma'an TV (720p)
 https://htvmada.mada.ps:4443/maannews/index.m3u8
 #EXTINF:-1,Watar TV (720p) [Not 24/7]
 https://htvint.mada.ps/orient/index.m3u8
-#EXTINF:-1,Wattan TV
-https://htvmada.mada.ps:4443/wattan/index.m3u8
-#EXTINF:-1,Ajyal TV (720p)
-http://htvajyal.mada.ps:8888/ajyal/index.m3u8
 #EXTINF:-1,Ajyal TV (720p)
 http://htvmada.mada.ps:8888/ajyal/index.m3u8
-#EXTINF:-1,Seraj TV (1080i)
-https://43869de4e1a0d641.servers.dvcloud.tv/hls/al_aqsa_channel/6udfi7v8a3eof6nlps6e9ovfrs65c7l7.m3u8
+#EXTINF:-1,Ajyal TV (720p)
+http://htvajyal.mada.ps:8888/ajyal/index.m3u8

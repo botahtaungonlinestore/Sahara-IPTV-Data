@@ -1,31 +1,31 @@
 #EXTM3U
 #EXTINF:-1,STV (720p)
 http://89.201.163.244:8080/hls/hdmi.m3u8
+#EXTINF:-1,Nova TV (1080p)
+http://176.61.157.250/NovaTV/index.m3u8
 #EXTINF:-1,National Geographic (1080p)
 http://176.61.157.250/NationalGeographic/index.m3u8
 #EXTINF:-1,Nickelodeon (1080p)
 http://176.61.157.250/Nickelodeon/index.m3u8
-#EXTINF:-1,Nova TV (1080p)
-http://176.61.157.250/NovaTV/index.m3u8
 #EXTINF:-1,Nick Jr. (540p)
 http://176.61.157.250/NickJr/index.m3u8
 #EXTINF:-1,Shift TV (1080p)
 https://hls.shift.tv/live/shifttv/playlist.m3u8
-#EXTINF:-1,CMC TV (1080p)
-https://stream.cmctv.hr:49998/cmc/live.m3u8
 #EXTINF:-1,Klape i Tambure TV (1080p)
 https://stream.cmctv.hr:49998/kit/live.m3u8
-#EXTINF:-1,SBTV (1080p) [Not 24/7]
-https://live.leveex.hr/hls/live.m3u8
+#EXTINF:-1,CMC TV (1080p)
+https://stream.cmctv.hr:49998/cmc/live.m3u8
+#EXTINF:-1,HRT 1 (720p)
+https://webtvstream.bhtelecom.ba/hrt1.m3u8
+#EXTINF:-1,HRT 3 (720p)
+https://webtvstream.bhtelecom.ba/hrt3.m3u8
+#EXTINF:-1,HRT 2 (720p)
+https://webtvstream.bhtelecom.ba/hrt2.m3u8
 #EXTINF:-1,Radio Televizija Banovina (1080p) [Not 24/7]
 https://pool.alter-media.hr:1936/live/myStream/playlist.m3u8?DVR=
 #EXTINF:-1,TV Jadran (720p) [Not 24/7]
 https://tvjadran.stream.agatin.hr:3412/live/tvjadranlive.m3u8
-#EXTINF:-1,HRT 1 (720p)
-https://webtvstream.bhtelecom.ba/hrt1.m3u8
-#EXTINF:-1,HRT 2 (720p)
-https://webtvstream.bhtelecom.ba/hrt2.m3u8
+#EXTINF:-1,SBTV (1080p) [Not 24/7]
+https://live.leveex.hr/hls/live.m3u8
 #EXTINF:-1,TV Nova (720p)
 https://stream.agatin.hr:3727/live/tvnovalive.m3u8
-#EXTINF:-1,HRT 3 (720p)
-https://webtvstream.bhtelecom.ba/hrt3.m3u8

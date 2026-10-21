@@ -1,17 +1,17 @@
 #EXTM3U
+#EXTINF:-1,Parliament TV (1080p)
+https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8
 #EXTINF:-1,Firstlight (576p)
 https://uni01rtmp.tulix.tv/firstlight/firstlight.smil/playlist.m3u8
 #EXTINF:-1,Kordia TV (1080p)
 https://ptvlive.kordia.net.nz/out/v1/3fc2254c865a457c8d7fbbce227a2aae/index.m3u8
-#EXTINF:-1,Parliament TV (1080p)
-https://ptvlive.kordia.net.nz/out/v1/daf20b9a9ec5449dadd734e50ce52b74/index.m3u8
-#EXTINF:-1,Te Reo (1080p)
-https://i.mjh.nz/.r/te-reo.m3u8
-#EXTINF:-1,Wairarapa TV (1080p) [Not 24/7]
-https://stream.wairarapatv.co.nz/Broadband_High/playlist.m3u8
-#EXTINF:-1,Wairarapa TV (360p) [Not 24/7]
-https://stream.wairarapatv.co.nz/Cellular_High/playlist.m3u8
 #EXTINF:-1,Whakaata Maori (1080p)
 https://i.mjh.nz/.r/maori-tv.m3u8
+#EXTINF:-1,Wairarapa TV (1080p) [Not 24/7]
+https://stream.wairarapatv.co.nz/Broadband_High/playlist.m3u8
+#EXTINF:-1,Te Reo (1080p)
+https://i.mjh.nz/.r/te-reo.m3u8
+#EXTINF:-1,Wairarapa TV (360p) [Not 24/7]
+https://stream.wairarapatv.co.nz/Cellular_High/playlist.m3u8
 #EXTINF:-1,Wairarapa TV (1080p) [Not 24/7]
 https://stream1.np.co.nz/WAITVABR/WAITVABR/playlist.m3u8

@@ -1,104 +1,104 @@
 #EXTM3U
-#EXTINF:-1,Al Jazeera
-https://dash4.antik.sk/live/test_aljazeera/playlist.m3u8
-#EXTINF:-1,Al Jazeera English
-https://dash4.antik.sk/live/test_aljazeera_eng/playlist.m3u8
-#EXTINF:-1,Armenia 1
-https://dash2.antik.sk/live/test_armenia/playlist.m3u8
-#EXTINF:-1,Arirang TV HD
-https://dash3.antik.sk/live/test_arirang/playlist.m3u8
-#EXTINF:-1,CGTN Spanish
-https://dash4.antik.sk/live/test_cgtn_esp_tizen/playlist.m3u8
-#EXTINF:-1,CGTN Documentary
-https://dash3.antik.sk/live/test_cgtn_doc/playlist.m3u8
-#EXTINF:-1,Rai 3 (720p)
-https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8
-#EXTINF:-1,CGTN French
-https://dash4.antik.sk/live/test_cgtn_fra_tizen/playlist.m3u8
-#EXTINF:-1,Espreso TV
-https://dash4.antik.sk/live/test_espresso/playlist.m3u8
-#EXTINF:-1,BBC News Europe
-https://dash2.antik.sk/live/test_bbc_world/playlist.m3u8
-#EXTINF:-1,CT24
-https://dash2.antik.sk/live/ct24_avc_25p/playlist.m3u8
-#EXTINF:-1,CGTN Arabic
-https://dash3.antik.sk/live/test_cgtn_arb_tizen/playlist.m3u8
-#EXTINF:-1,TV9
-https://dash4.antik.sk/live/test_tv9/playlist.m3u8
-#EXTINF:-1,hr-fernsehen HD
-https://dash4.antik.sk/live/test_hr_tizen/playlist.m3u8
-#EXTINF:-1,sixx
-https://dash4.antik.sk/live/test_sixx_tizen/playlist.m3u8
-#EXTINF:-1,CGTN
-https://dash4.antik.sk/live/test_cgtn/playlist.m3u8
-#EXTINF:-1,Newsmax TV
-https://dash3.antik.sk/live/test_newsmax_avc/playlist.m3u8
-#EXTINF:-1,KiKA HD
-https://dash4.antik.sk/live/test_kika_tizen/playlist.m3u8
-#EXTINF:-1,MDR Fernsehen Thuringen
-https://dash4.antik.sk/live/test_mdr_tizen/playlist.m3u8
-#EXTINF:-1,TRT World HD
-https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8
-#EXTINF:-1,CGTN Russian
-https://dash3.antik.sk/live/test_cgtn_rus_tizen/playlist.m3u8
-#EXTINF:-1,FREEDOM
-https://dash2.antik.sk/live/test_uatv/playlist.m3u8
-#EXTINF:-1,CCTV-4 Europe
-https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
 #EXTINF:-1,arte HD
 https://dash4.antik.sk/live/test_arte_avc_25p/playlist.m3u8
-#EXTINF:-1,English Club TV
-https://dash2.antik.sk/live/test_ectv_hd_1200/playlist.m3u8
-#EXTINF:-1,Silk Way
-https://dash2.antik.sk/live/test_qazaq_tv_tizen/playlist.m3u8
-#EXTINF:-1,France 24
-https://dash4.antik.sk/live/test_france24_france/playlist.m3u8
-#EXTINF:-1,Rai 1 (720p)
-https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8
-#EXTINF:-1,rbb Fernsehen
-https://dash2.antik.sk/live/test_rbb_tizen/playlist.m3u8
-#EXTINF:-1,NZTV
-https://dash2.antik.sk/live/test_nove_zamky/playlist.m3u8
-#EXTINF:-1,TV8
-https://dash3.antik.sk/live/test_osem/playlist.m3u8
-#EXTINF:-1,TVP World
-https://dash2.antik.sk/live/test_tvp_world/playlist.m3u8
-#EXTINF:-1,Regio TV
-https://dash2.antik.sk/live/test_regio_tv/playlist.m3u8
-#EXTINF:-1,Euronews English HD
-https://dash4.antik.sk/live/test_euronews/playlist.m3u8
-#EXTINF:-1,France 24 English
-https://dash3.antik.sk/live/test_france24_eng/playlist.m3u8
+#EXTINF:-1,Arirang TV HD
+https://dash3.antik.sk/live/test_arirang/playlist.m3u8
+#EXTINF:-1,CGTN Arabic
+https://dash3.antik.sk/live/test_cgtn_arb_tizen/playlist.m3u8
+#EXTINF:-1,Al Jazeera
+https://dash4.antik.sk/live/test_aljazeera/playlist.m3u8
+#EXTINF:-1,Espreso TV
+https://dash4.antik.sk/live/test_espresso/playlist.m3u8
+#EXTINF:-1,CGTN Spanish
+https://dash4.antik.sk/live/test_cgtn_esp_tizen/playlist.m3u8
 #EXTINF:-1,NDR Fernsehen International
 https://dash3.antik.sk/live/test_ndr_tizen/playlist.m3u8
-#EXTINF:-1,TV LocAll
-https://dash3.antik.sk/live/test_locall/playlist.m3u8
-#EXTINF:-1,kabel eins
-https://dash4.antik.sk/live/test_kabel_eins_tizen/playlist.m3u8
-#EXTINF:-1,TVP Info
-https://dash4.antik.sk/live/test_tvp_info/playlist.m3u8
-#EXTINF:-1,Polar TV
-https://dash4.antik.sk/live/test_polar_tv_atktv/playlist.m3u8
-#EXTINF:-1,EWTN
-https://dash3.antik.sk/live/test_ewtn_tizen/playlist.m3u8
-#EXTINF:-1,SAT.1 Gold (576p)
-https://dash4.antik.sk/live/test_sat_eins_gold_tizen/playlist.m3u8
-#EXTINF:-1,TV Nitricka
-https://dash4.antik.sk/live/test_nitricka/playlist.m3u8
-#EXTINF:-1,ProSieben (1080p)
-https://dash4.antik.sk/live/test_pro_sieben_tizen/playlist.m3u8
-#EXTINF:-1,TV Vita
-https://dash3.antik.sk/live/test_vita/playlist.m3u8
-#EXTINF:-1,TVP Polonia
-https://dash2.antik.sk/live/test_tvp_polonia/playlist.m3u8
+#EXTINF:-1,MDR Fernsehen Thuringen
+https://dash4.antik.sk/live/test_mdr_tizen/playlist.m3u8
+#EXTINF:-1,CT24
+https://dash2.antik.sk/live/ct24_avc_25p/playlist.m3u8
+#EXTINF:-1,CCTV-4 Europe
+https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
+#EXTINF:-1,English Club TV
+https://dash2.antik.sk/live/test_ectv_hd_1200/playlist.m3u8
+#EXTINF:-1,BBC News Europe
+https://dash2.antik.sk/live/test_bbc_world/playlist.m3u8
 #EXTINF:-1,TV Central
 https://dash4.antik.sk/live/test_central/playlist.m3u8
+#EXTINF:-1,rbb Fernsehen
+https://dash2.antik.sk/live/test_rbb_tizen/playlist.m3u8
+#EXTINF:-1,CGTN Documentary
+https://dash3.antik.sk/live/test_cgtn_doc/playlist.m3u8
+#EXTINF:-1,CGTN French
+https://dash4.antik.sk/live/test_cgtn_fra_tizen/playlist.m3u8
+#EXTINF:-1,Armenia 1
+https://dash2.antik.sk/live/test_armenia/playlist.m3u8
+#EXTINF:-1,Al Jazeera English
+https://dash4.antik.sk/live/test_aljazeera_eng/playlist.m3u8
+#EXTINF:-1,KiKA HD
+https://dash4.antik.sk/live/test_kika_tizen/playlist.m3u8
+#EXTINF:-1,CGTN
+https://dash4.antik.sk/live/test_cgtn/playlist.m3u8
+#EXTINF:-1,SAT.1 Gold (576p)
+https://dash4.antik.sk/live/test_sat_eins_gold_tizen/playlist.m3u8
+#EXTINF:-1,Rai 1 (720p)
+https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8
+#EXTINF:-1,kabel eins
+https://dash4.antik.sk/live/test_kabel_eins_tizen/playlist.m3u8
+#EXTINF:-1,EWTN
+https://dash3.antik.sk/live/test_ewtn_tizen/playlist.m3u8
+#EXTINF:-1,TRT World HD
+https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8
+#EXTINF:-1,TVP World
+https://dash2.antik.sk/live/test_tvp_world/playlist.m3u8
+#EXTINF:-1,France 24
+https://dash4.antik.sk/live/test_france24_france/playlist.m3u8
+#EXTINF:-1,Silk Way
+https://dash2.antik.sk/live/test_qazaq_tv_tizen/playlist.m3u8
+#EXTINF:-1,TV8
+https://dash3.antik.sk/live/test_osem/playlist.m3u8
+#EXTINF:-1,TV LocAll
+https://dash3.antik.sk/live/test_locall/playlist.m3u8
+#EXTINF:-1,TV9
+https://dash4.antik.sk/live/test_tv9/playlist.m3u8
 #EXTINF:-1,TV SLO 2 HD
 https://dash2.antik.sk/live/test_slo2_tizen/playlist.m3u8
-#EXTINF:-1,TV Mistral
-https://dash3.antik.sk/live/test_mistral_atktv/playlist.m3u8
+#EXTINF:-1,TV Nitricka
+https://dash4.antik.sk/live/test_nitricka/playlist.m3u8
 #EXTINF:-1,TV SLO 1 HD
 https://dash2.antik.sk/live/test_slo1_tizen/playlist.m3u8
+#EXTINF:-1,NZTV
+https://dash2.antik.sk/live/test_nove_zamky/playlist.m3u8
+#EXTINF:-1,TV Vita
+https://dash3.antik.sk/live/test_vita/playlist.m3u8
+#EXTINF:-1,Polar TV
+https://dash4.antik.sk/live/test_polar_tv_atktv/playlist.m3u8
+#EXTINF:-1,Euronews English HD
+https://dash4.antik.sk/live/test_euronews/playlist.m3u8
+#EXTINF:-1,hr-fernsehen HD
+https://dash4.antik.sk/live/test_hr_tizen/playlist.m3u8
+#EXTINF:-1,TV Mistral
+https://dash3.antik.sk/live/test_mistral_atktv/playlist.m3u8
+#EXTINF:-1,ProSieben (1080p)
+https://dash4.antik.sk/live/test_pro_sieben_tizen/playlist.m3u8
+#EXTINF:-1,sixx
+https://dash4.antik.sk/live/test_sixx_tizen/playlist.m3u8
+#EXTINF:-1,TVP Polonia
+https://dash2.antik.sk/live/test_tvp_polonia/playlist.m3u8
+#EXTINF:-1,Regio TV
+https://dash2.antik.sk/live/test_regio_tv/playlist.m3u8
+#EXTINF:-1,Rai 3 (720p)
+https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8
+#EXTINF:-1,FREEDOM
+https://dash2.antik.sk/live/test_uatv/playlist.m3u8
+#EXTINF:-1,France 24 English
+https://dash3.antik.sk/live/test_france24_eng/playlist.m3u8
+#EXTINF:-1,Newsmax TV
+https://dash3.antik.sk/live/test_newsmax_avc/playlist.m3u8
+#EXTINF:-1,TVP Info
+https://dash4.antik.sk/live/test_tvp_info/playlist.m3u8
+#EXTINF:-1,CGTN Russian
+https://dash3.antik.sk/live/test_cgtn_rus_tizen/playlist.m3u8
 #EXTINF:-1,WDR Fernsehen
 https://dash3.antik.sk/live/test_wdr_tizen/playlist.m3u8
 #EXTINF:-1,Zapadoslovenska TV

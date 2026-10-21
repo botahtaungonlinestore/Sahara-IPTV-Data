@@ -1,46 +1,50 @@
 #EXTM3U
-#EXTINF:-1,Canal TV Radio Maya TGBA (480p)
-https://s.emisoras.tv:8081/radiomaya/index.m3u8
-#EXTINF:-1,Canal 30 TV Bethel (720p) [Not 24/7]
-https://s.emisoras.tv:8081/canal30tvbethel/index.m3u8
+#EXTINF:-1,Rhema TV
+http://190.61.90.17:40000/play/a0iw/index.m3u8
 #EXTINF:-1,Iglesia Del Camino (480p) [Not 24/7]
 http://streamingcontrol.com:1935/ectv/ectv/playlist.m3u8
 #EXTINF:-1,Júbilo TV (720p)
 http://173.249.60.54/hls/jubilotv.m3u8
-#EXTINF:-1,Rhema TV
-http://190.61.90.17:40000/play/a0iw/index.m3u8
-#EXTINF:-1,Amigos TV Chiquimula (480p)
-https://antmedia.cablevisionrobles.com:5443/LiveApp/streams/CqwAgRagMvBNYN8c1731608980342.m3u8
-#EXTINF:-1,Canal 11 (720p)
-http://179.60.224.196:8000/play/a0dv/index.m3u8
+#EXTINF:-1,TV Maya (480p)
+https://5ca9af4645e15.streamlock.net/mayas/videomayas/playlist.m3u8
 #EXTINF:-1,Canal 3 (720p)
 http://181.119.177.253:8000/play/a03o/index.m3u8
-#EXTINF:-1,Canal 13 Esquipulas (720p)
-https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8
 #EXTINF:-1,Canal 7 (720p)
 http://181.119.177.253:8000/play/a03n/index.m3u8
-#EXTINF:-1,Canal 13 (720p)
-http://190.61.101.11:7050/play/a07f/index.m3u8
-#EXTINF:-1,Canal 7 (576p)
-http://200.115.120.1:8000/play/ca112/index.m3u8
 #EXTINF:-1,Peniel Kids & Young (480p)
 https://s.emisoras.tv:8081/penielkids/index.m3u8
-#EXTINF:-1,Peniel Musical (480p)
-https://s.emisoras.tv:8081/penielmusical/index.m3u8
+#EXTINF:-1,Amigos TV Chiquimula (480p)
+https://antmedia.cablevisionrobles.com:5443/LiveApp/streams/CqwAgRagMvBNYN8c1731608980342.m3u8
 #EXTINF:-1,Peniel TV Biblia Abierta (480p)
 https://s.emisoras.tv:8081/penielbibliaabierta/index.m3u8
-#EXTINF:-1,MAS TV
-https://cdn.streamhispanatv.net:3011/live/mastvgtlive.m3u8
+#EXTINF:-1,Canal 30 TV Bethel (720p) [Not 24/7]
+https://s.emisoras.tv:8081/canal30tvbethel/index.m3u8
 #EXTINF:-1,Canal 100 Chinique (1080p)
 https://live20.bozztv.com/giatv/giatv-chinique100tvenvivo/chinique100tvenvivo/playlist.m3u8
-#EXTINF:-1,Guatevision (720p)
-http://168.196.127.137:6001/play/a04m/index.m3u8
+#EXTINF:-1,Canal TV Radio Maya TGBA (480p)
+https://s.emisoras.tv:8081/radiomaya/index.m3u8
+#EXTINF:-1,Peniel Musical (480p)
+https://s.emisoras.tv:8081/penielmusical/index.m3u8
+#EXTINF:-1,Canal 11 (720p)
+http://179.60.224.196:8000/play/a0dv/index.m3u8
 #EXTINF:-1,SIL TV (1080p)
 https://live20.bozztv.com/giatv/giatv-SilTvOnline/SilTvOnline/playlist.m3u8
+#EXTINF:-1,Canal 13 (720p)
+http://190.61.101.11:7050/play/a07f/index.m3u8
+#EXTINF:-1,Canal 13 Esquipulas (720p)
+https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8
+#EXTINF:-1,MAS TV
+https://cdn.streamhispanatv.net:3011/live/mastvgtlive.m3u8
 #EXTINF:-1,Conectados con Dios
 https://cdn.oktvus.com/ConectadoConDios/tracks-v2a1/mono.ts.m3u8
 #EXTINF:-1,Canal 13 (720p)
 http://168.196.127.137:6001/play/a064/index.m3u8
+#EXTINF:-1,Canal 7 (576p)
+http://200.115.120.1:8000/play/ca112/index.m3u8
+#EXTINF:-1,Radio Coatan Canal 21
+https://s2.tvdatta.com:3112/hybrid/play.m3u8
+#EXTINF:-1,Guatevision (720p)
+http://168.196.127.137:6001/play/a04m/index.m3u8
 #EXTINF:-1,Tigo Sports (1080p)
 http://168.196.127.137:6001/play/a0b0/index.m3u8
 #EXTINF:-1,World TV Guatemala (720p)
@@ -51,13 +55,9 @@ http://181.78.106.127:5000/play/ca090/index.m3u8
 http://200.115.120.1:8000/play/ca066/index.m3u8
 #EXTINF:-1,Rhema TV (1080p)
 http://45.171.64.30:6060/play/a04k/index.m3u8
-#EXTINF:-1,TV Maya (480p)
-https://5ca9af4645e15.streamlock.net/mayas/videomayas/playlist.m3u8
 #EXTINF:-1,Rhema TV (720p)
 https://5e85d90130e77.streamlock.net/6006/6006/playlist.m3u8
 #EXTINF:-1,MCN Television (720p)
 https://eu1.servers10.com:8081/8338/index.m3u8
 #EXTINF:-1,Guatevision (720p)
 https://mdstrm.com/live-stream-playlist/69f8df22a762c9b1ab3eabca.m3u8
-#EXTINF:-1,Nuestra Imagen TV
-https://live.tvcontrolcp.com:1936/tvnitelevision/tvnitelevision/playlist.m3u8

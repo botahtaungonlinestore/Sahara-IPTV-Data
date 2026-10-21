@@ -1,14 +1,14 @@
 #EXTM3U
-#EXTINF:-1,MAHAR TV
-https://ygncdn.com/live/mahar/720p/chunks.m3u8
 #EXTINF:-1,FORTUNE TV (720p)
 http://103.215.194.93:8282/hls/fortunetv/vmix.m3u8
+#EXTINF:-1,MAHAR TV
+https://ygncdn.com/live/mahar/720p/chunks.m3u8
+#EXTINF:-1,MWD (720p) [Not 24/7]
+http://203.81.84.130/hls/mwd/index.m3u8
 #EXTINF:-1,MWD Documentary [Geo-blocked]
 http://203.81.84.130/hls/mwd_document/index.m3u8
 #EXTINF:-1,MWD Variety (720p) [Not 24/7]
 http://203.81.84.130/hls/mwd_variety/index.m3u8
-#EXTINF:-1,MWD (720p) [Not 24/7]
-http://203.81.84.130/hls/mwd/index.m3u8
 #EXTINF:-1,MWD Movies [Not 24/7]
 http://203.81.84.130/hls/mwd_movie/index.m3u8
 #EXTINF:-1,TVM
@@ -21,19 +21,7 @@ https://live-stream.dvb.no/hls/stream_src/index.m3u8
 https://live.pyoneplay.com/live/01m2sn12yc6v2enx392qj2ekqt/video1_stream.m3u8
 #EXTINF:-1,Channel7
 https://live.pyoneplay.com/live/01m2sr3kyn6bztz3xk02w3t7pn/video1_stream.m3u8
-#EXTINF:-1,Myanmar International TV
-https://mrtvott.com/cache/MITV/master.m3u8
-#EXTINF:-1,MRTV Farmer
-https://mrtvott.com/cache/MRTV-FARMER/master.m3u8
-#EXTINF:-1,MRTV NRC
-https://mrtvott.com/cache/MRTV-NRC-HD/master.m3u8
-#EXTINF:-1,MRTV News
-https://mrtvott.com/cache/MRTV-NEWS-HD/master.m3u8
 #EXTINF:-1,MRTV Sports [Not 24/7]
 https://mrtvott.com/cache/MRTV-SPORT/master.m3u8
-#EXTINF:-1,Hluttaw S & D
-https://mrtvott.com/cache/MRTV-HLUTTAW/master.m3u8
-#EXTINF:-1,MRTV
-https://mrtvott.com/cache/MRTV-HD/master.m3u8
-#EXTINF:-1,MRTV Entertainment
-https://mrtvott.com/cache/MRTV-Ent-HD/master.m3u8
+#EXTINF:-1,MRTV NRC
+https://mrtvott.com/cache/MRTV-NRC-HD/master.m3u8

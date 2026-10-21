@@ -1,13 +1,13 @@
 #EXTM3U
 #EXTINF:-1,NTV [Geo-blocked]
 https://xykt-fix.github.io/channel/ottliv-036/index.m3u8
-#EXTINF:-1,MNB Sport (1080p)
-https://live.mnb.mn/hls/mnb_sport.stream.m3u8
-#EXTINF:-1,MNB (576p)
-https://live.mnb.mn/hls/mnb.stream.m3u8
-#EXTINF:-1,MNB World (576p)
-https://live.mnb.mn/hls/mnb_world.stream.m3u8
-#EXTINF:-1,MNB Монголын Мэдээ (576p)
-https://live.mnb.mn/hls/mn2.stream.m3u8
 #EXTINF:-1,MN+
 https://cdn4.skygo.mn/live/disk1/MNplus91/HLSv3-FTA/MNplus91.m3u8
+#EXTINF:-1,MNB (576p)
+https://live.mnb.mn/hls/mnb.stream.m3u8
+#EXTINF:-1,MNB Монголын Мэдээ (576p)
+https://live.mnb.mn/hls/mn2.stream.m3u8
+#EXTINF:-1,MNB World (576p)
+https://live.mnb.mn/hls/mnb_world.stream.m3u8
+#EXTINF:-1,MNB Sport (1080p)
+https://live.mnb.mn/hls/mnb_sport.stream.m3u8

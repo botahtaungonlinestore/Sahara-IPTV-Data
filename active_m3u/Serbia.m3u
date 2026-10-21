@@ -1,37 +1,37 @@
 #EXTM3U
-#EXTINF:-1,DM Sat
-http://85.14.32.26:8800/udp/239.100.10.40:5000
 #EXTINF:-1,RTS 3 (720p)
 http://185.81.240.65:15000/udp/233.233.233.36:12000
+#EXTINF:-1,DM Sat
+http://85.14.32.26:8800/udp/239.100.10.40:5000
 #EXTINF:-1,ZICO TV (720p)
 https://gjirafa-video-live.gjirafa.net/gjvideo-live/j3a-n14-2pf-g3s/index.m3u8
-#EXTINF:-1,Radio Hit FM TV (720p)
-https://peer2.tdiradio.com/static/streaming-playlists/hls/bab99862-ec1c-474f-9a02-4f8c8677d565/0.m3u8
-#EXTINF:-1,Radio Karolina TV (720p)
-https://peer2.tdiradio.com/static/streaming-playlists/hls/4207de1d-52e8-4591-ad9e-218069b864d1/0.m3u8
 #EXTINF:-1,Radio Lola (720p) [Not 24/7]
 https://peer2.tdiradio.com/static/streaming-playlists/hls/7c3ea8d3-49dc-4e1b-8b1e-dc6fab71f5cf/0.m3u8
 #EXTINF:-1,TDI Radio TV
 https://peer2.tdiradio.com/static/streaming-playlists/hls/8f5d84ce-e8ac-4109-9975-9665f5605557/master.m3u8
-#EXTINF:-1,RTS 2 (720p) [Not 24/7]
-https://webtvstream.bhtelecom.ba/rts2.m3u8
+#EXTINF:-1,Radio Karolina TV (720p)
+https://peer2.tdiradio.com/static/streaming-playlists/hls/4207de1d-52e8-4591-ad9e-218069b864d1/0.m3u8
+#EXTINF:-1,Radio Hit FM TV (720p)
+https://peer2.tdiradio.com/static/streaming-playlists/hls/bab99862-ec1c-474f-9a02-4f8c8677d565/0.m3u8
 #EXTINF:-1,Arena Sport 1 Premium (360p)
 http://telekomsrbije.com:2095/play/lhpjmkfVyhON1JAiZCx7vmRdlEHaaMaQAQw3LRAakpnghBMtR57sXXgLEXZF8gVD
-#EXTINF:-1,Sci Fi
-https://webtvstream.bhtelecom.ba/sci-fi.m3u8
 #EXTINF:-1,TV Panon
 https://stream2.nmih.hu:4102/live.m3u8
-#EXTINF:-1,RTS 1 (720p) [Not 24/7]
-https://webtvstream.bhtelecom.ba/rts1.m3u8
-#EXTINF:-1,Sandzak TV (576p)
-https://streaming.iptv.nextfiber.rs/nxt004/master.m3u8
-#EXTINF:-1,DM Sat (576p)
-https://shift03.isp.bg/DMSat/index.m3u8
 #EXTINF:-1,RTV Novi Pazar
 https://tv.rtvnp.rs/stream.m3u8
-#EXTINF:-1,TV Hram (576p) [Not 24/7]
-https://vod1.laki.eu/live/hram/index.m3u8
 #EXTINF:-1,IDJTV
 https://best-str.umn.cdn.united.cloud/stream?channel=idjhd&p=In$trum300na765ta&player=m3u8&sp=idjtv&stream=hp1400&u=idjtv
+#EXTINF:-1,TV Hram (576p) [Not 24/7]
+https://vod1.laki.eu/live/hram/index.m3u8
+#EXTINF:-1,Sandzak TV (576p)
+https://streaming.iptv.nextfiber.rs/nxt004/master.m3u8
+#EXTINF:-1,Sci Fi
+https://webtvstream.bhtelecom.ba/sci-fi.m3u8
+#EXTINF:-1,RTS 1 (720p) [Not 24/7]
+https://webtvstream.bhtelecom.ba/rts1.m3u8
+#EXTINF:-1,RTS 2 (720p) [Not 24/7]
+https://webtvstream.bhtelecom.ba/rts2.m3u8
+#EXTINF:-1,DM Sat (576p)
+https://shift03.isp.bg/DMSat/index.m3u8
 #EXTINF:-1,Nova (1080p)
 https://best-str.umn.cdn.united.cloud/stream?channel=novashd&p=n0v43!23t001&player=m3u8&sp=novas&stream=hp7000&u=novas
