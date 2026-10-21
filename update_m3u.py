@@ -12,14 +12,26 @@ from urllib3.util.retry import Retry
 TIMEOUT = 5
 MAX_THREADS = 50
 OUTPUT_FOLDER = "active_m3u"
-IPTV_ORG_API = "https://api.github.com/repos/iptv-org/iptv/contents/streams"
 EXTRA_FILE_MYANMAR = "extra_myanmar.m3u"
+
+# ✨ 1. GitHub API များ (အစ်ကိုပေးသော လင့်ခ်များကို API အဖြစ် ပြောင်းထားပါသည်)
+GITHUB_APIS = [
+    "https://api.github.com/repos/iptv-org/iptv/contents/streams",
+    "https://api.github.com/repos/YueChan/Live/contents",
+    "https://api.github.com/repos/qiangi/m3u/contents",
+    "https://api.github.com/repos/youshandefeiyang/IPTV-URL-1/contents",
+    "https://api.github.com/repos/youshandefeiyang/IPTV-URL/contents"
+]
+
+# ✨ 2. တိုက်ရိုက် Direct M3U လင့်ခ်များ
+CUSTOM_ONLINE_PLAYLISTS = {
+    "Migu_Playlist.m3u": "https://migu.yang-1989.xyz/playlist.m3u"
+}
 
 # ✨ Expert ၏ အဆင့်မြင့် Network Connection စနစ်
 _THREAD_LOCAL = threading.local()
 
 def get_session():
-    """Thread တစ်ခုချင်းစီအတွက် သီးသန့် Connection Pool ဖန်တီးပေးခြင်း (ပိုမြန်၊ ပိုခိုင်မာစေသည်)"""
     session = getattr(_THREAD_LOCAL, "session", None)
     if session is None:
         session = requests.Session()
@@ -82,7 +94,6 @@ def parse_m3u_text(text):
 
 def check_link(channel):
     try:
-        # ✨ Expert ၏ Session ကို အသုံးပြု၍ ချိတ်ဆက်ခြင်း
         session = get_session()
         response = session.get(channel["url"], timeout=TIMEOUT, stream=True, allow_redirects=True)
         if response.status_code == 200:
@@ -130,37 +141,41 @@ def process_and_save(filename, channels):
 def main():
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
     
-    print("Fetching files from iptv-org...")
-    try:
-        session = get_session()
-        response = session.get(IPTV_ORG_API, timeout=15)
-        files = response.json()
-    except Exception as e:
-        print(f"Failed to fetch API: {e}")
-        return
-
-    # 1. iptv-org မှ ဖိုင်များကို စီမံခြင်း
-    for file_info in files:
-        if isinstance(file_info, dict) and file_info.get('name', '').endswith('.m3u'):
-            filename = file_info['name']
-            download_url = file_info['download_url']
+    # 1. GitHub APIs များမှ M3U များကို အကုန်ဆွဲမည်
+    for api_url in GITHUB_APIS:
+        print(f"\nFetching files from GitHub API: {api_url}")
+        try:
+            session = get_session()
+            response = session.get(api_url, timeout=15)
+            files = response.json()
             
-            try:
-                res = get_session().get(download_url, timeout=15)
-                channels = parse_m3u_text(res.text)
+            if isinstance(files, list):
+                for file_info in files:
+                    if isinstance(file_info, dict) and (file_info.get('name', '').lower().endswith('.m3u') or file_info.get('name', '').lower().endswith('.m3u8')):
+                        filename = file_info['name']
+                        download_url = file_info['download_url']
+                        
+                        try:
+                            res = get_session().get(download_url, timeout=15)
+                            channels = parse_m3u_text(res.text)
+                            
+                            # Myanmar ဆိုလျှင် extra_myanmar ကိုပါ ပေါင်းထည့်မည်
+                            if ("mm" in filename.lower() or "myanmar" in filename.lower()) and os.path.exists(EXTRA_FILE_MYANMAR):
+                                print(f"Merging {EXTRA_FILE_MYANMAR} into Myanmar list...")
+                                with open(EXTRA_FILE_MYANMAR, 'r', encoding='utf-8', errors='ignore') as ef:
+                                    extra_channels = parse_m3u_text(ef.read())
+                                    channels.extend(extra_channels)
+                            
+                            process_and_save(filename, channels)
+                        except Exception as e:
+                            print(f"Failed to process {filename}: {e}")
+            else:
+                print(f"API Response is not a list for {api_url}")
                 
-                # 🌟 Myanmar ဆိုလျှင် extra_myanmar.m3u ကိုပါ ပေါင်းထည့်မည်
-                if filename.lower() == "mm.m3u" and os.path.exists(EXTRA_FILE_MYANMAR):
-                    print(f"Merging {EXTRA_FILE_MYANMAR} into Myanmar list...")
-                    with open(EXTRA_FILE_MYANMAR, 'r', encoding='utf-8', errors='ignore') as ef:
-                        extra_channels = parse_m3u_text(ef.read())
-                        channels.extend(extra_channels)
-                
-                process_and_save(filename, channels)
-            except Exception as e:
-                print(f"Failed to process {filename}: {e}")
+        except Exception as e:
+            print(f"Failed to fetch API {api_url}: {e}")
 
-    # 2. 🌟 Local မှ အခြား extra_*.m3u ဖိုင်များကို စီမံခြင်း (ဥပမာ extra_adult.m3u -> Adult.m3u)
+    # 2. Local မှ အခြား extra_*.m3u ဖိုင်များကို စီမံခြင်း
     for local_file in os.listdir('.'):
         if local_file.startswith('extra_') and local_file.endswith('.m3u') and local_file != EXTRA_FILE_MYANMAR:
             cat_filename = local_file.replace('extra_', '') 
@@ -168,6 +183,19 @@ def main():
             with open(local_file, 'r', encoding='utf-8', errors='ignore') as ef:
                 channels = parse_m3u_text(ef.read())
                 process_and_save(cat_filename, channels)
+
+    # 3. တိုက်ရိုက်လင့်ခ် (CUSTOM_ONLINE_PLAYLISTS) များကို စီမံခြင်း
+    for filename, download_url in CUSTOM_ONLINE_PLAYLISTS.items():
+        print(f"\nFetching custom online playlist: {filename}")
+        try:
+            res = get_session().get(download_url, timeout=15)
+            if res.status_code == 200:
+                channels = parse_m3u_text(res.text)
+                process_and_save(filename, channels)
+            else:
+                print(f"Failed to fetch {download_url} (HTTP {res.status_code})")
+        except Exception as e:
+            print(f"Failed to process custom playlist {filename}: {e}")
 
 if __name__ == '__main__':
     main()
