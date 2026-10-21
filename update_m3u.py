@@ -14,7 +14,7 @@ MAX_THREADS = 50
 OUTPUT_FOLDER = "active_m3u"
 EXTRA_FILE_MYANMAR = "extra_myanmar.m3u"
 
-# ✨ 1. GitHub API များ (အစ်ကိုပေးသော လင့်ခ်များကို API အဖြစ် ပြောင်းထားပါသည်)
+# ✨ 1. GitHub API များ
 GITHUB_APIS = [
     "https://api.github.com/repos/iptv-org/iptv/contents/streams",
     "https://api.github.com/repos/YueChan/Live/contents",
@@ -23,9 +23,11 @@ GITHUB_APIS = [
     "https://api.github.com/repos/youshandefeiyang/IPTV-URL/contents"
 ]
 
-# ✨ 2. တိုက်ရိုက် Direct M3U လင့်ခ်များ
+# ✨ 2. တိုက်ရိုက် Direct M3U လင့်ခ်များ (အစ်ကို့ လင့်ခ်အသစ်ကို ထပ်ပေါင်းထည့်ထားပါသည်)
 CUSTOM_ONLINE_PLAYLISTS = {
-    "Migu_Playlist.m3u": "https://migu.yang-1989.xyz/playlist.m3u"
+    "Migu_Playlist.m3u": "https://migu.yang-1989.xyz/playlist.m3u",
+    "Waastudios.m3u": "http://events.waastudios.dpdns.org:8877/sub/wDIWWCqpBc4hvIBFOXCX8ZrhPEOPCyjV/playlist.m3u",
+    "MyIPTV.m3u": "https://github.chenc.dev/raw.githubusercontent.com/CKL1211/eric/refs/heads/master/MyIPTV.m3u"
 }
 
 # ✨ Expert ၏ အဆင့်မြင့် Network Connection စနစ်
