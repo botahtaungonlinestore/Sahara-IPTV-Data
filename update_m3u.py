@@ -1,52 +1,64 @@
+#!/usr/bin/env python3
 import os
-import requests
-import pycountry
+import logging
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
+from typing import Any
+
+import pycountry
+import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 # ============================================================
 # SETTINGS
 # ============================================================
-TIMEOUT = 5
+TIMEOUT = 7.0
 MAX_THREADS = 50
-OUTPUT_FOLDER = "active_m3u"
+OUTPUT_FOLDER = Path("active_m3u")
 EXTRA_FILE_MYANMAR = "extra_myanmar.m3u"
+USER_AGENT = "IPTV-Playlist-Builder/2.0"
 
-# ✨ 1. GitHub API များ
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+log = logging.getLogger("iptv_playlist_builder")
+
 GITHUB_APIS = [
     "https://api.github.com/repos/iptv-org/iptv/contents/streams",
     "https://api.github.com/repos/YueChan/Live/contents",
     "https://api.github.com/repos/qiangi/m3u/contents",
     "https://api.github.com/repos/youshandefeiyang/IPTV-URL-1/contents",
-    "https://api.github.com/repos/youshandefeiyang/IPTV-URL/contents"
+    "https://api.github.com/repos/youshandefeiyang/IPTV-URL/contents",
+    "https://api.github.com/repos/mursor1985/LIVE/contents"
 ]
 
-# ✨ 2. တိုက်ရိုက် Direct M3U လင့်ခ်များ (အစ်ကို့ လင့်ခ်အသစ်ကို ထပ်ပေါင်းထည့်ထားပါသည်)
 CUSTOM_ONLINE_PLAYLISTS = {
     "Migu_Playlist.m3u": "https://migu.yang-1989.xyz/playlist.m3u",
     "Waastudios.m3u": "http://events.waastudios.dpdns.org:8877/sub/wDIWWCqpBc4hvIBFOXCX8ZrhPEOPCyjV/playlist.m3u",
     "MyIPTV.m3u": "https://github.chenc.dev/raw.githubusercontent.com/CKL1211/eric/refs/heads/master/MyIPTV.m3u"
 }
 
-# ✨ Expert ၏ အဆင့်မြင့် Network Connection စနစ်
 _THREAD_LOCAL = threading.local()
 
-def get_session():
+# ============================================================
+# EXPERT'S NETWORK SESSION MANAGER
+# ============================================================
+def get_session() -> requests.Session:
     session = getattr(_THREAD_LOCAL, "session", None)
     if session is None:
         session = requests.Session()
         session.headers.update({
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
+            "User-Agent": USER_AGENT,
             "Accept": "*/*",
             "Connection": "keep-alive",
         })
         retries = Retry(
-            total=2,
+            total=2, connect=2, read=1, status=2,
             backoff_factor=0.35,
-            status_forcelist=[429, 500, 502, 503, 504],
-            allowed_methods=["GET", "HEAD"]
+            status_forcelist=(429, 500, 502, 503, 504),
+            allowed_methods=frozenset({"GET", "HEAD"}),
+            respect_retry_after_header=True,
+            raise_on_status=False,
         )
         adapter = HTTPAdapter(max_retries=retries, pool_connections=8, pool_maxsize=8)
         session.mount("https://", adapter)
@@ -54,7 +66,10 @@ def get_session():
         _THREAD_LOCAL.session = session
     return session
 
-def get_country_name(filename):
+# ============================================================
+# HELPERS
+# ============================================================
+def get_country_name(filename: str) -> str:
     name = os.path.splitext(filename)[0]
     lower_name = name.lower()
     parts = lower_name.split("_", 1)
@@ -64,140 +79,203 @@ def get_country_name(filename):
     if country:
         country_name = country.name.replace(" ", "_")
         if len(parts) > 1:
-            suffix = parts[1]
-            return f"{country_name}_{suffix}.m3u"
-        else:
-            return f"{country_name}.m3u"
+            return f"{country_name}_{parts[1]}.m3u"
+        return f"{country_name}.m3u"
     return f"{name.title()}.m3u"
 
-def extract_channel_name(extinf_line):
-    if "," in extinf_line:
-        channel_name = extinf_line.split(",", 1)[1].strip()
-        if channel_name:
-            return channel_name
-    return "Unknown Channel"
+def _url_key(url: str) -> str:
+    return url.strip().lower()
 
-def parse_m3u_text(text):
+def parse_m3u_text(text: str) -> list[dict[str, Any]]:
     channels = []
-    lines = text.splitlines()
-    current_channel_name = None
-    for raw_line in lines:
-        line = raw_line.strip()
+    current_extinf = "#EXTINF:-1,Unknown Channel"
+    
+    for line in text.splitlines():
+        line = line.strip()
         if not line: continue
         if line.startswith("#EXTINF"):
-            current_channel_name = extract_channel_name(line)
+            current_extinf = line
         elif line.startswith("http"):
             channels.append({
-                "name": current_channel_name or "Unknown Channel",
+                "extinf": current_extinf,
                 "url": line
             })
-            current_channel_name = None
+            current_extinf = "#EXTINF:-1,Unknown Channel"
     return channels
 
-def check_link(channel):
-    try:
-        session = get_session()
-        response = session.get(channel["url"], timeout=TIMEOUT, stream=True, allow_redirects=True)
-        if response.status_code == 200:
-            return True
-    except:
-        pass
-    return False
+# ============================================================
+# DATA COLLECTION (MERGING ALL SOURCES)
+# ============================================================
+def collect_all_playlists() -> dict[str, list[dict[str, Any]]]:
+    playlists = {}
 
-def process_and_save(filename, channels):
-    print(f"\n=== Processing: {filename} ===")
-    
-    unique_channels = []
-    seen_urls = set()
-    for channel in channels:
-        url = channel["url"]
-        if url not in seen_urls:
-            seen_urls.add(url)
-            unique_channels.append(channel)
+    def add_to_playlist(fname, chs):
+        if fname not in playlists:
+            playlists[fname] = []
+        playlists[fname].extend(chs)
 
-    active_channels = []
-    with ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
-        future_map = {executor.submit(check_link, ch): ch for ch in unique_channels}
-        for future in as_completed(future_map):
-            ch = future_map[future]
-            try:
-                if future.result():
-                    active_channels.append(ch)
-            except:
-                pass
-
-    if not active_channels:
-        print(f"No active channels for {filename}. Skipping.")
-        return
-
-    output_filename = get_country_name(filename)
-    output_path = os.path.join(OUTPUT_FOLDER, output_filename)
-    
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        for ch in active_channels:
-            f.write(f"#EXTINF:-1,{ch['name']}\n{ch['url']}\n")
-    
-    print(f"Saved: {output_path} (Active: {len(active_channels)}/{len(unique_channels)})")
-
-def main():
-    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
-    
-    # 1. GitHub APIs များမှ M3U များကို အကုန်ဆွဲမည်
-    for api_url in GITHUB_APIS:
-        print(f"\nFetching files from GitHub API: {api_url}")
+    # 1. Custom Online Playlists
+    for filename, url in CUSTOM_ONLINE_PLAYLISTS.items():
+        log.info("Fetching custom playlist: %s", filename)
         try:
-            session = get_session()
-            response = session.get(api_url, timeout=15)
-            files = response.json()
-            
-            if isinstance(files, list):
-                for file_info in files:
-                    if isinstance(file_info, dict) and (file_info.get('name', '').lower().endswith('.m3u') or file_info.get('name', '').lower().endswith('.m3u8')):
-                        filename = file_info['name']
-                        download_url = file_info['download_url']
-                        
-                        try:
-                            res = get_session().get(download_url, timeout=15)
-                            channels = parse_m3u_text(res.text)
-                            
-                            # Myanmar ဆိုလျှင် extra_myanmar ကိုပါ ပေါင်းထည့်မည်
-                            if ("mm" in filename.lower() or "myanmar" in filename.lower()) and os.path.exists(EXTRA_FILE_MYANMAR):
-                                print(f"Merging {EXTRA_FILE_MYANMAR} into Myanmar list...")
-                                with open(EXTRA_FILE_MYANMAR, 'r', encoding='utf-8', errors='ignore') as ef:
-                                    extra_channels = parse_m3u_text(ef.read())
-                                    channels.extend(extra_channels)
-                            
-                            process_and_save(filename, channels)
-                        except Exception as e:
-                            print(f"Failed to process {filename}: {e}")
-            else:
-                print(f"API Response is not a list for {api_url}")
-                
+            res = get_session().get(url, timeout=15)
+            if res.status_code == 200:
+                add_to_playlist(filename, parse_m3u_text(res.text))
         except Exception as e:
-            print(f"Failed to fetch API {api_url}: {e}")
+            log.error("Failed custom %s: %s", filename, e)
 
-    # 2. Local မှ အခြား extra_*.m3u ဖိုင်များကို စီမံခြင်း
+    # 2. Local Extra Categories (e.g. extra_adult.m3u)
     for local_file in os.listdir('.'):
         if local_file.startswith('extra_') and local_file.endswith('.m3u') and local_file != EXTRA_FILE_MYANMAR:
-            cat_filename = local_file.replace('extra_', '') 
-            print(f"Processing local custom category: {local_file}")
-            with open(local_file, 'r', encoding='utf-8', errors='ignore') as ef:
-                channels = parse_m3u_text(ef.read())
-                process_and_save(cat_filename, channels)
+            cat_name = local_file.replace('extra_', '')
+            log.info("Fetching local extra: %s", local_file)
+            try:
+                with open(local_file, 'r', encoding='utf-8', errors='ignore') as f:
+                    add_to_playlist(cat_name, parse_m3u_text(f.read()))
+            except Exception as e:
+                log.error("Failed local %s: %s", local_file, e)
 
-    # 3. တိုက်ရိုက်လင့်ခ် (CUSTOM_ONLINE_PLAYLISTS) များကို စီမံခြင်း
-    for filename, download_url in CUSTOM_ONLINE_PLAYLISTS.items():
-        print(f"\nFetching custom online playlist: {filename}")
+    # 3. GitHub API Folders
+    for api_url in GITHUB_APIS:
+        log.info("Fetching GitHub API: %s", api_url)
         try:
-            res = get_session().get(download_url, timeout=15)
-            if res.status_code == 200:
-                channels = parse_m3u_text(res.text)
-                process_and_save(filename, channels)
-            else:
-                print(f"Failed to fetch {download_url} (HTTP {res.status_code})")
+            res = get_session().get(api_url, timeout=15)
+            files = res.json()
+            if isinstance(files, list):
+                for f_info in files:
+                    if isinstance(f_info, dict) and f_info.get('name', '').lower().endswith(('.m3u', '.m3u8')):
+                        dl_url = f_info['download_url']
+                        fname = f_info['name']
+                        try:
+                            r = get_session().get(dl_url, timeout=15)
+                            add_to_playlist(fname, parse_m3u_text(r.text))
+                        except Exception:
+                            pass
         except Exception as e:
-            print(f"Failed to process custom playlist {filename}: {e}")
+            log.error("Failed API %s: %s", api_url, e)
 
-if __name__ == '__main__':
-    main()
+    # 4. Merge extra_myanmar.m3u into Myanmar Playlist
+    if os.path.exists(EXTRA_FILE_MYANMAR):
+        log.info("Merging %s into Myanmar list...", EXTRA_FILE_MYANMAR)
+        try:
+            with open(EXTRA_FILE_MYANMAR, 'r', encoding='utf-8', errors='ignore') as f:
+                mm_extras = parse_m3u_text(f.read())
+                # Find if mm.m3u exists, if not create Myanmar.m3u
+                mm_key = next((k for k in playlists.keys() if "mm" in k.lower() or "myanmar" in k.lower()), "Myanmar.m3u")
+                add_to_playlist(mm_key, mm_extras)
+        except Exception as e:
+            log.error("Failed to merge %s: %s", EXTRA_FILE_MYANMAR, e)
+
+    return playlists
+
+# ============================================================
+# EXPERT'S LINK CHECKING & SAVING LOGIC
+# ============================================================
+def check_link(url: str) -> bool:
+    try:
+        session = get_session()
+        resp = session.get(url, timeout=TIMEOUT, stream=True, allow_redirects=True)
+        return resp.status_code == 200
+    except Exception:
+        return False
+
+def check_all_unique_links(playlists: dict[str, list[dict[str, Any]]]) -> dict[str, bool]:
+    representatives = {}
+    for channels in playlists.values():
+        for channel in channels:
+            key = _url_key(channel["url"])
+            representatives.setdefault(key, channel["url"])
+
+    total = len(representatives)
+    log.info("Checking %d unique HTTP(S) link(s) with %d worker(s)...", total, MAX_THREADS)
+    results = {}
+    if not total:
+        return results
+
+    completed = 0
+    with ThreadPoolExecutor(max_workers=MAX_THREADS) as pool:
+        future_to_key = {
+            pool.submit(check_link, url): key
+            for key, url in representatives.items()
+        }
+        for future in as_completed(future_to_key):
+            key = future_to_key[future]
+            try:
+                results[key] = bool(future.result())
+            except Exception as exc:
+                log.debug("Link check raised an error: %s", exc)
+                results[key] = False
+            completed += 1
+            if completed % 50 == 0 or completed == total:
+                log.info("Link checks: %d/%d complete", completed, total)
+
+    active_count = sum(results.values())
+    log.info("Link check complete: %d active / %d total.", active_count, total)
+    return results
+
+def write_playlist(output_path: Path, channels: list[dict[str, Any]]) -> None:
+    """Write atomically to avoid leaving a partially-written playlist."""
+    temporary_path = output_path.with_suffix(output_path.suffix + ".tmp")
+    with temporary_path.open("w", encoding="utf-8", newline="\n") as output:
+        output.write("#EXTM3U\n")
+        for channel in channels:
+            extinf = str(channel.get("extinf") or "#EXTINF:-1,Unknown Channel").strip()
+            output.write(extinf + "\n")
+            output.write(str(channel["url"]).strip() + "\n")
+    os.replace(temporary_path, output_path)
+
+def save_active_playlists(playlists: dict[str, list[dict[str, Any]]], active_by_url: dict[str, bool]) -> None:
+    OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
+    total_saved = 0
+
+    for filename, channels in playlists.items():
+        active_channels = [
+            channel for channel in channels
+            if active_by_url.get(_url_key(channel["url"]), False)
+        ]
+        output_name = get_country_name(filename)
+        output_path = OUTPUT_FOLDER / output_name
+
+        if not active_channels:
+            try:
+                output_path.unlink(missing_ok=True)
+            except OSError as exc:
+                pass
+            continue
+
+        try:
+            write_playlist(output_path, active_channels)
+            total_saved += len(active_channels)
+            log.info("Saved %-32s active=%d / source=%d", str(output_path), len(active_channels), len(channels))
+        except OSError as exc:
+            log.error("Could not write %s: %s", output_path, exc)
+            try:
+                output_path.with_suffix(output_path.suffix + ".tmp").unlink(missing_ok=True)
+            except OSError:
+                pass
+
+    log.info("Finished. Saved %d active channel entry/entries across output playlists.", total_saved)
+
+def main() -> int:
+    log.info("=" * 68)
+    log.info("SAHARA IPTV - SUPER M3U PLAYLIST COLLECTOR + LINK CHECKER")
+    log.info("Workers: %d | Output: %s", MAX_THREADS, OUTPUT_FOLDER)
+
+    playlists = collect_all_playlists()
+    if not playlists:
+        log.error("No playlists could be loaded. Check your network and source URLs.")
+        return 1
+
+    channel_count = sum(len(channels) for channels in playlists.values())
+    log.info("Collected %d URL entries across %d output categories.", channel_count, len(playlists))
+
+    active_by_url = check_all_unique_links(playlists)
+    save_active_playlists(playlists, active_by_url)
+    return 0
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except KeyboardInterrupt:
+        log.warning("Stopped by user.")
+        raise SystemExit(130)
