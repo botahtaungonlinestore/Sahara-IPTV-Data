@@ -1,45 +1,39 @@
 #EXTM3U
 #EXTINF:-1,tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://epg.112114.xyz/logo/翡翠台.png" group-title="港澳台",翡翠台
-http://r.jdshipin.com/n90gt
-#EXTINF:-1,tvg-id="J2" tvg-name="J2" tvg-logo="https://epg.112114.xyz/logo/J2.png" group-title="香港",香港J2频道
-http://r.jdshipin.com/Nr5jq
-#EXTINF:-1,tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://epg.112114.xyz/logo/翡翠台.png" group-title="港澳台",翡翠台
 http://r.jdshipin.com/qClQf
 #EXTINF:-1,tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://epg.112114.xyz/logo/翡翠台.png" group-title="港澳台",翡翠台
+http://r.jdshipin.com/n90gt
+#EXTINF:-1,tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://epg.112114.xyz/logo/翡翠台.png" group-title="港澳台",翡翠台
 http://r.jdshipin.com/qrfbg
-#EXTINF:-1,tvg-id="绍兴新闻综合" tvg-name="绍兴新闻综合" tvg-logo="https://epg.112114.xyz/logo/绍兴新闻综合.png" group-title="其他",绍兴新闻综合
-http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8?zzhed
-#EXTINF:-1,tvg-id="绍兴新闻综合" tvg-name="绍兴新闻综合" tvg-logo="https://epg.112114.xyz/logo/绍兴新闻综合.png" group-title="其他",绍兴新闻综合
-http://live.shaoxing.com.cn/video/s10001-sxhb/index.m3u8?zzhed
-#EXTINF:-1,tvg-id="绍兴文化影院" tvg-name="绍兴文化影院" tvg-logo="https://epg.112114.xyz/logo/绍兴文化影院.png" group-title="其他",绍兴文化影院
-http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8?zzhed
-#EXTINF:-1,tvg-id="上虞新闻综合" tvg-name="上虞新闻综合" tvg-logo="https://epg.112114.xyz/logo/上虞新闻综合.png" group-title="其他",上虞新闻综合
-http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed
-#EXTINF:-1,tvg-id="萧山生活频道" tvg-name="萧山生活频道" tvg-logo="https://epg.112114.xyz/logo/萧山生活.png" group-title="其他",萧山生活频道
-http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed
-#EXTINF:-1,tvg-id="余姚姚江文化" tvg-name="余姚姚江文化" tvg-logo="https://epg.112114.xyz/logo/余姚姚江文化.png" group-title="其他",余姚姚江文化
-http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8?zzhed
-#EXTINF:-1,tvg-id="兰溪新闻综合" tvg-name="兰溪新闻综合" tvg-logo="https://epg.112114.xyz/logo/兰溪新闻综合.png" group-title="其他",兰溪新闻综合
-http://l.cztvcloud.com/channels/lantian/SXlanxi1/720p.m3u8?zzhed
-#EXTINF:-1,tvg-id="上虞新商都" tvg-name="上虞新商都" tvg-logo="https://epg.112114.xyz/logo/上虞新商都.png" group-title="其他",上虞新商都
-http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8?zzhed
-#EXTINF:-1,tvg-id="余姚新闻综合" tvg-name="余姚新闻综合" tvg-logo="https://epg.112114.xyz/logo/余姚新闻综合.png" group-title="其他",余姚新闻综合
-http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?zzhed
-#EXTINF:-1,tvg-id="平湖新闻综合" tvg-name="平湖新闻综合" tvg-logo="https://epg.112114.xyz/logo/平湖新闻综合.png" group-title="其他",平湖新闻综合
-http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed
-#EXTINF:-1,tvg-id="诸暨新闻综合" tvg-name="诸暨新闻综合" tvg-logo="https://epg.112114.xyz/logo/诸暨新闻综合.png" group-title="其他",诸暨新闻综合
-http://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8?zzhed
-#EXTINF:-1,tvg-id="萧山新闻综合" tvg-name="萧山新闻综合" tvg-logo="https://epg.112114.xyz/logo/萧山新闻综合.png" group-title="其他",萧山新闻综合
-http://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8?zzhed
-#EXTINF:-1,tvg-id="嵊州新闻综合" tvg-name="嵊州新闻综合" tvg-logo="https://epg.112114.xyz/logo/嵊州新闻综合.png" group-title="其他",嵊州新闻综合
-http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed
-#EXTINF:-1,tvg-id="上虞文化影院" tvg-name="上虞文化影院" tvg-logo="https://epg.112114.xyz/logo/上虞文化影院.png" group-title="其他",上虞文化影院
-http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8?zzhed
-#EXTINF:-1,tvg-id="余杭综合频道" tvg-name="余杭综合频道" tvg-logo="https://epg.112114.xyz/logo/余杭综合.png" group-title="其他",余杭综合频道
-http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="J2" tvg-name="J2" tvg-logo="https://epg.112114.xyz/logo/J2.png" group-title="香港",香港J2频道
+http://r.jdshipin.com/Nr5jq
 #EXTINF:-1,tvg-id="武义新闻综合" tvg-name="武义新闻综合" tvg-logo="https://epg.112114.xyz/logo/武义新闻综合.png" group-title="其他",武义新闻综合
 http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8?zzhed
-#EXTINF:-1,tvg-id="余杭未来E频道" tvg-name="余杭未来E频道" tvg-logo="https://epg.112114.xyz/logo/余杭未来E.png" group-title="其他",余杭未来E频道
-http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="平湖新闻综合" tvg-name="平湖新闻综合" tvg-logo="https://epg.112114.xyz/logo/平湖新闻综合.png" group-title="其他",平湖新闻综合
+http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed
 #EXTINF:-1,tvg-id="平湖民生休闲" tvg-name="平湖民生休闲" tvg-logo="https://epg.112114.xyz/logo/平湖民生休闲.png" group-title="其他",平湖民生休闲
 http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="萧山新闻综合" tvg-name="萧山新闻综合" tvg-logo="https://epg.112114.xyz/logo/萧山新闻综合.png" group-title="其他",萧山新闻综合
+http://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="萧山生活频道" tvg-name="萧山生活频道" tvg-logo="https://epg.112114.xyz/logo/萧山生活.png" group-title="其他",萧山生活频道
+http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="余杭综合频道" tvg-name="余杭综合频道" tvg-logo="https://epg.112114.xyz/logo/余杭综合.png" group-title="其他",余杭综合频道
+http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="余杭未来E频道" tvg-name="余杭未来E频道" tvg-logo="https://epg.112114.xyz/logo/余杭未来E.png" group-title="其他",余杭未来E频道
+http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="余姚新闻综合" tvg-name="余姚新闻综合" tvg-logo="https://epg.112114.xyz/logo/余姚新闻综合.png" group-title="其他",余姚新闻综合
+http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="余姚姚江文化" tvg-name="余姚姚江文化" tvg-logo="https://epg.112114.xyz/logo/余姚姚江文化.png" group-title="其他",余姚姚江文化
+http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="嵊州新闻综合" tvg-name="嵊州新闻综合" tvg-logo="https://epg.112114.xyz/logo/嵊州新闻综合.png" group-title="其他",嵊州新闻综合
+http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="诸暨新闻综合" tvg-name="诸暨新闻综合" tvg-logo="https://epg.112114.xyz/logo/诸暨新闻综合.png" group-title="其他",诸暨新闻综合
+http://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="上虞新闻综合" tvg-name="上虞新闻综合" tvg-logo="https://epg.112114.xyz/logo/上虞新闻综合.png" group-title="其他",上虞新闻综合
+http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="上虞文化影院" tvg-name="上虞文化影院" tvg-logo="https://epg.112114.xyz/logo/上虞文化影院.png" group-title="其他",上虞文化影院
+http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="上虞新商都" tvg-name="上虞新商都" tvg-logo="https://epg.112114.xyz/logo/上虞新商都.png" group-title="其他",上虞新商都
+http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8?zzhed
+#EXTINF:-1,tvg-id="兰溪新闻综合" tvg-name="兰溪新闻综合" tvg-logo="https://epg.112114.xyz/logo/兰溪新闻综合.png" group-title="其他",兰溪新闻综合
+http://l.cztvcloud.com/channels/lantian/SXlanxi1/720p.m3u8?zzhed

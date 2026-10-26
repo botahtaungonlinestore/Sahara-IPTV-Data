@@ -1,0 +1,57 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="【公告】公益免费，Telegram群组@garysclub" tvg-logo="https://cdn.nodeimage.com/i/GPbV85PSZZdWoUf4W40drVXWDJCc3PfP.webp" group-title="公告",【公告】公益免费，Telegram群组@garysclub
+http://events.waastudios.dpdns.org:8877/ch/88ed3166254e72e555a4bf161edaa0a5/raw
+#EXTINF:-1 tvg-id="eurosport.4k" tvg-name="Eurosport 4K 🇷🇸" tvg-logo="https://i.postimg.cc/g0trnwSW/Eurosport-4K.png" group-title="UHD",Eurosport 4K 🇷🇸
+http://events.waastudios.dpdns.org:8877/ch/3f616e3113fc069882055c45895a0f4a/raw
+#EXTINF:-1 tvg-id="ElevenSp.1" tvg-name="Eleven Sports 1 4K 🇵🇱" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/international/eleven-sports-1-int.png" group-title="UHD",Eleven Sports 1 4K 🇵🇱
+http://events.waastudios.dpdns.org:8877/ch/79eced5a5e8d767e0feaf6cb96cba00a/raw
+#EXTINF:-1 tvg-id="allente_se.vultra" tvg-name="V Sport UltraHD【非24小时】🇫🇮" tvg-logo="https://i.postimg.cc/QC4VcpmZ/v-sport-ultra.png" group-title="UHD",V Sport UltraHD【非24小时】🇫🇮
+http://events.waastudios.dpdns.org:8877/ch/0452863f86a222f3c61b6cbc2cf08dd4/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ESPN 4K【非24小时】🇺🇸" tvg-logo="https://i.postimg.cc/sx5Q10T8/ESPN-4K.png" group-title="UHD",ESPN 4K【非24小时】🇺🇸
+http://events.waastudios.dpdns.org:8877/ch/94d9e911832dbef4e4d387fb76d37998/raw
+#EXTINF:-1 tvg-id="digi4k_ro" tvg-name="DIGI 4K 🇷🇴" tvg-logo="https://i.postimg.cc/mgzRQZNB/DIGI-4K.jpg" group-title="UHD",DIGI 4K 🇷🇴
+http://events.waastudios.dpdns.org:8877/ch/9ccb19bf327e1b35daf1bc391471defe/master.m3u8
+#EXTINF:-1 tvg-id="travelxp.eu" tvg-name="TravelXP 4K 欧洲台 🇷🇺" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/india/travelxp-4k-in.png" group-title="UHD",TravelXP 4K 欧洲台 🇷🇺
+http://events.waastudios.dpdns.org:8877/ch/0e33e1fff98162b2c078711135fd707c/raw
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Now 4K 🇨🇦" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Stingray_Now_4K.svg/3840px-Stingray_Now_4K.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="UHD",Stingray Now 4K 🇨🇦
+http://events.waastudios.dpdns.org:8877/ch/f76c48d5f16b88ebba45ca80827d50e0/raw
+#EXTINF:-1 tvg-id="telus.713" tvg-name="Love Nature 4K 🇨🇦" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Love_Nature_logo_%282025%29.svg/3840px-Love_Nature_logo_%282025%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="UHD",Love Nature 4K 🇨🇦
+http://events.waastudios.dpdns.org:8877/ch/6392c8408cf7b764278824e573ca2c7f/raw
+#EXTINF:-1 tvg-id="eurosport.1" tvg-name="Eurosport 1" tvg-logo="https://i.postimg.cc/T1yyLxr3/Eurosport1.png" group-title="FHD",Eurosport 1
+http://events.waastudios.dpdns.org:8877/ch/acdd71c64721b47c9bd50509bcca822e/raw
+#EXTINF:-1 tvg-id="eurosport.2" tvg-name="Eurosport 2" tvg-logo="https://i.postimg.cc/jC0jD7xM/Eurosport2.png" group-title="FHD",Eurosport 2
+http://events.waastudios.dpdns.org:8877/ch/9f33b6c4806f1106e221328d8aef52f5/raw
+#EXTINF:-1 tvg-id="ee_uk.408" tvg-name="TNT Sports 1 🇬🇧" tvg-logo="https://i.postimg.cc/436M6pbc/tnt-sports-1.png" group-title="FHD",TNT Sports 1 🇬🇧
+http://events.waastudios.dpdns.org:8877/ch/149ddddc1ab1638ee4dd7e6b102cdb77/master.m3u8
+#EXTINF:-1 tvg-id="ee_uk.409" tvg-name="TNT Sports 2 🇬🇧" tvg-logo="https://i.postimg.cc/MG7471bQ/tnt-sports-2.png" group-title="FHD",TNT Sports 2 🇬🇧
+http://events.waastudios.dpdns.org:8877/ch/cebc3076f9bb007d1f6317126828b5e0/raw
+#EXTINF:-1 tvg-id="ee_uk.410" tvg-name="TNT Sports 3 🇬🇧" tvg-logo="https://i.postimg.cc/k5QZQWFt/tnt-sports-3.png" group-title="FHD",TNT Sports 3 🇬🇧
+http://events.waastudios.dpdns.org:8877/ch/4ba827b4e510a95a90866684570f8a30/raw
+#EXTINF:-1 tvg-id="ee_uk.411" tvg-name="TNT Sports 4 🇬🇧" tvg-logo="https://i.postimg.cc/QMGwKf5c/tnt-sports-4.png" group-title="FHD",TNT Sports 4 🇬🇧
+http://events.waastudios.dpdns.org:8877/ch/c7babfb1802fed28f814199324d5edcb/raw
+#EXTINF:-1 tvg-id="TC.us" tvg-name="Tennis Channel 🇺🇸" tvg-logo="https://i.postimg.cc/9fZGV42T/TC.jpg" group-title="FHD",Tennis Channel 🇺🇸
+http://events.waastudios.dpdns.org:8877/ch/c74bb36011b11840274bf087c8694da4/raw
+#EXTINF:-1 tvg-id="GolazoNet.us" tvg-name="CBS Sports Golazo Network 🇺🇸" tvg-logo="https://i.postimg.cc/28427fB9/Golazo-Network.png" group-title="FHD",CBS Sports Golazo Network 🇺🇸
+http://events.waastudios.dpdns.org:8877/ch/acffbcfdb4697415a3c3166eb7a3330a/raw
+#EXTINF:-1 tvg-id="WNBC-NY.us" tvg-name="NBC 4 New York" tvg-logo="https://i.postimg.cc/9FR0Tywt/WNBC-NY.png" group-title="NBC系列频道",NBC 4 New York
+http://events.waastudios.dpdns.org:8877/ch/9efa21f8808fe5e5331f6b10e7015f52/master.m3u8
+#EXTINF:-1 tvg-id="WNBC-LA.us" tvg-name="NBC 4 Los Angeles" tvg-logo="https://i.postimg.cc/MZrXv9HW/WNBC-LA.png" group-title="NBC系列频道",NBC 4 Los Angeles
+http://events.waastudios.dpdns.org:8877/ch/133fdf5a80842fc01b9e79de9c24ba00/master.m3u8
+#EXTINF:-1 tvg-id="KNTV.us" tvg-name="NBC Bay Area" tvg-logo="https://i.postimg.cc/vm6yPddn/KNTV-BAY.png" group-title="NBC系列频道",NBC Bay Area
+http://events.waastudios.dpdns.org:8877/ch/326e0cc50aead58a34c5e86472441b96/master.m3u8
+#EXTINF:-1 tvg-id="WSCV.us" tvg-name="Telemundo 51 Miami" tvg-logo="https://i.postimg.cc/QN2qfx3Z/Telemundo-51.png" group-title="NBC系列频道",Telemundo 51 Miami
+http://events.waastudios.dpdns.org:8877/ch/42585ba120a9584122e07c6f200990b4/master.m3u8
+#EXTINF:-1 tvg-id="NBCSpBay.us" tvg-name="NBC Sports Bay Area" tvg-logo="https://i.postimg.cc/fLFPgTg4/NBC-Sports-Bay-Area.png" group-title="NBC系列频道",NBC Sports Bay Area
+http://events.waastudios.dpdns.org:8877/ch/81b6cafe79de31526058406f2f1c442d/master.m3u8
+#EXTINF:-1 tvg-id="NBCSpPhilly.us" tvg-name="NBC Sports Philadelphia" tvg-logo="https://i.postimg.cc/Z5rwFLSb/NBC-Sports-Philadelphia.png" group-title="NBC系列频道",NBC Sports Philadelphia
+http://events.waastudios.dpdns.org:8877/ch/fb38d28d4497dff6f5d49a085c225389/master.m3u8
+#EXTINF:-1 tvg-id="NBCSpBos.us" tvg-name="NBC Sports Boston" tvg-logo="https://i.postimg.cc/rp17skmY/NBC-Sports-Boston.png" group-title="NBC系列频道",NBC Sports Boston
+http://events.waastudios.dpdns.org:8877/ch/2edc599212fcc48bffe4c87625836fe4/master.m3u8
+#EXTINF:-1 tvg-id="NBCSpCali.us" tvg-name="NBC Sports California" tvg-logo="https://i.postimg.cc/jjcvBdCt/NBC-Sports-California.png" group-title="NBC系列频道",NBC Sports California
+http://events.waastudios.dpdns.org:8877/ch/fc5ce94ba3589c50ec40c5dc338e0c76/master.m3u8
+#EXTINF:-1 tvg-id="Universo.us" tvg-name="Universo East" tvg-logo="https://i.postimg.cc/GpbSGhNx/Universo.png" group-title="NBC系列频道",Universo East
+http://events.waastudios.dpdns.org:8877/ch/7f82c62f0c74fdde749f8acd6087618c/master.m3u8
+#EXTINF:-1 tvg-id="bein1" tvg-name="beIN Sports 1 🇸🇬" tvg-logo="https://i.postimg.cc/4yKHgxtY/638_wbg_c_693ae9bf65.png" group-title="测试频道",beIN Sports 1 🇸🇬
+http://events.waastudios.dpdns.org:8877/ch/1eb0f28d5e281c926ca6efec957f1d50/master.m3u8
+#EXTINF:-1 tvg-id="hubpremier2" tvg-name="Hub Premier 2 UHD 🇸🇬" tvg-logo="https://poster.starhubgo.com/Linear_channels2/222_1920x1080_HTV.png" group-title="测试频道",Hub Premier 2 UHD 🇸🇬
+http://events.waastudios.dpdns.org:8877/ch/42c476ddeef08347e75d5b9d01a5caa3/master.m3u8

@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1,Young Hollywood (720p)
-https://younghollywood-tcl.amagi.tv/playlist.m3u8
-#EXTINF:-1,Unbeaten (1080p)
+#EXTINF:-1 tvg-id="Unbeaten.us@SD",Unbeaten (1080p)
 https://unbeaten-tcl.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="YoungHollywood.us@SD",Young Hollywood (720p)
+https://younghollywood-tcl.amagi.tv/playlist.m3u8

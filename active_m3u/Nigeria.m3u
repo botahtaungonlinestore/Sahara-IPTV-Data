@@ -1,51 +1,57 @@
 #EXTM3U
-#EXTINF:-1,Superscreen TV (412p)
-https://video1.getstreamhosting.com:1936/8398/8398/playlist.m3u8
-#EXTINF:-1,Rapid TV (480p)
-https://stream-hls.castr-cdn.com/6a05a899db0ebd344a759542/live_9655bc604f8211f19e748901a3f596d0/index.m3u8
-#EXTINF:-1,LoveWorld Arabic (360p)
-https://go5lm6a6dawb-hls-live.5centscdn.com/lwarabic/53132d996b4263ec0d7b602292c46eaf.sdp/playlist.m3u8
-#EXTINF:-1,Itage TV (480p)
-https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_011/Stream/playlist.m3u8
-#EXTINF:-1,Coza TV (576p)
-https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_019/Stream/playlist.m3u8
-#EXTINF:-1,Fortis TV
-https://stream.fortistv.com/hls/fortis-news/index.m3u8
-#EXTINF:-1,ACNN (480p)
+#EXTINF:-1 tvg-id="ACNN.ng@SD",ACNN (480p)
 https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_014/Stream/playlist.m3u8
-#EXTINF:-1,Sunna TV (576p)
-https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_015/Stream/playlist.m3u8
-#EXTINF:-1,BCS StarCross TV (576p)
-https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_001/Stream/playlist.m3u8
-#EXTINF:-1,Flame TV (576p)
-https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_010/Stream/playlist.m3u8
-#EXTINF:-1,Approval TV (720p)
-https://live.approvaltv.com/approvaltv/index.m3u8
-#EXTINF:-1,Approval TV
-https://tv.bigicloud.com/hls/approvaltv/approvaltv.m3u8
-#EXTINF:-1,Bride TV (576p)
-https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_013/Stream/playlist.m3u8
-#EXTINF:-1,Chosen TV English (360p)
-https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_024/Stream/playlist.m3u8
-#EXTINF:-1,Salvation TV (576p)
-https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_017/Stream/playlist.m3u8
-#EXTINF:-1,Rave TV (576p)
-https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_039/Stream/playlist.m3u8
-#EXTINF:-1,AMusic Channel (480p)
+#EXTINF:-1 tvg-id="AMusicChannel.ng@SD",AMusic Channel (480p)
 https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_021/Stream/playlist.m3u8
-#EXTINF:-1,Silverbird News 24 (576p)
-https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_029/Stream/playlist.m3u8
-#EXTINF:-1,Synagogue TV (576p)
-https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_038/Stream/playlist.m3u8
-#EXTINF:-1,Nigbati (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ApprovalTV.ng@HD",Approval TV (720p)
+https://live.approvaltv.com/approvaltv/index.m3u8
+#EXTINF:-1 tvg-id="ApprovalTV.ng@HD",Approval TV
+https://tv.bigicloud.com/hls/approvaltv/approvaltv.m3u8
+#EXTINF:-1 tvg-id="BCSStarCrossTV.ng@SD",BCS StarCross TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_001/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="BrideTV.ng@SD",Bride TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_013/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="ChosenTVEnglish.ng@SD",Chosen TV English (360p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_024/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="CozaTV.ng@SD",Coza TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_019/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="FlameTV.ng@SD",Flame TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_010/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="FortisTV.ng@SD",Fortis TV
+https://stream.fortistv.com/hls/fortis-news/index.m3u8
+#EXTINF:-1 tvg-id="ItageTV.ng@SD",Itage TV (480p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_011/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="LoveWorldArabic.ng@SD",LoveWorld Arabic (360p)
+https://go5lm6a6dawb-hls-live.5centscdn.com/lwarabic/53132d996b4263ec0d7b602292c46eaf.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="NewsCentral.ng@SD",News Central
+https://wf.newscentral.ng:8443/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Nigbati.ng@SD",Nigbati (720p) [Not 24/7]
 https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_023/Stream/playlist.m3u8
-#EXTINF:-1,TV-WEST (720p) [Not 24/7]
-https://tv-west.lg.mncdn.com/tv_west/tv_west.stream/playlist.m3u8
-#EXTINF:-1,Qausain TV (720p)
+#EXTINF:-1 tvg-id="QausainTV.ng@SD",Qausain TV (720p)
 https://acasmedia3.acangroup.org/qausaintv/qausaintv_output/playlist.m3u8
-#EXTINF:-1,Wazobia Max TV Port Harcourt (720p)
-https://wazobia.live:8333/channel/wmaxph.m3u8
-#EXTINF:-1,Tele Regency TV (576p)
+#EXTINF:-1 tvg-id="RapidTV.ng@SD",Rapid TV (480p)
+https://stream-hls.castr-cdn.com/6a05a899db0ebd344a759542/live_9655bc604f8211f19e748901a3f596d0/index.m3u8
+#EXTINF:-1 tvg-id="RaveTV.ng@SD",Rave TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_039/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="SalvationTV.ng@SD",Salvation TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_017/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="SilverbirdNews24.ng@SD",Silverbird News 24 (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_029/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="SunnaTV.ng@SD",Sunna TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_015/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="SuperscreenTV.ng@SD",Superscreen TV (412p)
+https://video1.getstreamhosting.com:1936/8398/8398/playlist.m3u8
+#EXTINF:-1 tvg-id="SynagogueTV.ng@SD",Synagogue TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_038/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleRegencyTV.ng@SD",Tele Regency TV (576p)
 https://streams.playtv.com.ng/Tele-Regency_TRTV/index.m3u8
-#EXTINF:-1,Wazobia Max TV Nigeria (720p)
+#EXTINF:-1 tvg-id="TVC.ng@SD",TVC (720p)
+http://212.5.144.156:8080/tvc/index.m3u8
+#EXTINF:-1 tvg-id="WazobiaMaxTVNigeria.ng@SD",Wazobia Max TV Nigeria (720p)
 https://wazobia.live:8333/channel/wmax.m3u8
+#EXTINF:-1 tvg-id="WazobiaMaxTVPortHarcourt.ng@SD",Wazobia Max TV Port Harcourt (720p)
+https://wazobia.live:8333/channel/wmaxph.m3u8
+#EXTINF:-1 tvg-id="TVWEST.ng@HD",TV-WEST (720p) [Not 24/7]
+https://tv-west.lg.mncdn.com/tv_west/tv_west.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="HMTV.ng@SD",HMTV (720p)
+https://customer-yzxu6n447dx2x45h.cloudflarestream.com/f255a1e5ef17a8277e15e5f409951e98/manifest/video.m3u8

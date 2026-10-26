@@ -1,99 +1,113 @@
 #EXTM3U
-#EXTINF:-1,EDN TV (1080p) [Not 24/7]
-https://60417ddeaf0d9.streamlock.net/edntv/videoedntv/playlist.m3u8
-#EXTINF:-1,Alsacias Televisión (ATV | Canal 28) (720p)
+#EXTINF:-1 tvg-id="AlsaciasTelevision.hn@SD",Alsacias Televisión (ATV | Canal 28) (720p)
 https://s.emisoras.tv:8081/atv/index.m3u8
-#EXTINF:-1,ICN Digital
-https://streaming.icndigital.com/live_output/icn_live_stream_1.m3u8
-#EXTINF:-1,Canal 7 Talanga Vision (720p)
-https://amixtv.com:8081/talangavision/index.m3u8
-#EXTINF:-1,Buendia TV
-https://servilive.com:3508/stream/play.m3u8
-#EXTINF:-1,CCI Channel (1080p)
-https://livestream.mediacci.com/ccitv/index.m3u8
-#EXTINF:-1,Kerusso TV (720p)
-https://s.emisoras.tv:8081/kerussotv/index.m3u8
-#EXTINF:-1,Girasol TV (1080i)
-https://s.emisoras.tv:8081/girasoltv/index.m3u8
-#EXTINF:-1,Metro TV (720p)
-https://s.emisoras.tv:8081/metrotv/index.m3u8
-#EXTINF:-1,Dios Te Ve (720p)
-https://s.emisoras.tv:8081/diostevetv/index.m3u8
-#EXTINF:-1,Choluteca TV (1080p)
-https://s.emisoras.tv:8081/cholutecatv/index.m3u8
-#EXTINF:-1,RSV Honduras (720p)
-https://stmv2.srvif.com/rsvhonduras/rsvhonduras/playlist.m3u8
-#EXTINF:-1,La Top 107.7 (720p)
-https://59d39900ebfb8.streamlock.net/top107/top107/playlist.m3u8
-#EXTINF:-1,Dios Te Ve Kids (720p)
-https://s.emisoras.tv:8081/diostevekids/index.m3u8
-#EXTINF:-1,CHTV (1080p)
-https://viewhn.com/chtv/live/playlist.m3u8
-#EXTINF:-1,Deportes TVC
-https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8
-#EXTINF:-1,Puringla TV
-https://stmv2.srvif.com/puringla/puringla/playlist.m3u8
-#EXTINF:-1,Guayape TV
-https://tv.bitstreaming.net:8443/live/guayapetv.m3u8
-#EXTINF:-1,Lenca Television Canal 40 (720p) [Not 24/7]
-https://lencatelevision.com/hls/stream.m3u8
-#EXTINF:-1,AZA TV HD (1080p)
+#EXTINF:-1 tvg-id="AZATVHD.hn@SD",AZA TV HD (1080p)
 https://tv.webmedialive.com/azatvhn/live/playlist.m3u8
-#EXTINF:-1,JBN TV (1080p)
-https://tv.webmedialive.com/jbn_live/enlace/playlist.m3u8
-#EXTINF:-1,STVE Telebasica (1080p)
-https://streamingcws30.com/suyapa/videosuyapa/playlist.m3u8
-#EXTINF:-1,Campus TV (480p) [Not 24/7]
-https://5e85d90130e77.streamlock.net/6052/6052/playlist.m3u8
-#EXTINF:-1,HCH (720p)
-https://live.streamhch.com/live/streams/hch1.m3u8
-#EXTINF:-1,JBN TV (1080p)
-https://viewhn.com/jbn_live/enlace/playlist.m3u8
-#EXTINF:-1,Dios Tv Talanga (1080p)
-https://tv.webmedialive.com/unciontv/live/playlist.m3u8
-#EXTINF:-1,Ebenezer TV (1080p)
-https://5e85d90130e77.streamlock.net/6010/ngrp:6010_all/playlist.m3u8
-#EXTINF:-1,Radio Imagen 105.1 FM (720p) [Not 24/7]
-https://streaming.imagenfm105-1.com/hls/stream.m3u8
-#EXTINF:-1,Radio Fiesta de Milagros TV (1080p)
-https://tv.webmedialive.com/fiestatv/live/playlist.m3u8
-#EXTINF:-1,Radio Ideal 104.7 FM (La Esperanza) (720p) [Not 24/7]
-https://www.idealfm104-7.com/hls/0/stream.m3u8
-#EXTINF:-1,TEN Canal 10 (720p) [Not 24/7]
-https://raw.githubusercontent.com/BellezaEmporium/IPTV_Exception/master/channels/hn/tentv.m3u8
-#EXTINF:-1,RCV TV (712p)
-https://59d39900ebfb8.streamlock.net/rcv/rcv/playlist.m3u8
-#EXTINF:-1,La Top 102.9 (720p)
-https://59d39900ebfb8.streamlock.net/top102/top102/playlist.m3u8
-#EXTINF:-1,TeleDanli [Not 24/7]
-https://live20.bozztv.com/giatv/giatv-canal9/canal9/chunks.m3u8
-#EXTINF:-1,Azteca Honduras (720p)
+#EXTINF:-1 tvg-id="AztecaHonduras.hn@SD",Azteca Honduras (720p)
 https://mdstrm.com/live-stream-playlist/65a1d2fd7e7f14355550d570.m3u8
-#EXTINF:-1,Deportes TVC (720p)
-http://190.61.101.11:7050/play/a06t/index.m3u8
-#EXTINF:-1,Sula TV (1080p)
-https://tv.webmedialive.com/sulatv/live/playlist.m3u8
-#EXTINF:-1,Tigo Sports (1080p)
-http://168.196.127.137:6001/play/a0ay/index.m3u8
-#EXTINF:-1,Telerayo (1080p)
-https://s.emisoras.tv:8081/telerayo/index.m3u8
-#EXTINF:-1,Telemas (1080p)
-https://s.emisoras.tv:8081/telemas/index.m3u8
-#EXTINF:-1,UNE TV (720p)
-https://amixtv.com:8081/unetvhn/tracks-v1a1/mono.m3u8
-#EXTINF:-1,TV Estrella (720p)
-https://s.emisoras.tv:8081/tve/index.m3u8
-#EXTINF:-1,TV Copán (720p) [Not 24/7]
-https://s.emisoras.tv:8081/tvcopan/index.m3u8
-#EXTINF:-1,Canal 11 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="BuendiaTV.hn@SD",Buendia TV
+https://servilive.com:3508/stream/play.m3u8
+#EXTINF:-1 tvg-id="CampusTV.hn@SD",Campus TV (480p) [Not 24/7]
+https://5e85d90130e77.streamlock.net/6052/6052/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal5ElLider.hn@SD",Canal 5 El Líder (720p) [Not 24/7]
+https://mdstrm.com/live-stream-playlist/6287fda8ea3b8b397d1ca2ed.m3u8
+#EXTINF:-1 tvg-id="Canal7TalangaVision.hn@SD",Canal 7 Talanga Vision (720p)
+https://amixtv.com:8081/talangavision/index.m3u8
+#EXTINF:-1 tvg-id="Canal11.hn@SD",Canal 11 (1080p) [Not 24/7]
 https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/canal11hn/canal11hn.smil/playlist.m3u8
-#EXTINF:-1,Teleceiba (720p)
+#EXTINF:-1 tvg-id="CCIChannel.hn@SD",CCI Channel (1080p)
+https://livestream.mediacci.com/ccitv/index.m3u8
+#EXTINF:-1 tvg-id="CholutecaTV.hn@SD",Choluteca TV (1080p)
+https://s.emisoras.tv:8081/cholutecatv/index.m3u8
+#EXTINF:-1 tvg-id="CHTV.hn@SD",CHTV (1080p)
+https://viewhn.com/chtv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="DeportesTVC.hn@SD",Deportes TVC
+https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8
+#EXTINF:-1 tvg-id="DiosTeVe.hn@SD",Dios Te Ve (720p)
+https://s.emisoras.tv:8081/diostevetv/index.m3u8
+#EXTINF:-1 tvg-id="DiosTeVeKids.hn@SD",Dios Te Ve Kids (720p)
+https://s.emisoras.tv:8081/diostevekids/index.m3u8
+#EXTINF:-1 tvg-id="DiosTvTalanga.hn@SD",Dios Tv Talanga (1080p)
+https://tv.webmedialive.com/unciontv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="EbenezerTV.hn@SD",Ebenezer TV (1080p)
+https://5e85d90130e77.streamlock.net/6010/ngrp:6010_all/playlist.m3u8
+#EXTINF:-1 tvg-id="EDNTV.hn@SD",EDN TV (1080p) [Not 24/7]
+https://60417ddeaf0d9.streamlock.net/edntv/videoedntv/playlist.m3u8
+#EXTINF:-1 tvg-id="GirasolTV.hn@SD",Girasol TV (1080i)
+https://s.emisoras.tv:8081/girasoltv/index.m3u8
+#EXTINF:-1 tvg-id="GuayapeTV.hn@SD",Guayape TV
+https://tv.bitstreaming.net:8443/live/guayapetv.m3u8
+#EXTINF:-1 tvg-id="HCH.hn@SD",HCH (720p)
+https://live.streamhch.com/live/streams/hch1.m3u8
+#EXTINF:-1 tvg-id="ICNDigital.hn@SD",ICN Digital
+https://streaming.icndigital.com/live_output/icn_live_stream_1.m3u8
+#EXTINF:-1 tvg-id="JBNTV.hn@SD",JBN TV (1080p)
+https://tv.webmedialive.com/jbn_live/enlace/playlist.m3u8
+#EXTINF:-1 tvg-id="JBNTV.hn@SD",JBN TV (1080p)
+https://viewhn.com/jbn_live/enlace/playlist.m3u8
+#EXTINF:-1 tvg-id="KerussoTV.hn@SD",Kerusso TV (720p)
+https://s.emisoras.tv:8081/kerussotv/index.m3u8
+#EXTINF:-1 tvg-id="LaTop1029.hn@SD",La Top 102.9 (720p)
+https://59d39900ebfb8.streamlock.net/top102/top102/playlist.m3u8
+#EXTINF:-1 tvg-id="LaTop1077.hn@SD",La Top 107.7 (720p)
+https://59d39900ebfb8.streamlock.net/top107/top107/playlist.m3u8
+#EXTINF:-1 tvg-id="LencaTV.hn@SD",Lenca Television Canal 40 (720p) [Not 24/7]
+https://lencatelevision.com/hls/stream.m3u8
+#EXTINF:-1 tvg-id="MayaTV.hn@SD",Maya TV
+https://media.streambrothers.com:19360/8036/8036.m3u8
+#EXTINF:-1 tvg-id="MetroTV.hn@SD",Metro TV (720p)
+https://s.emisoras.tv:8081/metrotv/index.m3u8
+#EXTINF:-1 tvg-id="PuringlaTV.hn@SD",Puringla TV
+https://stmv2.srvif.com/puringla/puringla/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioFiestadeMilagrosTV.hn@SD",Radio Fiesta de Milagros TV (1080p)
+https://tv.webmedialive.com/fiestatv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioIdeal.hn@SD",Radio Ideal 104.7 FM (La Esperanza) (720p) [Not 24/7]
+https://www.idealfm104-7.com/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="ImagenFM1051.hn@SD",Radio Imagen 105.1 FM (720p) [Not 24/7]
+https://streaming.imagenfm105-1.com/hls/stream.m3u8
+#EXTINF:-1 tvg-id="RCVTV.hn@SD",RCV TV (712p)
+https://59d39900ebfb8.streamlock.net/rcv/rcv/playlist.m3u8
+#EXTINF:-1 tvg-id="RSVHonduras.hn@SD",RSV Honduras (720p)
+https://stmv2.srvif.com/rsvhonduras/rsvhonduras/playlist.m3u8
+#EXTINF:-1 tvg-id="STVETelebasica.hn@SD",STVE Telebasica (1080p)
+https://streamingcws30.com/suyapa/videosuyapa/playlist.m3u8
+#EXTINF:-1 tvg-id="SulaTV.hn@SD",Sula TV (1080p)
+https://tv.webmedialive.com/sulatv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="SuyapaTV.hn@SD",Suyapa TV (1080p)
+https://streamingcws30.com/suyapa2/videosuyapa2/playlist.m3u8
+#EXTINF:-1 tvg-id="Teleceiba.hn@SD",Teleceiba (720p)
 https://teleceiba.com/stream/tlcb720.m3u8
-#EXTINF:-1,Televisión Metrópolis 19.1 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleDanli.hn@SD",TeleDanli [Not 24/7]
+https://live20.bozztv.com/giatv/giatv-canal9/canal9/chunks.m3u8
+#EXTINF:-1 tvg-id="Telemas.hn@SD",Telemas (1080p)
+https://s.emisoras.tv:8081/telemas/index.m3u8
+#EXTINF:-1 tvg-id="Telerayo.hn@SD",Telerayo (1080p)
+https://s.emisoras.tv:8081/telerayo/index.m3u8
+#EXTINF:-1 tvg-id="TelevisionMetropolis191.hn@SD",Televisión Metrópolis 19.1 (1080p) [Not 24/7]
 https://5e85d90130e77.streamlock.net/6028/6028/playlist.m3u8
-#EXTINF:-1,TV Centro 27.2 HD (720p)
-https://cloud2.streaminglivehd.com:1936/8004/8004/playlist.m3u8
-#EXTINF:-1,Televisión Metrópolis 19.2 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisionMetropolis192.hn@SD",Televisión Metrópolis 19.2 (1080p) [Not 24/7]
 https://5e85d90130e77.streamlock.net/6014/6014/playlist.m3u8
-#EXTINF:-1,JEMR TV (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TelevisionOlanchana.hn@SD",Television Olanchana (1080p)
+https://viewhn.com/canal30/live/playlist.m3u8
+#EXTINF:-1 tvg-id="TENCanal10.hn@SD",TEN Canal 10 (720p) [Not 24/7]
+https://raw.githubusercontent.com/BellezaEmporium/IPTV_Exception/master/channels/hn/tentv.m3u8
+#EXTINF:-1 tvg-id="TSi.hn@SD",TSi (720p) [Not 24/7]
+https://mdstrm.com/live-stream-playlist/6287fdc9303e3008289ab711.m3u8
+#EXTINF:-1 tvg-id="TVCentro272HD.hn@SD",TV Centro 27.2 HD (720p)
+https://cloud2.streaminglivehd.com:1936/8004/8004/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCentroHD.hn@SD",TV Centro HD (720p)
+https://cloud2.streaminglivehd.com:1936/8032/8032/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCopan.hn@SD",TV Copán (720p) [Not 24/7]
+https://s.emisoras.tv:8081/tvcopan/index.m3u8
+#EXTINF:-1 tvg-id="TVEstrella.hn@SD",TV Estrella (720p)
+https://s.emisoras.tv:8081/tve/index.m3u8
+#EXTINF:-1 tvg-id="UNETV.hn@SD",UNE TV (720p)
+https://amixtv.com:8081/unetvhn/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="DeportesTVC.hn@SD",Deportes TVC (720p)
+http://190.61.101.11:7050/play/a06t/index.m3u8
+#EXTINF:-1 tvg-id="TigoSports.hn@SD",Tigo Sports (1080p)
+http://168.196.127.137:6001/play/a0ay/index.m3u8
+#EXTINF:-1 tvg-id="Teleceiba.hn@SD",Teleceiba (1080p)
+http://45.238.141.222:8000/play/a0pf/index.m3u8
+#EXTINF:-1 tvg-id="JEMRTV.hn@HD",JEMR TV (1080p) [Geo-blocked]
 https://tv.webmedialive.com/jmrtv/live/playlist.m3u8

@@ -1,18 +1,18 @@
 #EXTM3U
-#EXTINF:-1,tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://epg.112114.xyz/logo/CCTV4K.png" group-title="央视",CCTV4K
-http://r.jdshipin.com/krMB5
 #EXTINF:-1,tvg-id="直播中国" tvg-name="直播中国" tvg-logo="https://epg.112114.xyz/logo/直播中国.png" group-title="其他",直播中国
 https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1,tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://epg.112114.xyz/logo/CCTV4K.png" group-title="央视",CCTV4K
+http://r.jdshipin.com/krMB5
+#EXTINF:-1,tvg-id="斗鱼4K影院" tvg-name="斗鱼4K影院" tvg-logo="https://epg.112114.xyz/logo/斗鱼4K影院.png" group-title="其他",斗鱼4K影院
+http://epg.112114.xyz/douyu/9249162
+#EXTINF:-1,tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://epg.112114.xyz/logo/凤凰香港.png" group-title="香港",凤凰香港
+http://r.jdshipin.com/NfC0f
+#EXTINF:-1,tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://epg.112114.xyz/logo/凤凰香港.png" group-title="香港",凤凰香港
+http://r.jdshipin.com/yDoTN
 #EXTINF:-1,tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://epg.112114.xyz/logo/凤凰中文.png" group-title="香港",凤凰中文
 http://r.jdshipin.com/cCCzW
 #EXTINF:-1,tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://epg.112114.xyz/logo/凤凰资讯.png" group-title="香港",凤凰资讯
 http://r.jdshipin.com/0Rp07
-#EXTINF:-1,tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://epg.112114.xyz/logo/凤凰香港.png" group-title="香港",凤凰香港
-http://r.jdshipin.com/yDoTN
-#EXTINF:-1,tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://epg.112114.xyz/logo/凤凰香港.png" group-title="香港",凤凰香港
-http://r.jdshipin.com/NfC0f
-#EXTINF:-1,tvg-id="斗鱼4K影院" tvg-name="斗鱼4K影院" tvg-logo="https://epg.112114.xyz/logo/斗鱼4K影院.png" group-title="其他",斗鱼4K影院
-http://epg.112114.xyz/douyu/9249162
 #EXTINF:-1,tvg-id="西藏卫视" tvg-name="西藏卫视" tvg-logo="https://epg.112114.xyz/logo/西藏卫视.png" group-title="卫视",西藏卫视
 http://php.jdshipin.com:8880/xztv.php?id=ws
 #EXTINF:-1,tvg-id="海峡卫视" tvg-name="海峡卫视" tvg-logo="https://epg.112114.xyz/logo/海峡卫视.png" group-title="卫视",海峡卫视
@@ -24,23 +24,21 @@ http://php.jdshipin.com:8880/xztv.php?id=zy
 #EXTINF:-1,tvg-id="湖南电视剧" tvg-name="湖南电视剧" tvg-logo="https://epg.112114.xyz/logo/湖南电视剧.png" group-title="湖南",湖南电视剧
 http://php.jdshipin.com:8880/iptv.php?id=hndsj
 #EXTINF:-1,tvg-id="峨眉电影" tvg-name="峨眉电影" tvg-logo="https://epg.112114.xyz/logo/峨眉电影.png" group-title="其他",峨眉电影
-http://r.jdshipin.com/vFgDS
-#EXTINF:-1,tvg-id="峨眉电影" tvg-name="峨眉电影" tvg-logo="https://epg.112114.xyz/logo/峨眉电影.png" group-title="其他",峨眉电影
 http://r.jdshipin.com/XIjta
+#EXTINF:-1,tvg-id="峨眉电影" tvg-name="峨眉电影" tvg-logo="https://epg.112114.xyz/logo/峨眉电影.png" group-title="其他",峨眉电影
+http://r.jdshipin.com/vFgDS
 #EXTINF:-1,tvg-id="4K超高清电影" tvg-name="4K超高清电影" tvg-logo="https://epg.112114.xyz/logo/4K电影.png" group-title="其他",4K超高清电影
 http://r.jdshipin.com/5DWJk
-#EXTINF:-1,tvg-id="北京IPTV淘电影" tvg-name="北京IPTV淘电影" tvg-logo="https://epg.112114.xyz/logo/北京IPTV淘电影.png" group-title="北京",北京IPTV淘电影
-http://r.jdshipin.com/OeHMu
-#EXTINF:-1,tvg-id="广东珠江" tvg-name="广东珠江" tvg-logo="https://epg.112114.xyz/logo/广东珠江.png" group-title="广东",广东珠江
-http://r.jdshipin.com/sE5vO
-#EXTINF:-1,tvg-id="广州影视" tvg-name="广州影视" tvg-logo="https://epg.112114.xyz/logo/广州影视.png" group-title="其他",广州影视
-http://r.jdshipin.com/TcKr2
 #EXTINF:-1,tvg-id="4K超高清电影" tvg-name="4K超高清电影" tvg-logo="https://epg.112114.xyz/logo/4K电影.png" group-title="其他",4K超高清电影
 http://r.jdshipin.com/B7sfp
-#EXTINF:-1,tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://epg.112114.xyz/logo/广东体育.png" group-title="广东",广东体育
-http://r.jdshipin.com/LiYdg
+#EXTINF:-1,tvg-id="北京IPTV淘电影" tvg-name="北京IPTV淘电影" tvg-logo="https://epg.112114.xyz/logo/北京IPTV淘电影.png" group-title="北京",北京IPTV淘电影
+http://r.jdshipin.com/OeHMu
 #EXTINF:-1,tvg-id="M1905电影网" tvg-name="M1905电影网" tvg-logo="https://epg.112114.xyz/logo/M电影网.png" group-title="其他",M1905电影网
 http://php.jdshipin.com:8880/1905.php?id=1905dy
+#EXTINF:-1,tvg-id="广东珠江" tvg-name="广东珠江" tvg-logo="https://epg.112114.xyz/logo/广东珠江.png" group-title="广东",广东珠江
+http://r.jdshipin.com/sE5vO
+#EXTINF:-1,tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://epg.112114.xyz/logo/广东体育.png" group-title="广东",广东体育
+http://r.jdshipin.com/LiYdg
 #EXTINF:-1,tvg-id="广州综合" tvg-name="广州综合" tvg-logo="https://epg.112114.xyz/logo/广州综合.png" group-title="其他",广州综合
 http://r.jdshipin.com/iR6Gq
 #EXTINF:-1,tvg-id="广州综合" tvg-name="广州综合" tvg-logo="https://epg.112114.xyz/logo/广州综合.png" group-title="其他",广州综合
@@ -49,50 +47,50 @@ http://php.jdshipin.com:8880/iptv.php?id=gzzh
 http://r.jdshipin.com/nWaZO
 #EXTINF:-1,tvg-id="广州南国都市" tvg-name="广州南国都市" tvg-logo="https://epg.112114.xyz/logo/广州南国都市.png" group-title="其他",广州南国都市
 http://php.jdshipin.com:8880/gztv.php?id=shenghuo
+#EXTINF:-1,tvg-id="广州影视" tvg-name="广州影视" tvg-logo="https://epg.112114.xyz/logo/广州影视.png" group-title="其他",广州影视
+http://r.jdshipin.com/TcKr2
 #EXTINF:-1,tvg-id="西藏影视文化" tvg-name="西藏影视文化" tvg-logo="https://epg.112114.xyz/logo/西藏影视文化.png" group-title="其他",西藏影视文化
 http://php.jdshipin.com:8880/xztv.php?id=ys
 #EXTINF:-1,tvg-id="湖北影视" tvg-name="湖北影视" tvg-logo="https://epg.112114.xyz/logo/湖北影视.png" group-title="湖北",湖北影视
 http://cdn.jdshipin.com:8880/hbgd.php?id=hbys_1000
-#EXTINF:-1,tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://epg.112114.xyz/logo/翡翠台.png" group-title="港澳台",翡翠台
-http://r.jdshipin.com/qClQf
+#EXTINF:-1,tvg-id="无线新闻" tvg-name="无线新闻" tvg-logo="https://epg.112114.xyz/logo/无线新闻.png" group-title="港澳台",无线新闻
+http://r.jdshipin.com/CkuBd
 #EXTINF:-1,tvg-id="无线财经" tvg-name="无线财经" tvg-logo="https://epg.112114.xyz/logo/无线财经.png" group-title="港澳台",无线财经
 http://r.jdshipin.com/jUx8K
 #EXTINF:-1,tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://epg.112114.xyz/logo/翡翠台.png" group-title="港澳台",翡翠台
-http://r.jdshipin.com/GeWKr?id=fct720
+http://r.jdshipin.com/qClQf
 #EXTINF:-1,tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://epg.112114.xyz/logo/翡翠台.png" group-title="港澳台",翡翠台
 http://r.jdshipin.com/qrfbg
 #EXTINF:-1,tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://epg.112114.xyz/logo/翡翠台.png" group-title="港澳台",翡翠台
 http://r.jdshipin.com/GeWKr?id=fct406
-#EXTINF:-1,tvg-id="无线新闻" tvg-name="无线新闻" tvg-logo="https://epg.112114.xyz/logo/无线新闻.png" group-title="港澳台",无线新闻
-http://r.jdshipin.com/CkuBd
-#EXTINF:-1,tvg-id="J2" tvg-name="J2" tvg-logo="https://epg.112114.xyz/logo/J2.png" group-title="其他",J2
-http://r.jdshipin.com/Nr5jq
-#EXTINF:-1,tvg-id="VIUTV" tvg-name="VIUTV" tvg-logo="https://epg.112114.xyz/logo/VIUTV.png" group-title="其他",VIUTV
-http://r.jdshipin.com/vSJvl
-#EXTINF:-1,tvg-id="J2" tvg-name="J2" tvg-logo="https://epg.112114.xyz/logo/J2.png" group-title="其他",J2
-http://r.jdshipin.com/ndGgS
+#EXTINF:-1,tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://epg.112114.xyz/logo/翡翠台.png" group-title="港澳台",翡翠台
+http://r.jdshipin.com/GeWKr?id=fct720
 #EXTINF:-1,tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://epg.112114.xyz/logo/翡翠台.png" group-title="港澳台",华丽翡翠台
 http://r.jdshipin.com/thuYX
 #EXTINF:-1,tvg-id="TVB星河" tvg-name="TVB星河" tvg-logo="https://epg.112114.xyz/logo/TVB星河.png" group-title="港澳台",TVB星河
 http://r.jdshipin.com/sXuuD
-#EXTINF:-1,tvg-id="明珠台" tvg-name="明珠台" tvg-logo="https://epg.112114.xyz/logo/明珠台.png" group-title="港澳台",明珠台
-http://php.jdshipin.com:8880/iptv.php?id=mzt
 #EXTINF:-1,tvg-id="TVB星河" tvg-name="TVB星河" tvg-logo="https://epg.112114.xyz/logo/TVB星河.png" group-title="港澳台",TVB星河
 http://r.jdshipin.com/Voac4
 #EXTINF:-1,tvg-id="明珠台" tvg-name="明珠台" tvg-logo="https://epg.112114.xyz/logo/明珠台.png" group-title="港澳台",明珠台
 http://r.jdshipin.com/GeWKr?id=mzt720
-#EXTINF:-1,tvg-id="澳门莲花" tvg-name="澳门莲花" tvg-logo="https://epg.112114.xyz/logo/澳门莲花.png" group-title="其他",澳门莲花
-http://php.jdshipin.com:8880/amlh.php
+#EXTINF:-1,tvg-id="明珠台" tvg-name="明珠台" tvg-logo="https://epg.112114.xyz/logo/明珠台.png" group-title="港澳台",明珠台
+http://php.jdshipin.com:8880/iptv.php?id=mzt
+#EXTINF:-1,tvg-id="J2" tvg-name="J2" tvg-logo="https://epg.112114.xyz/logo/J2.png" group-title="其他",J2
+http://r.jdshipin.com/Nr5jq
+#EXTINF:-1,tvg-id="J2" tvg-name="J2" tvg-logo="https://epg.112114.xyz/logo/J2.png" group-title="其他",J2
+http://r.jdshipin.com/ndGgS
+#EXTINF:-1,tvg-id="VIUTV" tvg-name="VIUTV" tvg-logo="https://epg.112114.xyz/logo/VIUTV.png" group-title="其他",VIUTV
+http://r.jdshipin.com/vSJvl
 #EXTINF:-1,tvg-id="澳视澳门" tvg-name="澳视澳门" tvg-logo="https://epg.112114.xyz/logo/澳视澳门.png" group-title="其他",澳视澳门
 http://r.jdshipin.com/n2YZI
+#EXTINF:-1,tvg-id="澳门莲花" tvg-name="澳门莲花" tvg-logo="https://epg.112114.xyz/logo/澳门莲花.png" group-title="其他",澳门莲花
+http://php.jdshipin.com:8880/amlh.php
 #EXTINF:-1,tvg-id="好莱坞电影台" tvg-name="好莱坞电影台" tvg-logo="https://epg.112114.xyz/logo/好莱坞电影台.png" group-title="其他",好莱坞电影
 http://r.jdshipin.com/QFhCq
 #EXTINF:-1,tvg-id="北京IPTV4K" tvg-name="北京IPTV4K" tvg-logo="https://epg.112114.xyz/logo/北京IPTV4K.png" group-title="北京",北京IPTV4K
 http://php.jdshipin.com:8880/iptv.php?id=bj4k
 #EXTINF:-1,tvg-id="广东4K超高清" tvg-name="广东4K超高清" tvg-logo="https://epg.112114.xyz/logo/广东4K.png" group-title="广东",广东4K超高清
 http://php.jdshipin.com:8880/iptv.php?id=gd4k
-#EXTINF:-1,tvg-id="百视通4K测试" tvg-name="百视通4K测试" tvg-logo="https://epg.112114.xyz/logo/百视通4K测试.png" group-title="其他",百视通4K测试
-http://php.jdshipin.com:8880/iptv.php?id=bst4k
 #EXTINF:-1,tvg-id="广州南国都市4K" tvg-name="广州南国都市4K" tvg-logo="https://epg.112114.xyz/logo/广州南国都市4K.png" group-title="其他",广州南国都市4K
 http://php.jdshipin.com:8880/iptv.php?id=ngds4k
 #EXTINF:-1,tvg-id="绚影4K" tvg-name="绚影4K" tvg-logo="https://epg.112114.xyz/logo/绚影4K.png" group-title="其他",绚影4K
@@ -101,6 +99,8 @@ http://php.jdshipin.com:8880/iptv.php?id=xy4k
 http://php.jdshipin.com:8880/iptv.php?id=hn4k
 #EXTINF:-1,tvg-id="云南4K" tvg-name="云南4K" tvg-logo="https://epg.112114.xyz/logo/云南4K.png" group-title="云南",云南4K
 http://php.jdshipin.com:8880/iptv.php?id=yn4k
+#EXTINF:-1,tvg-id="百视通4K测试" tvg-name="百视通4K测试" tvg-logo="https://epg.112114.xyz/logo/百视通4K测试.png" group-title="其他",百视通4K测试
+http://php.jdshipin.com:8880/iptv.php?id=bst4k
 #EXTINF:-1,tvg-id="百视通4K儿童" tvg-name="百视通4K儿童" tvg-logo="https://epg.112114.xyz/logo/百视通4K儿童.png" group-title="其他",百视通4K儿童
 http://php.jdshipin.com:8880/iptv.php?id=bst4ket
 #EXTINF:-1,tvg-id="百视通4K电影" tvg-name="百视通4K电影" tvg-logo="https://epg.112114.xyz/logo/百视通4K电影.png" group-title="其他",百视通4K电影

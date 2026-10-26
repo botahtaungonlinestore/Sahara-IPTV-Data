@@ -1,39 +1,31 @@
 #EXTM3U
-#EXTINF:-1,TVK 2 (720p)
-https://live.kh.malimarcdn.com/live/tvk2.stream/playlist.m3u8
-#EXTINF:-1,TVK (720p)
-https://live.kh.malimarcdn.com/live/tvk.stream/playlist.m3u8
-#EXTINF:-1,CTV 9 (1080p)
-http://43.252.18.195:5080/live/streams/ctv9_hd_playlist.m3u8
-#EXTINF:-1,Fresh News
-http://streaming-android.freshnewsasia.tv:1935/live/ngrp:myStream_all/playlist.m3u8
-#EXTINF:-1,SEATV (1080p)
-https://seatv.netlinkbroadcaster.com/hls/test.m3u8
-#EXTINF:-1,Hang Meas HDTV (720p)
-http://clive.malisresidences.com:1935/hm_hdtv/_definst_/smil:hmhdt12356.smil/playlist.m3u8
-#EXTINF:-1,Hang Meas HDTV
-http://clive.malisresidences.com:1935/hmgo/_definst_/smil:hmgo.smil/playlist.m3u8
-#EXTINF:-1,Hang Meas HDTV
-http://clive.malisresidences.com:1935/hmcine/_definst_/smil:hmcine.smil/playlist.m3u8
-#EXTINF:-1,Hang Meas HDTV
-http://clive.malisresidences.com:1935/hmplay/_definst_/smil:hmplay.smil/playlist.m3u8
-#EXTINF:-1,EAC News TV
-https://live.eac-news.com/LiveApp/streams/eacnews.m3u8
-#EXTINF:-1,Hang Meas HDTV
-http://clive.malisresidences.com:1935/hmnow/_definst_/smil:hmnow.smil/playlist.m3u8
-#EXTINF:-1,ARDB TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ARDBTV.kh@SD",ARDB TV (1080p) [Not 24/7]
 https://ardbtv.ardb.com.kh:8443/tv-live/tv-online.m3u8
-#EXTINF:-1,CTV 9
-https://stream.pdtvhd.com/live/streams/ctv9_hd_playlist.m3u8
-#EXTINF:-1,Town TV
-https://stream.pdtvhd.com/LiveApp/streams/Townfullhd.m3u8
-#EXTINF:-1,WIKI TV (720p)
-https://stream.wikitv.asia/live/ngrp:myStream_all/playlist.m3u8
-#EXTINF:-1,Sangkem TV
-https://live.sangkemtv.com/memfs/sangkem.m3u8
-#EXTINF:-1,EBC General Education (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CTV9.kh@SD",CTV 9 (1080p)
+http://43.252.18.195:5080/live/streams/ctv9_hd_playlist.m3u8
+#EXTINF:-1 tvg-id="EACNewsTV.kh@SD",EAC News TV
+https://live.eac-news.com/LiveApp/streams/eacnews.m3u8
+#EXTINF:-1 tvg-id="EBCGeneralEducation.kh@SD",EBC General Education (720p) [Not 24/7]
 https://iptv.ebc.edu.kh/iptv/channel/1.m3u8
-#EXTINF:-1,Bayon TV
-https://live-evg2.tv360.metfone.com.kh/livebayontv/bayontvhd.stream/playlist.m3u8
-#EXTINF:-1,MSJ TV
+#EXTINF:-1 tvg-id="FreshNews.kh@SD",Fresh News
+http://streaming-android.freshnewsasia.tv:1935/live/ngrp:myStream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="MSJTV.kh@SD",MSJ TV
 http://119.15.85.85:5080/LiveApp/streams/MSJTV_hd_playlist.m3u8
+#EXTINF:-1 tvg-id="",Netlink TV (720p)
+https://netlink.netlinkbroadcaster.com/hls/test.m3u8
+#EXTINF:-1 tvg-id="OneTVESchoolCambodia.kh@SD",One TV E-School Cambodia (1080p)
+http://49.156.33.114:5080/live/streams/elearning.playlist.m3u8
+#EXTINF:-1 tvg-id="SangkemTV.kh@SD",Sangkem TV
+https://live.sangkemtv.com/memfs/sangkem.m3u8
+#EXTINF:-1 tvg-id="SEATV.kh@SD",SEATV (1080p)
+https://seatv.netlinkbroadcaster.com/hls/test.m3u8
+#EXTINF:-1 tvg-id="TVK.kh@SD",TVK (720p)
+https://live.kh.malimarcdn.com/live/tvk.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TVK2.kh@SD",TVK 2 (720p)
+https://live.kh.malimarcdn.com/live/tvk2.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="WikiTV.kh@SD",WIKI TV (720p)
+https://stream.wikitv.asia/live/ngrp:myStream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="CTV9.kh@SD",CTV 9
+https://stream.pdtvhd.com/live/streams/ctv9_hd_playlist.m3u8
+#EXTINF:-1 tvg-id="TownTV.kh@SD",Town TV
+https://stream.pdtvhd.com/LiveApp/streams/Townfullhd.m3u8

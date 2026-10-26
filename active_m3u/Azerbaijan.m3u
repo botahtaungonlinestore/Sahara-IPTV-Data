@@ -1,27 +1,23 @@
 #EXTM3U
-#EXTINF:-1,Azstar TV HD (1080p)
-https://live.livestreamtv.ca/azstar/amlst:azstar/playlist.m3u8
-#EXTINF:-1,Baku.TV
-https://rtmp.baku.tv/hls/bakutv.m3u8
-#EXTINF:-1,APA Tv (1080p)
+#EXTINF:-1 tvg-id="APATv.az@SD",APA Tv (1080p)
 http://stream.apa.tv/apastream/index.m3u8
-#EXTINF:-1,Ayaz TV (720p)
+#EXTINF:-1 tvg-id="AyazTV.az@SD",Ayaz TV (720p)
 https://janya-ayaztv.vgcdn.net/ptnr-WebApp/title-Ayaz_TV/v1/vglive-sk-934820/main.m3u8
-#EXTINF:-1,Az TV
-http://109.205.166.68/server124/aztv/index3.m3u8?e=1676581573&st=AzGSZjk1DpXY1SLc1m4OvA
-#EXTINF:-1,EL TV (260p) [Not 24/7]
-http://85.132.53.162:1935/live/eltv/playlist.m3u8
-#EXTINF:-1,Kapaz TV
-http://85.132.78.122:8050/hls/stream/index.m3u8
-#EXTINF:-1,KN Music TV
-https://cdn4.yayin.com.tr/kntv/tracks-v1a1/mono.m3u8
-#EXTINF:-1,Vilayet TV
-https://nl.livekadeh.com/hls2/vilayet.m3u8
-#EXTINF:-1,Xezer TV (720p)
-https://www.xezerxeber.az/stream/index.m3u8
-#EXTINF:-1,Azad TV (1080p)
-https://lives.atv.az:5443/ATV_TV_STREAM/streams/atvcanli.m3u8
-#EXTINF:-1,Kanal S
-https://lives.atv.az:5443/KANAL-S/streams/kanals.m3u8
-#EXTINF:-1,Az TV
+#EXTINF:-1 tvg-id="AzTV.az@SD",Az TV
 https://stream8.cinerama.uz/1455/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="AzStarTV.ca@SD",Azstar TV HD (1080p)
+https://live.livestreamtv.ca/azstar/amlst:azstar/playlist.m3u8
+#EXTINF:-1 tvg-id="BakuTV.az@SD",Baku.TV
+https://rtmp.baku.tv/hls/bakutv.m3u8
+#EXTINF:-1 tvg-id="ELTV.az@SD",EL TV (260p) [Not 24/7]
+http://85.132.53.162:1935/live/eltv/playlist.m3u8
+#EXTINF:-1 tvg-id="KanalS.az@SD",Kanal S
+https://lives.atv.az:5443/KANAL-S/streams/kanals.m3u8
+#EXTINF:-1 tvg-id="KapazTV.az@SD",Kapaz TV
+http://85.132.78.122:8050/hls/stream/index.m3u8
+#EXTINF:-1 tvg-id="KNMusicTV.az@SD",KN Music TV
+https://cdn4.yayin.com.tr/kntv/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="VilayetTV.az@SD",Vilayet TV
+https://nl.livekadeh.com/hls2/vilayet.m3u8
+#EXTINF:-1 tvg-id="AzadTV.az@SD",Azad TV (1080p)
+https://lives.atv.az:5443/ATV_TV_STREAM/streams/atvcanli.m3u8

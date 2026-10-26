@@ -1,13 +1,5 @@
 #EXTM3U
-#EXTINF:-1,KassouaTV (720p)
-https://playtv4k.live/live/kassouatv/index.m3u8
-#EXTINF:-1,ADO TV (720p)
-https://strhls.streamakaci.tv/ortb/ortb2-multi/playlist.m3u8
-#EXTINF:-1,ORTB TV (1080i)
-https://strhls.streamakaci.tv/ortb/ortb1-multi/playlist.m3u8
-#EXTINF:-1,Le Nouveau Manager TV
-https://lnmlive.com/live/lnmtv.m3u8
-#EXTINF:-1,Eden TV (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="EdenTV.bj@SD",Eden TV (540p) [Not 24/7]
 https://rtmp.edentv.bj/hls/stream.m3u8
-#EXTINF:-1,TVC Bénin (720p)
+#EXTINF:-1 tvg-id="TVCBenin.bj@SD",TVC Bénin (720p)
 https://live.tvcbenin.com/direct/729c37a1d3319ee21991227b1f84c687.sdp/playlist.m3u8
