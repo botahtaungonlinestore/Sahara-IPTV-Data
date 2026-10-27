@@ -81,3 +81,15 @@ https://mrtvott.com/cache/MRTV-NRC-HD/master.m3u8
 https://mrtvott.com/cache/MRTV-Ent-HD/master.m3u8
 #EXTINF:-1,MRTV Sports
 https://mrtvott.com/cache/MRTV-SPORT/master.m3u8
+#EXTINF:-1 tvg-name="Channel 7" tvg-logo="" group-title="Myanmar TV",Channel 7
+https://live.pyoneplay.com/live/01m2sr3kyn6bztz3xk02w3t7pn/index.m3u8
+#EXTINF:-1 tvg-name="MaharBawDi" tvg-logo="" group-title="Myanmar TV",MaharBawDi
+https://live.pyoneplay.com/live/01m2tfrqkdceydf6g6f48pdrmn/index.m3u8
+#EXTINF:-1 tvg-name="MRTV-4" tvg-logo="" group-title="Myanmar TV",MRTV-4
+https://live.pyoneplay.com/live/01m2sn12yc6v2enx392qj2ekqt/index.m3u8
+#EXTINF:-1 tvg-name="MRTV NRC" tvg-logo="" group-title="Myanmar TV",MRTV NRC
+https://mrtvott.com/feb805bcfa111efa090b79c62940b67e---/cache/MRTV-NRC-HD/m3u8/cache_MRTV-NRC-HD_m3u8_hls_m3u8_MRTV-NRC-HD-TS-M.m3u8
+#EXTINF:-1,MRTV Sports 
+https://mrtvott.com/cache/MRTV-SPORT/master.m3u8
+#EXTINF:-1,Myanmar International TV
+https://mrtvott.com/cache/MITV/master.m3u8
