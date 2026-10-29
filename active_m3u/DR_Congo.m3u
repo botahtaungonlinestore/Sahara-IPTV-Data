@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="EVITV.cd@SD",EVI TV (720p)
+https://mistserver.evi-tv.com/hls/evi_tv_live/index.m3u8

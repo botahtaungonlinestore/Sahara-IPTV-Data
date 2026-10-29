@@ -1,6 +1,10 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="16AnnieIncinta.de@IT",16 Anni e Incinta
+https://jmp2.uk/plu-60940a07d88ba90007b9cb71.m3u8
 #EXTINF:-1 tvg-id="",Affare Fatto
 https://jmp2.uk/plu-64ec5c6644fe100009d114ae.m3u8
+#EXTINF:-1 tvg-id="",Alice Nevers
+https://jmp2.uk/plu-66d9aa4315d2c60008d4ac40.m3u8
 #EXTINF:-1 tvg-id="Andromeda.us@Italy",Andromeda Italy (720p)
 https://jmp2.uk/plu-60802d37ee238e0007c94e64.m3u8
 #EXTINF:-1 tvg-id="",Automoto
@@ -47,6 +51,8 @@ https://jmp2.uk/plu-64ec5cf50f73a800081310a5.m3u8
 https://jmp2.uk/plu-6971fc07c945e6e4e5bc46bf.m3u8
 #EXTINF:-1 tvg-id="GeordieShore.de@IT",Geordie Shore
 https://jmp2.uk/plu-619263ee9541940007d20d60.m3u8
+#EXTINF:-1 tvg-id="",Gli Immortali | Van Damme vs Lundgren (720p)
+https://jmp2.uk/plu-6536608b4f123d000876b78b.m3u8
 #EXTINF:-1 tvg-id="",Gormiti
 https://jmp2.uk/plu-66a8c64814a2bb00084d09d6.m3u8
 #EXTINF:-1 tvg-id="HellsKitchen.us@UK",Hell's Kitchen (720p)

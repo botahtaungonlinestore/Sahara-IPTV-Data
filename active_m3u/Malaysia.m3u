@@ -2,20 +2,26 @@
 #EXTINF:-1 tvg-id="8TV.my@SD",8TV
 http://cdn6.163189.xyz/163189/8tv
 #EXTINF:-1 tvg-id="BeritaRTM.my@SD",Berita RTM [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:berita/playlist.m3u8?id=5
 #EXTINF:-1 tvg-id="CinemaWorld.my@SD",CinemaWorld (720p)
 https://cdn.qd.je/163189/cinemaworld
 #EXTINF:-1 tvg-id="MaahTV.my@SD",Maah TV (720p)
 https://hls.maahtv.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="Okey.my@SD",Okey [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:okey/playlist.m3u8?id=3
 #EXTINF:-1 tvg-id="RTMParlimenDewanNegara.my@SD",RTM Parlimen (Dewan Negara) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:negara/playlist.m3u8?id=8
 #EXTINF:-1 tvg-id="RTMParlimenDewanRakyat.my@SD",RTM Parlimen (Dewan Rakyat) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:rakyat/playlist.m3u8?id=7
 #EXTINF:-1 tvg-id="TV1.my@SD",TV1 (1080p) [Geo-blocked]
 https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/manifest.mpd
 #EXTINF:-1 tvg-id="TV1.my@SD",TV1 [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1
 #EXTINF:-1 tvg-id="TV6.my@SD",TV6 [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/playlist.m3u8?id=6

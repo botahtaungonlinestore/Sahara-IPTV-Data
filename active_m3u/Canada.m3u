@@ -32,6 +32,7 @@ https://amagi-streams.akamaized.net/hls/live/2110962/cbcexplore/master.m3u8
 #EXTINF:-1 tvg-id="",CBC News Toronto (1080p) [Geo-blocked]
 https://amagi-streams.akamaized.net/hls/live/2110961/cbctoronto/master.m3u8
 #EXTINF:-1 tvg-id="",CFJC Kamloops BC (720p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://cfjctoday.com/
 https://videostream.jpbgdigital.com/CFJCTV.m3u8
 #EXTINF:-1 tvg-id="CityNewsCalgary.ca@SD",CityNews Calgary (720p)
 https://citynewsregional.akamaized.net/hls/live/1024053/Regional_Live_8/master.m3u8
@@ -42,6 +43,7 @@ https://citynewsregional.akamaized.net/hls/live/1024052/Regional_Live_7/master.m
 #EXTINF:-1 tvg-id="CityNewsVancouver.ca@SD",CityNews Vancouver (720p)
 https://citynewsregional.akamaized.net/hls/live/1024054/Regional_Live_9/master.m3u8
 #EXTINF:-1 tvg-id="",CKPG Prince George BC (720p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://ckpgtoday.ca/
 https://videostream.jpbgdigital.com/CKPGTV.m3u8
 #EXTINF:-1 tvg-id="DesheBidesheTV.ca@SD",DesheBideshe TV
 https://dbcanada.sonarbanglatv.com/deshebideshe/dbtv/index.m3u8
@@ -103,6 +105,8 @@ http://stream.pardesitv.online/pardesi/index.m3u8
 http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="PrimeAsiaTV.ca@SD",Prime Asia TV (1080p)
 http://primeasia.selfip.net/Samsung/index.m3u8
+#EXTINF:-1 tvg-id="ProbashiTVNews.ca@SD",Probashi TV News (1080p)
+http://158.69.24.53:8080/probashi_tv/index.m3u8
 #EXTINF:-1 tvg-id="PTCPunjabiCanada.ca@SD",PTC Punjabi Canada (1080p)
 https://stream.ottlive.co.in/ptccanada/index.m3u8
 #EXTINF:-1 tvg-id="QuoVadisTV.ca@SD",Quo Vadis TV (720p)

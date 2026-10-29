@@ -193,8 +193,6 @@ https://pb-gnznqq6l66wre.akamaized.net/Deal_or_No_Deal.m3u8
 https://pb-2x4r5igjtn1o7.akamaized.net/v1/aenetworks_dealzone_1/samsungheadend_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 tvg-id="",Death Valley Days (1080p)
 https://d49k4i5y48mxv.cloudfront.net/SONO66.m3u8
-#EXTINF:-1 tvg-id="Degrassi.us@US",Degrassi (720p)
-https://d3537vnymvfque.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-id="",Dhar Mann TV (1080p)
 https://d3p03mkvhnk6ll.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-id="",Dinos 24/7 (1080p)
@@ -459,8 +457,6 @@ https://pb-we3ltka9xobj6.akamaized.net/master.m3u8
 https://d265y4sk8257lt.cloudfront.net/nh.m3u8
 #EXTINF:-1 tvg-id="NinjaKidzTV.us@SD",Ninja Kidz (720p)
 https://d3868b4ny0rgdf.cloudfront.net/playlist.m3u8
-#EXTINF:-1 tvg-id="Nosey.us@US",Nosey (720p)
-https://wurlnosey.global.transmit.live/hls/678a8e220d785cafbf154147/v1/nosey_2/samsung_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 tvg-id="",Noticias Telemundo Ahora (1080p) [Geo-blocked]
 https://pb-21qh1uz4mmkrs.akamaized.net/master.m3u8
 #EXTINF:-1 tvg-id="",Novelas Turcas (1080p)
@@ -575,8 +571,6 @@ https://d2awq8rdysdj3u.cloudfront.net/playlist.m3u8
 https://dtwdcugadwtnw.cloudfront.net/master.m3u8
 #EXTINF:-1 tvg-id="SportsGrid.us@SD",SportsGrid (1080p)
 https://sportsgrid-samsungus.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="Stadium.us@SD",Stadium (720p)
-https://wurl120sports.global.transmit.live/hls/679a907dce42a042c23ace37/v1/stadium_gracenote/samsung_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 tvg-id="",Storage Wars LA (720p) [Geo-blocked]
 https://pb-312sgyls2cddh.akamaized.net/v1/aenetworks_storagewarsla_1/samsungheadend_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 tvg-id="",Storm Vibes (1080p)

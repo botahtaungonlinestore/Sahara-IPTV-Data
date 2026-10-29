@@ -5,15 +5,23 @@ https://www.canal10.com.ni/envivo
 http://138.117.4.70:8075/channel9/playlist.m3u8
 #EXTINF:-1 tvg-id="EscuchameRadioTV.ni@SD",Escúchame Radio TV (720p) [Not 24/7]
 https://stmv1.transmissaodigital.com/pedro9800/pedro9800/playlist.m3u8
+#EXTINF:-1 tvg-id="MegaBox.ni@SD",MegaBox (720p) [Not 24/7]
+https://hdbox.chunklistv.com/live?stream=megabox
 #EXTINF:-1 tvg-id="OlamMetroTV.ni@SD",Olam Metro TV (720p)
 https://netzerstreaming.com:4433/hls/olammetro/index.m3u8
 #EXTINF:-1 tvg-id="TN8.ni@SD",TN8 (1080p)
 https://streamingcws30.com/tn8/videotn8/playlist.m3u8
 #EXTINF:-1 tvg-id="TN8.ni@SD",TN8 (576p)
 http://190.61.101.11:7050/play/a07j/index.m3u8
+#EXTINF:-1 tvg-id="TV45.ni@SD",TV45-3ABN Nicaragua (720p) [Not 24/7]
+https://hdbox.chunklistv.com/live?stream=3abn-nicaragua
+#EXTINF:-1 tvg-id="TVONENicaragua.ni@SD",TVONE Nicaragua (720p) [Not 24/7]
+https://hdbox.chunklistv.com/live?stream=tvone
 #EXTINF:-1 tvg-id="WTVCanal20.ni@SD",WTV Canal 20 (1080p)
 https://cootv.cootel.com.ni:8095/Canal40_WTV/playlist.m3u8
 #EXTINF:-1 tvg-id="WTVCanal20.ni@SD",WTV Canal 20 (720p)
 https://cloudvideo.servers10.com:8081/8130/index.m3u8
 #EXTINF:-1 tvg-id="Canal10.ni@SD",Canal 10
 https://ddycmnicl95kp.cloudfront.net/live/ja5k3h31wv9r/master.m3u8
+#EXTINF:-1 tvg-id="Canal12.ni@SD",Canal 12 (576p)
+http://45.228.234.9:8000/play/a06s/index.m3u8

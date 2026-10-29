@@ -1,6 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="CMCTV.hr@SD",CMC TV (1080p)
 https://stream.cmctv.hr:49998/cmc/live.m3u8
+#EXTINF:-1 tvg-id="DiadoraTV.hr@SD",Diadora TV
+https://diadoratv.stream/live/diadora/playlist.m3u8
 #EXTINF:-1 tvg-id="KlapeiTambureTV.hr@SD",Klape i Tambure TV (1080p)
 https://stream.cmctv.hr:49998/kit/live.m3u8
 #EXTINF:-1 tvg-id="NationalGeographic.hr@SD",National Geographic (1080p)
@@ -9,6 +11,8 @@ http://176.61.157.250/NationalGeographic/index.m3u8
 http://176.61.157.250/Nickelodeon/index.m3u8
 #EXTINF:-1 tvg-id="NovaTV.hr@SD",Nova TV (1080p)
 http://176.61.157.250/NovaTV/index.m3u8
+#EXTINF:-1 tvg-id="RadioTelevizijaBanovina.hr@SD",Radio Televizija Banovina (1080p) [Not 24/7]
+https://pool.alter-media.hr:1936/live/myStream/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="SBTV.hr@SD",SBTV (1080p) [Not 24/7]
 https://live.leveex.hr/hls/live.m3u8
 #EXTINF:-1 tvg-id="ShiftTV.hr@SD",Shift TV (1080p)

@@ -1,0 +1,19 @@
+{
+  "application": "SAHARA IPTV Playlist Builder",
+  "version": "3.0.0",
+  "stats": {
+    "source_files_found": 371,
+    "playlist_categories": 323,
+    "channel_entries_collected": 30432,
+    "unique_urls_checked": 30049,
+    "active_urls": 20014,
+    "inactive_urls": 10035,
+    "channel_entries_saved": 20084,
+    "source_errors": 36
+  },
+  "link_checks": {
+    "reachable": 20014,
+    "unreachable": 10035
+  },
+  "note": "HTTP reachability does not guarantee that a stream will play in every IPTV app or region."
+}

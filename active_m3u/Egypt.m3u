@@ -29,3 +29,5 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-2/754931856515075b0a
 https://ml-pull-hwc.myco.io/MixTV/hls/index.m3u8
 #EXTINF:-1 tvg-id="WatanTV.eg@SD",Watan TV (1080p)
 https://rp.tactivemedia.com/watantv_source/live/playlist.m3u8
+#EXTINF:-1 tvg-id="HyaTV.eg@SD",Hya TV (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=187

@@ -63,8 +63,6 @@ http://181.78.17.228:8081/RCN-HD/index.m3u8
 https://stmv2.voxtvhd.com.br/telefamilia/telefamilia/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalTV3.co@SD",Canal TV3 (720p) [Not 24/7]
 https://streaming.telenetdigital.net.co:8086/canal3tv/stream.m3u8
-#EXTINF:-1 tvg-id="CanalWomtv.co@SD",Canal Womtv (720p)
-https://live.amelbatv.co:81/womtvlive/index.m3u8
 #EXTINF:-1 tvg-id="CanicaTV.co@SD",Canica TV (240p)
 https://stmv4.voxtvhd.com.br/canicatv/canicatv/playlist.m3u8
 #EXTINF:-1 tvg-id="CaracolHD2.co@SD",Caracol HD2 (1080p)
@@ -79,6 +77,10 @@ http://138.121.15.230:9002/CITY-TV/index.m3u8
 https://cdn1.cmbcolombia.tv/bethesda/video.m3u8
 #EXTINF:-1 tvg-id="CMBTelevision.co@SD",CMB Television (1080p)
 https://hls-m9hrfayq-livepush.akamaized.net/live_cdn/nsxlDfnVmUyEy/eme2QCj5oX02cY/index.m3u8
+#EXTINF:-1 tvg-id="CNCBugavision.co@SD",CNC Bugavisión (720p)
+https://movil.ejeserver.com/live/cncbuga.m3u8
+#EXTINF:-1 tvg-id="CNCBugavision.co@SD",CNC Bugavisión (720p)
+https://video.ejeserver.com/live/cncbuga.m3u8
 #EXTINF:-1 tvg-id="CNCPereira.co@SD",CNC Pereira (720p)
 https://cloudvideo.servers10.com:8081/latinchaneltv/index.m3u8
 #EXTINF:-1 tvg-id="CNCSantanderdeQuilichao.co@SD",CNC Santander de Quilichao (480p)
@@ -99,8 +101,6 @@ https://stmv3.voxtvhd.com.br/conex2/conex2/playlist.m3u8
 https://movil.ejeserver.com/live/elmundodelcampo.m3u8
 #EXTINF:-1 tvg-id="EmisoraComunitaria1041FM.co@SD",Emisora Comunitaria 104.1 FM
 https://104florencia.co/wp-admin/admin-ajax.php?action=frp_hls_proxy&url=https://streamyes.alsolnet.com/comunitariafm/live/playlist.m3u8
-#EXTINF:-1 tvg-id="FiestaTV.co@SD",Fiesta TV
-https://panelvideo1.intermediahost.co:3286/live/ruzfpkqklive.m3u8
 #EXTINF:-1 tvg-id="FrecuenciaFTV.co@SD",Frecuencia F TV (1080p)
 https://tv.frecuenciaf.com/live/envivo_1080p4000kbs/index.m3u8
 #EXTINF:-1 tvg-id="HeliconiaRadioTV.co@SD",Heliconia Radio TV (720p)
@@ -135,6 +135,8 @@ http://170.238.200.199/nuestra-tele/index.m3u8
 http://181.78.8.199:8000/play/a0a8/index.m3u8
 #EXTINF:-1 tvg-id="OasisTV.co@SD",Oasis TV (720p) [Not 24/7]
 https://5e85d90130e77.streamlock.net/6020/6020/playlist.m3u8
+#EXTINF:-1 tvg-id="PancheTelevision.co@SD",Panche Television
+https://vs20.live.opencaster.com/panche_3c70d368/index.m3u8
 #EXTINF:-1 tvg-id="ParrandaVallenata.co@SD",Parranda Vallenata (720p)
 https://backupmaxmedia.hvmultiplay.com/hls/stream3/parrandavallenata.m3u8
 #EXTINF:-1 tvg-id="RCNHD2.co@SD",RCN HD2 (1080p)
@@ -171,8 +173,6 @@ https://5ab772334c39c.streamlock.net/live-teleislas/teleislas/playlist.m3u8
 https://play.cdn.enetres.net/6E5C615AA5FF4123ACAF0DAB57B7B8DC021/022/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleQuindio.co@SD",TeleQuindio (1080p)
 https://live20.bozztv.com/akamaissh101/ssh101/telequindio/playlist.m3u8
-#EXTINF:-1 tvg-id="Telesangil.co@SD",Telesangil (720p)
-https://live20.bozztv.com/akamaissh101/ssh101/telesangil/playlist.m3u8
 #EXTINF:-1 tvg-id="TeveColombia.co@SD",TeveColombia (720p) [Not 24/7]
 https://cloud6.livescast.com:3900/live/tevecolombialive.m3u8
 #EXTINF:-1 tvg-id="TuUniversoTV.co@SD",Tu Universo TV (720p)
@@ -181,6 +181,8 @@ https://5bf8041cb3fed.streamlock.net/TUUNIVERSOTV/TUUNIVERSOTV/playlist.m3u8
 https://live.amelbatv.co:81/teleopita/index.fmp4.m3u8
 #EXTINF:-1 tvg-id="TVGolfoUraba.co@SD",TV Golfo Uraba
 https://stmv7.voxtvhd.com.br/golfo/golfo/playlist.m3u8
+#EXTINF:-1 tvg-id="TVGracia.co@SD",TVGracia
+https://vs20.live.opencaster.com/diego_57244803/index.m3u8
 #EXTINF:-1 tvg-id="UltraCasanareTV.co@SD",Ultra Casanare TV (1080p) [Not 24/7]
 https://eu1.servers10.com:8081/8072/index.m3u8
 #EXTINF:-1 tvg-id="UMCTV.co@SD",UMC TV (720p)
@@ -213,12 +215,6 @@ http://138.59.177.78:9999/play/a0a8/index.m3u8
 http://181.78.211.244:8005/play/a09u/index.m3u8
 #EXTINF:-1 tvg-id="RCNMas.co@SD",RCN Mas (1080p)
 http://45.226.205.96:48000/play/a0af/index.m3u8
-#EXTINF:-1 tvg-id="NTN24.co@SD",NTN24 (720p)
-http://181.78.12.119:16123/play/ch80/index.m3u8
-#EXTINF:-1 tvg-id="WinSports.co@SD",Win Sports (1080p)
-http://181.78.12.119:16123/play/ch18/index.m3u8
-#EXTINF:-1 tvg-id="WinPlusFutbol.co@SD",Win+ Futbol (1080p)
-http://181.78.12.119:16123/play/ch19/index.m3u8
 #EXTINF:-1 tvg-id="RCNNovelas.co@SD",RCN Novelas (480p)
 http://181.65.191.173:8069/play/a061
 #EXTINF:-1 tvg-id="NTN24.co@SD",NTN24 (720p)
@@ -277,8 +273,6 @@ http://200.115.96.61:9090/play/a0jk/index.m3u8
 http://45.173.231.22:8000/play/a009/index.m3u8
 #EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
 http://200.59.191.177:8000/play/a001/index.m3u8
-#EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
-http://190.110.96.238:8000/play/a0mu/index.m3u8
 #EXTINF:-1 tvg-id="CanalRCN.co@SD",Canal RCN (1080p)
 http://181.205.130.194:4000/play/a0dl
 #EXTINF:-1 tvg-id="CanalRCN.co@SD",Canal RCN (1080p)
@@ -341,8 +335,6 @@ http://138.94.3.106:8000/play/a06z
 http://190.109.2.92:8000/play/a05u/index.m3u8
 #EXTINF:-1 tvg-id="CaracolInternacional.co@SD",Caracol Internacional (1080p)
 http://132.255.210.69:8000/play/a049/index.m3u8
-#EXTINF:-1 tvg-id="Teleantioquia.co@SD",Teleantioquia (1080p)
-http://200.115.120.1:8000/play/ca246/index.m3u8
 #EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
 http://190.109.2.92:8000/play/a00q/index.m3u8
 #EXTINF:-1 tvg-id="CanalInstitucional.co@SD",Canal Institucional (1080p)
@@ -359,8 +351,6 @@ http://201.216.147.90:8729/play/a01v
 http://181.78.79.131:8000/play/a0sb
 #EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
 http://38.190.100.202:8000/play/a09v/index.m3u8
-#EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
-http://190.61.42.218:9000/play/a09n/index.m3u8
 #EXTINF:-1 tvg-id="RadiolaTV.co@SD",Radiola TV (1080p)
 http://158.172.217.18:8000/play/a01k/index.m3u8
 #EXTINF:-1 tvg-id="RCNMas.co@SD",RCN Mas (1080p)
@@ -374,10 +364,13 @@ https://barinaslive1.boldmss.com/RCN/RCN.isml/RCN.m3u8
 #EXTINF:-1 tvg-id="RCNMas.co@SD",RCN Mas (1080p)
 http://45.224.96.220:18000/play/a098/index.m3u8
 #EXTINF:-1 tvg-id="CaracolInternacional.co@SD",Caracol Internacional (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/154.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
 https://streaming.onnethn.com/CARACOL_INTERNACIONAL/playlist.m3u8
 #EXTINF:-1 tvg-id="RCNNovelas.co@SD",RCN Novelas (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/154.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
 https://streaming.onnethn.com/RCN_NOVELAS/playlist.m3u8
 #EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 http://45.173.12.70:8000/play/a0f9
 #EXTINF:-1 tvg-id="CaracolInternacional.co@SD",Caracol Internacional (1080p)
 http://45.238.141.222:8000/play/a0oo/index.m3u8
@@ -401,17 +394,15 @@ http://190.121.140.222:8081/CARACOL/index.m3u8
 https://barinaslive1.boldmss.com/CANAL1/CANAL1.isml/CANAL1.m3u8
 #EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
 http://179.60.224.196:8000/play/a0hw/index.m3u8
-#EXTINF:-1 tvg-id="RanchenatoTV.co@SD",Ranchenato TV (1080p)
-http://181.78.12.119:16123/play/ch15/index.m3u8
-#EXTINF:-1 tvg-id="EnlaceTelevision.co@SD",Enlace Television (1080p)
-http://181.78.12.119:16123/play/ch33/index.m3u8
 #EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
 http://181.79.87.131:8000/play/a0f0/index.m3u8
 #EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
 http://200.122.232.149:8000/play/a020/index.m3u8
-#EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
-http://181.78.12.119:16123/play/ch58/index.m3u8
 #EXTINF:-1 tvg-id="HogarTV.co@SD",Hogar TV (1080p)
 http://190.61.47.54:8000/play/a01n/index.m3u8
 #EXTINF:-1 tvg-id="TVAgro.co@SD",TVAgro (1080p)
 http://190.61.47.54:8000/play/a01k/index.m3u8
+#EXTINF:-1 tvg-id="Zoom.co@SD",Zoom
+http://181.78.79.131:8000/play/a0sg
+#EXTINF:-1 tvg-id="RCNNovelas.co@SD",RCN Novelas (480p)
+http://45.171.64.30:8800/play/a01z

@@ -31,8 +31,6 @@ https://live-evg8.tv360.bitel.com.pe/bitel/antenasurtv/playlist.m3u8
 https://video2.lhdserver.es/asiritv/live.m3u8
 #EXTINF:-1 tvg-id="ATV.pe@SD",ATV (1080p)
 http://190.93.224.42/ATV/index.m3u8
-#EXTINF:-1 tvg-id="ATV.pe@SD",ATV (720p)
-http://187.102.210.46/ATV/index.m3u8
 #EXTINF:-1 tvg-id="ATVSur.pe@SD",ATV Sur (1080p)
 http://190.93.224.42/ATV-SUR/index.m3u8
 #EXTINF:-1 tvg-id="ATVPlus.pe@SD",ATV+ (1080p)
@@ -41,6 +39,8 @@ http://45.171.108.253:8888/ATV/index.m3u8
 http://190.93.224.42/ATV-PLUS/index.m3u8
 #EXTINF:-1 tvg-id="AutenticaTelevision.pe@SD",Auténtica Televisión (720p) [Not 24/7]
 https://live.obslivestream.com/autenticatvmux/index.m3u8
+#EXTINF:-1 tvg-id="BellaAbanquinaTV.pe@SD",Bella Abanquina TV (720p)
+https://live-evg8.tv360.bitel.com.pe/bitel/bellaabanquinaSRT/playlist.m3u8
 #EXTINF:-1 tvg-id="BethelTV.pe@SD",Bethel TV (720p)
 https://alfa.betheltv.tv/srt/3_abr/playlist.m3u8
 #EXTINF:-1 tvg-id="BNBDigital.pe@SD",BNB Digital (720p)
@@ -95,8 +95,6 @@ https://luna-4-video.mediaserver.digital/exitosatv_233b-4b49-a726-5a451262/index
 http://187.102.210.46/EXITOSA/index.m3u8
 #EXTINF:-1 tvg-id="ForoTV.pe@SD",Foro TV
 https://mc.servidor.stream:19360/8274/8274.m3u8
-#EXTINF:-1 tvg-id="GeniosTV.pe@SD",Genios TV (1080p)
-https://sc3.wasidata.com/Genios2_1902/video.m3u8
 #EXTINF:-1 tvg-id="GlobalTV.pe@SD",Global TV (1080p)
 http://190.93.224.42/GLOBAL/index.m3u8
 #EXTINF:-1 tvg-id="GlobalTV.pe@SD",Global TV (720p)
@@ -111,8 +109,6 @@ https://cloudvideo.servers10.com:8081/impactotv/index.m3u8
 https://live-evg5.tv360.bitel.com.pe/bitel/imperialSRT/playlist.m3u8
 #EXTINF:-1 tvg-id="IntuitivaTV.pe@SD",Intuitiva TV (720p)
 https://video2.lhdserver.es/cableperu/live.m3u8
-#EXTINF:-1 tvg-id="JN19.pe@SD",JN19 (1080p) [Not 24/7]
-https://servilive.com:3028/live/jntv19live.m3u8
 #EXTINF:-1 tvg-id="JNETV.pe@SD",JNE TV (720p)
 https://lbgo.bozztv.com/ssh101/ssh101/jnetv/playlist.m3u8
 #EXTINF:-1 tvg-id="JusticiaTV.pe@SD",Justicia TV (1080p)
@@ -207,8 +203,6 @@ https://live-evg5.tv360.bitel.com.pe/bitel/qollasuyotv/playlist.m3u8
 https://live-evg5.tv360.bitel.com.pe/bitel/qosqo/playlist.m3u8
 #EXTINF:-1 tvg-id="QosqoTimes.pe@SD",Qosqo Times
 https://stmv2.srvif.com/qtelevision/qtelevision/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioChalaca.pe@SD",Radio Chalaca
-https://servilive.com:3414/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="RadioMaster.pe@HD",Radio Master (720p)
 https://videoserver.tmcreativos.com:19360/radiomaster/radiomaster.m3u8
 #EXTINF:-1 tvg-id="RadioOndaDigital.pe@SD",Radio Onda Digital (1080p)
@@ -225,8 +219,6 @@ https://live.obslivestream.com/tvoriente/index.m3u8
 https://live-evg10.tv360.bitel.com.pe/bitel/realtv/playlist.m3u8
 #EXTINF:-1 tvg-id="RegionTVCallao.pe@SD",Region TV Callao (720p)
 https://live-evg7.tv360.bitel.com.pe/bitel/regiontvSRT/playlist.m3u8
-#EXTINF:-1 tvg-id="RegionTVCallao.pe@SD",Region TV Callao
-https://servilive.com:3757/live/regiontvlive.m3u8
 #EXTINF:-1 tvg-id="RNTelevision.pe@SD",RN Televisión (720p) [Not 24/7]
 https://videoserver.tmcreativos.com:19360/rnyurimaguas/rnyurimaguas.m3u8
 #EXTINF:-1 tvg-id="RPPTV.pe@SD",RPP TV (1080p)
@@ -243,6 +235,10 @@ https://live-evg5.tv360.bitel.com.pe/bitel/mixtvSRT/playlist.m3u8
 https://livestream.perucast.com/hls/stream.m3u8
 #EXTINF:-1 tvg-id="SiscomTV.pe@SD",Siscom TV
 https://video2.lhdserver.es/siscomtv/live.m3u8
+#EXTINF:-1 tvg-id="SolarTelevision.pe@SD",Solar Television
+https://7.innovatestream.pe:19360/corporacionperiodistica/corporacionperiodistica.m3u8
+#EXTINF:-1 tvg-id="SqalaTV.pe@SD",Sqala TV (720p)
+https://live-evg8.tv360.bitel.com.pe/bitel/studiotvhuanta/playlist.m3u8
 #EXTINF:-1 tvg-id="StudioPascoTV.pe@SD",Studio Pasco TV (720p)
 https://live-evg7.tv360.bitel.com.pe/bitel/studiopasco/playlist.m3u8
 #EXTINF:-1 tvg-id="SuperCanal.pe@SD",Super Canal (720p)
@@ -255,8 +251,6 @@ https://live-evg11.tv360.bitel.com.pe/bitel/telelimaSRT/playlist.m3u8
 https://live-evg7.tv360.bitel.com.pe/bitel/teleselva/playlist.m3u8
 #EXTINF:-1 tvg-id="Teleselva.pe@SD",Teleselva
 https://7.innovatestream.pe:19360/tvnoticiassatipo/tvnoticiassatipo.m3u8
-#EXTINF:-1 tvg-id="TelesystemTV.pe@SD",Telesystem TV (720p)
-https://live-evg5.tv360.bitel.com.pe/bitel/telesystemSRT/playlist.m3u8
 #EXTINF:-1 tvg-id="TelevisionTarapoto.pe@SD",Television Tarapoto (720p)
 https://live-evg11.tv360.bitel.com.pe/bitel/tvtarapotoSRT/playlist.m3u8
 #EXTINF:-1 tvg-id="TeveEmpresa.pe@SD",Teve Empresa (720p)
@@ -283,8 +277,6 @@ https://videoserver.tmcreativos.com:19360/tvcosmos/tvcosmos.m3u8
 https://live-evg11.tv360.bitel.com.pe/bitel/tvmarSRT/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMAX.pe@SD",TV MAX (720p)
 https://live-evg8.tv360.bitel.com.pe/bitel/nexSRT_TRA/playlist.m3u8
-#EXTINF:-1 tvg-id="TVNorteChiclayo.pe@SD",TV Norte Chiclayo (720p)
-https://live-evg5.tv360.bitel.com.pe/bitel/tvnorte/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPeru.pe@SD",TV Peru (1080p)
 http://190.93.224.42/TV-PERU/index.m3u8
 #EXTINF:-1 tvg-id="TVPeru.pe@SD",TV Peru (720p)
@@ -363,3 +355,7 @@ http://190.108.91.206:9050/play/a0bd/index.m3u8
 http://181.224.200.5:2277/play/a0dx/index.m3u8
 #EXTINF:-1 tvg-id="PanamericanaTV.pe@SD",Panamericana TV (1080p)
 http://181.224.200.5:2277/play/kkio/index.m3u8
+#EXTINF:-1 tvg-id="RumboMineroTV.pe@SD",Rumbo Minero TV (720p)
+https://live-evg8.tv360.bitel.com.pe/bitel/minero/playlist.m3u8
+#EXTINF:-1 tvg-id="TopLatinoTV.pe@SD",Top Latino TV
+http://38.87.224.20:2220/play/a02b/index.m3u8
