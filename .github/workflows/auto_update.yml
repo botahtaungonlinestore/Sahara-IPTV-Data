@@ -1,35 +1,174 @@
-name: Auto Update IPTV Channels
+# SAHARA IPTV - automated playlist refresh
+# Scheduled at 00:17 UTC on calendar days 1, 6, 11, 16, 21, 26 and 31.
+
+name: SAHARA IPTV Auto Update
 
 on:
   schedule:
-    - cron: '0 0 */5 * *'
+    - cron: '17 0 */5 * *'
   workflow_dispatch:
+    inputs:
+      skip_link_check:
+        description: 'Skip HTTP stream checks for a faster run (keeps collected links even if unverified)'
+        required: false
+        type: boolean
+        default: false
+      workers:
+        description: 'Concurrent link-check workers'
+        required: false
+        type: choice
+        options:
+          - '16'
+          - '32'
+          - '40'
+          - '64'
+        default: '40'
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: sahara-iptv-auto-update-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   update-channels:
+    name: Collect, validate and save playlists
     runs-on: ubuntu-latest
+    timeout-minutes: 55
+    permissions:
+      contents: write
+
+    env:
+      PYTHONUNBUFFERED: '1'
+      PIP_DISABLE_PIP_VERSION_CHECK: '1'
+
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          fetch-depth: 0
+          persist-credentials: true
 
-      - name: Install Dependencies
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        shell: bash
         run: |
-          pip install requests pycountry
+          set -Eeuo pipefail
+          python -m pip install --upgrade pip
+          if [[ -f requirements.txt ]]; then
+            python -m pip install -r requirements.txt
+          else
+            python -m pip install requests pycountry
+          fi
 
-      - name: Run Python Script
-        run: python update_m3u.py
+      - name: Detect updater script
+        id: detect-script
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          if [[ -f update_m3u.py ]]; then
+            echo 'path=update_m3u.py' >> "$GITHUB_OUTPUT"
+            echo 'Using update_m3u.py.'
+          elif [[ -f sahara_iptv_builder_v3.py ]]; then
+            echo 'path=sahara_iptv_builder_v3.py' >> "$GITHUB_OUTPUT"
+            echo 'Using sahara_iptv_builder_v3.py.'
+          else
+            echo '::error::No supported updater found. Add update_m3u.py to the repository root.'
+            exit 1
+          fi
 
-      # 🌟 ဖြေရှင်းချက် - Git ကို လက်နဲ့ မရေးတော့ဘဲ အလိုအလျောက် သေချာပေါက် Save ပေးမယ့် ပလပ်ဂင် (Plugin) ကို ပြောင်းသုံးလိုက်ပါပြီ
-      - name: Auto Commit and Push
+      - name: Compile-check updater
+        env:
+          SCRIPT_PATH: ${{ steps.detect-script.outputs.path }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          python -m py_compile "$SCRIPT_PATH"
+
+      - name: Run IPTV updater
+        env:
+          SCRIPT_PATH: ${{ steps.detect-script.outputs.path }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          IPTV_WORKERS: ${{ inputs.workers || '40' }}
+          IPTV_TIMEOUT: '10'
+          SKIP_LINK_CHECK: ${{ inputs.skip_link_check && 'true' || 'false' }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          if python "$SCRIPT_PATH" --help 2>&1 | grep -q -- '--workers'; then
+            args=(--workers "$IPTV_WORKERS" --timeout "$IPTV_TIMEOUT" --output active_m3u)
+            if [[ "$SKIP_LINK_CHECK" == 'true' ]]; then
+              args+=(--skip-link-check)
+            fi
+            python -u "$SCRIPT_PATH" "${args[@]}"
+          else
+            python -u "$SCRIPT_PATH"
+          fi
+
+      - name: Validate generated playlists
+        id: validate
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          if [[ ! -d active_m3u ]]; then
+            echo '::error::The updater did not create the active_m3u directory.'
+            exit 1
+          fi
+
+          playlist_count="$(find active_m3u -maxdepth 1 -type f -iname '*.m3u' | wc -l | tr -d ' ')"
+          if [[ "$playlist_count" -eq 0 ]]; then
+            echo '::error::No .m3u playlists were generated. Refusing to commit an empty update.'
+            exit 1
+          fi
+
+          if [[ -f active_m3u/report.json ]]; then
+            python -m json.tool active_m3u/report.json >/dev/null
+          fi
+
+          echo "playlist_count=$playlist_count" >> "$GITHUB_OUTPUT"
+          {
+            echo '## SAHARA IPTV update summary'
+            echo
+            echo "- Updater: \`${{ steps.detect-script.outputs.path }}\`"
+            echo "- Generated playlists: **${playlist_count}**"
+            if [[ -f active_m3u/report.json ]]; then
+              echo '- Report: `active_m3u/report.json` (valid JSON)'
+            else
+              echo '- Report: not produced by the legacy updater'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit changed playlists
+        id: auto-commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto-update active channels"
-          file_pattern: "active_m3u/*.m3u"
+          commit_message: 'chore(iptv): refresh active playlists'
+          file_pattern: 'active_m3u/'
+          commit_user_name: 'github-actions[bot]'
+          commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+          skip_dirty_check: false
+
+      - name: Report commit result
+        if: always()
+        env:
+          CHANGES_DETECTED: ${{ steps.auto-commit.outputs.changes_detected }}
+          COMMIT_HASH: ${{ steps.auto-commit.outputs.commit_hash }}
+        shell: bash
+        run: |
+          {
+            echo
+            echo '### Git result'
+            if [[ "$CHANGES_DETECTED" == 'true' ]]; then
+              echo "- Updated playlist changes were committed."
+              if [[ -n "$COMMIT_HASH" ]]; then echo "- Commit: \`$COMMIT_HASH\`"; fi
+            elif [[ "$CHANGES_DETECTED" == 'false' ]]; then
+              echo '- No playlist changes were detected; no commit was needed.'
+            else
+              echo '- Commit status is unavailable (check the earlier step for errors).'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
