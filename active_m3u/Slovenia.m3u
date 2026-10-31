@@ -1,7 +1,5 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="FolxSlovenija.si@SD",Folx Slovenija
 https://folxsloapp.b-cdn.net/1080p/index.m3u8
-#EXTINF:-1 tvg-id="ViasatKino.ua@Balkan",Viasat Kino Balkan (1080p)
-http://176.61.157.250/TV1000/index.m3u8
 #EXTINF:-1 tvg-id="TVVeseljakGolicaHD.si@SD",TV Veseljak Golica HD
 https://radio.serv.si/VeseljakGolicaTV/tracks-v1a1/mono.m3u8

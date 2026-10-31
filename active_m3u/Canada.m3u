@@ -45,6 +45,8 @@ https://citynewsregional.akamaized.net/hls/live/1024054/Regional_Live_9/master.m
 #EXTINF:-1 tvg-id="",CKPG Prince George BC (720p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://ckpgtoday.ca/
 https://videostream.jpbgdigital.com/CKPGTV.m3u8
+#EXTINF:-1 tvg-id="CP24.ca@SD",CP24 (576p)
+https://tvsen6.aynaott.com/cp24/index.m3u8
 #EXTINF:-1 tvg-id="DesheBidesheTV.ca@SD",DesheBideshe TV
 https://dbcanada.sonarbanglatv.com/deshebideshe/dbtv/index.m3u8
 #EXTINF:-1 tvg-id="DoyelTV.ca@SD",Doyel TV
@@ -119,8 +121,6 @@ http://158.69.124.9:1935/sardaritv/sardaritv/playlist.m3u8
 https://amagi-streams.akamaized.net/hls/live/2120484/schittscreek/master.m3u8
 #EXTINF:-1 tvg-id="SikhSpiritualCentreRexdale.ca@SD",Sikh Spiritual Centre Rexdale (720p)
 https://cdn12.henico.net:8443/live/ssct/index.m3u8
-#EXTINF:-1 tvg-id="SohailTV.ca@SD",Sohail TV (1080p)
-https://iptv.sohailtv.com/sohail/playlist/index.m3u8
 #EXTINF:-1 tvg-id="SooriyanTV.ca@SD",Sooriyan TV (1080p)
 https://live20.bozztv.com/giatv/giatv-Infinittyott/Infinittyott/playlist.m3u8
 #EXTINF:-1 tvg-id="StingrayiConcerts.ca@HD",Stingray iConcerts HD

@@ -17,6 +17,8 @@ https://mdstrm.com/live-stream-playlist/69f8df22a762c9b1ab3eabca.m3u8
 http://streamingcontrol.com:1935/ectv/ectv/playlist.m3u8
 #EXTINF:-1 tvg-id="JubiloTV.gt@SD",Júbilo TV (720p)
 http://173.249.60.54/hls/jubilotv.m3u8
+#EXTINF:-1 tvg-id="MASTV.gt@SD",MAS TV
+https://cdn.streamhispanatv.net:3011/live/mastvgtlive.m3u8
 #EXTINF:-1 tvg-id="MaxivisionTV.gt@SD",Maxivisión TV (720p)
 https://video03.logicahost.com.br/maxivisiontv/maxivisiontv/playlist.m3u8
 #EXTINF:-1 tvg-id="MCNTelevision.gt@SD",MCN Television (720p)
@@ -61,8 +63,6 @@ http://168.196.127.137:6001/play/a04m/index.m3u8
 http://168.196.127.137:6001/play/a064/index.m3u8
 #EXTINF:-1 tvg-id="TigoSports.gt@SD",Tigo Sports (1080p)
 http://168.196.127.137:6001/play/a0b0/index.m3u8
-#EXTINF:-1 tvg-id="VeaCanal.gt@SD",Vea Canal (720p)
-http://181.78.106.127:5000/play/ca090/index.m3u8
 #EXTINF:-1 tvg-id="Guatevision.gt@SD",Guatevision (1080p)
 http://200.115.120.1:8000/play/ca066/index.m3u8
 #EXTINF:-1 tvg-id="RhemaTV.gt@SD",Rhema TV (1080p)

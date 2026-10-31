@@ -3,17 +3,17 @@
   "version": "3.0.0",
   "stats": {
     "source_files_found": 371,
-    "playlist_categories": 323,
-    "channel_entries_collected": 30432,
-    "unique_urls_checked": 30049,
-    "active_urls": 20014,
-    "inactive_urls": 10035,
-    "channel_entries_saved": 20084,
-    "source_errors": 36
+    "playlist_categories": 324,
+    "channel_entries_collected": 30511,
+    "unique_urls_checked": 30128,
+    "active_urls": 20349,
+    "inactive_urls": 9779,
+    "channel_entries_saved": 20417,
+    "source_errors": 35
   },
   "link_checks": {
-    "reachable": 20014,
-    "unreachable": 10035
+    "reachable": 20349,
+    "unreachable": 9779
   },
   "note": "HTTP reachability does not guarantee that a stream will play in every IPTV app or region."
 }

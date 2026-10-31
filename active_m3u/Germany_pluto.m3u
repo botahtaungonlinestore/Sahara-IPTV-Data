@@ -49,6 +49,10 @@ https://jmp2.uk/plu-66337e365a402e00087eccaf.m3u8
 https://jmp2.uk/plu-60c716084d842c00085f6e64.m3u8
 #EXTINF:-1 tvg-id="",Dating hinter Gittern
 https://jmp2.uk/plu-691b2b690d121b44ad4a53ef.m3u8
+#EXTINF:-1 tvg-id="DAZNDartsxPlutoTV.de@DACH",DAZN Darts x Pluto TV
+https://jmp2.uk/plu-64b67f0424ade50008a3be17.m3u8
+#EXTINF:-1 tvg-id="DAZNHeldinnenxPlutoTV.de@DACH",DAZN Heldinnen x Pluto TV
+https://jmp2.uk/plu-64afe50c5dc16600087f3227.m3u8
 #EXTINF:-1 tvg-id="",Der Bergdoktor
 https://jmp2.uk/plu-69b0167477cdde1f05c8a625.m3u8
 #EXTINF:-1 tvg-id="",Der Chef (720p)
@@ -301,6 +305,8 @@ https://jmp2.uk/plu-69776b58036e883f39e5ab8a.m3u8
 https://jmp2.uk/plu-686cff3224918d4300fa542b.m3u8
 #EXTINF:-1 tvg-id="",Swamp People
 https://jmp2.uk/plu-691491c6bb69fb3258c3524a.m3u8
+#EXTINF:-1 tvg-id="TakeshisCastle.de@DACH",Takeshi's Castle
+https://jmp2.uk/plu-6054a9f4bc8a5f000771504c.m3u8
 #EXTINF:-1 tvg-id="",Täterjagd
 https://jmp2.uk/plu-642abea1283aa4000805bb5b.m3u8
 #EXTINF:-1 tvg-id="",Telenovela ZDF
@@ -317,6 +323,8 @@ https://jmp2.uk/plu-6989b64839dd847194cadcd7.m3u8
 https://jmp2.uk/plu-68ad90673efb41cd97c95825.m3u8
 #EXTINF:-1 tvg-id="",The Real Housewives (720p)
 https://jmp2.uk/plu-677fb0231da79bfe4fb0bf4e.m3u8
+#EXTINF:-1 tvg-id="TopGear.uk@SD",Top Gear
+https://jmp2.uk/plu-64c109735dc1660008a4a2dc.m3u8
 #EXTINF:-1 tvg-id="TotallyTurtles.de@DACH",Totally Turtles (720p)
 https://jmp2.uk/plu-5d6792bd6be2998ad0ccce30.m3u8
 #EXTINF:-1 tvg-id="",Unentdeckt – Mörder unter uns (720p)
