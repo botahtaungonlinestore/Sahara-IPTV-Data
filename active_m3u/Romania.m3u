@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="A7TV.ro@SD",A7TV (1080p)
+https://a7tvlive.ro/A7TV/A7TV/playlist.m3u8
 #EXTINF:-1 tvg-id="AgroTV.ro@SD",Agro TV (360p) [Not 24/7]
 https://agrotv.streamnet.ro/mobile_tv/agrotv.m3u8
 #EXTINF:-1 tvg-id="AlephBusiness.ro@SD",Aleph Business (1280p)
@@ -77,6 +79,8 @@ https://live77cdn2.antenaplay.ro/live_ObservatorNews/live_ObservatorNews.m3u8
 https://live.ro24tv.ro/hls/stream.m3u8
 #EXTINF:-1 tvg-id="QubTV.ro@SD",Qub TV
 https://live.djemba.ro/memfs/474f9942-f72b-4130-817a-435cd54b2c36.m3u8
+#EXTINF:-1 tvg-id="RadioFxNet.ro@HD",Radio Fx Net (720p)
+https://streamlov.alsolnet.com/radiofxnet/live/playlist.m3u8
 #EXTINF:-1 tvg-id="RealitateaPlus.ro@SD",Realitatea Plus (720p)
 https://stream.realitatea.net/realitatea/plus_md/ts:playlist.m3u8
 #EXTINF:-1 tvg-id="RealitateaSportiva.ro@SD",Realitatea Sportiva (720p)
@@ -250,8 +254,6 @@ https://hls01ns.antenaplay.ro/hls/tv-as-sd/index.m3u8
 https://live4dai.antenaplay.ro/live2_srt/live2_srt.m3u8
 #EXTINF:-1 tvg-id="TVArad.ro@SD",TV Arad (576i)
 https://live.djemba.ro/memfs/1b01c281-126d-4787-9d51-9e06c96bb9f9.m3u8
-#EXTINF:-1 tvg-id="RadioRomaniaIasi.ro@SD",Radio Romania Iasi (576i) [Not 24/7]
-https://stream3.srr.ro/live/radio-iasi/chunklist_w1565024915.m3u8
 #EXTINF:-1 tvg-id="UTV.ro@HD",UTV HD (1080i)
 https://vip-acasatv.online:25463/lrZuGxAuP3/6782859900/714.m3u8
 #EXTINF:-1 tvg-id="OrizontTV.ro@SD",Orizont TV (576i)
@@ -266,6 +268,8 @@ https://hls01ns.antenaplay.ro/hls/trinitas-tv-sd/index.m3u8
 https://vip-acasatv.online:25463/lrZuGxAuP3/6782859900/16677.m3u8
 #EXTINF:-1 tvg-id="PROTVNews.ro@SD",PROTV News
 http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-ro-voyo-news/live_fullhd?offsetSeconds=0
+#EXTINF:-1 tvg-id="BihorTV.ro@SD",Bihor TV (576p)
+https://bihor-tv.ro/hls/bihortv.m3u8
 #EXTINF:-1 tvg-id="NCN.ro@SD",NCN (576p)
 https://hls01ns.antenaplay.ro/hls/ncn-sd/index.m3u8
 #EXTINF:-1 tvg-id="Antena3Constanta.ro@SD",Antena 3 Constanta (576p)
@@ -278,3 +282,7 @@ https://hls02ns.antenaplay.ro/hls/kapital-tv-sd/index.m3u8
 https://stream3.srr.ro/live/antenasatelor/chunklist_w1642210843.m3u8
 #EXTINF:-1 tvg-id="AntenaPlayEvents.ro@SD",AntenaPlay Events (576p) [Not 24/7]
 https://live4dai.antenaplay.ro/live2_sdi09/live2_sdi09_600k.m3u8
+#EXTINF:-1 tvg-id="RapsodiaTV.ro@SD",Rapsodia TV
+http://hls02ns.antenaplay.ro/hls/rapsoida-tv-sd/index.m3u8
+#EXTINF:-1 tvg-id="Antena3Suceava.ro@SD",Antena 3 Suceava (576i)
+https://livestream.a3sv.ro/master.m3u8

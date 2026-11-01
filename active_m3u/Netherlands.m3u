@@ -72,8 +72,6 @@ http://88.212.15.50/live/test_filmbox/playlist.m3u8
 #EXTINF:-1 tvg-id="FomixTV.nl@HD",FomixTV (1080p)
 #EXTVLCOPT:http-referrer=https://www.fomix.nl
 https://stream.fomixmedia.nl/FomixTV/video.m3u8
-#EXTINF:-1 tvg-id="GigantFM.nl@SD",Gigant FM (720p)
-https://video.uitzending.tv:19360/gigantfm/gigantfm.m3u8
 #EXTINF:-1 tvg-id="Haarlem105TV.nl@SD",Haarlem105 RTV (720p)
 https://d2qm50imcbcfqx.cloudfront.net/nlpo/clr-nlpo/haarlem105/index.m3u8
 #EXTINF:-1 tvg-id="HypeVisualRadio.nl@SD",Hype Visual Radio (1080p)
@@ -102,6 +100,8 @@ https://d1qpgfi3ivud4k.cloudfront.net/nlpo/clr-nlpo/langstraat/index.m3u8
 https://ms7.mx-cd.net/tv/278-3414514/RTV_Lansingerland.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="LEOMiddelseTV.nl@SD",LEO Middelsé TV (480p)
 https://ms7.mx-cd.net/tv/238-2061506/Omroep_LEO_TV.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="LONTV.nl@SD",LON TV (720p)
+https://streamingserver02.omroepnuenen.nl/lon/lonweb/chunklist_w1463772894.m3u8
 #EXTINF:-1 tvg-id="MagicPowerRadio.nl@SD",Magic PowerRadio (288p) [Not 24/7]
 https://server-23.stream-server.nl:1936/Magic-PowerRadio/Magic-PowerRadio/playlist.m3u8
 #EXTINF:-1 tvg-id="MerweTV.nl@SD",Merwe TV (720p)
@@ -228,8 +228,6 @@ https://d2n2i1jp4j20kw.cloudfront.net/nlpo/clr-nlpo/schietv/index.m3u8
 https://video-eu1.streamerr.co/hls/s7fdeb27a49/live.m3u8
 #EXTINF:-1 tvg-id="SRCTV.nl@SD",SRC TV (720p)
 http://highvolume155.streampartner.nl/adminsrc/adminsrc/playlist.m3u8
-#EXTINF:-1 tvg-id="StreekTV.nl@SD",Streek TV (720p) [Not 24/7]
-http://cdn22.streampartner.nl/streektv/streektv/playlist.m3u8
 #EXTINF:-1 tvg-id="StreekstadCentral.nl@SD",Streekstad Alkmaar Centraal (1080p)
 https://videostreams.streekstadcentraal.nl/hls/streekstad_alkmaar/streekstad_alkmaar.m3u8
 #EXTINF:-1 tvg-id="Studio040TV.nl@SD",Studio040 TV (720p)
@@ -292,3 +290,7 @@ http://92.114.85.87:8003/play/a00b/index.m3u8
 https://tmf-nl-nl.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-yourchannels-10-restreaming/bitok/eyJzdGlkIjoiMzUzNGNiZTAtNWY4MS00ZmU4LWE1NGYtYjgyMjJmMTM3ZmZjIiwibWt0IjoibmwiLCJjaCI6IjEwIiwicHRmIjo1fQ%3D%3D/mpgmedia/TMF/TMF_NL/TMF_NL.m3u8
 #EXTINF:-1 tvg-id="BTLTV.nl@SD",BTL TV (720p)
 https://livecdn.live247stream.com/btl/tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Nickelodeon.nl@SD",Nickelodeon
+http://185.77.12.179:9981/stream/channelid/788918401?profile=pass
+#EXTINF:-1 tvg-id="DisneyChannel.nl@SD",Disney Channel
+http://185.77.12.179:9981/stream/channelid/2102298310?profile=pass

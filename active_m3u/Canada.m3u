@@ -107,8 +107,6 @@ http://stream.pardesitv.online/pardesi/index.m3u8
 http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="PrimeAsiaTV.ca@SD",Prime Asia TV (1080p)
 http://primeasia.selfip.net/Samsung/index.m3u8
-#EXTINF:-1 tvg-id="ProbashiTVNews.ca@SD",Probashi TV News (1080p)
-http://158.69.24.53:8080/probashi_tv/index.m3u8
 #EXTINF:-1 tvg-id="PTCPunjabiCanada.ca@SD",PTC Punjabi Canada (1080p)
 https://stream.ottlive.co.in/ptccanada/index.m3u8
 #EXTINF:-1 tvg-id="QuoVadisTV.ca@SD",Quo Vadis TV (720p)

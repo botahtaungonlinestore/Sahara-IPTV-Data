@@ -15,6 +15,22 @@ https://intl.dunyanews.tv/livehd/ngrp:dunyalivehd_2_all/playlist.m3u8
 https://ukintl.dunyanews.tv/liveuk/ngrp:dunyalive_all/playlist.m3u8
 #EXTINF:-1 tvg-id="FazalTV.pk@SD",Fazal TV (1080p)
 http://cdn9.live247stream.com/punjabitvcanada/tv/playlist.m3u8
+#EXTINF:-1 tvg-id="GodStandsKidsClubTV.pk@Arabic",God Stands Kids Club TV Arabic
+https://online.godstands.tv:5443/WebRTCApp/streams/KidsArabic.m3u8
+#EXTINF:-1 tvg-id="GodStandsKidsClubTV.pk@Chinese",God Stands Kids Club TV Chinese
+https://online.godstands.tv:5443/WebRTCApp/streams/KidsChinese.m3u8
+#EXTINF:-1 tvg-id="GodStandsKidsClubTV.pk@English",God Stands Kids Club TV English
+https://online.godstands.tv:5443/WebRTCApp/streams/kidsenglish.m3u8
+#EXTINF:-1 tvg-id="GodStandsKidsClubTV.pk@Urdu",God Stands Kids Club TV Urdu
+https://online.godstands.tv:5443/WebRTCApp/streams/KidsUrdu.m3u8
+#EXTINF:-1 tvg-id="GodStandsTV.pk@Main",God Stands TV
+https://online.godstands.tv:5443/WebRTCApp/streams/mainlive.m3u8
+#EXTINF:-1 tvg-id="GodStandsTV.pk@English",God Stands TV English
+https://online.godstands.tv:5443/WebRTCApp/streams/EnglishStreaming.m3u8
+#EXTINF:-1 tvg-id="GodStandsTV.pk@Punjabi",God Stands TV Punjabi
+https://online.godstands.tv:5443/WebRTCApp/streams/PunjabiStreaming.m3u8
+#EXTINF:-1 tvg-id="GodStandsTV.pk@Urdu",God Stands TV Urdu
+https://online.godstands.tv:5443/WebRTCApp/streams/UrduStreaming.m3u8
 #EXTINF:-1 tvg-id="GraceNetwork.pk@SD",Grace Network (720p)
 https://livecdn.live247stream.com/grace/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="IsaacTV.pk@SD",Isaac TV (720p)
@@ -61,6 +77,8 @@ https://pixelsmedia.live/livepraisetv/index.m3u8
 https://tvsen7.aynascope.net/Sports1/index.m3u8
 #EXTINF:-1 tvg-id="SamaaTV.pk@SD",Samaa TV (576p)
 https://vodzong.mjunoon.tv:8087/streamtest/SAMAA-173/playlist.m3u8
+#EXTINF:-1 tvg-id="SkyNewsUrdu.pk@SD",Sky News Urdu (720p)
+https://lbgo.bozztv.com/ssh101/ssh101/skynews/playlist.m3u8
 #EXTINF:-1 tvg-id="SuchTV.pk@SD",Such TV
 https://video.primexsports.com/suchnews/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ZindagiTV.pk@SD",Zindagi TV (576p) [Not 24/7]

@@ -15,8 +15,6 @@ http://190.61.101.11:7050/play/a07j/index.m3u8
 https://hdbox.chunklistv.com/live?stream=3abn-nicaragua
 #EXTINF:-1 tvg-id="TVONENicaragua.ni@SD",TVONE Nicaragua (720p) [Not 24/7]
 https://hdbox.chunklistv.com/live?stream=tvone
-#EXTINF:-1 tvg-id="WTVCanal20.ni@SD",WTV Canal 20 (1080p)
-https://cootv.cootel.com.ni:8095/Canal40_WTV/playlist.m3u8
 #EXTINF:-1 tvg-id="WTVCanal20.ni@SD",WTV Canal 20 (720p)
 https://cloudvideo.servers10.com:8081/8130/index.m3u8
 #EXTINF:-1 tvg-id="Canal10.ni@SD",Canal 10

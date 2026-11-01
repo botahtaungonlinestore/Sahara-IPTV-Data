@@ -1,6 +1,14 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Kino1.ru@International",Кино 1 International [Not 24/7]
 http://kino-1.catcast.tv/content/38617/index.m3u8
+#EXTINF:-1 tvg-id="Kino1.ru@International",Кино 1 International [Not 24/7]
+https://autopilot.catcast.tv/content/38617/index.m3u8
+#EXTINF:-1 tvg-id="Muzyka1.ru@International",Музыка 1 International [Not 24/7]
+https://kino-1.catcast.tv/content/37745/index.m3u8
+#EXTINF:-1 tvg-id="Muzyka1.ru@International",Музыка 2 International [Not 24/7]
+https://kino-1.catcast.tv/content/37742/index.m3u8
+#EXTINF:-1 tvg-id="MuzykaKino.ru@International",Музыка Кино International [Not 24/7]
+https://kino-1.catcast.tv/content/37739/index.m3u8
 #EXTINF:-1 tvg-id="CityEdenPlay.ru@HD",Сити Эдем Play Христианский Музыкальный [Not 24/7]
 https://cityeden.catcast.tv/content/34100/index.m3u8
 #EXTINF:-1 tvg-id="CityEdenAutoGid.ru@HD",Сити Эдем АвтоГид [Not 24/7]
@@ -11,8 +19,6 @@ https://cityeden.catcast.tv/content/34393/index.m3u8
 https://cityeden.catcast.tv/content/38398/index.m3u8
 #EXTINF:-1 tvg-id="CityEdenKinoDetektiv.ru@HD",Сити Эдем КиноДетектив [Not 24/7]
 https://cityeden.catcast.tv/content/41327/index.m3u8
-#EXTINF:-1 tvg-id="CityEdenKinoDok.ru@HD",Сити Эдем КиноДок [Not 24/7]
-https://cityeden.catcast.tv/content/38354/index.m3u8
 #EXTINF:-1 tvg-id="CityEdenKinoDrama.ru@HD",Сити Эдем КиноДрама [Not 24/7]
 https://cityeden.catcast.tv/content/45269/index.m3u8
 #EXTINF:-1 tvg-id="CityEdenKinoKlassika.ru@HD",Сити Эдем КиноКлассика [Not 24/7]
@@ -31,5 +37,7 @@ https://cityeden.catcast.tv/content/47400/index.m3u8
 https://cityeden.catcast.tv/content/47519/index.m3u8
 #EXTINF:-1 tvg-id="CityEdenReceptyGurmana.ru@HD",Сити Эдем Рецепты Гурмана [Not 24/7]
 https://cityeden.catcast.tv/content/47516/index.m3u8
-#EXTINF:-1 tvg-id="CityEdenSirtakiTV.ru@HD",Сити Эдем Сиртаки ТВ [Not 24/7]
-https://cityeden.catcast.tv/content/46421/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenTV.ru@HD",Сити Эдем ТВ Христианский [Not 24/7]
+https://cityeden.catcast.tv/content/34246/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenTeleNovella.ru@HD",Сити Эдем ТелеНовелла [Not 24/7]
+https://cityeden.catcast.tv/content/46209/index.m3u8

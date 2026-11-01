@@ -1,8 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ARDBTV.kh@SD",ARDB TV (1080p) [Not 24/7]
 https://ardbtv.ardb.com.kh:8443/tv-live/tv-online.m3u8
-#EXTINF:-1 tvg-id="BayonTV.kh@SD",Bayon TV
-https://live-evg2.tv360.metfone.com.kh/livebayontv/bayontvhd.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CTV9.kh@SD",CTV 9 (1080p)
 http://43.252.18.195:5080/live/streams/ctv9_hd_playlist.m3u8
 #EXTINF:-1 tvg-id="EACNewsTV.kh@SD",EAC News TV

@@ -55,6 +55,8 @@ https://stream.arcast.com.ar/canal4esquel/canal4esquel/playlist.m3u8
 https://5cd577a3dd8ec.streamlock.net/CANAL4/smil:CANAL4.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4Posadas.ar@SD",Canal 4 Posadas (576p)
 https://iptv.ixfo.com.ar:30443/live/C4POS/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal4SanJuan.ar@SD",Canal 4 San Juan (576p)
+https://streamlov.alsolnet.com/canal4sanjuan/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4Teleaire.ar@SD",Canal 4 Teleaire
 https://stmvideo6.livecastv.com/canal4/canal4/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4VillaDolores.ar@SD",Canal 4 Villa Dolores
@@ -111,8 +113,6 @@ https://g4.vxral-hor.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/P
 https://stream.arcast.net:4443/canal21/ngrp:canal21_all/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalPulpoTV.ar@SD",Canal Pulpo TV
 https://vs20.live.opencaster.com/canalpulpotv_bdeee6e2/index.m3u8
-#EXTINF:-1 tvg-id="CanalShowsport.ar@SD",Canal Showsport (720p)
-https://livestream.lumpentv.com.ar/hls/lumpen.m3u8
 #EXTINF:-1 tvg-id="CanalTDC.ar@SD",Canal TDC
 https://tdcserver.com:19360/tdconlione-2/tdconlione-2.m3u8
 #EXTINF:-1 tvg-id="CanalUniversidad.ar@SD",Canal Universidad
@@ -308,8 +308,6 @@ https://canalsantaferts.argtelemax.workers.dev/
 https://edge.enhdtv.com/litustv/index.m3u8
 #EXTINF:-1 tvg-id="Canal8MardelPlata.ar@SD",Canal 8 Mar del Plata (720p) [Not 24/7]
 https://canal8mdq.unpocodeawita.workers.dev/
-#EXTINF:-1 tvg-id="TelefeSalta.ar@SD",Telefe Salta
-https://canal11saltatv.unpocodeawita.workers.dev/
 #EXTINF:-1 tvg-id="NeoxTV.ar@SD",Neox TV [Not 24/7]
 https://tv.streamcasthd.com:3031/live/neoxtvlive.m3u8
 #EXTINF:-1 tvg-id="PlimPlim.ar@SD",Plim Plim (1080p)
@@ -356,8 +354,6 @@ http://138.59.227.20:8000/play/a05t/index.m3u8
 http://138.59.227.20:8000/play/a06w/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar@Panregional",Disney Channel Latin America (1080p)
 https://barinaslive1.boldmss.com/DISNEY/DISNEY.isml/DISNEY.m3u8
-#EXTINF:-1 tvg-id="TVPublicaMarcosPaz.ar@SD",TV Publica Marcos Paz (720p)
-https://ca.centaurychile.com:2443/hls/mediospublicos.m3u8
 #EXTINF:-1 tvg-id="TN.ar@SD",TN (1080p)
 http://158.172.155.130:8000/play/a0dp/index.m3u8
 #EXTINF:-1 tvg-id="QuieroMusicaenmiIdioma.ar@SD",Quiero Musica en mi Idioma (1080p)
@@ -380,3 +376,13 @@ https://videostream.shockmedia.com.ar/hls/multivisionfederal/multivisionfederal.
 http://45.228.234.9:8000/play/a06g/index.m3u8
 #EXTINF:-1 tvg-id="EuropaEuropa.ar@SD",Europa Europa (1080p)
 http://45.228.234.9:8000/play/a06z/index.m3u8
+#EXTINF:-1 tvg-id="ElTreceInternacionalLatinAmerica.ar@SD",El Trece Internacional Latin America
+http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/23.m3u8
+#EXTINF:-1 tvg-id="TNTSports.ar@HD",TNT Sports
+http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/86.m3u8
+#EXTINF:-1 tvg-id="ESPNPremium.ar@HD",ESPN Premium HD
+http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/116.m3u8
+#EXTINF:-1 tvg-id="FoxSports.ar@HD",Fox Sports HD
+http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/1552.m3u8
+#EXTINF:-1 tvg-id="TNTSports.ar@SD",TNT Sports SD (576p)
+http://181.78.79.131:8000/play/a0mo

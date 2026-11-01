@@ -31,8 +31,6 @@ https://video2.lhdserver.es/canal9cosespu/live.m3u8
 https://movil.ejeserver.com/live/calimatv.m3u8
 #EXTINF:-1 tvg-id="CanalCapital.co@SD",Canal Capital (1080p)
 http://138.121.15.230:9002/CANAL-CAPITAL/index.m3u8
-#EXTINF:-1 tvg-id="CanalCHD.co@SD",Canal CHD
-https://vs20.live.opencaster.com/canalchd2025_8d99626c/index.m3u8
 #EXTINF:-1 tvg-id="CanalCineDios.co@SD",Canal Cine Dios
 https://canal.mediaserver.com.co/live/cinedios.m3u8
 #EXTINF:-1 tvg-id="CanalCongreso.co@SD",Canal Congreso (1080p)
@@ -81,10 +79,6 @@ http://138.121.15.230:9002/CITY-TV/index.m3u8
 https://cdn1.cmbcolombia.tv/bethesda/video.m3u8
 #EXTINF:-1 tvg-id="CMBTelevision.co@SD",CMB Television (1080p)
 https://hls-m9hrfayq-livepush.akamaized.net/live_cdn/nsxlDfnVmUyEy/eme2QCj5oX02cY/index.m3u8
-#EXTINF:-1 tvg-id="CNCBugavision.co@SD",CNC Bugavisión (720p)
-https://movil.ejeserver.com/live/cncbuga.m3u8
-#EXTINF:-1 tvg-id="CNCBugavision.co@SD",CNC Bugavisión (720p)
-https://video.ejeserver.com/live/cncbuga.m3u8
 #EXTINF:-1 tvg-id="CNCPereira.co@SD",CNC Pereira (720p)
 https://cloudvideo.servers10.com:8081/latinchaneltv/index.m3u8
 #EXTINF:-1 tvg-id="CNCSantanderdeQuilichao.co@SD",CNC Santander de Quilichao (480p)
@@ -109,6 +103,8 @@ https://panelvideo1.intermediahost.co:3286/live/ruzfpkqklive.m3u8
 https://tv.frecuenciaf.com/live/envivo_1080p4000kbs/index.m3u8
 #EXTINF:-1 tvg-id="HeliconiaRadioTV.co@SD",Heliconia Radio TV (720p)
 https://eu1.servers10.com:8081/8178/index.m3u8
+#EXTINF:-1 tvg-id="KaluTV.co@SD",Kalu TV (1080p)
+https://tv.kaludecolombia.com/memfs/d71c0104-4752-4690-bdbf-19aa849da6c4.m3u8
 #EXTINF:-1 tvg-id="LaKalle.co@SD",La Kalle (720p)
 https://mdstrm.com/live-stream-playlist/58d191f07290fbb058025843.m3u8
 #EXTINF:-1 tvg-id="LaMoradaRadioTV.co@SD",La Morada Radio TV (720p)
@@ -175,8 +171,6 @@ https://5ab772334c39c.streamlock.net/live-teleislas/teleislas/playlist.m3u8
 https://play.cdn.enetres.net/6E5C615AA5FF4123ACAF0DAB57B7B8DC021/022/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleQuindio.co@SD",TeleQuindio (1080p)
 https://live20.bozztv.com/akamaissh101/ssh101/telequindio/playlist.m3u8
-#EXTINF:-1 tvg-id="Telesangil.co@SD",Telesangil (720p)
-https://live20.bozztv.com/akamaissh101/ssh101/telesangil/playlist.m3u8
 #EXTINF:-1 tvg-id="TeveColombia.co@SD",TeveColombia (720p) [Not 24/7]
 https://cloud6.livescast.com:3900/live/tevecolombialive.m3u8
 #EXTINF:-1 tvg-id="TuUniversoTV.co@SD",Tu Universo TV (720p)
@@ -185,8 +179,6 @@ https://5bf8041cb3fed.streamlock.net/TUUNIVERSOTV/TUUNIVERSOTV/playlist.m3u8
 https://live.amelbatv.co:81/teleopita/index.fmp4.m3u8
 #EXTINF:-1 tvg-id="TVGolfoUraba.co@SD",TV Golfo Uraba
 https://stmv7.voxtvhd.com.br/golfo/golfo/playlist.m3u8
-#EXTINF:-1 tvg-id="TVGracia.co@SD",TVGracia
-https://vs20.live.opencaster.com/diego_57244803/index.m3u8
 #EXTINF:-1 tvg-id="UltraCasanareTV.co@SD",Ultra Casanare TV (1080p) [Not 24/7]
 https://eu1.servers10.com:8081/8072/index.m3u8
 #EXTINF:-1 tvg-id="UMCTV.co@SD",UMC TV (720p)
@@ -223,8 +215,6 @@ http://45.226.205.96:48000/play/a0af/index.m3u8
 http://181.78.12.119:16123/play/ch80/index.m3u8
 #EXTINF:-1 tvg-id="WinSports.co@SD",Win Sports (1080p)
 http://181.78.12.119:16123/play/ch18/index.m3u8
-#EXTINF:-1 tvg-id="WinPlusFutbol.co@SD",Win+ Futbol (1080p)
-http://181.78.12.119:16123/play/ch19/index.m3u8
 #EXTINF:-1 tvg-id="RCNNovelas.co@SD",RCN Novelas (480p)
 http://181.65.191.173:8069/play/a061
 #EXTINF:-1 tvg-id="NTN24.co@SD",NTN24 (720p)
@@ -281,8 +271,6 @@ http://181.205.130.194:4000/play/a0ck
 http://200.115.96.61:9090/play/a0jk/index.m3u8
 #EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
 http://45.173.231.22:8000/play/a009/index.m3u8
-#EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
-http://200.59.191.177:8000/play/a001/index.m3u8
 #EXTINF:-1 tvg-id="CanalRCN.co@SD",Canal RCN (1080p)
 http://181.205.130.194:4000/play/a0dl
 #EXTINF:-1 tvg-id="CanalRCN.co@SD",Canal RCN (1080p)
@@ -291,8 +279,6 @@ http://38.134.250.110:8000/play/a00i/index.m3u8
 http://190.60.46.228:8888/play/a04d/index.m3u8
 #EXTINF:-1 tvg-id="CanalRCN.co@SD",Canal RCN (1080p)
 http://45.173.231.22:8000/play/a00a/index.m3u8
-#EXTINF:-1 tvg-id="CanalRCN.co@SD",Canal RCN (1080p)
-http://200.59.191.177:8000/play/a004/index.m3u8
 #EXTINF:-1 tvg-id="CanalRCN.co@SD",Canal RCN (1080p)
 http://181.78.79.131:8000/play/a0sc
 #EXTINF:-1 tvg-id="NuestraTeleInternacional.co@SD",Nuestra Tele Internacional (1080p)
@@ -343,8 +329,6 @@ https://stream1.bitred.cl/rcn-novelas/index.m3u8
 http://138.94.3.106:8000/play/a06z
 #EXTINF:-1 tvg-id="CaracolHD2.co@SD",Caracol HD2 (1080p)
 http://190.109.2.92:8000/play/a05u/index.m3u8
-#EXTINF:-1 tvg-id="CaracolInternacional.co@SD",Caracol Internacional (1080p)
-http://132.255.210.69:8000/play/a049/index.m3u8
 #EXTINF:-1 tvg-id="Teleantioquia.co@SD",Teleantioquia (1080p)
 http://200.115.120.1:8000/play/ca246/index.m3u8
 #EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
@@ -406,8 +390,6 @@ http://181.78.82.130:8000/play/a0ru/index.m3u8
 http://190.121.140.222:8081/CARACOL/index.m3u8
 #EXTINF:-1 tvg-id="Canal1.co@SD",Canal 1 (720p)
 https://barinaslive1.boldmss.com/CANAL1/CANAL1.isml/CANAL1.m3u8
-#EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
-http://179.60.224.196:8000/play/a0hw/index.m3u8
 #EXTINF:-1 tvg-id="RanchenatoTV.co@SD",Ranchenato TV (1080p)
 http://181.78.12.119:16123/play/ch15/index.m3u8
 #EXTINF:-1 tvg-id="EnlaceTelevision.co@SD",Enlace Television (1080p)
@@ -426,3 +408,13 @@ http://190.61.47.54:8000/play/a01k/index.m3u8
 http://181.78.79.131:8000/play/a0sg
 #EXTINF:-1 tvg-id="RCNNovelas.co@SD",RCN Novelas (480p)
 http://45.171.64.30:8800/play/a01z
+#EXTINF:-1 tvg-id="RumbaTV.co@SD",Rumba TV (1080p)
+http://190.61.47.54:8000/play/a01l/index.m3u8
+#EXTINF:-1 tvg-id="RumbaTV.co@SD",Rumba TV (1080p)
+http://138.94.3.106:8000/play/a04r/index.m3u8
+#EXTINF:-1 tvg-id="RumbaTV.co@SD",Rumba TV (1080p)
+http://38.134.250.110:8000/play/a01p/index.m3u8
+#EXTINF:-1 tvg-id="TeleNostalgia.co@SD",TeleNostalgia (720p)
+http://190.124.20.69/TeleNostalgia/index.m3u8
+#EXTINF:-1 tvg-id="CaracolTV.co@SD",Caracol TV (1080p)
+http://181.78.8.199:8000/play/a0b0/index.m3u8

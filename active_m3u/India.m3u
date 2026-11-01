@@ -151,6 +151,8 @@ https://asianetnews.vgcdn.net/vglive-sk-335835/playlist.m3u8
 http://tvsen7.aynascope.net/AssamTalks/index.m3u8
 #EXTINF:-1 tvg-id="AwaazIndiaTV.in@SD",Awaaz India TV (720p) [Not 24/7]
 https://awaazindia.livebox.co.in/AwaazIndaTVhls/Live.m3u8
+#EXTINF:-1 tvg-id="AyushTV.in@SD",Ayush TV (360p) [Not 24/7]
+https://95eryw39dwn4-hls-live.wmncdn.net/Ayushu/271ddf829afeece44d8732757fba1a66.sdp/index.m3u8
 #EXTINF:-1 tvg-id="AyushTV.in@SD",Ayush TV
 https://cdn.pishow.tv/ott/live/221/master.m3u8
 #EXTINF:-1 tvg-id="B4UBhojpuri.in@SD",B4U Bhojpuri (1080p)
@@ -263,6 +265,8 @@ https://ott.livelegitpro.in/fatehtv/fatehtv/index.m3u8
 https://xlbor37ydvaj-hls-live.wmncdn.net/firstindianewstv1/live.stream/index.m3u8
 #EXTINF:-1 tvg-id="FoodFood.in@SD",Food Food (576p)
 https://mumt03.tangotv.in/Dsly5z3HFOODFOOD/index.m3u8
+#EXTINF:-1 tvg-id="GangaurTV.in@SD",Gangaur TV (1080p)
+https://pbgangaur.wiseplayout.com/Gangaur/master.m3u8
 #EXTINF:-1 tvg-id="GlobalPunjab.in@SD",Global Punjab (1080p)
 https://server.livelegitpro.in/globalpunjab/globalpunjab/index.m3u8
 #EXTINF:-1 tvg-id="GoldminesBollywood.in@SD",Goldmines Bollywood (576p)
@@ -380,6 +384,8 @@ https://d1msejlow1t3l4.cloudfront.net/fta/khabreinabhitak/playlist.m3u8
 https://932y4x26ljv8-hls-live.5centscdn.com/victers/tv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="KolkataTV.in@SD",Kolkata TV (1080p)
 https://cdn.ottlive.co.in/kolkatatv/index.m3u8
+#EXTINF:-1 tvg-id="KTVBangla.in@SD",KTV Bangla (720p)
+https://server.livelegitpro.in:9899/tribetv/tribetv/index.m3u8
 #EXTINF:-1 tvg-id="LifeTV.in@SD",Life TV (720p)
 https://lifetv.livebox.co.in/lifetvhls/lifetv.m3u8
 #EXTINF:-1 tvg-id="LivingIndiaNews.in@SD",Living India News (1080p)
@@ -468,6 +474,8 @@ https://ndtvprofit.akamaized.net/hls/live/2107404/ndtvprofit/chunklist_5.m3u8
 https://ndtvprofit.akamaized.net/hls/live/2107404/ndtvprofit/master_1.m3u8
 #EXTINF:-1 tvg-id="NDTVRajasthan.in@SD",NDTV Rajasthan (1080p)
 https://ndtvregional.akamaized.net/hls/live/2102726-b/ndtvraj/master_1.m3u8
+#EXTINF:-1 tvg-id="Nepal1.in@SD",Nepal 1 (396p)
+https://d1msejlow1t3l4.cloudfront.net/fta/nepal1/chunks.m3u8
 #EXTINF:-1 tvg-id="Nepal1.in@SD",Nepal 1
 https://cdn.pishow.tv/ott/live/1490/master.m3u8
 #EXTINF:-1 tvg-id="Network10.in@SD",Network 10
@@ -841,8 +849,6 @@ https://mumt05.tangotv.in/87NeALx2UNIQUETV/index.m3u8
 https://em4qj6nedyvg-hls-live.wmncdn.net/liveunit/89b1e919eed04e59383cf820d644c20e.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="V6News.in@SD",V6 News (576p)
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/v6news_nim_https/140622/v6news/playlist.m3u8
-#EXTINF:-1 tvg-id="VaanavilTV.in@SD",Vaanavil TV (720p)
-https://6n3yope4d9ok-hls-live.5centscdn.com/vaanavil/TV.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="VasanthTV.in@SD",Vasanth TV (576p)
 https://mumt04.tangotv.in/m18aqlK4VASANTHTV/index.m3u8
 #EXTINF:-1 tvg-id="VCV.in@SD",VCV (720p) [Not 24/7]
@@ -853,8 +859,8 @@ https://aasthaott.akamaized.net/110923/smil:vedic.smil/playlist.m3u8
 https://tglmp01.akamaized.net/out/v1/c1071012b73f4f189b202e1529e8f802/manifest.mpd
 #EXTINF:-1 tvg-id="VillageTV.in@SD",Village TV (576p)
 https://villagetv.applelive.in/villagetv/villagetv/index.m3u8
-#EXTINF:-1 tvg-id="Vision.in@SD",Vision (576p)
-http://103.85.204.205:1935/VISIONMEDIA/live/playlist.m3u8
+#EXTINF:-1 tvg-id="VTU.in@SD",VTU (1080p)
+https://lbgo.bozztv.com/ssh101/ssh101/afghantheatretv/playlist.m3u8
 #EXTINF:-1 tvg-id="VyasChannel.in@SD",Vyas NIC (576p)
 https://playhls.media.nic.in/hls/live/vyas/vyas.m3u8
 #EXTINF:-1 tvg-id="WION.in@SD",WION (1080p)
@@ -963,6 +969,8 @@ https://streams.tangotv.in/SHEMAROOUMANG/ORIGIN/index.m3u8
 https://mumt06.tangotv.in/qYyB8fXVEPICTV/index.m3u8
 #EXTINF:-1 tvg-id="DDNational.in@HD",DD National HD (576p)
 https://streams.tangotv.in/DDNATIONALHD/ORIGIN/index.m3u8
+#EXTINF:-1 tvg-id="ManoranjanGrand.in@SD",Manoranjan Grand (576p)
+https://streams.tangotv.in/MANORANJANGRAND/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-id="ShemarooJosh.in@SD",Shemaroo Josh (576p)
 https://mumt04.tangotv.in/m18aqlK4SHEMAROOJOSH/index.m3u8
 #EXTINF:-1 tvg-id="ManoranjanTV.in@SD",Manoranjan TV (576p)
@@ -1135,6 +1143,8 @@ https://streams.tangotv.in/NEWSTAMIL24X7/ORIGIN/index.m3u8
 https://streams.tangotv.in/THANTHITV/ORIGIN/index.m3u8
 #EXTINF:-1 tvg-id="News7Tamil.in@SD",News 7 Tamil (576p)
 https://streams.tangotv.in/NEWS7TAMIL/ORIGIN/index.m3u8
+#EXTINF:-1 tvg-id="OMTV.in@SD",OM TV (576p)
+https://mumt01.tangotv.in/O5aw8Zn3OMTV/index.m3u8
 #EXTINF:-1 tvg-id="AngelTV.in@India",Angel TV (576p)
 https://mumt01.tangotv.in/O5aw8Zn3ANGELTVHD/index.m3u8
 #EXTINF:-1 tvg-id="MadhaTV.in@SD",Madha TV (576p)
@@ -1249,10 +1259,14 @@ https://mumt05.tangotv.in/87NeALx2TEHZEEBTV/index.m3u8
 https://mumt07.tangotv.in/zHjX9OFlZEESALAM/index.m3u8
 #EXTINF:-1 tvg-id="ChannelWIN.in@SD",Channel WIN (576p)
 https://mumt05.tangotv.in/87NeALx2CHANNELWIN/index.m3u8
-#EXTINF:-1 tvg-id="DangalTV.in@SD",Dangal TV (576p)
-https://tvsen3.aynaott.com/qPNg4LJK/index.m3u8
+#EXTINF:-1 tvg-id="Nepal1.in@SD",Nepal 1 (576p)
+https://mumt05.tangotv.in/87NeALx2NEPAL1/index.m3u8
 #EXTINF:-1 tvg-id="Dangal2.in@SD",Dangal 2 (576p)
 https://tvsen3.aynaott.com/8KfZvBYS/index.m3u8
+#EXTINF:-1 tvg-id="ManoranjanTV.in@SD",Manoranjan TV (576p)
+https://tvsen6.aynaott.com/vhu6qz5Nsd/index.m3u8
+#EXTINF:-1 tvg-id="Network10.in@SD",Network 10 (576p)
+https://tvsen6.aynaott.com/3Cb2WLFz/index.m3u8
 #EXTINF:-1 tvg-id="TaazaTV.in@SD",Taaza TV (576p)
 https://tvsen3.aynaott.com/yRMLky2j/index.m3u8
 #EXTINF:-1 tvg-id="CVREnglish.in@SD",CVR English (576p)
@@ -1579,8 +1593,6 @@ https://live1.ottlive.co.in/munsiftv/munsiftv/index.m3u8
 https://ott.livelegitpro.in:9899/hnnnews/hnnnews/index.m3u8
 #EXTINF:-1 tvg-id="Bharat24.in@SD",Bharat24 (720p)
 https://cdn.ottlive.co.in/bharat24/index.m3u8
-#EXTINF:-1 tvg-id="WorldPunjabiTV.in@SD",World Punjabi TV (576p)
-https://mumt06.tangotv.in/qYyB8fXVWPNWORLDPUNJABI/index.m3u8
 #EXTINF:-1 tvg-id="ABPNews.in@SD",ABP News (576p)
 https://mumt04.tangotv.in/m18aqlK4ABPNEWS/index.m3u8
 #EXTINF:-1 tvg-id="GospelTVIndia.in@SD",Gospel TV India (576p)
@@ -1591,8 +1603,6 @@ https://mumt03.tangotv.in/Dsly5z3HGOLDMINESACTION/index.m3u8
 https://d3arbp6l7f096k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-gv6wgpbb4mgwk/playlist.m3u8?ads.ads_cdn=cf&ads.app_domain=APP_DOMAIN&ads.cdn=cf
 #EXTINF:-1 tvg-id="VRLive.in@SD",VR Live (720p)
 https://channel.vrlivegujarat.com/hls/vrchannel.m3u8
-#EXTINF:-1 tvg-id="VistaarNews.in@SD",Vistaar News (1080p)
-https://stream.ottlive.co.in/vistaartv/index.m3u8
 #EXTINF:-1 tvg-id="UTVPalakkad.in@SD",UTV Palakkad (1080p)
 https://em4qj6nedyvg-hls-live.wmncdn.net/utv/ab2de115318ae40bdd434e193a2f2e7f.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="UBangla.in@SD",U Bangla (1080p)
@@ -1637,8 +1647,6 @@ https://stream.ottlive.co.in/hindikhabar/index.m3u8
 https://n18syndication.akamaized.net/bpk-tv/Kadak_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-id="KBCNews.in@SD",KBC News (1080p)
 https://stream.ottlive.co.in/kbcnews/index.m3u8
-#EXTINF:-1 tvg-id="KBPTimes.in@SD",KBP Times (1080p)
-https://kbpnews.cloud/Kbptimes/Kbptimeslive/video.m3u8
 #EXTINF:-1 tvg-id="KnockBhakti.in@SD",Knock Bhakti (1080p)
 https://knocktv2.wiseplayout.com/Knock_Bhakti_EST/master.m3u8
 #EXTINF:-1 tvg-id="NationNews.in@SD",Nation News (720p)
@@ -1663,12 +1671,12 @@ https://jmp2.uk/stvp-IN46000140Q
 https://jmp2.uk/stvp-IN460001373
 #EXTINF:-1 tvg-id="NSC9News.in@SD",NSC9 News (1080p)
 https://legitpro.co.in/nsc9/index.m3u8
-#EXTINF:-1 tvg-id="Pradesh24Gujarati.in@SD",Pradesh24 Gujarati (1080p)
-https://stream2.livebox.co.in/pradesh24hls/live.m3u8
 #EXTINF:-1 tvg-id="PrimeNews.in@SD",Prime News (1080p)
 https://stream.ottlive.co.in/primenews/index.m3u8
 #EXTINF:-1 tvg-id="RaatdinBangla.in@SD",Raatdin Bangla (720p)
 https://server.playontv.in/raatdinbangla/index.m3u8
+#EXTINF:-1 tvg-id="SwastikTV.in@SD",Swastik TV (720p)
+https://server.playontv.in/swastiktv/index.m3u8
 #EXTINF:-1 tvg-id="ThendralTV.in@SD",Thendral TV (576p)
 https://hls.thendraltv.in/thendraltv_1210b43d/index.m3u8
 #EXTINF:-1 tvg-id="BIGTV.in@SD",BIG TV (576p)
@@ -1797,6 +1805,8 @@ https://yuppnimresmum.akamaized.net/120723/smil:bigtv.smil/playlist.m3u8?hdnts=s
 https://mumt05.tangotv.in/87NeALx2GSTV/index.m3u8
 #EXTINF:-1 tvg-id="KhushbooBangla.in@SD",Khushboo Bangla (576p) [Geo-blocked]
 https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8
+#EXTINF:-1 tvg-id="SangeetBangla.in@SD",Sangeet Bangla (576p) [Geo-blocked]
+https://tvsen6.aynaott.com/hT5jHczt/index.m3u8
 #EXTINF:-1 tvg-id="ShemarooTV.in@SD",Shemaroo TV (576p)
 https://mumt06.tangotv.in/qYyB8fXVSHEMAROOTV/index.m3u8
 #EXTINF:-1 tvg-id="ShemarooUmang.in@SD",Shemaroo Umang (576p)
@@ -2111,8 +2121,6 @@ https://samitaorigin.tangotv.in/CHINTPURNILIVE/SAMITAORIGIN/index.m3u8
 https://mumt03.tangotv.in/Dsly5z3HCHINTPURNILIVE/index.m3u8
 #EXTINF:-1 tvg-id="DukhnivaranPatialaLive.in@HD",Dukhnivaran Patiala Live (720p)
 https://samitaorigin.tangotv.in/DUKHNIWARAN/SAMITAORIGIN/index.m3u8
-#EXTINF:-1 tvg-id="IndiaTalkies.in@SD",India Talkies (360p)
-https://samitaorigin.tangotv.in/INDIATALKIES/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-id="Kabaddi24x7.in@SD",Kabaddi 24x7 (720p)
 https://samitaorigin.tangotv.in/KABADDI24X7/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-id="MoviePunjab.in@SD",Movie Punjab (720p)
@@ -2151,12 +2159,12 @@ https://mars.streambridge.cloud/sls/ashwaveega/playlist.m3u8
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:asianetmovies.smil/chunklist_b1928000.m3u8
 #EXTINF:-1 tvg-id="SonarBangla.in@SD",Sonar Bangla (360p)
 https://samitaorigin.tangotv.in/SONARBANGLA/SAMITAORIGIN/index.m3u8
-#EXTINF:-1 tvg-id="ATNSamachar.in@SD",ATN Samachar (1080p)
-https://newsliveindia.com:4433/atn/index.m3u8
 #EXTINF:-1 tvg-id="B4UBhojpuri.in@Plus",B4U Bhojpuri Plus (1080p)
 https://cc-t2mudtkmuz4wb.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-t2mudtkmuz4wb/B4U_Bhojpuri/master.m3u8
 #EXTINF:-1 tvg-id="BanglaJago.in@SD",Bangla Jago (720p)
 https://banglajagotv.livebox.co.in/banglajagohls/24x7.m3u8
+#EXTINF:-1 tvg-id="BharatAtoZ.in@SD",Bharat AtoZ (720p)
+https://live.ekamraott.com/4tv/bharata2z/index.m3u8
 #EXTINF:-1 tvg-id="BHIChannel.in@SD",BHI Channel (720p)
 https://server.livelegitpro.in/bhichannel/bhichannel/index.m3u8
 #EXTINF:-1 tvg-id="BSTV.in@SD",BSTV (720p)
@@ -2193,6 +2201,8 @@ https://samitaorigin.tangotv.in/MHONE/SAMITAORIGIN/index.m3u8
 https://mumt01.tangotv.in/O5aw8Zn3PUNJABIBEATSHD/index.m3u8
 #EXTINF:-1 tvg-id="PuthiyaThalaimuraiExpress.in@SD",Puthiya Thalaimurai Express (720p)
 https://samitaorigin.tangotv.in/PUTHIYAEXPRESS/SAMITAORIGIN/index.m3u8
+#EXTINF:-1 tvg-id="AMNTV.in@SD",AMN TV (576p)
+https://live.onecloudlive.in/amn/amntv/index.m3u8
 #EXTINF:-1 tvg-id="NKTV24x7.in@SD",NK TV 24x7 (576p)
 https://mumt05.tangotv.in/87NeALx2NKTVPLUS/index.m3u8
 #EXTINF:-1 tvg-id="NewsLive.in@SD",News Live (576p)
@@ -2506,9 +2516,6 @@ https://fta.ektv.in/live/169/master.m3u8
 #EXTINF:-1 tvg-id="PeaceofMindTV.in@SD",Peace of Mind TV (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/170/master.m3u8
-#EXTINF:-1 tvg-id="Captain.in@SD",Captain (576p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/173/master.m3u8
 #EXTINF:-1 tvg-id="B4UBhojpuri.in@SD",B4U Bhojpuri (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/174/master.m3u8
@@ -2791,6 +2798,9 @@ https://fta.ektv.in/live/203/master.m3u8
 #EXTINF:-1 tvg-id="PublicTV.in@SD",Public TV (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/241/master.m3u8
+#EXTINF:-1 tvg-id="DDKashir.in@SD",DD Kashir (576p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+https://fta.ektv.in/live/248/master.m3u8
 #EXTINF:-1 tvg-id="DDUttarPradesh.in@SD",DD Uttar Pradesh (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/263/master.m3u8
@@ -2854,6 +2864,9 @@ https://fta.ektv.in/live/368/master.m3u8
 #EXTINF:-1 tvg-id="AasthaGujarati.in@SD",Aastha Gujarati (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/372/master.m3u8
+#EXTINF:-1 tvg-id="Nepal1.in@SD",Nepal 1 (576p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+https://fta.ektv.in/live/380/master.m3u8
 #EXTINF:-1 tvg-id="DDMizoram.in@SD",DD Mizoram (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/381/master.m3u8

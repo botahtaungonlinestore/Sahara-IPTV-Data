@@ -57,6 +57,8 @@ https://0b73ace69ebb45eaa249bb87837cb958.mediatailor.us-west-2.amazonaws.com/v1/
 http://iptv.rtv-ooe.at/stream.m3u8
 #EXTINF:-1 tvg-id="SchladmingDachsteinTV.at@SD",Schladming-Dachstein TV (720p)
 https://m317.video-stream-hosting.de/gzSoftware-live/_definst_/smil:livestream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="SteiermarkTV.at@SD",Steiermark TV (1080p)
+https://h056.video-stream-hosting.de/easycast8-live/_definst_/mp4:livestreamhd4/playlist.m3u8?ref=
 #EXTINF:-1 tvg-id="SwamijiTVAmerican.at@SD",Swamiji TV American (1080p) [Not 24/7]
 https://stream.swamiji.tv/YogaIPTV/smil:YogaStreamUS.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="SwamijiTVAustralian.at@SD",Swamiji TV Australian (1080p) [Not 24/7]
@@ -71,3 +73,5 @@ https://streaming10.huberwebmedia.at/LiveApp/streams/238985177034727564068269_ad
 https://ms01.w24.at/W24/smil:liveevent.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ServusTV.at@SD",ServusTV (576p)
 https://s6.hopslan.com/servuz1/index.m3u8
+#EXTINF:-1 tvg-id="ORFSportPlus.at@SD",ORF Sport+
+https://test02.mdn.ors.at/orf/orfs/qxa/manifest.m3u8

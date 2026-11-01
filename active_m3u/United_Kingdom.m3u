@@ -98,8 +98,6 @@ https://d1msejlow1t3l4.cloudfront.net/211125/godtv/chunks.m3u8
 https://amg01753-narrativeuk-amg01753c3-lg-gb-1833.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatmovies-lggb/playlist.m3u8
 #EXTINF:-1 tvg-id="GREATromance.uk@UK",GREAT! romance (1080p)
 https://amg01753-narrativeuk-amg01753c2-lg-gb-1832.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatchristmas-lggb/playlist.m3u8
-#EXTINF:-1 tvg-id="HalaLondon.uk@SD",Hala London (1080p)
-https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8
 #EXTINF:-1 tvg-id="HellenicTV.uk@SD",Hellenic TV (720p) [Not 24/7]
 https://l5.cloudskep.com/hellenictv/htv/playlist.m3u8
 #EXTINF:-1 tvg-id="HobbyMaker.uk@SD",Hobby Maker (720p)
@@ -116,6 +114,8 @@ https://live.livetvstream.co.uk/LS-63503-4/index.m3u8
 https://live.playstop.me/1816184091/index.m3u8
 #EXTINF:-1 tvg-id="IranInternational.uk@SD",Iran International (720p)
 https://live.playstop.me/LS-63503-4/index.m3u8
+#EXTINF:-1 tvg-id="JimJamEurope.uk@SD",JimJam Europe (720p)
+http://212.5.144.156:8080/jimjam/index.m3u8
 #EXTINF:-1 tvg-id="JimJamEurope.uk@SD",JimJam Europe (576p)
 http://stream.mcquack.net/150/index.m3u8
 #EXTINF:-1 tvg-id="KanshiTV.uk@SD",Kanshi TV (720p) [Not 24/7]
@@ -256,6 +256,8 @@ https://mumbai-edge.smartplaytv.in/BBCNews/index.m3u8
 http://195.189.60.253/118/index.m3u8
 #EXTINF:-1 tvg-id="BabyTV.uk@LatinAmerica",BabyTV Latin America (480p)
 http://181.78.12.119:16123/play/ch01/index.m3u8
+#EXTINF:-1 tvg-id="Now90s00s.uk@Poland",Now 90s00s (576p)
+https://web-primeprimetv2026.onrender.com/playlist.m3u8
 #EXTINF:-1 tvg-id="StarPlus.uk@SD",StarPlus (576p)
 https://d1rc86nwwc9fag.cloudfront.net/260723/starplusuk_2500/chunks.m3u8
 #EXTINF:-1 tvg-id="GODTV.uk@SD",GOD TV (576p)
@@ -288,3 +290,15 @@ http://23.237.104.106:8080/DAZN_5/index.m3u8
 https://d1msejlow1t3l4.cloudfront.net/211125/godtv/playlist.m3u8
 #EXTINF:-1 tvg-id="PBSAmerica.uk@SD",PBS America (576p)
 http://185.19.191.2:8090/PBS/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveryScienceEurope.uk@UK",Discovery Science Europe UK
+http://37.49.224.5/stream/9/index.m3u8
+#EXTINF:-1 tvg-id="AnimalPlanet.uk@SD",Animal Planet
+http://37.49.224.5/stream/10/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveryChannel.uk@UK",Discovery Channel
+http://37.49.224.5/stream/11/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveryHistory.uk@SD",Discovery History
+http://37.49.224.5/stream/12/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveryTurbo.uk@SD",Discovery Turbo
+http://37.49.224.5/stream/13/index.m3u8
+#EXTINF:-1 tvg-id="Really.uk@SD",Really
+http://37.49.224.5/stream/36/index.m3u8

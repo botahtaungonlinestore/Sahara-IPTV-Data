@@ -299,6 +299,8 @@ https://live.yoltv.com/hls/stream.m3u8
 https://zweiapp.b-cdn.net/1080p/index.m3u8
 #EXTINF:-1 tvg-id="DW.de@English",DW English (576p)
 https://mumt05.tangotv.in/87NeALx2DWTV/index.m3u8
+#EXTINF:-1 tvg-id="DW.de@English",DW English (576p)
+https://tvsen6.aynaott.com/Qq3s5WR2/index.m3u8
 #EXTINF:-1 tvg-id="MTV.de@SD",MTV
 https://ma.anixa.tv/clips/stream/mtv/playlist.php
 #EXTINF:-1 tvg-id="ComedyCentral.de@SD",Comedy Central
@@ -355,3 +357,5 @@ https://rtmp.radiobozsike.com/hls/stream1.m3u8
 https://fta.ektv.in/live/116/116_0.m3u8
 #EXTINF:-1 tvg-id="RiCtoday.de@HD",RiC.today
 http://88.212.7.14/live/test_ric_international_avc_25p/playlist.m3u8
+#EXTINF:-1 tvg-id="NickComedyCentralPlus1.de@SD",Nick/Comedy Central +1
+http://90.183.52.46:4000/play/a046/index.m3u8

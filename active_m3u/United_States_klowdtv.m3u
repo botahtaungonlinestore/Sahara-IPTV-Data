@@ -67,8 +67,6 @@ https://a-cdn.klowdtv.com/live2/horsetv_720p/playlist.m3u8
 https://a-cdn.klowdtv.com/live2/hsn_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="JewishLifeTelevision.us@SD",Jewish Life Television (720p)
 https://a-cdn.klowdtv.com/live3/jltv_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="LacrosseTV.us@SD",Lacrosse TV (720p)
-https://a-cdn.klowdtv.com/live2/lsn_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="LATV.us@SD",LATV (720p) [Geo-blocked]
 https://amg00779-latv-amg00779c1-klowdtv-us-2135.playouts.now.amagi.tv/playlist/amg00779-latvnetworkllc-latv-klowdtvus/playlist.m3u8
 #EXTINF:-1 tvg-id="LawCrime.us@SD",Law & Crime (720p)

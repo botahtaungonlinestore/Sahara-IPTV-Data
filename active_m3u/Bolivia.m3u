@@ -1,8 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="AmitelTV.bo@SD",Amitel TV (720p)
 https://stv2.boliviaplay.com.bo/hls/stream.m3u8
-#EXTINF:-1 tvg-id="AsContenidos.bo@SD",As Contenidos (720p)
-https://master.tucableip.com/ascontenido/index.m3u8
 #EXTINF:-1 tvg-id="ATBLaPaz.bo@SD",ATB La Paz
 https://stream.atb.com.bo/live/daniel/index.m3u8
 #EXTINF:-1 tvg-id="Audiokiss.bo@SD",Audiokiss (1080p)
@@ -37,12 +35,8 @@ https://s3.tvdatta.com:3846/live/poderdedioslive.m3u8
 https://giatv.bozztv.com/giatv/giatv-PTVonLINE/PTVonLINE/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioCentro.bo@SD",Radio Centro (720p)
 https://streamlov.alsolnet.com/grupocentrobo/live/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioClasicaTV.bo@SD",Radio Clasica TV (720p)
-https://ares.disfrutaenlared.com:1936/clasica/clasica/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioKollasuyo.bo@SD",Radio Kollasuyo (720p)
 https://azura2.bitstreaming.net/hls/kollasuyo3/live.m3u8
-#EXTINF:-1 tvg-id="RadioUniversitariaSanAndres.bo@SD",Radio Universitaria San Andres (720p)
-https://edge.enhdtv.com/8054/index.m3u8
 #EXTINF:-1 tvg-id="RedADvenirTV.bo@SD",Red ADvenir TV (360p) [Not 24/7]
 http://streamer1.streamhost.org:1935/salive/GMIredadvenirm/playlist.m3u8
 #EXTINF:-1 tvg-id="RedAmericaTV.bo@SD",Red America TV (1080p)
@@ -61,6 +55,8 @@ https://rtp.noxun.net/hls720/stream3.m3u8
 https://rtp.noxun.net/hls480/stream2.m3u8
 #EXTINF:-1 tvg-id="RTP.bo@SD",RTP
 https://rtp.noxun.net/hls/stream.m3u8
+#EXTINF:-1 tvg-id="SucremantaTV.bo@SD",Sucremanta TV (720p)
+https://lbgo.bozztv.com/ssh101/ssh101/ok2026/playlist.m3u8
 #EXTINF:-1 tvg-id="TDTMultimedia.bo@SD",TDT Multimedia (720p)
 https://video01.brascast.com/juan6318/juan6318/playlist.m3u8
 #EXTINF:-1 tvg-id="TELE6.bo@SD",TELE 6 (720p)
@@ -77,13 +73,6 @@ https://castv10.plugstreaming.com:19360/redtv/redtv.m3u8
 https://master.tucableip.com/tvlatina/index.m3u8
 #EXTINF:-1 tvg-id="TVOFF.bo@SD",TV OFF (1080p)
 https://edge.enhdtv.com/tvoff/index.m3u8
-#EXTINF:-1 tvg-id="TVUSucre.bo@SD",TVU Sucre (720p)
-https://edge.enhdtv.com/8214/index.m3u8
-#EXTINF:-1 tvg-id="UMSATVUInternacional.bo@HD",UMSA TVU Internacional (720p)
-https://edge.enhdtv.com/8026/index.m3u8
-#EXTINF:-1 tvg-id="UMSATVUInternacional.bo@HD",UMSA TVU Internacional (720p)
-#EXTVLCOPT:http-referrer=https://tvu.umsa.bo/tvu-internacional
-https://live.enhdtv.com:8081/8026/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="UMSATVULP.bo@SD",UMSA TVU LP (720p)
 https://edge.enhdtv.com/8190/index.m3u8
 #EXTINF:-1 tvg-id="UMSATVULP.bo@SD",UMSA TVU LP (720p)

@@ -74,8 +74,6 @@ https://live-8knsk.cdnvideo.ru/8knsk/stream1/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel10.ru@SD",Channel 10 (576i)
 https://bl.rutube.ru/livestream/c9e26bf5c003fd8d477200065ca1a05f/index.m3u8?e=2072611029&s=eqlTXebDP9wSWTZgre6BwQ&scheme=https
 #EXTINF:-1 tvg-id="ChannelOne.ru@SD",Channel One (576p)
-http://45.153.24.78/1TV/index.m3u8
-#EXTINF:-1 tvg-id="ChannelOne.ru@SD",Channel One (576p)
 http://178.217.49.7/1/index.m3u8
 #EXTINF:-1 tvg-id="ChannelOne.ru@HD",Channel One HD (720p)
 https://stream8.cinerama.uz/1214/tracks-v1a1/mono.m3u8
@@ -361,6 +359,8 @@ https://stream8.cinerama.uz/1052/tracks-v1a1/mono.m3u8
 #EXTVLCOPT:http-referrer=https://gtrkvainah.ru/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 OPR/130.0.0.0 (Edition std-2)
 https://live.chechensoft.ru/vainahtv/ngrp:vaynahtv_all/playlist.m3u8
+#EXTINF:-1 tvg-id="RT.ru@SD",RT (720p)
+http://212.5.144.156:8080/rt/index.m3u8
 #EXTINF:-1 tvg-id="RTBalkan.ru@SD",RT Balkan (1080p)
 https://rt-srb.rttv.com/dvr/rtbalkan/playlist.m3u8
 #EXTINF:-1 tvg-id="RTBalkan.ru@SD",RT Balkan (1080p)
@@ -461,8 +461,6 @@ https://songtv.hls.iptvdc.com/web-russia/playlist.m3u8
 http://178.124.179.122:8080/TRO/index.m3u8
 #EXTINF:-1 tvg-id="Spas.ru@SD",Spas (576p)
 https://tvspas.mediacdn.ru/cdn/spas/playlist.m3u8
-#EXTINF:-1 tvg-id="Sportivnyy.ru@SD",Sportivnyy (1080p)
-https://live-3.otcnet.ru/sportivny/index.m3u8
 #EXTINF:-1 tvg-id="StarCinema.ru@SD",Star Cinema
 https://dash2.antik.sk/live/test_star_cinema_atktv/playlist.m3u8
 #EXTINF:-1 tvg-id="StarFamily.ru@SD",Star Family (1080p)
@@ -723,8 +721,6 @@ http://live-tolknews.cdnvideo.ru/tolknews/stream/playlist.m3u8
 https://hls.tv.3angels.ru/stream.m3u8
 #EXTINF:-1 tvg-id="HuzurTV.ru@SD",Хузур ТВ (1080p) [Not 24/7]
 https://hls-mycdn08724960135.cdnvideo.ru/mycdn08724960135/stream1/playlist.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru@SD",Шансон ТВ (512p) [Geo-blocked]
-http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="ShchyolkovskoeTV.ru@SD",Щёлковское ТВ (576p) [Not 24/7]
 http://stream0.tv41.ru/live.m3u8
 #EXTINF:-1 tvg-id="Yuvelirochka.ru@SD",Ювелирочка ТВ (576p)
@@ -839,6 +835,8 @@ https://stream8.cinerama.uz/1270/tracks-v1a1/mono.m3u8
 https://stream8.cinerama.uz/1425/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="Kuhnya.ru@SD",Kuhnya (576p)
 https://stream8.cinerama.uz/1236/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="TVCentr.ru@SD",TV Centr (576p)
+https://stream8.cinerama.uz/1025/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="Tochkaotryva.ru@SD",Tochka otryva (576p)
 https://stream8.cinerama.uz/1031/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="Usadba.ru@SD",Usadba (576p)
