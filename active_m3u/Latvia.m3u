@@ -2,9 +2,15 @@
 #EXTINF:-1 tvg-id="LTV1.lv@SD",LTV1 (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/34/index.m3u8
+#EXTINF:-1 tvg-id="LTV1.lv@SD",LTV1 (1080p)
+https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv1_pasaule/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="LTV7.lv@SD",LTV7 (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/371/index.m3u8
+#EXTINF:-1 tvg-id="LTV7.lv@SD",LTV7 (1080p)
+https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv7_pasaule/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="LTV7.lv@SD",LTV7
+http://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv7_pasaule/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioSWHTV.lv@SD",Radio SWH TV (1080p)
 https://00ff00.latnet.media/edge/swh_tv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ReTV.lv@SD",Re TV (1080p)
@@ -14,9 +20,3 @@ https://retv2132.cloudycdn.services/slive/_definst_/retv_retv_channel_5k7_42787_
 http://stream.mcquack.net/373/index.m3u8
 #EXTINF:-1 tvg-id="VidusdaugavasTelevizija.lv@SD",Vidusdaugavas Televīzija (576p)
 https://straume.vdtv.lv/vdtv2/index.m3u8
-#EXTINF:-1 tvg-id="LTV1.lv@SD",LTV1 (1080p)
-https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv1_pasaule/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="LTV7.lv@SD",LTV7 (1080p)
-https://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv7_pasaule/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="LTV7.lv@SD",LTV7
-http://lsm.eu.cdns-redge.media/livehls/o2/lsm-live/live/ltv7_pasaule/live.livx/playlist.m3u8

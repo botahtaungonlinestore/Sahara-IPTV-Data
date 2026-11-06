@@ -6,16 +6,16 @@ http://events.waastudios.dpdns.org:8877/ch/88ed3166254e72e555a4bf161edaa0a5/raw
 http://events.waastudios.dpdns.org:8877/ch/3f616e3113fc069882055c45895a0f4a/raw
 #EXTINF:-1 tvg-id="ElevenSp.1" tvg-name="Eleven Sports 1 4K 🇵🇱" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/international/eleven-sports-1-int.png" group-title="UHD",Eleven Sports 1 4K 🇵🇱
 http://events.waastudios.dpdns.org:8877/ch/79eced5a5e8d767e0feaf6cb96cba00a/raw
-#EXTINF:-1 tvg-id="allente_se.vultra" tvg-name="V Sport UltraHD【非24小时】🇫🇮" tvg-logo="https://i.postimg.cc/QC4VcpmZ/v-sport-ultra.png" group-title="UHD",V Sport UltraHD【非24小时】🇫🇮
-http://events.waastudios.dpdns.org:8877/ch/0452863f86a222f3c61b6cbc2cf08dd4/master.m3u8
+#EXTINF:-1 tvg-id="allente_se.vultra" tvg-name="V Sport UltraHD【非24小时】🇩🇰" tvg-logo="https://i.postimg.cc/QC4VcpmZ/v-sport-ultra.png" group-title="UHD",V Sport UltraHD【非24小时】🇩🇰
+http://events.waastudios.dpdns.org:8877/ch/0452863f86a222f3c61b6cbc2cf08dd4/raw
 #EXTINF:-1 tvg-id="digi4k_ro" tvg-name="DIGI 4K 🇷🇴" tvg-logo="https://i.postimg.cc/mgzRQZNB/DIGI-4K.jpg" group-title="UHD",DIGI 4K 🇷🇴
 http://events.waastudios.dpdns.org:8877/ch/9ccb19bf327e1b35daf1bc391471defe/master.m3u8
 #EXTINF:-1 tvg-id="travelxp.eu" tvg-name="TravelXP 4K 欧洲台 🇷🇺" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/india/travelxp-4k-in.png" group-title="UHD",TravelXP 4K 欧洲台 🇷🇺
 http://events.waastudios.dpdns.org:8877/ch/0e33e1fff98162b2c078711135fd707c/raw
-#EXTINF:-1 tvg-id="" tvg-name="Stingray Now 4K 🇨🇦" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Stingray_Now_4K.svg/3840px-Stingray_Now_4K.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="UHD",Stingray Now 4K 🇨🇦
-http://events.waastudios.dpdns.org:8877/ch/f76c48d5f16b88ebba45ca80827d50e0/raw
 #EXTINF:-1 tvg-id="telus.713" tvg-name="Love Nature 4K 🇨🇦" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Love_Nature_logo_%282025%29.svg/3840px-Love_Nature_logo_%282025%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="UHD",Love Nature 4K 🇨🇦
 http://events.waastudios.dpdns.org:8877/ch/6392c8408cf7b764278824e573ca2c7f/raw
+#EXTINF:-1 tvg-id="" tvg-name="Stingray Now 4K 🇨🇦" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Stingray_Now_4K.svg/3840px-Stingray_Now_4K.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="UHD",Stingray Now 4K 🇨🇦
+http://events.waastudios.dpdns.org:8877/ch/f76c48d5f16b88ebba45ca80827d50e0/raw
 #EXTINF:-1 tvg-id="eurosport.1" tvg-name="Eurosport 1" tvg-logo="https://i.postimg.cc/T1yyLxr3/Eurosport1.png" group-title="FHD",Eurosport 1
 http://events.waastudios.dpdns.org:8877/ch/acdd71c64721b47c9bd50509bcca822e/raw
 #EXTINF:-1 tvg-id="eurosport.2" tvg-name="Eurosport 2" tvg-logo="https://i.postimg.cc/jC0jD7xM/Eurosport2.png" group-title="FHD",Eurosport 2
@@ -56,15 +56,9 @@ http://events.waastudios.dpdns.org:8877/ch/fb38d28d4497dff6f5d49a085c225389/mast
 http://events.waastudios.dpdns.org:8877/ch/2edc599212fcc48bffe4c87625836fe4/master.m3u8
 #EXTINF:-1 tvg-id="NBCSpCali.us" tvg-name="NBC Sports California" tvg-logo="https://i.postimg.cc/jjcvBdCt/NBC-Sports-California.png" group-title="NBC系列频道",NBC Sports California
 http://events.waastudios.dpdns.org:8877/ch/fc5ce94ba3589c50ec40c5dc338e0c76/master.m3u8
-#EXTINF:-1 tvg-id="bein1" tvg-name="beIN Sports 1 🇸🇬" tvg-logo="https://i.postimg.cc/4yKHgxtY/638_wbg_c_693ae9bf65.png" group-title="测试频道",beIN Sports 1 🇸🇬
-http://events.waastudios.dpdns.org:8877/ch/1eb0f28d5e281c926ca6efec957f1d50/master.m3u8
-#EXTINF:-1 tvg-id="bein2" tvg-name="beIN Sports 2 🇸🇬" tvg-logo="https://i.postimg.cc/sxBGrgSB/639_wbg_c_c934cb40d8.png" group-title="测试频道",beIN Sports 2 🇸🇬
-http://events.waastudios.dpdns.org:8877/ch/7a0b05851181d04269da85beec024feb/master.m3u8
-#EXTINF:-1 tvg-id="bein3" tvg-name="beIN Sports 3 🇸🇬" tvg-logo="https://i.postimg.cc/JnYHvkyw/643_wbg_c_5e0adf46dd.png" group-title="测试频道",beIN Sports 3 🇸🇬
-http://events.waastudios.dpdns.org:8877/ch/cfe43301c980d9b50ac8abd2ac96d5c7/master.m3u8
-#EXTINF:-1 tvg-id="hubpremier2" tvg-name="Hub Premier 2 UHD 🇸🇬" tvg-logo="https://poster.starhubgo.com/Linear_channels2/222_1920x1080_HTV.png" group-title="测试频道",Hub Premier 2 UHD 🇸🇬
-http://events.waastudios.dpdns.org:8877/ch/42c476ddeef08347e75d5b9d01a5caa3/master.m3u8
-#EXTINF:-1 tvg-id="viutv" tvg-name="ViuTV 🇭🇰" tvg-logo="https://epg.v1.mk/logo/viutv.png" group-title="测试频道",ViuTV 🇭🇰
-http://events.waastudios.dpdns.org:8877/ch/74cc21b662bd9882e4c6fe36b5cf6bc7/master.m3u8
-#EXTINF:-1 tvg-id="viutv6" tvg-name="ViuTVsix 🇭🇰" tvg-logo="https://epg.v1.mk/logo/viutv6.png" group-title="测试频道",ViuTVsix 🇭🇰
-http://events.waastudios.dpdns.org:8877/ch/214b7112f8eb75c9a079e4038af85096/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Mewatch 达喀尔青奥会 CH01" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format=%27png%27&Quality=85&ImageId=%2717251041%27&EntityType=%27Item%27&EntityId=%27862712%27&Width=1920&Height=1080&ResizeAction=%27fill%27&HorizontalAlignment=%27center%27&VerticalAlignment=%27top%27" group-title="青奥会",Mewatch 达喀尔青奥会 CH01
+http://events.waastudios.dpdns.org:8877/ch/c23380fe01fb5e81a109920f06bd2d10/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Mewatch 达喀尔青奥会 CH02" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format=%27png%27&Quality=85&ImageId=%2717251037%27&EntityType=%27Item%27&EntityId=%27862710%27&Width=1920&Height=1080&ResizeAction=%27fill%27&HorizontalAlignment=%27center%27&VerticalAlignment=%27top%27" group-title="青奥会",Mewatch 达喀尔青奥会 CH02
+http://events.waastudios.dpdns.org:8877/ch/fc3409f098b04f25fe76b68c326d60fc/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Mewatch 达喀尔青奥会 CH03" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format=%27png%27&Quality=85&ImageId=%2717251033%27&EntityType=%27Item%27&EntityId=%27862709%27&Width=1920&Height=1080&ResizeAction=%27fill%27&HorizontalAlignment=%27center%27&VerticalAlignment=%27top%27" group-title="青奥会",Mewatch 达喀尔青奥会 CH03
+http://events.waastudios.dpdns.org:8877/ch/5b7e8fb8546fa1f55278deadfe0612dc/master.m3u8

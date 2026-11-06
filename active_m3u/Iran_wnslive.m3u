@@ -1,10 +1,14 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="AfraFilm.ir@SD",Afra Film
+https://afrafhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="AraxTV.ir@SD",Arax TV
 https://araxhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="ArkoTV.ir@SD",Arko TV
 https://arkhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="ArvanTV.ir@SD",Arvan TV
 https://arvhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AVASeries.ir@SD",AVA Series
+https://avaserieshls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="CafeFilm.ir@SD",Cafe Film
 https://cafefhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="ClassicTV.ir@SD",Classic TV
@@ -27,6 +31,8 @@ https://icnet2hls.wns.live/hls/stream.m3u8
 https://ic3hls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="KalemehTV.uk@HD",Kalemeh TV
 https://klmhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="KanalJadid.uk@SD",Kanal Jadid
+https://kjhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="KomalaTV.se@SD",Komala TV
 https://komhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="KurdChannel.iq@SD",Kurd Channel
@@ -51,9 +57,15 @@ https://sat7phls.wns.live/hls/stream.m3u8
 https://setarehhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="Shabakeh7.us@SD",Shabakeh 7
 https://sh7hls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="SL1.ir@SD",SL 1
+https://slonehls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="SL2.ir@SD",SL 2
+https://sltwohls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="T2TV.ir@SD",T2 TV
 https://t2hls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="TVITN.ir@SD",TV ITN
 https://itnhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="VoATVPersian.us@SD",VOA Persian
+https://voaphls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="ZedTV.ir@HD",Zed TV
 https://zedhls.wns.live/hls/stream.m3u8

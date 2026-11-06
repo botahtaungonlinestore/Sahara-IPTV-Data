@@ -127,8 +127,6 @@ https://d2tlbbjop5ksk2.cloudfront.net/BuzzFeed_Tasty.m3u8
 https://d1727vwt6h9ghr.cloudfront.net/BuzzFeed_Unsolved.m3u8
 #EXTINF:-1 tvg-id="BYUTV.us@SD",BYUtv (1080p)
 https://d13j8jpstr8iqz.cloudfront.net/BYUtv.m3u8
-#EXTINF:-1 tvg-id="",Caillou (720p)
-https://d2mshoh3usf646.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-id="",Campfire Vibes (1080p)
 https://d1bcz21zn68he1.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-id="CanelaTV.us@SD",Canela.TV (1080p)

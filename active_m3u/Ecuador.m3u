@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="AmericaEstereoGuayaquil.ec@SD",América Estéreo Guayaquil (360p)
+https://video.makrodigital.com/americaestereoguayaquil/americaestereoguayaquil/playlist.m3u8
 #EXTINF:-1 tvg-id="AmericaEstereoIbarra.ec@SD",América Estéreo Ibarra (720p)
 https://video.makrodigital.com/americaestereoibarra/americaestereoibarra/playlist.m3u8
 #EXTINF:-1 tvg-id="AmericaEstereoQuito.ec@SD",América Estéreo Quito (1080p)
@@ -35,6 +37,8 @@ https://tv.wracanal10.com:3025/live/elsoltvlive.m3u8
 https://video2.makrodigital.com/fmmundo/fmmundo/playlist.m3u8
 #EXTINF:-1 tvg-id="Gamavision.ec@SD",Gamavision (1080p)
 http://45.224.97.181:9999/Gamavision/index.m3u8
+#EXTINF:-1 tvg-id="Gamavision.ec@SD",Gamavision (1080p)
+http://181.78.211.244:8000/play/a0a2/index.m3u8
 #EXTINF:-1 tvg-id="GaviotaTV.ec@SD",Gaviota TV [Not 24/7]
 https://gaviotatv.streamseguro.com:3195/live/gaviotatvlive.m3u8
 #EXTINF:-1 tvg-id="HechosEcuador.ec@SD",Hechos Ecuador (1080p) [Not 24/7]
@@ -58,8 +62,6 @@ http://iptv.makrodigitaltv.makrodigital.com:8081/makrodigitaltelevision/iptv/pla
 https://play.once.net.ec/play/Ily2oYdd3E1fi9wK2zORoRovFU9P5xM0g3CNVK2MT0M/.m3u8
 #EXTINF:-1 tvg-id="MarcaTV.ec@SD",Marca TV (1080p)
 http://200.7.219.221:8088/live/livetv/index.m3u8
-#EXTINF:-1 tvg-id="MelRadioTV.ec@SD",Mel Radio TV (360p)
-https://eu1.servers10.com:8081/8334/index.m3u8
 #EXTINF:-1 tvg-id="MetropoliMediosTV.ec@SD",Metropoli Medios TV (720p)
 https://eu1.servers10.com:8081/8214/index.m3u8
 #EXTINF:-1 tvg-id="NukaTV.ec@SD",Ñuka TV (720p) [Not 24/7]
@@ -94,6 +96,8 @@ http://45.224.97.181:9999/RTU/index.m3u8
 https://sv72.ecuaradiotv.net/rtvhd/live/manifest.m3u8
 #EXTINF:-1 tvg-id="SonoOndaTV.ec@SD",Sono Onda TV (720p)
 https://live.obslivestream.com/sonoondatv/index.m3u8
+#EXTINF:-1 tvg-id="StudioPlusTV.ec@HD",Studio + TV (1080p)
+https://vd01.streaminghd.net.ar:3113/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="TCTelevision.ec@SD",TC Television (1080p)
 http://45.224.97.181:9999/TC/index.m3u8
 #EXTINF:-1 tvg-id="TCTelevision.ec@SD",TC Television
@@ -114,6 +118,8 @@ https://streamingav.asambleanacional.gob.ec/hls/stream.m3u8
 https://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8
 #EXTINF:-1 tvg-id="TVC.ec@SD",TVC (1080p)
 http://45.224.97.181:9999/TVC/index.m3u8
+#EXTINF:-1 tvg-id="TVC.ec@SD",TVC (720p)
+http://157.100.248.242:8080/TVCHD/index.m3u8
 #EXTINF:-1 tvg-id="TvOro.ec@SD",TvOro (1080p)
 http://45.187.0.19:9090/tvusa/index.m3u8
 #EXTINF:-1 tvg-id="UNIANDESTV.ec@SD",UNIANDES TV (720p) [Not 24/7]
@@ -124,7 +130,3 @@ http://provedores.unsion.tv:8081/srt/1/playlist.m3u8
 https://cloud37.ecuatel.com/vostv/live/manifest.m3u8
 #EXTINF:-1 tvg-id="WuanPlus.ec@SD",Wuan+
 https://7.innovatestream.pe:19360/ecuadortest/ecuadortest.m3u8
-#EXTINF:-1 tvg-id="StudioPlusTV.ec@HD",Studio + TV (1080p)
-https://vd01.streaminghd.net.ar:3113/hybrid/play.m3u8
-#EXTINF:-1 tvg-id="Gamavision.ec@SD",Gamavision (1080p)
-http://181.78.211.244:8000/play/a0a2/index.m3u8

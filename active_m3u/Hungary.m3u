@@ -1,28 +1,47 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="16tvBudapest.hu@SD",16tv Budapest (360p)
 https://cloudfront44.lexanetwork.com:1344/freerelay/16tv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="AnimalPlanet.hu@SD",Animal Planet
+http://88.212.7.14/live/animal_hun/index.m3u8
 #EXTINF:-1 tvg-id="ApostolTV.hu@SD",Apostol TV (576p)
 https://live.apostoltv.hu/live/playlist.m3u8
+#EXTINF:-1 tvg-id="Arena4.hu@SD",Arena4
+http://88.212.7.14/live/arena4/index.m3u8
 #EXTINF:-1 tvg-id="ATV.hu@SD",ATV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/test_atv_hungary_1200_atk/playlist.m3u8
 #EXTINF:-1 tvg-id="ATVSpirit.hu@SD",ATV Spirit
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/test_atv_spirit/playlist.m3u8
+#EXTINF:-1 tvg-id="AXNCrime.us@SD",AXN Crime
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+http://88.212.7.14/live/viasat_film/index.m3u8
+#EXTINF:-1 tvg-id="AXNSpin.hu@SD",AXN Spin
+#EXTVLCOPT:http-referrer=https://cool-tv.net/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
+https://cronos.mangora1.cfd/spyn/usergencs85ja0j1rrnd.m3u8
 #EXTINF:-1 tvg-id="BTV.hu@SD",Bábolnai TV (360p)
 https://cloudfront44.lexanetwork.com:1344/freerelay/babolnatv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="BalatonTV.hu@SD",Balaton TV (432p)
 https://stream.iptvservice.eu/hls/balatontv.m3u8
 #EXTINF:-1 tvg-id="BudapestEuropaTelevizio.hu@SD",Budapest Európa Televízió (576p)
 https://cloudfront44.lexanetwork.com:1344/freerelay/bpetv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="Cinemax2CentralEurope.hu@SD",Cinemax 2 Central Europe
+http://193.33.39.108:9009/play/a024
+#EXTINF:-1 tvg-id="CinemaxCentralEurope.hu@SD",Cinemax Central Europe
+http://193.33.39.108:9023/play/a01b
 #EXTINF:-1 tvg-id="CityTV.hu@SD",City TV
 https://citytv.hu/playlist.m3u8
 #EXTINF:-1 tvg-id="DikhTV.hu@SD",Dikh TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/dikh/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveryChannel.hu@SD",Discovery Channel
+http://88.212.7.14/live/discovery_hungary/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannel.hu@SD",Disney Channel
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/disney_channel_hun/index.m3u8
+#EXTINF:-1 tvg-id="DisneyChannel.hu@SD",Disney Channel
+http://193.33.39.108:9019/play/a00n
 #EXTINF:-1 tvg-id="Duna.hu@SD",Duna
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/duna_hun/index.m3u8
@@ -49,20 +68,29 @@ http://88.212.7.14/live/film_cafe/index.m3u8
 #EXTINF:-1 tvg-id="FilmPlus.hu@SD",Film+
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/film_plus_hun_atk/index.m3u8
+#EXTINF:-1 tvg-id="FoodNetwork.hu@SD",Food Network
+http://88.212.7.14/live/fn_hungary/index.m3u8
 #EXTINF:-1 tvg-id="Galaxy4.hu@SD",Galaxy4
 https://budapest-cache-1.antik.sk/live/test_galaxy_4_atk_1200/playlist.m3u8
 #EXTINF:-1 tvg-id="GyongyosiTV.hu@SD",Gyongyosi TV
 https://cloudfront44.lexanetwork.com:1344/relay44_1/HDE043.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="HeviziTV.hu@SD",Hévízi TV (1080p)
 https://cloudfront44.lexanetwork.com:1344/relay03/livestream003.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="HGTV.hu@SD",HGTV
+http://88.212.7.14/live/hgtv_hun/index.m3u8
 #EXTINF:-1 tvg-id="History.hu@SD",History
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/history_hun/index.m3u8
+#EXTINF:-1 tvg-id="InvestigationDiscovery.hu@SD",Investigation Discovery
+http://88.212.7.14/live/id_hun/index.m3u8
 #EXTINF:-1 tvg-id="IzauraTV.hu@SD",Izaura TV (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/izaura/index.m3u8
 #EXTINF:-1 tvg-id="JaszsagiTersegiTV.hu@SD",Jászsági Térségi TV (440p)
 https://cloudfront44.lexanetwork.com:1344/relay01/broadcast007.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="JimJam.hu@SD",JimJam
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+http://88.212.7.14/live/jim_jam_hun/index.m3u8
 #EXTINF:-1 tvg-id="JockyTV.hu@SD",Jocky TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 http://88.212.7.14/live/jocky/index.m3u8
@@ -85,6 +113,9 @@ http://88.212.7.14/live/lifetv/index.m3u8
 http://88.212.7.14/live/test_m_1_hungary_1200_atk/playlist.m3u8
 #EXTINF:-1 tvg-id="M2.hu@SD",M2 (1080p)
 http://88.212.7.14/live/m2_hun/index.m3u8
+#EXTINF:-1 tvg-id="M4Sport.hu@SD",M4 Sport (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+http://88.212.7.14/live/uatlmvixrr/index.m3u8
 #EXTINF:-1 tvg-id="M5.hu@SD",M5 (1080p)
 http://88.212.7.14/live/test_m_5_hun_atk_1200/playlist.m3u8
 #EXTINF:-1 tvg-id="MagyarMoziTV.hu@SD",Magyar Mozi TV
@@ -92,6 +123,10 @@ http://88.212.7.14/live/test_m_5_hun_atk_1200/playlist.m3u8
 http://88.212.7.14/live/mozi/index.m3u8
 #EXTINF:-1 tvg-id="MakoiVarosiTelevizio.hu@SD",Makói Városi (576p)
 http://makomedia.mikrohalo.hu/hls/makotv.m3u8
+#EXTINF:-1 tvg-id="Match4.hu@SD",Match4 (1080p)
+http://141.94.193.53/Match4_HD/index.m3u8
+#EXTINF:-1 tvg-id="MAX4.hu@SD",MAX4 (1080p)
+http://141.94.193.53/MAX4_HD/index.m3u8
 #EXTINF:-1 tvg-id="MezokovesdiTelevizio.hu@SD",Mezőkövesdi Televízió (360p)
 https://cloudfront44.lexanetwork.com:1344/freerelay/mezokovesdvtv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="Minimax.hu@SD",Minimax
@@ -123,6 +158,8 @@ http://88.212.7.14/live/nick_junior_hun/index.m3u8
 #EXTINF:-1 tvg-id="Nickelodeon.hu@SD",Nickelodeon
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/test_nickelodeon_hu_1200_atk/playlist.m3u8
+#EXTINF:-1 tvg-id="Nickelodeon.hu@SD",Nickelodeon
+http://193.33.39.108:9011/play/a017
 #EXTINF:-1 tvg-id="Nicktoons.hu@SD",Nicktoons
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 http://88.212.7.14/live/nicktoons_hungary/index.m3u8
@@ -139,8 +176,6 @@ http://stream.nmih.hu:7980/live.m3u8
 #EXTINF:-1 tvg-id="OzoneTV.hu@SD",Ozone TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 http://88.212.7.14/live/ozone/index.m3u8
-#EXTINF:-1 tvg-id="PannonTV.rs@SD",Pannon RTV (648p)
-https://stream.nmih.hu:4102/live.m3u8
 #EXTINF:-1 tvg-id="Prime.hu@SD",Prime
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/prime/index.m3u8
@@ -190,6 +225,9 @@ http://88.212.7.14/live/sport2_hun/index.m3u8
 #EXTINF:-1 tvg-id="Story4.hu@SD",Story4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://88.212.7.14/live/test_story_4_atk_1200/playlist.m3u8
+#EXTINF:-1 tvg-id="Story4.hu@Czechia",Story4 Czechia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+http://88.212.7.14/live/story_4_cze_atk/index.m3u8
 #EXTINF:-1 tvg-id="SuperTV2.hu@SD",Super TV2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/test_super_tv2_hungary_1200_atk/playlist.m3u8
@@ -201,6 +239,13 @@ https://cloudfront44.lexanetwork.com:1344/relay01/broadcast006.sdp/playlist.m3u8
 https://cloudfront44.lexanetwork.com:1344/relay02/livestream004.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TheFishingHuntingChannel.hu@SD",The Fishing & Hunting Channel
 http://88.212.7.14/live/test_fishing_hunting/playlist.m3u8
+#EXTINF:-1 tvg-id="TheFishingHuntingChannel.hu@HD",The Fishing & Hunting Channel HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+http://88.212.7.14/live/fishing_hun/index.m3u8
+#EXTINF:-1 tvg-id="TLC.hu@SD",TLC
+http://88.212.7.14/live/tlc_hungary/index.m3u8
+#EXTINF:-1 tvg-id="TravelChannel.hu@SD",Travel Channel
+http://88.212.7.14/live/travel_hun/index.m3u8
 #EXTINF:-1 tvg-id="TV2.hu@SD",TV2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/test_tv_2_hungary_1200_atk/playlist.m3u8
@@ -222,6 +267,9 @@ https://stream.y5.hu/stream/stream_bekescsaba/stream.m3u8
 http://stream.tveger.hu:8010/live.m3u8
 #EXTINF:-1 tvg-id="TVKeszthely.hu@SD",TV Keszthely (360p)
 https://cloudfront44.lexanetwork.com:1344/freerelay/keszthelyivtv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVPaprika.hu@SD",TV Paprika
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+http://88.212.7.14/live/parpika_hun/index.m3u8
 #EXTINF:-1 tvg-id="VasarhelyiTelevizio.hu@SD",Vásárhelyi Televízió (576p)
 https://stream.vasarhelyitelevizio.hu/stream/stream.m3u8
 #EXTINF:-1 tvg-id="Viasat2.hu@SD",Viasat2
@@ -233,9 +281,10 @@ http://88.212.7.14/live/viasat3/index.m3u8
 #EXTINF:-1 tvg-id="Viasat6.hu@SD",Viasat 6
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.7.14/live/viasat6/index.m3u8
-#EXTINF:-1 tvg-id="AXNCrime.us@SD",AXN Crime
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-http://88.212.7.14/live/viasat_film/index.m3u8
+#EXTINF:-1 tvg-id="ViasatHistory.hu@SD",Viasat History
+http://193.33.39.108:9007/play/a00p
+#EXTINF:-1 tvg-id="ViasatNature.hu@SD",Viasat Nature
+http://193.33.39.108:9000/play/a05r
 #EXTINF:-1 tvg-id="VTVMor.hu@SD",VTV Mór (360p)
 https://cloudfront44.lexanetwork.com:1344/freerelay/morvtv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="XVTV.hu@SD",XV TV (480p)
@@ -247,42 +296,3 @@ https://cloudfront44.lexanetwork.com:1344/freerelay/zegtv.sdp/playlist.m3u8
 http://88.212.7.14/live/zenebutik/index.m3u8
 #EXTINF:-1 tvg-id="ZugloTV.hu@SD",Zuglo TV (360p)
 https://cloudfront44.lexanetwork.com:1344/freerelay/zuglotv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TheFishingHuntingChannel.hu@HD",The Fishing & Hunting Channel HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-http://88.212.7.14/live/fishing_hun/index.m3u8
-#EXTINF:-1 tvg-id="M4Sport.hu@SD",M4 Sport (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-http://88.212.7.14/live/uatlmvixrr/index.m3u8
-#EXTINF:-1 tvg-id="TVPaprika.hu@SD",TV Paprika
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-http://88.212.7.14/live/parpika_hun/index.m3u8
-#EXTINF:-1 tvg-id="JimJam.hu@SD",JimJam
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-http://88.212.7.14/live/jim_jam_hun/index.m3u8
-#EXTINF:-1 tvg-id="Story4.hu@Czechia",Story4 Czechia
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-http://88.212.7.14/live/story_4_cze_atk/index.m3u8
-#EXTINF:-1 tvg-id="AXNSpin.hu@SD",AXN Spin
-#EXTVLCOPT:http-referrer=https://cool-tv.net/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
-https://cronos.mangora1.cfd/spyn/usergencs85ja0j1rrnd.m3u8
-#EXTINF:-1 tvg-id="MAX4.hu@SD",MAX4 (1080p)
-http://141.94.193.53:80/MAX4_HD/index.m3u8
-#EXTINF:-1 tvg-id="Match4.hu@SD",Match4 (1080p)
-http://141.94.193.53:80/Match4_HD/index.m3u8
-#EXTINF:-1 tvg-id="Arena4.hu@SD",Arena4
-http://88.212.7.14/live/arena4/index.m3u8
-#EXTINF:-1 tvg-id="InvestigationDiscovery.hu@SD",Investigation Discovery
-http://88.212.7.14/live/id_hun/index.m3u8
-#EXTINF:-1 tvg-id="DiscoveryChannel.hu@SD",Discovery Channel
-http://88.212.7.14/live/discovery_hungary/index.m3u8
-#EXTINF:-1 tvg-id="HGTV.hu@SD",HGTV
-http://88.212.7.14/live/hgtv_hun/index.m3u8
-#EXTINF:-1 tvg-id="AnimalPlanet.hu@SD",Animal Planet
-http://88.212.7.14/live/animal_hun/index.m3u8
-#EXTINF:-1 tvg-id="TravelChannel.hu@SD",Travel Channel
-http://88.212.7.14/live/travel_hun/index.m3u8
-#EXTINF:-1 tvg-id="FoodNetwork.hu@SD",Food Network
-http://88.212.7.14/live/fn_hungary/index.m3u8
-#EXTINF:-1 tvg-id="TLC.hu@SD",TLC
-http://88.212.7.14/live/tlc_hungary/index.m3u8
