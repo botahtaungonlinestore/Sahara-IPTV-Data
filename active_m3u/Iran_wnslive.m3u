@@ -17,8 +17,6 @@ https://clshls.wns.live/hls/stream.m3u8
 https://rdejhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="FX1.ir@SD",FX TV 1
 https://fxtvhls.wns.live/hls/stream.m3u8
-#EXTINF:-1 tvg-id="FX2.ir@SD",FX TV 2
-https://toonixhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="GoldStar.ir@SD",Gold Star
 https://moviethls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="GrandCinema.tr@SD",Grand Cinema

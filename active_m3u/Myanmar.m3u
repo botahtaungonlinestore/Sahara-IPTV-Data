@@ -1,11 +1,10 @@
 #EXTM3U
-
+#EXTINF:-1 tvg-id="DVBTV.mm@SD",DVB TV (720p) [Geo-blocked]
+https://live-stream.dvb.no/hls/stream_src/index.m3u8
 #EXTINF:-1 tvg-id="FortuneTV.mm@SD",FORTUNE TV (720p)
 http://103.215.194.93:8282/hls/fortunetv/vmix.m3u8
 #EXTINF:-1 tvg-id="HluttawSD.mm@SD",Hluttaw S & D
 https://mrtvott.com/cache/MRTV-HLUTTAW/master.m3u8
-#EXTINF:-1 tvg-id="MRTV.mm@SD",MRTV
-https://mrtvott.com/cache/MRTV-HD/master.m3u8
 #EXTINF:-1 tvg-id="MRTVEntertainment.mm@SD",MRTV Entertainment
 https://mrtvott.com/cache/MRTV-Ent-HD/master.m3u8
 #EXTINF:-1 tvg-id="MRTVFarmer.mm@SD",MRTV Farmer
@@ -42,5 +41,3 @@ https://live.pyoneplay.com/live/01m2sr3kyn6bztz3xk02w3t7pn/index.m3u8
 https://live.pyoneplay.com/live/01m2tfrqkdceydf6g6f48pdrmn/index.m3u8
 #EXTINF:-1 tvg-name="MRTV-4" tvg-logo="" group-title="Myanmar TV",MRTV-4
 https://live.pyoneplay.com/live/01m2sn12yc6v2enx392qj2ekqt/index.m3u8
-#EXTINF:-1 tvg-name="MRTV NRC" tvg-logo="" group-title="Myanmar TV",MRTV NRC
-https://mrtvott.com/feb805bcfa111efa090b79c62940b67e---/cache/MRTV-NRC-HD/m3u8/cache_MRTV-NRC-HD_m3u8_hls_m3u8_MRTV-NRC-HD-TS-M.m3u8
