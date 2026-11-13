@@ -1,15 +1,17 @@
 # SAHARA IPTV - automated playlist refresh
-# Scheduled at 00:17 UTC on calendar days 1, 6, 11, 16, 21, 26 and 31.
+# Runs at 00:17 UTC on calendar days 1, 11 and 21 each month.
+# Note: this is a calendar schedule, not a strict rolling 10-day interval.
 
 name: SAHARA IPTV Auto Update
 
 on:
   schedule:
-    - cron: '17 0 */5 * *'
+    - cron: '17 0 1,11,21 * *'
+
   workflow_dispatch:
     inputs:
       skip_link_check:
-        description: 'Skip HTTP stream checks for a faster run (keeps collected links even if unverified)'
+        description: 'Skip HTTP stream checks for a faster run (only when supported by the updater)'
         required: false
         type: boolean
         default: false
@@ -29,146 +31,384 @@ permissions:
 
 concurrency:
   group: sahara-iptv-auto-update-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update-channels:
-    name: Collect, validate and save playlists
+    name: Collect, validate and publish playlists
     runs-on: ubuntu-latest
     timeout-minutes: 55
+
     permissions:
       contents: write
+
+    defaults:
+      run:
+        shell: bash
 
     env:
       PYTHONUNBUFFERED: '1'
       PIP_DISABLE_PIP_VERSION_CHECK: '1'
+      PIP_NO_INPUT: '1'
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
     steps:
+      # ------------------------------------------------------------
+      # CHECKOUT + PYTHON
+      # ------------------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
           persist-credentials: true
 
-      - name: Set up Python
+      - name: Set up Python 3.12
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Install dependencies
-        shell: bash
+      - name: Install and verify dependencies
         run: |
           set -Eeuo pipefail
+
           python -m pip install --upgrade pip
+
           if [[ -f requirements.txt ]]; then
             python -m pip install -r requirements.txt
           else
+            echo 'requirements.txt not found; installing fallback dependencies.'
             python -m pip install requests pycountry
           fi
 
+          python -m pip check
+          python --version
+          python -m pip --version
+
+      # ------------------------------------------------------------
+      # FIND + PRE-CHECK UPDATER
+      # ------------------------------------------------------------
       - name: Detect updater script
         id: detect-script
-        shell: bash
         run: |
           set -Eeuo pipefail
+
           if [[ -f update_m3u.py ]]; then
-            echo 'path=update_m3u.py' >> "$GITHUB_OUTPUT"
-            echo 'Using update_m3u.py.'
+            SCRIPT_PATH='update_m3u.py'
           elif [[ -f sahara_iptv_builder_v3.py ]]; then
-            echo 'path=sahara_iptv_builder_v3.py' >> "$GITHUB_OUTPUT"
-            echo 'Using sahara_iptv_builder_v3.py.'
+            SCRIPT_PATH='sahara_iptv_builder_v3.py'
           else
-            echo '::error::No supported updater found. Add update_m3u.py to the repository root.'
+            echo '::error::No supported updater found in the repository root.'
+            echo 'Expected update_m3u.py or sahara_iptv_builder_v3.py.'
             exit 1
           fi
+
+          printf 'path=%s\n' "$SCRIPT_PATH" >> "$GITHUB_OUTPUT"
+          echo "Selected updater: $SCRIPT_PATH"
 
       - name: Compile-check updater
         env:
           SCRIPT_PATH: ${{ steps.detect-script.outputs.path }}
-        shell: bash
         run: |
           set -Eeuo pipefail
           python -m py_compile "$SCRIPT_PATH"
+          echo 'Python syntax check passed.'
 
+      # ------------------------------------------------------------
+      # RUN UPDATER
+      # ------------------------------------------------------------
       - name: Run IPTV updater
+        id: run-updater
+        timeout-minutes: 42
         env:
           SCRIPT_PATH: ${{ steps.detect-script.outputs.path }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
           IPTV_WORKERS: ${{ inputs.workers || '40' }}
           IPTV_TIMEOUT: '10'
           SKIP_LINK_CHECK: ${{ inputs.skip_link_check && 'true' || 'false' }}
-        shell: bash
         run: |
           set -Eeuo pipefail
-          if python "$SCRIPT_PATH" --help 2>&1 | grep -q -- '--workers'; then
-            args=(--workers "$IPTV_WORKERS" --timeout "$IPTV_TIMEOUT" --output active_m3u)
-            if [[ "$SKIP_LINK_CHECK" == 'true' ]]; then
-              args+=(--skip-link-check)
-            fi
-            python -u "$SCRIPT_PATH" "${args[@]}"
+
+          case "$IPTV_WORKERS" in
+            16|32|40|64) ;;
+            *)
+              echo "::error::Unsupported worker count: $IPTV_WORKERS"
+              exit 1
+              ;;
+          esac
+
+          OPTIONS_FILE="$RUNNER_TEMP/sahara-updater-options.txt"
+
+          python - "$SCRIPT_PATH" > "$OPTIONS_FILE" <<'PY'
+          import ast
+          import sys
+          import tokenize
+
+          with tokenize.open(sys.argv[1]) as source_file:
+              source = source_file.read()
+          tree = ast.parse(source)
+
+          for node in ast.walk(tree):
+              if not isinstance(node, ast.Call):
+                  continue
+
+              function = node.func
+              is_add_argument = (
+                  isinstance(function, ast.Attribute) and function.attr == "add_argument"
+              ) or (
+                  isinstance(function, ast.Name) and function.id == "add_argument"
+              )
+
+              if not is_add_argument:
+                  continue
+
+              for argument in node.args:
+                  if (
+                      isinstance(argument, ast.Constant)
+                      and isinstance(argument.value, str)
+                      and argument.value.startswith("--")
+                  ):
+                      print(argument.value)
+          PY
+
+          has_option() {
+            grep -Fxq -- "$1" "$OPTIONS_FILE"
+          }
+
+          args=()
+
+          if has_option '--workers'; then
+            args+=(--workers "$IPTV_WORKERS")
           else
-            python -u "$SCRIPT_PATH"
+            echo '::warning::Updater does not declare --workers; using its built-in default.'
           fi
 
+          if has_option '--timeout'; then
+            args+=(--timeout "$IPTV_TIMEOUT")
+          fi
+
+          if has_option '--output'; then
+            args+=(--output active_m3u)
+          fi
+
+          if [[ "$SKIP_LINK_CHECK" == 'true' ]]; then
+            if has_option '--skip-link-check'; then
+              args+=(--skip-link-check)
+            else
+              echo '::error::Skip link check was requested, but this updater does not declare --skip-link-check.'
+              exit 1
+            fi
+          fi
+
+          echo 'Updater options:'
+          if [[ ${#args[@]} -gt 0 ]]; then
+            printf '  %q' "${args[@]}"
+            printf '\n'
+          else
+            echo '  Using updater defaults.'
+          fi
+
+          python -u "$SCRIPT_PATH" "${args[@]}"
+
+      # ------------------------------------------------------------
+      # VALIDATE OUTPUT BEFORE IT CAN BE PUBLISHED
+      # ------------------------------------------------------------
       - name: Validate generated playlists
         id: validate
-        shell: bash
+        env:
+          SCRIPT_PATH: ${{ steps.detect-script.outputs.path }}
+          SKIP_LINK_CHECK: ${{ inputs.skip_link_check && 'true' || 'false' }}
         run: |
           set -Eeuo pipefail
-          if [[ ! -d active_m3u ]]; then
-            echo '::error::The updater did not create the active_m3u directory.'
-            exit 1
-          fi
 
-          playlist_count="$(find active_m3u -maxdepth 1 -type f -iname '*.m3u' | wc -l | tr -d ' ')"
-          if [[ "$playlist_count" -eq 0 ]]; then
-            echo '::error::No .m3u playlists were generated. Refusing to commit an empty update.'
-            exit 1
-          fi
+          python - <<'PY'
+          import json
+          import os
+          import re
+          import sys
+          from pathlib import Path
 
-          if [[ -f active_m3u/report.json ]]; then
-            python -m json.tool active_m3u/report.json >/dev/null
-          fi
+          root = Path("active_m3u")
+          if not root.is_dir():
+              sys.exit("ERROR: updater did not create the active_m3u directory")
 
-          echo "playlist_count=$playlist_count" >> "$GITHUB_OUTPUT"
-          {
-            echo '## SAHARA IPTV update summary'
-            echo
-            echo "- Updater: \`${{ steps.detect-script.outputs.path }}\`"
-            echo "- Generated playlists: **${playlist_count}**"
-            if [[ -f active_m3u/report.json ]]; then
-              echo '- Report: `active_m3u/report.json` (valid JSON)'
-            else
-              echo '- Report: not produced by the legacy updater'
-            fi
-          } >> "$GITHUB_STEP_SUMMARY"
+          playlists = sorted(
+              path for path in root.rglob("*")
+              if path.is_file() and path.suffix.lower() == ".m3u"
+          )
 
-      - name: Commit changed playlists
+          if not playlists:
+              sys.exit("ERROR: no .m3u playlists were generated; refusing to publish an empty update")
+
+          total_streams = 0
+          total_bytes = 0
+          errors = []
+          stream_pattern = re.compile(r"^[A-Za-z][A-Za-z0-9+.-]*://\S+$")
+
+          for playlist in playlists:
+              try:
+                  content = playlist.read_text(encoding="utf-8-sig")
+              except (OSError, UnicodeError) as exc:
+                  errors.append(f"{playlist}: cannot read as UTF-8 ({exc})")
+                  continue
+
+              lines = [line.strip() for line in content.splitlines() if line.strip()]
+              if not lines:
+                  errors.append(f"{playlist}: file is empty")
+                  continue
+
+              if not lines[0].upper().startswith("#EXTM3U"):
+                  errors.append(f"{playlist}: missing #EXTM3U header")
+                  continue
+
+              stream_lines = [
+                  line for line in lines
+                  if not line.startswith("#") and stream_pattern.match(line)
+              ]
+
+              if not stream_lines:
+                  errors.append(f"{playlist}: contains no valid stream URL lines")
+                  continue
+
+              total_streams += len(stream_lines)
+              total_bytes += playlist.stat().st_size
+
+          report_path = root / "report.json"
+          report_status = "not produced"
+          if report_path.is_file():
+              try:
+                  with report_path.open("r", encoding="utf-8") as handle:
+                      json.load(handle)
+                  report_status = "valid JSON"
+              except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+                  errors.append(f"{report_path}: invalid JSON ({exc})")
+
+          if errors:
+              for error in errors:
+                  print(f"::error::{error}")
+              sys.exit(f"Playlist validation failed: {len(errors)} problem(s) found")
+
+          if total_streams == 0:
+              sys.exit("ERROR: total validated stream count is zero")
+
+          print(f"Validated playlists: {len(playlists)}")
+          print(f"Validated stream entries: {total_streams}")
+          print(f"Playlist data size: {total_bytes:,} bytes")
+          print(f"Report: {report_status}")
+
+          output_path = os.environ["GITHUB_OUTPUT"]
+          with open(output_path, "a", encoding="utf-8") as output:
+              output.write(f"playlist_count={len(playlists)}\n")
+              output.write(f"stream_count={total_streams}\n")
+              output.write(f"total_bytes={total_bytes}\n")
+              output.write(f"report_status={report_status}\n")
+
+          link_check_mode = (
+              "Skipped (manual dispatch)"
+              if os.environ.get("SKIP_LINK_CHECK", "false").lower() == "true"
+              else "Normal updater mode"
+          )
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
+              summary.write("## SAHARA IPTV update summary\n\n")
+              summary.write(f"- Updater: `{os.environ['SCRIPT_PATH']}`\n")
+              summary.write(f"- Generated playlists: **{len(playlists)}**\n")
+              summary.write(f"- Validated stream entries: **{total_streams:,}**\n")
+              summary.write(f"- Playlist data size: **{total_bytes:,} bytes**\n")
+              summary.write(f"- Link-check mode: **{link_check_mode}**\n")
+              summary.write(f"- Report: **{report_status}**\n\n")
+              summary.write("All generated M3U files passed structural validation.\n")
+          PY
+
+      # ------------------------------------------------------------
+      # COMMIT + PUSH WITH RACE-CONDITION RETRIES
+      # ------------------------------------------------------------
+      - name: Commit and push changed playlists
         id: auto-commit
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'chore(iptv): refresh active playlists'
-          file_pattern: 'active_m3u/'
-          commit_user_name: 'github-actions[bot]'
-          commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
-          skip_dirty_check: false
+        env:
+          TARGET_REF_TYPE: ${{ github.ref_type }}
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -Eeuo pipefail
 
+          if [[ "$TARGET_REF_TYPE" != 'branch' ]]; then
+            echo '::error::This workflow can publish only to a branch, not a tag.'
+            exit 1
+          fi
+
+          git check-ref-format --branch "$TARGET_BRANCH" >/dev/null
+
+          GENERATED_DIR="$RUNNER_TEMP/sahara-active-m3u-generated"
+          rm -rf "$GENERATED_DIR"
+          mkdir -p "$GENERATED_DIR"
+          cp -a active_m3u/. "$GENERATED_DIR/"
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          for attempt in 1 2 3; do
+            echo "Publish attempt ${attempt}/3..."
+
+            git fetch --no-tags origin "+refs/heads/${TARGET_BRANCH}:refs/remotes/origin/${TARGET_BRANCH}"
+            git reset --hard "refs/remotes/origin/${TARGET_BRANCH}"
+
+            rm -rf active_m3u
+            mkdir -p active_m3u
+            cp -a "$GENERATED_DIR"/. active_m3u/
+
+            git add --all -- active_m3u/
+
+            if git diff --cached --quiet; then
+              echo 'No playlist changes detected; nothing to commit.'
+              echo 'changes_detected=false' >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+
+            git commit -m "chore(iptv): refresh active playlists"
+
+            if git push origin "HEAD:refs/heads/${TARGET_BRANCH}"; then
+              COMMIT_HASH="$(git rev-parse --short HEAD)"
+              echo "changes_detected=true" >> "$GITHUB_OUTPUT"
+              echo "commit_hash=$COMMIT_HASH" >> "$GITHUB_OUTPUT"
+              echo "Successfully published commit $COMMIT_HASH."
+              exit 0
+            fi
+
+            if [[ "$attempt" -lt 3 ]]; then
+              echo '::warning::Push failed; refreshing the branch and retrying.'
+              sleep $((attempt * 3))
+            fi
+          done
+
+          echo '::error::Unable to push playlist updates after 3 attempts.'
+          exit 1
+
+      # ------------------------------------------------------------
+      # FINAL WORKFLOW SUMMARY
+      # ------------------------------------------------------------
       - name: Report commit result
         if: always()
         env:
+          JOB_STATUS: ${{ job.status }}
           CHANGES_DETECTED: ${{ steps.auto-commit.outputs.changes_detected }}
           COMMIT_HASH: ${{ steps.auto-commit.outputs.commit_hash }}
-        shell: bash
+          PLAYLIST_COUNT: ${{ steps.validate.outputs.playlist_count }}
+          STREAM_COUNT: ${{ steps.validate.outputs.stream_count }}
         run: |
+          set -Eeuo pipefail
+
           {
             echo
-            echo '### Git result'
+            echo '### Git publishing result'
+
             if [[ "$CHANGES_DETECTED" == 'true' ]]; then
-              echo "- Updated playlist changes were committed."
-              if [[ -n "$COMMIT_HASH" ]]; then echo "- Commit: \`$COMMIT_HASH\`"; fi
+              echo '- Playlist changes were committed and pushed successfully.'
+              [[ -n "$COMMIT_HASH" ]] && echo "- Commit: \`$COMMIT_HASH\`"
             elif [[ "$CHANGES_DETECTED" == 'false' ]]; then
-              echo '- No playlist changes were detected; no commit was needed.'
+              echo '- Playlists were validated; no changes were required.'
             else
-              echo '- Commit status is unavailable (check the earlier step for errors).'
+              echo '- Publishing did not complete. Check the earlier steps for details.'
             fi
+
+            [[ -n "$PLAYLIST_COUNT" ]] && echo "- Validated playlists: **$PLAYLIST_COUNT**"
+            [[ -n "$STREAM_COUNT" ]] && echo "- Validated stream entries: **$STREAM_COUNT**"
+            echo "- Workflow status: **$JOB_STATUS**"
           } >> "$GITHUB_STEP_SUMMARY"
