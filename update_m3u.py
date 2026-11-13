@@ -1,27 +1,10 @@
 #!/usr/bin/env python3
-"""SAHARA IPTV Playlist Builder v4.
+"""SAHARA IPTV Playlist Builder v4.1 (Fast Non-Blocking Edition).
 
 Collect M3U/M3U8 playlists from configured public GitHub repositories,
 configured remote playlist URLs, and local extra_*.m3u files. Optionally
 check HTTP(S) stream endpoints, de-duplicate entries, validate generated
 playlists, and publish the complete output directory atomically.
-
-Examples:
-    python update_m3u.py
-    python update_m3u.py --workers 64 --timeout 10
-    python update_m3u.py --skip-link-check
-    python update_m3u.py --no-github
-
-Environment variables:
-    GITHUB_TOKEN             Optional GitHub API token.
-    IPTV_WORKERS             Default concurrent workers (1..128).
-    IPTV_TIMEOUT             Default request timeout in seconds.
-    IPTV_OUTPUT_DIR          Output directory (default: active_m3u).
-    IPTV_WAASTUDIOS_URL      Optional override for the Waastudios playlist URL.
-    IPTV_MIGU_URL            Optional override for the Migu playlist URL.
-    IPTV_MYIPTV_URL          Optional override for the MyIPTV playlist URL.
-
-Only use playlist sources and streams you are authorized to access.
 """
 from __future__ import annotations
 
@@ -35,7 +18,7 @@ import tempfile
 import threading
 import time
 from collections import deque
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -48,7 +31,7 @@ from urllib3.util.retry import Retry
 
 try:
     import pycountry
-except ImportError:  # Country-name conversion is optional.
+except ImportError:
     pycountry = None  # type: ignore[assignment]
 
 
@@ -56,7 +39,7 @@ except ImportError:  # Country-name conversion is optional.
 # CONFIGURATION
 # ---------------------------------------------------------------------------
 APP_NAME = "SAHARA IPTV Playlist Builder"
-APP_VERSION = "4.0.0"
+APP_VERSION = "4.1.0"
 
 
 def _env_int(name: str, default: int, minimum: int, maximum: int) -> int:
@@ -72,13 +55,13 @@ def _env_float(name: str, default: float, minimum: float, maximum: float) -> flo
         value = float(os.getenv(name, str(default)).strip())
     except (TypeError, ValueError):
         value = default
-    if value != value:  # NaN guard
+    if value != value:
         value = default
     return max(minimum, min(maximum, value))
 
 
-DEFAULT_TIMEOUT = _env_float("IPTV_TIMEOUT", 8.0, 1.0, 120.0)
-DEFAULT_WORKERS = _env_int("IPTV_WORKERS", 40, 1, 128)
+DEFAULT_TIMEOUT = _env_float("IPTV_TIMEOUT", 5.0, 1.0, 120.0)
+DEFAULT_WORKERS = _env_int("IPTV_WORKERS", 64, 1, 128)
 DEFAULT_OUTPUT = Path(os.getenv("IPTV_OUTPUT_DIR", "active_m3u").strip() or "active_m3u")
 DEFAULT_MAX_GITHUB_FILES = 2500
 DEFAULT_MAX_PLAYLIST_BYTES = 32 * 1024 * 1024
@@ -103,7 +86,6 @@ _DEFAULT_MYIPTV_URL = "https://github.chenc.dev/raw.githubusercontent.com/CKL121
 
 
 def get_custom_playlist_urls() -> dict[str, str]:
-    """Build custom sources with fallback defaults so no playlist is dropped."""
     sources = {
         "Migu_Playlist.m3u": os.getenv("IPTV_MIGU_URL", _DEFAULT_MIGU_URL).strip(),
         "Waastudios.m3u": os.getenv("IPTV_WAASTUDIOS_URL", _DEFAULT_WAASTUDIOS_URL).strip(),
@@ -117,6 +99,8 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)-7s | %(message)s",
     datefmt="%H:%M:%S",
 )
+# Silence noisy urllib3 retry warnings in GitHub Actions logs
+logging.getLogger("urllib3").setLevel(logging.ERROR)
 log = logging.getLogger("sahara_iptv_builder")
 _THREAD_LOCAL = threading.local()
 
@@ -157,7 +141,6 @@ class RunStats:
 # LOGGING / NETWORK HELPERS
 # ---------------------------------------------------------------------------
 def safe_url_label(url: str) -> str:
-    """Return an origin-only URL label so query/path credentials aren't logged."""
     try:
         parsed = urlsplit(url)
         host = parsed.hostname or "unknown-host"
@@ -173,7 +156,6 @@ def safe_url_label(url: str) -> str:
 
 
 def safe_error(error: BaseException | str, limit: int = 500) -> str:
-    """Redact full URLs from exception text before logging/reporting."""
     value = str(error)
     value = re.sub(
         r"https?://[^\s\]\[\)\}\>'\"]+",
@@ -185,7 +167,7 @@ def safe_error(error: BaseException | str, limit: int = 500) -> str:
 
 
 def get_session() -> requests.Session:
-    """Return a retry-enabled Session dedicated to the current worker thread."""
+    """Retry-enabled Session for downloading source M3U playlists and GitHub API."""
     session = getattr(_THREAD_LOCAL, "session", None)
     if session is None:
         session = requests.Session()
@@ -207,13 +189,36 @@ def get_session() -> requests.Session:
         )
         adapter = HTTPAdapter(
             max_retries=retries,
-            pool_connections=4,
-            pool_maxsize=4,
+            pool_connections=8,
+            pool_maxsize=8,
             pool_block=False,
         )
         session.mount("https://", adapter)
         session.mount("http://", adapter)
         _THREAD_LOCAL.session = session
+    return session
+
+
+def get_check_session() -> requests.Session:
+    """Fast fail-fast Session (0 connect/read retries) dedicated to stream link checking."""
+    session = getattr(_THREAD_LOCAL, "check_session", None)
+    if session is None:
+        session = requests.Session()
+        session.headers.update({
+            "User-Agent": USER_AGENT,
+            "Accept": "*/*",
+            "Connection": "keep-alive",
+        })
+        # Do not retry dead stream servers; fail fast so 30,000+ links finish quickly.
+        adapter = HTTPAdapter(
+            max_retries=Retry(total=0, connect=0, read=0, redirect=2, status=0),
+            pool_connections=16,
+            pool_maxsize=16,
+            pool_block=False,
+        )
+        session.mount("https://", adapter)
+        session.mount("http://", adapter)
+        _THREAD_LOCAL.check_session = session
     return session
 
 
@@ -226,10 +231,9 @@ def _github_headers() -> dict[str, str]:
 
 
 def fetch_text(url: str, timeout: float, max_bytes: int = DEFAULT_MAX_PLAYLIST_BYTES) -> str:
-    """Fetch UTF-8 playlist text with a strict byte limit and response cleanup."""
     with get_session().get(
         url,
-        timeout=(min(timeout, 10.0), timeout),
+        timeout=(min(timeout, 10.0), max(timeout, 15.0)),
         stream=True,
         allow_redirects=True,
     ) as response:
@@ -258,7 +262,7 @@ def github_json(url: str, timeout: float) -> Any:
     with get_session().get(
         url,
         headers=_github_headers(),
-        timeout=(min(timeout, 10.0), timeout),
+        timeout=(min(timeout, 10.0), max(timeout, 15.0)),
         allow_redirects=True,
     ) as response:
         response.raise_for_status()
@@ -273,14 +277,13 @@ def is_http_url(value: str) -> bool:
         parsed = urlsplit(value.strip())
         if parsed.scheme.lower() not in {"http", "https"} or not parsed.hostname:
             return False
-        _ = parsed.port  # Force malformed-port validation.
+        _ = parsed.port
         return not any(ord(char) < 32 for char in value)
     except (AttributeError, TypeError, ValueError):
         return False
 
 
 def normalize_url(url: str) -> str:
-    """Normalize scheme/host/default ports without changing paths or queries."""
     value = url.strip()
     try:
         parsed = urlsplit(value)
@@ -313,7 +316,6 @@ def url_key(url: str) -> str:
 
 
 def get_country_name(filename: str) -> str:
-    """Convert country-code playlist names (e.g. us_news.m3u) to readable names."""
     safe_name = Path(filename).name
     stem = Path(safe_name).stem
     parts = stem.split("_", 1)
@@ -356,7 +358,6 @@ def get_country_name(filename: str) -> str:
 
 
 def parse_m3u_text(content: str) -> list[dict[str, Any]]:
-    """Parse channel entries and retain EXTINF plus per-channel directives."""
     channels: list[dict[str, Any]] = []
     pending: list[str] = []
 
@@ -388,7 +389,6 @@ def parse_m3u_text(content: str) -> list[dict[str, Any]]:
 
 
 def channel_urls(playlists: dict[str, list[dict[str, Any]]]) -> dict[str, str]:
-    """Return one representative URL per normalized URL key."""
     representatives: dict[str, str] = {}
     for channels in playlists.values():
         for channel in channels:
@@ -404,7 +404,7 @@ def is_myanmar_playlist_name(filename: str) -> bool:
 
 
 # ---------------------------------------------------------------------------
-# BOUNDED CONCURRENCY
+# TRUE SLIDING-WINDOW CONCURRENCY (NO BATCH STALLS)
 # ---------------------------------------------------------------------------
 def completed_in_batches(
     executor: ThreadPoolExecutor,
@@ -412,13 +412,28 @@ def completed_in_batches(
     items: list[Any],
     max_in_flight: int,
 ) -> Iterator[tuple[Any, Any]]:
-    """Yield (future, item) while limiting queued futures and memory use."""
-    batch_size = max(1, max_in_flight)
-    for offset in range(0, len(items), batch_size):
-        batch = items[offset:offset + batch_size]
-        future_map = {executor.submit(function, item): item for item in batch}
-        for future in as_completed(future_map):
-            yield future, future_map[future]
+    """Keep up to max_in_flight tasks running continuously without waiting for slow stragglers."""
+    limit = max(1, max_in_flight)
+    iterator = iter(items)
+    future_map: dict[Any, Any] = {}
+
+    for _ in range(limit):
+        try:
+            item = next(iterator)
+        except StopIteration:
+            break
+        future_map[executor.submit(function, item)] = item
+
+    while future_map:
+        done, _ = wait(future_map.keys(), return_when=FIRST_COMPLETED)
+        for future in done:
+            item = future_map.pop(future)
+            yield future, item
+            try:
+                next_item = next(iterator)
+                future_map[executor.submit(function, next_item)] = next_item
+            except StopIteration:
+                pass
 
 
 # ---------------------------------------------------------------------------
@@ -444,7 +459,6 @@ def _discover_via_contents_api(
     timeout: float,
     max_files: int,
 ) -> list[dict[str, str]]:
-    """Fallback recursive directory walk when GitHub's tree response is truncated."""
     queue: deque[str] = deque([requested_path])
     visited: set[str] = set()
     found: list[dict[str, str]] = []
@@ -496,7 +510,6 @@ def discover_github_playlists(
     timeout: float,
     max_files: int,
 ) -> list[dict[str, str]]:
-    """Use Git Trees API; fall back to recursive Contents API if truncated."""
     parsed = parse_github_contents_url(api_url)
     if not parsed:
         log.warning("Skipping unsupported GitHub API source: %s", safe_url_label(api_url))
@@ -615,7 +628,7 @@ def collect_all_playlists(
                 pool,
                 lambda job: download_source_playlist(job, args.timeout, args.max_playlist_bytes),
                 source_jobs,
-                max_in_flight=max(args.workers * 4, args.workers),
+                max_in_flight=max(args.workers * 2, args.workers),
             ):
                 completed += 1
                 try:
@@ -679,24 +692,27 @@ def collect_all_playlists(
 
 
 # ---------------------------------------------------------------------------
-# LINK VALIDATION
+# LINK VALIDATION (FAST FAIL-FAST SESSION)
 # ---------------------------------------------------------------------------
 def check_link(url: str, timeout: float) -> LinkCheckResult:
-    """Check an HTTP(S) endpoint without downloading the stream body."""
+    """Check an HTTP(S) endpoint quickly without retrying dead stream hosts."""
     started = time.monotonic()
+    connect_timeout = min(timeout, 4.0)
+    read_timeout = min(timeout, 5.0)
+    session = get_check_session()
     try:
-        with get_session().get(
+        with session.get(
             url,
             headers={"Range": "bytes=0-0"},
-            timeout=(min(timeout, 5.0), timeout),
+            timeout=(connect_timeout, read_timeout),
             stream=True,
             allow_redirects=True,
         ) as response:
             code = response.status_code
             if code in {405, 416, 501}:
-                with get_session().get(
+                with session.get(
                     url,
-                    timeout=(min(timeout, 5.0), timeout),
+                    timeout=(connect_timeout, read_timeout),
                     stream=True,
                     allow_redirects=True,
                 ) as fallback:
@@ -752,7 +768,7 @@ def check_all_unique_links(
                 pool,
                 lambda pair: check_link(pair[1], timeout),
                 items,
-                max_in_flight=max(workers * 4, workers),
+                max_in_flight=max(workers * 3, workers),
             ),
             start=1,
         ):
@@ -761,7 +777,7 @@ def check_all_unique_links(
                 results[key] = future.result()
             except Exception as exc:
                 results[key] = LinkCheckResult(active=False, error=safe_error(exc))
-            if completed % 100 == 0 or completed == total:
+            if completed % 250 == 0 or completed == total:
                 log.info("Link checks: %d/%d complete", completed, total)
 
     active_count = sum(1 for result in results.values() if result.active)
@@ -773,7 +789,6 @@ def check_all_unique_links(
 # OUTPUT GENERATION / VALIDATION / ATOMIC PUBLISH
 # ---------------------------------------------------------------------------
 def write_playlist(output_path: Path, channels: list[dict[str, Any]]) -> None:
-    """Write one UTF-8 M3U playlist atomically inside the staging directory."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
     temporary_path = output_path.with_suffix(output_path.suffix + ".tmp")
     try:
@@ -827,7 +842,6 @@ def group_active_playlists(
 
 
 def validate_output_directory(output_folder: Path, expected_channels: int) -> tuple[int, int]:
-    """Verify every generated playlist has a header and valid URL entries."""
     playlist_files = sorted(output_folder.glob("*.m3u")) + sorted(output_folder.glob("*.m3u8"))
     if not playlist_files:
         raise RuntimeError("no .m3u/.m3u8 playlists were generated")
@@ -895,7 +909,6 @@ def _remove_path(path: Path) -> None:
 
 
 def atomic_publish_directory(staging_dir: Path, output_dir: Path) -> None:
-    """Replace the destination as one recoverable directory operation."""
     output_dir.parent.mkdir(parents=True, exist_ok=True)
     backup_dir = output_dir.parent / f".{output_dir.name}.backup-{os.getpid()}-{time.time_ns()}"
     moved_old = False
@@ -920,7 +933,6 @@ def save_active_playlists(
     stats: RunStats,
     source_errors: list[str],
 ) -> tuple[int, int]:
-    """Build and validate a complete staging folder before replacing old output."""
     grouped = group_active_playlists(playlists, checks)
     if not grouped:
         raise RuntimeError("no active playlist entries remain; existing output was preserved")
@@ -1018,6 +1030,7 @@ def main(argv: list[str] | None = None) -> int:
         parser.error("--min-active-urls must be at least 1")
 
     logging.getLogger().setLevel(getattr(logging, args.log_level))
+    logging.getLogger("urllib3").setLevel(logging.ERROR)
     started = time.monotonic()
     stats = RunStats()
 
@@ -1106,7 +1119,6 @@ def main(argv: list[str] | None = None) -> int:
                  stats.active_urls, stats.inactive_urls, stats.unique_urls_checked)
         log.info("Source errors: %d | Duration: %.2fs", stats.source_errors, stats.elapsed_seconds)
         log.info("Output published safely: %s", args.output)
-        log.info("Note: HTTP reachability does not guarantee playback in every IPTV app or region.")
         return 0
 
     except KeyboardInterrupt:
