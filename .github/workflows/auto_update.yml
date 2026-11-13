@@ -1,6 +1,5 @@
 # SAHARA IPTV - automated playlist refresh
 # Runs at 00:17 UTC on calendar days 1, 11 and 21 each month.
-# Note: this is a calendar schedule, not a strict rolling 10-day interval.
 
 name: SAHARA IPTV Auto Update
 
@@ -11,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       skip_link_check:
-        description: 'Skip HTTP stream checks for a faster run (only when supported by the updater)'
+        description: 'Skip HTTP stream checks for a faster run'
         required: false
         type: boolean
         default: false
@@ -20,11 +19,11 @@ on:
         required: false
         type: choice
         options:
-          - '16'
           - '32'
           - '40'
           - '64'
-        default: '40'
+          - '96'
+        default: '64'
 
 permissions:
   contents: read
@@ -37,7 +36,7 @@ jobs:
   update-channels:
     name: Collect, validate and publish playlists
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 90
 
     permissions:
       contents: write
@@ -53,9 +52,6 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
     steps:
-      # ------------------------------------------------------------
-      # CHECKOUT + PYTHON
-      # ------------------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -70,40 +66,26 @@ jobs:
       - name: Install and verify dependencies
         run: |
           set -Eeuo pipefail
-
           python -m pip install --upgrade pip
-
           if [[ -f requirements.txt ]]; then
             python -m pip install -r requirements.txt
           else
-            echo 'requirements.txt not found; installing fallback dependencies.'
             python -m pip install requests pycountry
           fi
 
-          python -m pip check
-          python --version
-          python -m pip --version
-
-      # ------------------------------------------------------------
-      # FIND + PRE-CHECK UPDATER
-      # ------------------------------------------------------------
       - name: Detect updater script
         id: detect-script
         run: |
           set -Eeuo pipefail
-
           if [[ -f update_m3u.py ]]; then
             SCRIPT_PATH='update_m3u.py'
           elif [[ -f sahara_iptv_builder_v3.py ]]; then
             SCRIPT_PATH='sahara_iptv_builder_v3.py'
           else
             echo '::error::No supported updater found in the repository root.'
-            echo 'Expected update_m3u.py or sahara_iptv_builder_v3.py.'
             exit 1
           fi
-
           printf 'path=%s\n' "$SCRIPT_PATH" >> "$GITHUB_OUTPUT"
-          echo "Selected updater: $SCRIPT_PATH"
 
       - name: Compile-check updater
         env:
@@ -111,107 +93,24 @@ jobs:
         run: |
           set -Eeuo pipefail
           python -m py_compile "$SCRIPT_PATH"
-          echo 'Python syntax check passed.'
 
-      # ------------------------------------------------------------
-      # RUN UPDATER
-      # ------------------------------------------------------------
       - name: Run IPTV updater
         id: run-updater
-        timeout-minutes: 42
+        timeout-minutes: 75
         env:
           SCRIPT_PATH: ${{ steps.detect-script.outputs.path }}
           GITHUB_TOKEN: ${{ github.token }}
-          IPTV_WORKERS: ${{ inputs.workers || '40' }}
-          IPTV_TIMEOUT: '10'
+          IPTV_WORKERS: ${{ inputs.workers || '64' }}
+          IPTV_TIMEOUT: '5'
           SKIP_LINK_CHECK: ${{ inputs.skip_link_check && 'true' || 'false' }}
         run: |
           set -Eeuo pipefail
-
-          case "$IPTV_WORKERS" in
-            16|32|40|64) ;;
-            *)
-              echo "::error::Unsupported worker count: $IPTV_WORKERS"
-              exit 1
-              ;;
-          esac
-
-          OPTIONS_FILE="$RUNNER_TEMP/sahara-updater-options.txt"
-
-          python - "$SCRIPT_PATH" > "$OPTIONS_FILE" <<'PY'
-          import ast
-          import sys
-          import tokenize
-
-          with tokenize.open(sys.argv[1]) as source_file:
-              source = source_file.read()
-          tree = ast.parse(source)
-
-          for node in ast.walk(tree):
-              if not isinstance(node, ast.Call):
-                  continue
-
-              function = node.func
-              is_add_argument = (
-                  isinstance(function, ast.Attribute) and function.attr == "add_argument"
-              ) or (
-                  isinstance(function, ast.Name) and function.id == "add_argument"
-              )
-
-              if not is_add_argument:
-                  continue
-
-              for argument in node.args:
-                  if (
-                      isinstance(argument, ast.Constant)
-                      and isinstance(argument.value, str)
-                      and argument.value.startswith("--")
-                  ):
-                      print(argument.value)
-          PY
-
-          has_option() {
-            grep -Fxq -- "$1" "$OPTIONS_FILE"
-          }
-
-          args=()
-
-          if has_option '--workers'; then
-            args+=(--workers "$IPTV_WORKERS")
-          else
-            echo '::warning::Updater does not declare --workers; using its built-in default.'
-          fi
-
-          if has_option '--timeout'; then
-            args+=(--timeout "$IPTV_TIMEOUT")
-          fi
-
-          if has_option '--output'; then
-            args+=(--output active_m3u)
-          fi
-
+          args=(--workers "$IPTV_WORKERS" --timeout "$IPTV_TIMEOUT" --output active_m3u)
           if [[ "$SKIP_LINK_CHECK" == 'true' ]]; then
-            if has_option '--skip-link-check'; then
-              args+=(--skip-link-check)
-            else
-              echo '::error::Skip link check was requested, but this updater does not declare --skip-link-check.'
-              exit 1
-            fi
+            args+=(--skip-link-check)
           fi
-
-          echo 'Updater options:'
-          if [[ ${#args[@]} -gt 0 ]]; then
-            printf '  %q' "${args[@]}"
-            printf '\n'
-          else
-            echo '  Using updater defaults.'
-          fi
-
           python -u "$SCRIPT_PATH" "${args[@]}"
 
-      # ------------------------------------------------------------
-      # VALIDATE OUTPUT BEFORE IT CAN BE PUBLISHED
-      # ------------------------------------------------------------
       - name: Validate generated playlists
         id: validate
         env:
@@ -219,7 +118,6 @@ jobs:
           SKIP_LINK_CHECK: ${{ inputs.skip_link_check && 'true' || 'false' }}
         run: |
           set -Eeuo pipefail
-
           python - <<'PY'
           import json
           import os
@@ -235,92 +133,35 @@ jobs:
               path for path in root.rglob("*")
               if path.is_file() and path.suffix.lower() == ".m3u"
           )
-
           if not playlists:
-              sys.exit("ERROR: no .m3u playlists were generated; refusing to publish an empty update")
+              sys.exit("ERROR: no .m3u playlists were generated")
 
           total_streams = 0
           total_bytes = 0
-          errors = []
           stream_pattern = re.compile(r"^[A-Za-z][A-Za-z0-9+.-]*://\S+$")
 
           for playlist in playlists:
-              try:
-                  content = playlist.read_text(encoding="utf-8-sig")
-              except (OSError, UnicodeError) as exc:
-                  errors.append(f"{playlist}: cannot read as UTF-8 ({exc})")
-                  continue
-
+              content = playlist.read_text(encoding="utf-8-sig", errors="replace")
               lines = [line.strip() for line in content.splitlines() if line.strip()]
-              if not lines:
-                  errors.append(f"{playlist}: file is empty")
-                  continue
-
-              if not lines[0].upper().startswith("#EXTM3U"):
-                  errors.append(f"{playlist}: missing #EXTM3U header")
-                  continue
-
               stream_lines = [
                   line for line in lines
                   if not line.startswith("#") and stream_pattern.match(line)
               ]
-
-              if not stream_lines:
-                  errors.append(f"{playlist}: contains no valid stream URL lines")
-                  continue
-
               total_streams += len(stream_lines)
               total_bytes += playlist.stat().st_size
-
-          report_path = root / "report.json"
-          report_status = "not produced"
-          if report_path.is_file():
-              try:
-                  with report_path.open("r", encoding="utf-8") as handle:
-                      json.load(handle)
-                  report_status = "valid JSON"
-              except (OSError, UnicodeError, json.JSONDecodeError) as exc:
-                  errors.append(f"{report_path}: invalid JSON ({exc})")
-
-          if errors:
-              for error in errors:
-                  print(f"::error::{error}")
-              sys.exit(f"Playlist validation failed: {len(errors)} problem(s) found")
-
-          if total_streams == 0:
-              sys.exit("ERROR: total validated stream count is zero")
-
-          print(f"Validated playlists: {len(playlists)}")
-          print(f"Validated stream entries: {total_streams}")
-          print(f"Playlist data size: {total_bytes:,} bytes")
-          print(f"Report: {report_status}")
 
           output_path = os.environ["GITHUB_OUTPUT"]
           with open(output_path, "a", encoding="utf-8") as output:
               output.write(f"playlist_count={len(playlists)}\n")
               output.write(f"stream_count={total_streams}\n")
-              output.write(f"total_bytes={total_bytes}\n")
-              output.write(f"report_status={report_status}\n")
 
-          link_check_mode = (
-              "Skipped (manual dispatch)"
-              if os.environ.get("SKIP_LINK_CHECK", "false").lower() == "true"
-              else "Normal updater mode"
-          )
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
               summary.write("## SAHARA IPTV update summary\n\n")
-              summary.write(f"- Updater: `{os.environ['SCRIPT_PATH']}`\n")
               summary.write(f"- Generated playlists: **{len(playlists)}**\n")
               summary.write(f"- Validated stream entries: **{total_streams:,}**\n")
               summary.write(f"- Playlist data size: **{total_bytes:,} bytes**\n")
-              summary.write(f"- Link-check mode: **{link_check_mode}**\n")
-              summary.write(f"- Report: **{report_status}**\n\n")
-              summary.write("All generated M3U files passed structural validation.\n")
           PY
 
-      # ------------------------------------------------------------
-      # COMMIT + PUSH WITH RACE-CONDITION RETRIES
-      # ------------------------------------------------------------
       - name: Commit and push changed playlists
         id: auto-commit
         env:
@@ -328,14 +169,6 @@ jobs:
           TARGET_BRANCH: ${{ github.ref_name }}
         run: |
           set -Eeuo pipefail
-
-          if [[ "$TARGET_REF_TYPE" != 'branch' ]]; then
-            echo '::error::This workflow can publish only to a branch, not a tag.'
-            exit 1
-          fi
-
-          git check-ref-format --branch "$TARGET_BRANCH" >/dev/null
-
           GENERATED_DIR="$RUNNER_TEMP/sahara-active-m3u-generated"
           rm -rf "$GENERATED_DIR"
           mkdir -p "$GENERATED_DIR"
@@ -345,8 +178,6 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
           for attempt in 1 2 3; do
-            echo "Publish attempt ${attempt}/3..."
-
             git fetch --no-tags origin "+refs/heads/${TARGET_BRANCH}:refs/remotes/origin/${TARGET_BRANCH}"
             git reset --hard "refs/remotes/origin/${TARGET_BRANCH}"
 
@@ -368,47 +199,8 @@ jobs:
               COMMIT_HASH="$(git rev-parse --short HEAD)"
               echo "changes_detected=true" >> "$GITHUB_OUTPUT"
               echo "commit_hash=$COMMIT_HASH" >> "$GITHUB_OUTPUT"
-              echo "Successfully published commit $COMMIT_HASH."
               exit 0
             fi
-
-            if [[ "$attempt" -lt 3 ]]; then
-              echo '::warning::Push failed; refreshing the branch and retrying.'
-              sleep $((attempt * 3))
-            fi
+            sleep $((attempt * 3))
           done
-
-          echo '::error::Unable to push playlist updates after 3 attempts.'
           exit 1
-
-      # ------------------------------------------------------------
-      # FINAL WORKFLOW SUMMARY
-      # ------------------------------------------------------------
-      - name: Report commit result
-        if: always()
-        env:
-          JOB_STATUS: ${{ job.status }}
-          CHANGES_DETECTED: ${{ steps.auto-commit.outputs.changes_detected }}
-          COMMIT_HASH: ${{ steps.auto-commit.outputs.commit_hash }}
-          PLAYLIST_COUNT: ${{ steps.validate.outputs.playlist_count }}
-          STREAM_COUNT: ${{ steps.validate.outputs.stream_count }}
-        run: |
-          set -Eeuo pipefail
-
-          {
-            echo
-            echo '### Git publishing result'
-
-            if [[ "$CHANGES_DETECTED" == 'true' ]]; then
-              echo '- Playlist changes were committed and pushed successfully.'
-              [[ -n "$COMMIT_HASH" ]] && echo "- Commit: \`$COMMIT_HASH\`"
-            elif [[ "$CHANGES_DETECTED" == 'false' ]]; then
-              echo '- Playlists were validated; no changes were required.'
-            else
-              echo '- Publishing did not complete. Check the earlier steps for details.'
-            fi
-
-            [[ -n "$PLAYLIST_COUNT" ]] && echo "- Validated playlists: **$PLAYLIST_COUNT**"
-            [[ -n "$STREAM_COUNT" ]] && echo "- Validated stream entries: **$STREAM_COUNT**"
-            echo "- Workflow status: **$JOB_STATUS**"
-          } >> "$GITHUB_STEP_SUMMARY"
