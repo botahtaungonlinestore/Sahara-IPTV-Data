@@ -25,10 +25,8 @@ http://203.81.84.130/hls/mwd_variety/index.m3u8
 https://mrtvott.com/cache/MITV/master.m3u8
 #EXTINF:-1 ,MAHAR TV
 https://ygncdn.com/live/mahar/720p/chunks.m3u8
-#EXTINF:-1 tvg-id="MRTV-4",MWD Movies [Not 24/7]
-https://live.pyoneplay.com/live/01m2sn12yc6v2enx392qj2ekqt/video1_stream.m3u8
-#EXTINF:-1,Channel7
-https://live.pyoneplay.com/live/01m2sr3kyn6bztz3xk02w3t7pn/video1_stream.m3u8
+#EXTINF:-1,MAHAR E-Sports
+https://ygncdn.com/live/maharesports/360p/chunks.m3u8
 #EXTINF:-1,TVM
 http://203.81.84.130/hls/mwd_serie/index.m3u8
 #EXTINF:-1,Light
@@ -39,5 +37,4 @@ https://live.pyoneplay.com/live/01m2sr3kyn6bztz3xk02w3t7pn/index.m3u8
 https://live.pyoneplay.com/live/01m2tfrqkdceydf6g6f48pdrmn/index.m3u8
 #EXTINF:-1 tvg-name="MRTV-4" tvg-logo="" group-title="Myanmar TV",MRTV-4
 https://live.pyoneplay.com/live/01m2sn12yc6v2enx392qj2ekqt/index.m3u8
-#EXTINF:-1 tvg-name="MAHAR E-SPORTS" tvg-logo="" group-title="MAHAR E-SPORTS"
-https://ygncdn.com/live/maharesports/360p/chunks.m3u8
+
