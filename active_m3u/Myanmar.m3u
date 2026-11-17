@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="FortuneTV.mm@SD",FORTUNE TV (720p)
+#EXTINF:-1 tvg-id="FortuneTV.mm@SD",FORTUNE TV 
 http://103.215.194.93:8282/hls/fortunetv/vmix.m3u8
 #EXTINF:-1 tvg-id="HluttawSD.mm@SD",Hluttaw S & D
 https://mrtvott.com/cache/MRTV-HLUTTAW/master.m3u8
@@ -11,15 +11,15 @@ https://mrtvott.com/cache/MRTV-FARMER/master.m3u8
 https://mrtvott.com/cache/MRTV-NEWS-HD/master.m3u8
 #EXTINF:-1 tvg-id="MRTVNRC.mm@SD",MRTV NRC
 https://mrtvott.com/cache/MRTV-NRC-HD/master.m3u8
-#EXTINF:-1 tvg-id="MRTVSports.mm@SD",MRTV Sports [Not 24/7]
+#EXTINF:-1 tvg-id="MRTVSports.mm@SD",MRTV Sports 
 https://mrtvott.com/cache/MRTV-SPORT/master.m3u8
-#EXTINF:-1 tvg-id="MWD.mm@SD",MWD (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="MWD.mm@SD",MWD 
 http://203.81.84.130/hls/mwd/index.m3u8
-#EXTINF:-1 tvg-id="MWDDocumentary.mm@SD",MWD Documentary [Geo-blocked]
+#EXTINF:-1 tvg-id="MWDDocumentary.mm@SD",MWD Documentary 
 http://203.81.84.130/hls/mwd_document/index.m3u8
-#EXTINF:-1 tvg-id="MWDMovies.mm@SD",MWD Movies [Not 24/7]
+#EXTINF:-1 tvg-id="MWDMovies.mm@SD",MWD Movies 
 http://203.81.84.130/hls/mwd_movie/index.m3u8
-#EXTINF:-1 tvg-id="MWDVariety.mm@SD",MWD Variety (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="MWDVariety.mm@SD",MWD Variety 
 http://203.81.84.130/hls/mwd_variety/index.m3u8
 #EXTINF:-1 tvg-id="MyanmarInternationalTV.mm@SD",Myanmar International TV
 https://mrtvott.com/cache/MITV/master.m3u8
