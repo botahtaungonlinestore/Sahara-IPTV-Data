@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ea9jGx1.png" group-title="Mature",Banana HD
+#EXTINF:-1 ,Banana HD
 http://125.227.210.55:1009/VideoInput/play.ts
 #EXTINF:-1,Pornstar
 https://xc.adultiptv.net/live/2lrTyxuwkL/DK6tyl781r/1.m3u8
@@ -273,68 +273,6 @@ https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeStreams/StreamsTV-RU/sting
 http://tvpremiumhd.club/lista-gratuita/120113/on/live.php?id=cdn.adultiptv.net/livecams.m3u8
 #EXTINF:-1,Viki (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/Viki.m3u8
-#EXTINF:-1,vod10
-http://t33.cdn2020.com/video/m3u8/2025/11/09/cf23ca37/index.m3u8
-#EXTINF:-1,vod11
-http://t33.cdn2020.com/video/m3u8/2025/11/10/64732aef/index.m3u8
-#EXTINF:-1,vod12
-http://t33.cdn2020.com/video/m3u8/2025/11/10/d0e7afd7/index.m3u8
-#EXTINF:-1,vod13
-http://t33.cdn2020.com/video/m3u8/2025/11/11/eeb831ad/index.m3u8
-#EXTINF:-1,vod14
-http://t33.cdn2020.com/video/m3u8/2025/11/11/4a93ab3e/index.m3u8
-#EXTINF:-1,vod15
-http://t33.cdn2020.com/video/m3u8/2025/11/11/01d9f494/index.m3u8
-#EXTINF:-1,vod16
-http://t33.cdn2020.com/video/m3u8/2025/11/11/b329edd0/index.m3u8
-#EXTINF:-1,vod17
-http://t33.cdn2020.com/video/m3u8/2025/11/11/e1e9a833/index.m3u8
-#EXTINF:-1,vod18
-http://t33.cdn2020.com/video/m3u8/2025/11/11/4f30ccf2/index.m3u8
-#EXTINF:-1,vod19
-http://t33.cdn2020.com/video/m3u8/2025/11/12/6695b62d/index.m3u8
-#EXTINF:-1,vod2
-http://t33.cdn2020.com/video/m3u8/2025/11/06/d4925346/index.m3u8
-#EXTINF:-1,vod20
-http://t33.cdn2020.com/video/m3u8/2025/11/12/3d7dcfe7/index.m3u8
-#EXTINF:-1,vod21
-http://t33.cdn2020.com/video/m3u8/2025/11/12/d5be1dd2/index.m3u8
-#EXTINF:-1,vod22
-http://t33.cdn2020.com/video/m3u8/2025/11/12/1be35bc0/index.m3u8
-#EXTINF:-1,vod23
-http://t33.cdn2020.com/video/m3u8/2025/11/12/63682031/index.m3u8
-#EXTINF:-1,vod24
-http://t33.cdn2020.com/video/m3u8/2025/11/12/8c0a6253/index.m3u8
-#EXTINF:-1,vod25
-http://t33.cdn2020.com/video/m3u8/2025/11/13/240c05c9/index.m3u8
-#EXTINF:-1,vod26
-http://t33.cdn2020.com/video/m3u8/2025/11/13/d35857ec/index.m3u8
-#EXTINF:-1,vod27
-http://t33.cdn2020.com/video/m3u8/2025/11/07/546905e0/index.m3u8
-#EXTINF:-1,vod28
-http://t33.cdn2020.com/video/m3u8/2025/11/08/d556eb9b/index.m3u8
-#EXTINF:-1,vod29
-http://t33.cdn2020.com/video/m3u8/2025/11/11/2a3c84ff/index.m3u8
-#EXTINF:-1,vod3
-http://t33.cdn2020.com/video/m3u8/2025/11/07/df063af2/index.m3u8
-#EXTINF:-1,vod30
-http://t33.cdn2020.com/video/m3u8/2025/11/12/0a876f4c/index.m3u8
-#EXTINF:-1,vod31
-http://t33.cdn2020.com/video/m3u8/2025/11/13/52a69578/index.m3u8
-#EXTINF:-1,vod32
-http://t33.cdn2020.com/video/m3u8/2025/09/09/25fc50e8/index.m3u8
-#EXTINF:-1,vod4
-http://t33.cdn2020.com/video/m3u8/2025/11/08/7f1a4081/index.m3u8
-#EXTINF:-1,vod5
-http://t33.cdn2020.com/video/m3u8/2025/11/08/09565b57/index.m3u8
-#EXTINF:-1,vod6
-http://t33.cdn2020.com/video/m3u8/2025/11/08/7c7d43f8/index.m3u8
-#EXTINF:-1,vod7
-http://t33.cdn2020.com/video/m3u8/2025/11/08/bd7df09e/index.m3u8
-#EXTINF:-1,vod8
-http://t33.cdn2020.com/video/m3u8/2025/11/08/8f313ac6/index.m3u8
-#EXTINF:-1,vod9
-http://t33.cdn2020.com/video/m3u8/2025/11/08/39ba63a6/index.m3u8
 #EXTINF:-1,Young Girls
 http://live.mycamtv.com/young.m3u8
 #EXTINF:-1,Шалун ТВ
