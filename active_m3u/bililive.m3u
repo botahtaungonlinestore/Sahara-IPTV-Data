@@ -1,7 +1,15 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="2026-11-13 10:26:30" tvg-logo="https://cdn.jsdelivr.net/gh/feiyang666999/testvideo/tg.jpg" group-title="列表更新时间",2026-11-13 10:26:30
+#EXTINF:-1 tvg-name="2026-11-21 12:57:11" tvg-logo="https://cdn.jsdelivr.net/gh/feiyang666999/testvideo/tg.jpg" group-title="列表更新时间",2026-11-21 12:57:11
 https://cdn.jsdelivr.net/gh/feiyang666999/testvideo/time/time.mp4
 #EXTINF:-1 tvg-name="4K60PSDR-H264-AAC测试" tvg-logo="https://cdn.jsdelivr.net/gh/feiyang666999/testvideo/tg.jpg" group-title="4K频道",4K60PSDR-H264-AAC测试
 https://cdn.jsdelivr.net/gh/feiyang666999/testvideo/sdr4kvideo/playlist.m3u8
 #EXTINF:-1 tvg-name="4K60PHLG-HEVC-EAC3测试" tvg-logo="https://cdn.jsdelivr.net/gh/feiyang666999/testvideo/tg.jpg" group-title="4K频道",4K60PHLG-HEVC-EAC3测试
 https://cdn.jsdelivr.net/gh/feiyang666999/testvideo/hlg4kvideo/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i0.hdslb.com/bfs/live-key-frame/keyframe11211255001931163979ht6792.jpg" group-title="电子榨菜", 重生之我在自学帮画画
+https://mursor.ottiptv.cc/bilibili/1931163979
+#EXTINF:-1 tvg-logo="https://i0.hdslb.com/bfs/live-key-frame/keyframe112112560000246985312al5k6.jpg" group-title="户外", 【慢直播】峨眉山金顶看云海、祈福
+https://mursor.ottiptv.cc/bilibili/24698531
+#EXTINF:-1 tvg-logo="https://i0.hdslb.com/bfs/live-key-frame/keyframe11211256000008965648expawm.jpg" group-title="手工绘画", 这么齁的事怎么不早说
+https://mursor.ottiptv.cc/bilibili/8965648
+#EXTINF:-1 tvg-logo="https://i0.hdslb.com/bfs/live-key-frame/keyframe11211255000030787814inugv2.jpg" group-title="手工绘画", 今天要画一整天稿
+https://mursor.ottiptv.cc/bilibili/30787814

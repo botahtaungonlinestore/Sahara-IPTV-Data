@@ -3,6 +3,8 @@
 http://htvajyal.mada.ps:8888/ajyal/index.m3u8
 #EXTINF:-1 tvg-id="AjyalTV.ps@SD",Ajyal TV (720p)
 http://htvmada.mada.ps:8888/ajyal/index.m3u8
+#EXTINF:-1 tvg-id="AlMadina.ps@SD",Al Madina (720p)
+https://streaming.zaytonatube.com:8081/AlMadinatv/almadina21/index.m3u8
 #EXTINF:-1 tvg-id="AlNajahNews.ps@SD",Al Najah News (720p)
 https://streaming.najah.edu:8443/hls/AlNajah.m3u8
 #EXTINF:-1 tvg-id="FalastiniTV.ps@SD",Falastini TV (1080p)
@@ -24,6 +26,8 @@ https://pbc.furrera.ps/palestinehd/index.m3u8
 https://cdn-globecast.akamaized.net/live/eds/palestinian_satellite_channel/hls_roku/palestinian_satellite_channel.m3u8
 #EXTINF:-1 tvg-id="PalestineToday.ps@SD",Palestine Today (480p) [Geo-blocked]
 https://live.paltodaytv.com/paltv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="QudsunaTV.ps@HD",Qudsuna TV (1080i)
+https://qudsunatv-live.cdnnew.com/qudsunatv/qudsuna.m3u8
 #EXTINF:-1 tvg-id="RadioAlbaladTV.ps@SD",Radio Albalad TV (720p)
 http://streaming.zaytonatube.com:8080/radioalbalad/radioalbalad/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioAlbaladTV.ps@SD",Radio Albalad TV (576p)
@@ -39,5 +43,5 @@ https://streaming.zaytonatube.com:8081/ShababFM/shabab/index.m3u8
 http://htvint.mada.ps:8889/orient/index.m3u8
 #EXTINF:-1 tvg-id="WatarTV.ps@SD",Watar TV (720p) [Not 24/7]
 https://htvint.mada.ps/orient/index.m3u8
-#EXTINF:-1 tvg-id="WattanTV.ps@SD",Wattan TV
+#EXTINF:-1 tvg-id="WattanTV.ps@SD",Wattan TV (720p)
 https://htvmada.mada.ps:4443/wattan/index.m3u8

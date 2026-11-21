@@ -39,11 +39,7 @@ https://uni6rtmp.tulix.tv/ucur1/Payvand/playlist.m3u8
 https://tgn.bozztv.com/eshgtv-dvrfl05/gin-iribpooya/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="PressTV.ir@SD",Press TV
 https://live.presstv.co.uk/hls/presstv.m3u8
-#EXTINF:-1 tvg-id="RasoulallahTv.ir@HD",RasoulallahTv (1080p)
-https://avr.host247.net/live/rasoulallahtv/playlist.m3u8
 #EXTINF:-1 tvg-id="TBNNejatTV.ir@SD",TBN Nejat TV
 https://hls.nejat.live/hls/stream.m3u8
-#EXTINF:-1 tvg-id="WiseHumanTv.ir@HD",WiseHumanTv (1080p)
-https://avr.host247.net/live/WiseHumanTv/playlist.m3u8
 #EXTINF:-1 tvg-id="YourTimeTV.ir@SD",YourTime TV
 https://live.yourtime.tv/hls/stream.m3u8

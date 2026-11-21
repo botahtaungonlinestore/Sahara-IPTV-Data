@@ -18,13 +18,15 @@ https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8
 #EXTINF:-1 tvg-id="151BPB.cl@SD",15.1 BPB (720p)
 https://v2.tustreaming.cl/enlacebpbtv/index.m3u8
 #EXTINF:-1 tvg-id="ADATV.cl@SD",ADA TV (720p)
+https://live-evg10.tv360.bitel.com.pe/bitel/alasdeaguilaSRT/playlist.m3u8
+#EXTINF:-1 tvg-id="ADATV.cl@SD",ADA TV (720p)
 https://v4.tustreaming.cl/adatvchile/index.m3u8
 #EXTINF:-1 tvg-id="ADNTV.cl@SD",ADN TV (720p)
 https://redirector.rudo.video/hls-video/931b584451fa6dd1313ee66efbfd5802e3f3bcea/adntv/adntv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AERadioTV.cl@SD",AE Radio TV (720p) [Not 24/7]
-https://tls-cl.cdnz.cl/aeradio/live/playlist.m3u8
 #EXTINF:-1 tvg-id="AgriculturaTV.cl@SD",Agricultura TV (1080p)
 https://redirector.rudo.video/hls-video/ey6283je82983je9823je8jowowiekldk9838274/921tv/921tv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AMCanal.cl@SD",AM Canal
+https://streaming.bitsur.cl:3534/live/vdo1102live.m3u8
 #EXTINF:-1 tvg-id="AntofagastaTV.cl@SD",Antofagasta TV (ATV) (1080p)
 https://unlimited6-cl.dps.live/atv/atv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AtacamaNoticias.cl@SD",Atacama Noticias (720p) [Not 24/7]
@@ -53,8 +55,6 @@ http://15.204.246.24:8080/Canal13HD/index.m3u8
 https://pantera1-100gb-cl-movistar.dps.live/t13radio/t13radio.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal30Loncomilla.cl@SD",Canal 30 Loncomilla (720p)
 https://v1.tustreaming.cl/canal30loncomilla/index.m3u8
-#EXTINF:-1 tvg-id="CanalChilote.cl@SD",Canal Chilote (720p)
-https://videostream.chileservidores.com:8081/chiloe2/index.m3u8
 #EXTINF:-1 tvg-id="CanalISB.cl@SD",Canal ISB (Iglesia San Bernardo) (720p)
 https://unlimited1-us.dps.live/isb/isb.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalLatino54.cl@SD",Canal Latino 54 (360p)
@@ -63,12 +63,16 @@ https://videostream.chileservidores.com:8081/latina/index.m3u8
 https://v2.tustreaming.cl/canallocalcl/index.m3u8
 #EXTINF:-1 tvg-id="CanalSurvisionAlerce.cl@SD",Canal Survision Alerce (720p)
 https://s1.tvdatta.com:3384/live/canal20tvlive.m3u8
-#EXTINF:-1 tvg-id="CentralTV.cl@SD",Central TV (720p)
-https://freya.mivideo.pro/centraltv/video.m3u8
 #EXTINF:-1 tvg-id="ChileChannel.cl@SD",Chile Channel (720p)
 https://v2.tustreaming.cl/chilechannel/index.m3u8
 #EXTINF:-1 tvg-id="ChileVision.cl@SD",ChileVision (1080p)
 http://15.204.246.24:8080/CHVHD/index.m3u8
+#EXTINF:-1 tvg-id="ChileVision.cl@SD",ChileVision (1080p)
+http://181.78.88.113:9800/play/a05h/index.m3u8
+#EXTINF:-1 tvg-id="ChileVision.cl@SD",ChileVision (1080p) [Geo-blocked]
+https://redirector.dps.live/hls/chv/playlist.m3u8
+#EXTINF:-1 tvg-id="ChiloeRed25.cl@SD",Chiloe Red 25 (720p)
+https://v2.tustreaming.cl/chiloered/index.m3u8
 #EXTINF:-1 tvg-id="ChinaChannel.cl@SD",China Channel (720p)
 https://v2.tustreaming.cl/chinachannel/index.m3u8
 #EXTINF:-1 tvg-id="ChocolateFM.cl@SD",Chocolate FM (720p)
@@ -105,6 +109,8 @@ https://v1.tustreaming.cl/emociontv/index.m3u8
 https://v2.tustreaming.cl/enlineamauletv/index.m3u8
 #EXTINF:-1 tvg-id="EnerGeek.cl@HD",EnerGeek (1080p) [Geo-blocked]
 https://cl-2.backend.energeek.cl/bkp/egretroweb/index.m3u8?token=IPTVgh26
+#EXTINF:-1 tvg-id="EnerGeekFAN.cl@SD",EnerGeek FAN (720p) [Geo-blocked]
+https://cl-2.backend.energeek.cl/bkp/egfan/mobile/index.m3u8?token=IPTVgh26
 #EXTINF:-1 tvg-id="EnerGeekRadio.cl@SD",EnerGeek Radio (720p) [Geo-blocked]
 https://cl-2.backend.energeek.cl/bkp/egradio/mobile/index.m3u8?token=IPTVgh26
 #EXTINF:-1 tvg-id="EnfoqueDigitalTV.cl@SD",Enfoque Digital TV (1080p)
@@ -123,14 +129,14 @@ https://v2.tustreaming.cl/fmplus/index.m3u8
 https://multimedia.fortalezatv.cl/video/video.m3u8
 #EXTINF:-1 tvg-id="Frecuencia7TV.cl@SD",Frecuencia 7 TV (720p)
 https://v2.tustreaming.cl/frecuencia7/index.m3u8
-#EXTINF:-1 tvg-id="FunBox.cl@SD",FunBox
-http://186.148.196.100:8000/play/a00d
 #EXTINF:-1 tvg-id="GenialTV.cl@SD",Genial TV (720p)
 https://v1.tustreaming.cl/genialtv/index.m3u8
+#EXTINF:-1 tvg-id="Girovisual.cl@SD",Girovisual (1080p)
+https://live-evg8.tv360.bitel.com.pe/bitel/girovisualSRT-TRA/playlist.m3u8
+#EXTINF:-1 tvg-id="Girovisual.cl@SD",Girovisual (1080p)
+https://panel.tvstream.cl:1936/puekxmssxt/puekxmssxt/playlist.m3u8
 #EXTINF:-1 tvg-id="GVision.cl@SD",GVision (288p)
 https://videostream.chileservidores.com:8081/tome/index.m3u8
-#EXTINF:-1 tvg-id="HolvoetTV.cl@SD",Holvoet TV (Copiapó) (720p) [Not 24/7]
-https://unlimited1-us.dps.live/holvoettv/holvoettv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="IquiqueTV.cl@SD",Iquique TV (1080p)
 https://origin.skarnetchile.com:8081/iquiquetv-hd/index.m3u8
 #EXTINF:-1 tvg-id="ISATV.cl@SD",ISA TV (1080p)
@@ -155,6 +161,8 @@ https://jireh-8-hls-video-us-isp.dps.live/hls-video/931b584451fa6dd1313ee66efbfd
 https://redirector.rudo.video/hls-video/339f69c6122f6d8f4574732c235f09b7683e31a5/ln/ln.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="LaPopularTV.cl@SD",La Popular TV (720p)
 https://tv.arkeo.cl:1936/enlacetv1/enlacetv1/playlist.m3u8
+#EXTINF:-1 tvg-id="LaRed.cl@SD",La Red (720p)
+https://ddycmnicl95kp.cloudfront.net/live/xmw27slnrnv8/master.m3u8
 #EXTINF:-1 tvg-id="LilaTVPencahue.cl@SD",Lila TV Pencahue (720p)
 https://tv.arkeo.cl:1936/radiolila/radiolila/playlist.m3u8
 #EXTINF:-1 tvg-id="MarayTV.cl@SD",Maray TV (1080p)
@@ -185,6 +193,8 @@ https://vdochile.com:3194/live/mvqutymylive.m3u8
 https://pantera1-100gb-cl-movistar.dps.live/nctv/nctv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NinaTV.cl@SD",Nina TV (720p)
 https://tv1.ninatv.cl/hls/stream.m3u8
+#EXTINF:-1 tvg-id="NuevoTiempoTV.cl@SD",Nuevo Tiempo TV (1080p)
+http://190.181.61.93:8000/play/a00o/index.m3u8
 #EXTINF:-1 tvg-id="NuevoTiempoTV.cl@SD",Nuevo Tiempo TV (720p)
 https://streamtv.novotempo.com/CDN-TV-ES/smil:tvnuevotiempo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OdiseaTV.cl@SD",Odisea TV (720p)
@@ -197,6 +207,8 @@ https://video01.logicahost.com.br/grupomedia/grupomedia/playlist.m3u8
 https://redirector.rudo.video/hls-video/ey6283je82983je9823je8jowowiekldk9838274/pautatv/pautatv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="PichilemuTV.cl@SD",Pichilemu TV (1080p)
 https://5ff3d9babae13.streamlock.net/8028/8028/playlist.m3u8
+#EXTINF:-1 tvg-id="PlimPlim.ar@SD",Plim Plim (576p)
+http://186.148.196.100:8000/play/a00d
 #EXTINF:-1 tvg-id="PolarTV.cl@SD",Polar TV (1080p)
 https://polartv.webredirect.org/memfs/319ac83c-e602-4e91-8104-2b5501380b5e.m3u8
 #EXTINF:-1 tvg-id="PrimitivosTV.cl@SD",Primitivos TV (720p)
@@ -219,6 +231,8 @@ https://v2.tustreaming.cl/armoniamovil/index.m3u8
 https://tv.arkeo.cl:19360/8046/8046.m3u8
 #EXTINF:-1 tvg-id="RadioDuna.cl@SD",Radio Duna (720p)
 https://mdstrm.com/live-stream-playlist/67ed8a8d6db4af9a0188555c.m3u8
+#EXTINF:-1 tvg-id="RadioEdelweiss.cl@SD",Radio Edelweiss (720p)
+https://stmv5.voxtvhd.com.br/edelweisstv/edelweisstv/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioElSembrador.cl@SD",Radio El Sembrador (720p)
 https://tv.arkeo.cl:1936/elsembrador/elsembrador/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioFantasiaTV.cl@SD",Radio Fantasia TV (720p)
@@ -239,8 +253,6 @@ https://tv.arkeo.cl:1936/radiorancagua/radiorancagua/playlist.m3u8
 https://cl-2.backend.energeek.cl/RadioSuyai-Neo/index.m3u8
 #EXTINF:-1 tvg-id="RadioSuyaiTV.cl@HD",Radio Suyai TV (1080p)
 https://trun.suyaitv.cl/memfs/d0835165-7fb4-4982-8336-84a7f4522908.m3u8
-#EXTINF:-1 tvg-id="RadioUNIACC.cl@SD",Radio UNIACC (720p)
-https://scl.edge.grupoz.cl/uniaccastream/live/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioUniversal.cl@SD",Radio Universal (720p)
 https://videostream.chileservidores.com:8081/universal/index.m3u8
 #EXTINF:-1 tvg-id="RadioUSACH.cl@SD",Radio USACH (720p)
@@ -310,6 +322,8 @@ https://unlimited6-cl.dps.live/thema/thema.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TNE.cl@SD",TNE (720p) [Not 24/7]
 https://v2.tustreaming.cl/tnetv/index.m3u8
 #EXTINF:-1 tvg-id="TNTSports.cl@SD",TNT Sports (480p)
+http://205.235.6.29:8000/play/a0xa/index.m3u8
+#EXTINF:-1 tvg-id="TNTSports.cl@SD",TNT Sports (480p)
 http://209.45.101.130:8040/play/a03s/index.m3u8
 #EXTINF:-1 tvg-id="TNTSportsPremium.cl@ArgentinaHD",TNT Sports Premium ArgentinaHD (1080p)
 http://181.78.79.131:8000/play/a0q9
@@ -325,8 +339,6 @@ https://v1.tustreaming.cl/tv5linares/index.m3u8
 https://pantera1-100gb-cl-movistar.dps.live/tvquellon/tvquellon.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSenado.cl@SD",TV Senado (360p)
 https://janus-tv-ply.senado.cl/playlist/playlist.m3u8
-#EXTINF:-1 tvg-id="TVUCT.cl@SD",TV UCT (1080p)
-https://unlimited1-us.dps.live/uct/uct.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVUsach.cl@SD",TV Usach (720p)
 https://stv4.janus.cl/playlist/stream.m3u8
 #EXTINF:-1 tvg-id="TVPlus.cl@SD",TV+ (1080p)
@@ -337,6 +349,8 @@ http://15.204.246.24:8080/TVNHD/index.m3u8
 http://45.173.231.22:8000/play/a06l/index.m3u8
 #EXTINF:-1 tvg-id="TVN.cl@SD",TVN (1080p)
 http://138.121.15.230:9002/TVN/index.m3u8
+#EXTINF:-1 tvg-id="TVN.cl@SD",TVN (1080p)
+http://181.78.88.113:9800/play/a09f/index.m3u8
 #EXTINF:-1 tvg-id="TVN.cl@SD",TVN (1080p)
 https://iptv.bitred.cl/tvn/index.m3u8
 #EXTINF:-1 tvg-id="TVN3.cl@SD",TVN3 (1080p) [Geo-blocked]
@@ -366,8 +380,6 @@ https://unlimited1-us.dps.live/campustv/campustv.smil/campustv/livestream1/chunk
 https://v2.tustreaming.cl/utv/index.m3u8
 #EXTINF:-1 tvg-id="VClassicTV.cl@SD",V Classic TV (1080p)
 http://186.148.196.100:8000/play/a02z
-#EXTINF:-1 tvg-id="VClassicTV.cl@SD",V Classic TV (720p)
-https://5eaccbab48461.streamlock.net:1936/8112/8112/playlist.m3u8
 #EXTINF:-1 tvg-id="VersoTV.cl@SD",Verso TV
 https://verso.coopcom.cl/live/SHf6GLCpn4hDSpWdzaDzgX0ciU82/index.m3u8
 #EXTINF:-1 tvg-id="ViaX.cl@SD",Via X (576p)
@@ -383,11 +395,3 @@ https://unlimited6-cl.dps.live/vtv/vtv.smil/playlist.m3u8
 https://stream.wapptv.cl/video/index.m3u8
 #EXTINF:-1 tvg-id="ZonaLatina.cl@SD",Zona Latina (576p)
 http://45.170.130.224:8000/play/a00x/index.m3u8
-#EXTINF:-1 tvg-id="TNTSports.cl@SD",TNT Sports (480p)
-http://205.235.6.29:8000/play/a0xa/index.m3u8
-#EXTINF:-1 tvg-id="LaRed.cl@SD",La Red (720p)
-https://ddycmnicl95kp.cloudfront.net/live/xmw27slnrnv8/master.m3u8
-#EXTINF:-1 tvg-id="TVN.cl@SD",TVN (1080p)
-http://181.78.88.113:9800/play/a09f/index.m3u8
-#EXTINF:-1 tvg-id="ChileVision.cl@SD",ChileVision (1080p)
-http://181.78.88.113:9800/play/a05h/index.m3u8

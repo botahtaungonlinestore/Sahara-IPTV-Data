@@ -1,8 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="5tv.ar@SD",5tv
-https://617c5175c970b.streamlock.net:4444/tvcinco/live1/playlist.m3u8
-#EXTINF:-1 tvg-id="5tv.ar@SD",5TV Corrientes (480p) [Not 24/7]
-http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8
 #EXTINF:-1 tvg-id="247CanaldeNoticias.ar@SD",24/7 Canal de Noticias (360p)
 https://panel.host-live.com:19360/cn247tv/cn247tv.m3u8
 #EXTINF:-1 tvg-id="A24.ar@SD",A24 (1080p)
@@ -41,7 +37,7 @@ https://stream.arcast.com.ar/casse/casse/playlist.m3u8
 https://streamlov.alsolnet.com/cadena103/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal2deUshuaia.ar@SD",Canal 2 de Ushuaia (1080p)
 https://nd106.republicaservers.com:4433/hls/c6611/index.m3u8
-#EXTINF:-1 tvg-id="Canal2Gualeguay.ar@SD",Canal 2 Gualeguay
+#EXTINF:-1 tvg-id="Canal2Gualeguay.ar@SD",Canal 2 Gualeguay (1080p)
 https://stream.arcast.net:4443/gualeguay/gualeguay/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal2MardelPlata.ar@SD",Canal 2 Mar del Plata (720p)
 https://tv.streamcasthd.com:3641/live/canal2mdplive.m3u8
@@ -49,6 +45,9 @@ https://tv.streamcasthd.com:3641/live/canal2mdplive.m3u8
 https://nd106.republicaservers.com:4433/hls/canal2misioness/index.m3u8
 #EXTINF:-1 tvg-id="Canal2NexTVRafaela.ar@SD",Canal 2 NexTV Rafaela (720p)
 https://edge.enhdtv.com/nexthd/index.m3u8
+#EXTINF:-1 tvg-id="Canal3Arroyito.ar@SD",Canal 3 Arroyito (1080p)
+#EXTVLCOPT:http-referrer=https://canal3.cespalarroyito.coop/
+https://envivo.cespalarroyito.coop/live/Canal3Arroyito.m3u8
 #EXTINF:-1 tvg-id="Canal3Formosa.ar@SD",Canal 3 Formosa
 https://stmvideo6.livecastv.com/agenfor/agenfor/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal3LaPampa.ar@SD",Canal 3 La Pampa (1080p)
@@ -63,10 +62,10 @@ http://vivo.canal3tacural.com.ar:8081/hls/stream.m3u8
 https://stream.arcast.com.ar/canal4esquel/canal4esquel/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4Jujuy.ar@SD",Canal 4 Jujuy
 https://5cd577a3dd8ec.streamlock.net/CANAL4/smil:CANAL4.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal4Posadas.ar@SD",Canal 4 Posadas (1080p)
-http://190.128.214.97:64333/play/a06l/index.m3u8
 #EXTINF:-1 tvg-id="Canal4Posadas.ar@SD",Canal 4 Posadas (576p)
 https://iptv.ixfo.com.ar:30443/live/C4POS/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal4SanJuan.ar@SD",Canal 4 San Juan (576p)
+https://streamlov.alsolnet.com/canal4sanjuan/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4Teleaire.ar@SD",Canal 4 Teleaire
 https://stmvideo6.livecastv.com/canal4/canal4/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4VillaDolores.ar@SD",Canal 4 Villa Dolores
@@ -75,13 +74,11 @@ https://stmvideo3.livecastv.com/canal4vd/canal4vd/playlist.m3u8
 https://stmv4.voxtvhd.com.br/canal5pueblo/canal5pueblo/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal5SantaFe.ar@SD",Canal 5 Santa Fe (240p)
 https://stream.arcast.com.ar/c5sf/c5sf/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal5TVChepes.ar@SD",Canal 5 TV Chepes
-https://videostream.shockmedia.com.ar:19360/canal5alfatvchepes/canal5alfatvchepes.m3u8
 #EXTINF:-1 tvg-id="Canal6Posadas.ar@SD",Canal 6 Posadas (1080p)
 https://iptv.ixfo.com.ar:30443/live/c6digital/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal6VientoRecio.ar@SD",Canal 6 Viento Recio
 https://stmvideo6.livecastv.com/vientorecio/vientorecio/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal7Jujuy.ar@SD",Canal 7 Jujuy
+#EXTINF:-1 tvg-id="Canal7Jujuy.ar@SD",Canal 7 Jujuy (720p)
 https://stream.arcast.live/canal7jujuy/ngrp:canal7jujuy_all/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal7Neuquen.ar@SD",Canal 7 Neuquén (1080p)
 https://stream.arcast.com.ar/c7nq/ngrp:c7nq_all/playlist.m3u8
@@ -91,14 +88,10 @@ https://vivo.solumedia.com:19360/cooperativa/cooperativa.m3u8
 https://vivo.solumedia.com:19360/canal7salta/canal7salta.m3u8
 #EXTINF:-1 tvg-id="Canal7TV.ar@SD",Canal 7 Santiago del Estero (720p)
 https://stream.arcast.com.ar/envivo/castv/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal7TV.ar@SD",Canal 7 TV (576p) [Not 24/7]
-https://k-fra32.x10.network/Clrs/test/hls/1158394/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal8MardelPlata.ar@SD",Canal 8 Mar del Plata (720p) [Not 24/7]
 https://canal8mdq.unpocodeawita.workers.dev
-#EXTINF:-1 tvg-id="Canal9Link.ar@SD",Canal 9 Link
-https://617c5175c970b.streamlock.net:4444/9linklivert/smil:9linkmultibr.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal9Resistencia.ar@SD",Canal 9 Resistencia (720p)
-http://coninfo.net:1935/9linklivert/smil:9linkmultibr.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal10Goya.ar@SD",Canal 10 Goya (1080p)
+https://tv.streamcasthd.com:3637/live/canal10goyalive.m3u8
 #EXTINF:-1 tvg-id="Canal10MardelPlata.ar@SD",Canal 10 Mar del Plata
 https://g1.mc-hor.transport.edge-access.net/a12/ngrp:canal10mdq-100044_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="Canal12VenadoTuerto.ar@SD",Canal 12 Venado Tuerto (1080i)
@@ -107,6 +100,9 @@ https://nd106.republicaservers.com:4433/hls/diegologonitv/index.m3u8
 https://nd106.republicaservers.com:4433/c7827.mp4
 #EXTINF:-1 tvg-id="Canal13LaRioja.ar@SD",Canal 13 La Rioja (480p)
 http://arcast.net:1935/mp/mp/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal20VillaMaria.ar@SD",Canal 20 Villa Maria (1080p)
+#EXTVLCOPT:http-referrer=https://www.canal20villamaria.com.ar/
+https://stmvideo3.livecastv.com/canal20/canal20/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal21TV.ar@SD",Canal 21 TV (1080p)
 https://iptv.ixfo.com.ar:30443/c21tv/hd/c21tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal26.ar@SD",Canal 26 (1080p)
@@ -137,6 +133,10 @@ https://streaming.telered.com.ar/santa-maria/streaming/mystream.m3u8
 https://livestream.lumpentv.com.ar/hls/lumpen.m3u8
 #EXTINF:-1 tvg-id="CanalTDC.ar@SD",Canal TDC
 https://tdcserver.com:19360/tdconlione-2/tdconlione-2.m3u8
+#EXTINF:-1 tvg-id="CanalUniversidad.ar@SD",Canal Universidad
+https://videostream.shockmedia.com.ar/hls/canaluniversidadmdp/canaluniversidadmdp.m3u8
+#EXTINF:-1 tvg-id="CarasTV.ar@SD",Caras TV (1080p)
+https://unlimited1-us.dps.live/carastv/carastv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CatamarcaTV.ar@SD",Catamarca TV (720p)
 https://stream.arcast.com.ar/canal7catamarca/ngrp:canal7catamarca_all/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="CeltaTV.ar@SD",Celta TV (240p)
@@ -145,10 +145,8 @@ https://vivo.solumedia.com:19360/celta/celta.m3u8
 https://wowzasrv.chaco.gov.ar/Streamtv/chacotv/playlist.m3u8
 #EXTINF:-1 tvg-id="ChamameTV.ar@SD",Chamame TV
 https://srv4.zcast.com.br/chamametv/chamametv/playlist.m3u8
-#EXTINF:-1 tvg-id="CiudadTVResistencia.ar@SD",Ciudad TV Resistencia (720p)
-https://617c5175c970b.streamlock.net:4444/chacodxdtv/livenew/playlist.m3u8
-#EXTINF:-1 tvg-id="CorrientesTV.ar@SD",Corrientes TV
-https://617c5175c970b.streamlock.net:4444/13max2/live13maxtv2026/playlist.m3u8
+#EXTINF:-1 tvg-id="CorreaRadiovision.ar@SD",Correa Radiovision (720p)
+https://stream.arcast.net:4443/correadigital/canal12/playlist.m3u8
 #EXTINF:-1 tvg-id="CosmosTv.ar@SD",Cosmos Tv
 https://canaletaplus.com:3922/live/cosmoslive.m3u8
 #EXTINF:-1 tvg-id="CosmosTv.ar@HD",Cosmos Tv
@@ -163,14 +161,14 @@ http://15.204.246.24:8080/DisneyHD/index.m3u8
 http://45.171.108.253:8888/DISNEY_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar@Panregional",Disney Channel Latin America (1080p)
 http://45.185.163.75:8000/play/a02j/index.m3u8
-#EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar@Panregional",Disney Channel Latin America (1080p)
-https://barinaslive1.boldmss.com/DISNEY/DISNEY.isml/DISNEY.m3u8
 #EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar@Center",Disney Channel Latin America Center (1080p)
 http://181.78.8.199:8000/play/a0dn/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar@Mexico",Disney Channel Latin America Mexico (720p)
 http://45.166.93.156:9999/play/a0f3/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar@North",Disney Channel Latin America North (576p)
 http://138.121.15.230:9002/DISNEY-CHANNEL/index.m3u8
+#EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar@PanregionalHD",Disney Channel Latin America Panregional HD (1080p)
+http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannelLatinAmerica.ar@PanregionalHD",Disney Channel Latin America Panregional HD (1080p)
 http://138.59.227.20:8000/play/a06w/index.m3u8
 #EXTINF:-1 tvg-id="DisneyJrLatinAmerica.ar@Panregional",Disney Jr. Latin America (576p)
@@ -181,7 +179,7 @@ http://181.78.14.26:4000/play/a073/index.m3u8
 http://45.185.163.75:8000/play/a016/index.m3u8
 #EXTINF:-1 tvg-id="DisneyJrLatinAmerica.ar@South",Disney Jr. Latin America South
 http://tr.live.clarovtrcdn.vtrplay.com/disneyjrhdchi/vxfmt=dp/playlist.m3u8?device_profile=STB_HLS_VCAS_LIVE_HD
-#EXTINF:-1 tvg-id="EcoTV.ar@SD",Eco TV
+#EXTINF:-1 tvg-id="EcoTV.ar@SD",Eco TV (1080p)
 https://stream.arcast.com.ar/ecotv/ngrp:ecotv_all/playlist.m3u8
 #EXTINF:-1 tvg-id="ElGourmet.ar@Panregional",El Gourmet (1080p)
 http://15.204.246.24:8080/ElGourmetHD/index.m3u8
@@ -202,6 +200,8 @@ http://190.108.83.69:8000/play/a01d/index.m3u8
 http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/23.m3u8
 #EXTINF:-1 tvg-id="Encuentro.ar@SD",Encuentro (720p)
 http://138.59.227.20:8000/play/a05s/index.m3u8
+#EXTINF:-1 tvg-id="ESPNPremium.ar@SD",ESPN Premium
+http://45.134.141.161:2200/ARG/ESPN_Premium_Argentina_HD/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="ESPNPremium.ar@HD",ESPN Premium HD (1080p)
 http://158.172.155.130:8000/play/a0ao/index.m3u8
 #EXTINF:-1 tvg-id="ESPNPremium.ar@HD",ESPN Premium HD
@@ -216,8 +216,6 @@ https://iptv.bitred.cl/EUROPAEUROPA_HD/index.m3u8
 http://200.115.120.1:8000/play/ca131/index.m3u8
 #EXTINF:-1 tvg-id="FilmArts.ar@Panregional",Film & Arts (480p)
 http://45.228.234.9:8000/play/a06g/index.m3u8
-#EXTINF:-1 tvg-id="FolcloreandoTV.ar@SD",Folcloreando TV
-https://stmvideo6.livecastv.com/radioactivasanjuan/radioactivasanjuan/playlist.m3u8
 #EXTINF:-1 tvg-id="FoxSports.ar@SD",Fox Sports (1080p)
 http://138.59.227.20:8000/play/a085/index.m3u8
 #EXTINF:-1 tvg-id="FoxSports.ar@SD",Fox Sports (1080p)
@@ -239,28 +237,26 @@ https://vtm2.msinteractiva.com/lamil35/lamil35/playlist.m3u8
 https://edge.enhdtv.com/litustv/index.m3u8
 #EXTINF:-1 tvg-id="MasFM.ar@SD",Más FM 95.9 (720p)
 https://vivo.solumedia.com:19360/masfm/masfm.m3u8
+#EXTINF:-1 tvg-id="MercurioNoticias.ar@SD",Mercurio Noticias
+https://videostream.shockmedia.com.ar/hls/mercuriotv/mercuriotv.m3u8
 #EXTINF:-1 tvg-id="MetroTV.ar@SD",Metro TV (720p)
 https://streamtv12.ddns.net:5443/LiveApp/streams/193945633734205616732920.m3u8
 #EXTINF:-1 tvg-id="MisionesCuatro.ar@SD",Misiones Cuatro
 https://iptv.ixfo.com.ar:30443/live-HD/MISIONES4/playlist.m3u8
 #EXTINF:-1 tvg-id="MultivisionFederal.ar@SD",Multivision Federal
 https://videostream.shockmedia.com.ar/hls/multivisionfederal/multivisionfederal.m3u8
-#EXTINF:-1 tvg-id="MusicTop.ar@SD",MusicTop (1080p)
-http://190.128.214.97:64333/play/a06o/index.m3u8
 #EXTINF:-1 tvg-id="NeoTV.ar@SD",Neo TV
 https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8
 #EXTINF:-1 tvg-id="NeoxTV.ar@SD",Neox TV [Not 24/7]
 https://tv.streamcasthd.com:3031/live/neoxtvlive.m3u8
+#EXTINF:-1 tvg-id="NETTV.ar@SD",NET TV (1080p)
+http://45.226.205.96:48000/play/a09p/index.m3u8
 #EXTINF:-1 tvg-id="NETTV.ar@SD",NET TV (720p)
 http://45.134.141.161:2200/ARG/Net_TV/index.m3u8
 #EXTINF:-1 tvg-id="NETTV.ar@SD",NET TV (720p)
 https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NETTV.ar@SD",NET TV (720p)
 https://unlimited6-cl.dps.live/nettv/nettv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="NGFederal.ar@SD",NG Federal (720p)
-http://www.coninfo.net:1935/tvlink/live/playlist.m3u8
-#EXTINF:-1 tvg-id="NGFederal.ar@SD",NG Federal
-https://617c5175c970b.streamlock.net:4444/tvlink/live/playlist.m3u8
 #EXTINF:-1 tvg-id="NorteTV.ar@SD",Norte TV (720p) [Not 24/7]
 https://ntvcanal7.com.ar:81/dash/stream.mpd
 #EXTINF:-1 tvg-id="Pakapaka.ar@SD",Pakapaka (1080p)
@@ -291,16 +287,14 @@ https://live.enhdtv.com:8081/radioiguazutv/index.m3u8
 http://204.199.3.2/.m3u8
 #EXTINF:-1 tvg-id="Retroclub.ar@HD",Retroclub (720p)
 https://video03.logicahost.com.br/retroclub02/retroclub02/playlist.m3u8
-#EXTINF:-1 tvg-id="RockPop.ar@SD",Rock & Pop (1080p)
-http://190.128.214.97:64333/play/a032/index.m3u8
 #EXTINF:-1 tvg-id="RTN.ar@SD",RTN (Neuquén) (720p) [Not 24/7]
 https://media.neuquen.gov.ar/rtn/television/media.m3u8
-#EXTINF:-1 tvg-id="SanPedroTV.ar@SD",San Pedro TV (1080p) [Not 24/7]
-https://iptv.ixfo.com.ar:30443/live/sanpedrotv/playlist.m3u8
 #EXTINF:-1 tvg-id="SantaFeCanal.ar@SD",Santa Fe Canal (1080p)
 https://canalsantaferts.argtelemax.workers.dev
 #EXTINF:-1 tvg-id="SenillosaTV.ar@SD",Senillosa TV (360p)
 https://player.videohost.click/senillosatv/senillosatv/playlist.m3u8
+#EXTINF:-1 tvg-id="SicardiTV.ar@SD",Sicardi TV (720p)
+https://vivo.solumedia.com:19360/sicarditv/sicarditv.m3u8
 #EXTINF:-1 tvg-id="SoliveTV.ar@SD",Solive TV
 https://stmv6.voxtvhd.com.br/solivetv/solivetv/playlist.m3u8
 #EXTINF:-1 tvg-id="SonyChannel.ar@SD",Sony Channel (1080p)
@@ -319,14 +313,14 @@ http://45.134.141.161:2200/ARG/TELEFE_HD/index.m3u8
 http://200.115.120.1:8000/play/ca016/index.m3u8
 #EXTINF:-1 tvg-id="TelefeInternacional.ar@SD",Telefe Internacional (576p)
 http://190.108.83.69:8000/play/a08l/index.m3u8
+#EXTINF:-1 tvg-id="TelefeSalta.ar@SD",Telefe Salta (720p)
+https://canal11saltatv.unpocodeawita.workers.dev/
 #EXTINF:-1 tvg-id="TelefeSalta.ar@SD",Telefe Salta
 https://canal11saltatv.unpocodeawita.workers.dev
 #EXTINF:-1 tvg-id="TelefeTucuman.ar@SD",Telefe Tucuman (1080p)
 https://g2.mc-hor.transport.edge-access.net/a05/ngrp:elochotv-100168_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="Telemax.ar@SD",Telemax (1080p)
 https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8
-#EXTINF:-1 tvg-id="TIVTelevision.ar@SD",TIV Television (720p)
-https://videohd.live:19360/8008/8008.m3u8
 #EXTINF:-1 tvg-id="TN.ar@SD",TN (1080p)
 http://158.172.155.130:8000/play/a0dp/index.m3u8
 #EXTINF:-1 tvg-id="TNTSports.ar@HD",TNT Sports
@@ -348,6 +342,8 @@ https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-
 https://live-04-11-tyc-app-web.vodgc.net/tyc24/index.m3u8
 #EXTINF:-1 tvg-id="TyCSportsUSA.ar@SD",TyC Sports USA
 http://45.170.130.224:8000/play/a020/index.m3u8
+#EXTINF:-1 tvg-id="UnifeTV.ar@SD",Unife TV (720p)
+https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/index.m3u8
 #EXTINF:-1 tvg-id="UnifeTV.ar@SD",Unife TV (720p)
 https://cdn.mycloudstream.io/hls/live/broadcast/xundwjvp/index.m3u8
 #EXTINF:-1 tvg-id="Uniteve.ar@SD",Uniteve (720p) [Not 24/7]
@@ -372,15 +368,3 @@ https://stmv6.voxtvhd.com.br/cineclasico/cineclasico/playlist.m3u8
 #EXTINF:-1 tvg-id="XtremaTerror.ar@SD",Xtrema Terror
 #EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1456
 https://stmv6.voxtvhd.com.br/cineterror/cineterror/playlist.m3u8
-#EXTINF:-1 tvg-id="NETTV.ar@SD",NET TV (1080p)
-http://45.226.205.96:48000/play/a09p/index.m3u8
-#EXTINF:-1 tvg-id="Canal3Arroyito.ar@SD",Canal 3 Arroyito (1080p)
-#EXTVLCOPT:http-referrer=https://canal3.cespalarroyito.coop/
-https://envivo.cespalarroyito.coop/live/Canal3Arroyito.m3u8
-#EXTINF:-1 tvg-id="Canal10Goya.ar@SD",Canal 10 Goya (1080p)
-https://tv.streamcasthd.com:3637/live/canal10goyalive.m3u8
-#EXTINF:-1 tvg-id="Canal20VillaMaria.ar@SD",Canal 20 Villa Maria (1080p)
-#EXTVLCOPT:http-referrer=https://www.canal20villamaria.com.ar/
-https://stmvideo3.livecastv.com/canal20/canal20/playlist.m3u8
-#EXTINF:-1 tvg-id="ESPNPremium.ar@SD",ESPN Premium
-http://45.134.141.161:2200/ARG/ESPN_Premium_Argentina_HD/tracks-v1a1/mono.m3u8

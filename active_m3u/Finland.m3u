@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="Eveo.fi@SD",Eveo (720p) [Not 24/7]
+https://live-fi.tvkaista.net/eveo/live.m3u8?hd=true
 #EXTINF:-1 tvg-id="HimlenTV7.fi@SD",Himlen TV7 (720p)
 https://vod.tv7.fi/tv7-se/smil:tv7-se.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="JRTVJarviradio.fi@SD",JRTV Järviradio (720p)

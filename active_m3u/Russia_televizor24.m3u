@@ -13,13 +13,13 @@ https://streaming.televizor-24-tochka.ru/live/232.m3u8
 https://streaming.televizor-24-tochka.ru/live/28.m3u8
 #EXTINF:-1 tvg-id="Lugansk24.ua@SD",Луганск 24
 https://streaming.televizor-24-tochka.ru/live/29.m3u8
-#EXTINF:-1 tvg-id="MuzTV.ru@SD",МузТВ
+#EXTINF:-1 tvg-id="MuzTV.ru@SD",МузТВ (576p)
 https://streaming.televizor-24-tochka.ru/live/618.m3u8
 #EXTINF:-1 tvg-id="NTVMir.ru@SD",НТВ Мир (576p)
 https://streaming.thestream.cyou/live/213.m3u8
 #EXTINF:-1 tvg-id="ChannelOne.ru@Europe",Первый канал Европа (576p)
 https://streaming.thestream.cyou/live/210.m3u8
-#EXTINF:-1 tvg-id="PervyyRespublikanskiy.ru@SD",Первый Республиканский
+#EXTINF:-1 tvg-id="PervyyRespublikanskiy.ru@SD",Первый Республиканский (576p)
 https://streaming.televizor-24-tochka.ru/live/27.m3u8
 #EXTINF:-1 tvg-id="Pobeda.ru@SD",Победа (576p)
 https://streaming.thestream.cyou/live/43.m3u8

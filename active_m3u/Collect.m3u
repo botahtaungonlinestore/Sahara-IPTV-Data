@@ -15,22 +15,14 @@ https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1,tvg-id="浙江钱江" tvg-name="浙江钱江" tvg-logo="https://epg.v1.mk/logo/浙江钱江.png" group-title="浙江",浙江钱江频道
 https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
-#EXTINF:-1,tvg-id="耀才财经台" tvg-name="耀才财经台" tvg-logo="https://epg.v1.mk/logo/耀才财经台.png" group-title="其他",耀才财经台
-https://v3.mediacast.hk/webcast/bshdlive-pc/chunklist_w99771165.m3u8
 #EXTINF:-1,tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://epg.v1.mk/logo/凤凰资讯.png" group-title="香港",凤凰资讯频道
 http://61.221.215.25:8800/hls/47/index.m3u8
 #EXTINF:-1,tvg-id="无线新闻" tvg-name="无线新闻" tvg-logo="https://epg.v1.mk/logo/无线新闻.png" group-title="港澳台",无线新闻
 http://bziyunshao.synology.me:8890/bysid/83
 #EXTINF:-1,tvg-id="星空卫视" tvg-name="星空卫视" tvg-logo="https://epg.v1.mk/logo/星空卫视.png" group-title="卫视",星空卫视频道
 http://vl15191373.imwork.net:8880/udp/239.93.1.10:2193
-#EXTINF:-1,tvg-id="耀才财经" tvg-name="耀才财经" tvg-logo="https://epg.v1.mk/logo/耀才财经.png" group-title="其他",耀才财经
-https://v3.mediacast.hk/webcast/bshdlive-pc/chunklist_w1823419144.m3u8
 #EXTINF:-1,tvg-id="凤凰卫视香港" tvg-name="凤凰卫视香港" tvg-logo="https://epg.v1.mk/logo/凤凰卫视香港.png" group-title="香港",香港電台34
 https://news.cgtn.com/resource/live/document/cgtn-doc.m3u8
-#EXTINF:-1,tvg-id="耀才财经" tvg-name="耀才财经" tvg-logo="https://epg.v1.mk/logo/耀才财经.png" group-title="其他",耀才财经
-https://v3.mediacast.hk/webcast/bshdlive-pc/chunklist_w316626141.m3u8
-#EXTINF:-1,tvg-id="耀才财经" tvg-name="耀才财经" tvg-logo="https://epg.v1.mk/logo/耀才财经.png" group-title="其他",耀才财经
-https://v3.mediacast.hk/webcast/bshdlive-pc/playlist.m3u8
 #EXTINF:-1,tvg-id="人间卫视" tvg-name="人间卫视" tvg-logo="https://epg.v1.mk/logo/人间卫视.png" group-title="卫视",人间卫视
 http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8
 #EXTINF:-1,tvg-id="凤凰卫视香港" tvg-name="凤凰卫视香港" tvg-logo="https://epg.v1.mk/logo/凤凰卫视香港.png" group-title="香港",香港佛陀
@@ -77,6 +69,8 @@ https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
 http://live.guberniatv.cdnvideo.ru/guberniatv/guberniatv.sdp/playlist.m3u8
 #EXTINF:-1,tvg-id="TBSkorean" tvg-name="TBSkorean" tvg-logo="https://epg.v1.mk/logo/TBSkorean.png" group-title="其他",TBS Seoul
 https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
+#EXTINF:-1,tvg-id="湖南电视剧" tvg-name="湖南电视剧" tvg-logo="https://epg.v1.mk/logo/湖南电视剧.png" group-title="湖南",湖南电视剧
+http://php.jdshipin.com:8880/iptv.php?id=hndsj
 #EXTINF:-1,tvg-id="南宁新闻" tvg-name="南宁新闻" tvg-logo="https://epg.v1.mk/logo/南宁新闻.png" group-title="其他",南宁新闻
 https://hls.nntv.cn/nnlive/XWZH_24.m3u8
 #EXTINF:-1,tvg-id="南宁公共" tvg-name="南宁公共" tvg-logo="https://epg.v1.mk/logo/南宁公共.png" group-title="其他",南宁公共
@@ -175,8 +169,6 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/d48b15036a4b4a42b4
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/2ac7fcf2fd3d42b3a26fa2047d39185f/1200.m3u8
 #EXTINF:-1,tvg-id="IPTV少儿动画" tvg-name="IPTV少儿动画" tvg-logo="https://epg.v1.mk/logo/IPTV少儿动画.png" group-title="其他",少儿动画016
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/3c86fd9091a74094b69af0bacb40cd04/1200.m3u8
-#EXTINF:-1,tvg-id="IPTV少儿动画" tvg-name="IPTV少儿动画" tvg-logo="https://epg.v1.mk/logo/IPTV少儿动画.png" group-title="其他",少儿动画017
-https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/769a15d6da26470ba1c73e07ad306373/1200.m3u8
 #EXTINF:-1,tvg-id="IPTV少儿动画" tvg-name="IPTV少儿动画" tvg-logo="https://epg.v1.mk/logo/IPTV少儿动画.png" group-title="其他",少儿动画018
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/763dc6802b664f07b781b03ca1ed8571/1200.m3u8
 #EXTINF:-1,tvg-id="IPTV少儿动画" tvg-name="IPTV少儿动画" tvg-logo="https://epg.v1.mk/logo/IPTV少儿动画.png" group-title="其他",少儿动画019
@@ -275,8 +267,6 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/e608b9ad077847ba89
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b50fbd52005747ecad0929751a889b12/1200.m3u8
 #EXTINF:-1,tvg-id="IPTV少儿动画" tvg-name="IPTV少儿动画" tvg-logo="https://epg.v1.mk/logo/IPTV少儿动画.png" group-title="其他",少儿动画066
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/597c06ec153d4387a7601a10e42b7826/1200.m3u8
-#EXTINF:-1,tvg-id="IPTV少儿动画" tvg-name="IPTV少儿动画" tvg-logo="https://epg.v1.mk/logo/IPTV少儿动画.png" group-title="其他",少儿动画067
-https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/46fd359667344b2093c6b4801626ee98/1200.m3u8
 #EXTINF:-1,tvg-id="IPTV少儿动画" tvg-name="IPTV少儿动画" tvg-logo="https://epg.v1.mk/logo/IPTV少儿动画.png" group-title="其他",少儿动画068
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b993adc90a2f44938e798a5ea2e031bc/1200.m3u8
 #EXTINF:-1,tvg-id="IPTV少儿动画" tvg-name="IPTV少儿动画" tvg-logo="https://epg.v1.mk/logo/IPTV少儿动画.png" group-title="其他",少儿动画069

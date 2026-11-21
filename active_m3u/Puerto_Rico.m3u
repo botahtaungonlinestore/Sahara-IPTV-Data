@@ -11,6 +11,8 @@ https://627bb251f23c7.streamlock.net:444/CDMInternacional/CDMInternacional/playl
 https://video1.getstreamhosting.com:1936/8226/8226/playlist.m3u8
 #EXTINF:-1 tvg-id="EBNTelevision.pr@WIDP",EBN Television WIDP (1080p)
 https://627bb251f23c7.streamlock.net:444/EBNTELEVISION/EBNTELEVISION/playlist.m3u8
+#EXTINF:-1 tvg-id="FamiliaVisionHD.pr@SD",Familia Visión HD (1080p) [Not 24/7]
+https://584097344c1f0.streamlock.net/29/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="FarodeSantidadTV.pr@SD",Faro de Santidad TV (720p)
 https://5dbcd1053301e.streamlock.net:4443/farodesantidad/farodesantidad/playlist.m3u8
 #EXTINF:-1 tvg-id="LaX.pr@SD",La-X (720p)

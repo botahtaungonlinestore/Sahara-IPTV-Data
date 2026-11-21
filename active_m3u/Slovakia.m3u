@@ -44,8 +44,14 @@ http://88.212.15.50/live/test_dvojka_25p/playlist.m3u8
 https://dash3.antik.sk/live/test_haha_tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Jednotka.sk@SD",Jednotka
 http://88.212.15.50/live/test_jednotka_25p/playlist.m3u8
+#EXTINF:-1 tvg-id="KechnecTV.sk@SD",Kechnec TV
+http://88.212.7.14/live/test_kechnec_avc_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="LifeTv.sk@SD",LifeTv (1080p)
 https://lifetv.mpks.sk/s.m3u8
+#EXTINF:-1 tvg-id="MarkizaPlus1.sk@SD",Markiza +1
+http://88.212.7.14/live/test_mpjedna_hevc/playlist.m3u8
+#EXTINF:-1 tvg-id="MarkizaTNLive.sk@SD",Markiza TN Live
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-adhoc12/live_fullhd?offsetSeconds=0
 #EXTINF:-1 tvg-id="MTR.sk@SD",MTR (1080p)
 https://cdnsk003.panaccess.com/local/Ruzomberok/index.m3u8
 #EXTINF:-1 tvg-id="PrimaCoolSK.sk@SD",Prima Cool SK (1080p)
@@ -58,6 +64,12 @@ http://88.212.15.50/live/prima_krimi_avc_25p/playlist.m3u8
 http://88.212.15.50/live/test_prima_plus_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="Senzi.sk@SD",Senzi (720p)
 http://lb.streaming.sk/senzi/stream/playlist.m3u8
+#EXTINF:-1 tvg-id="Sport1.sk@HD",Sport 1
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-sport1-sk/live_fullhd
+#EXTINF:-1 tvg-id="Sport2.sk@HD",Sport 2
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-sport2-sk/live_fullhd
+#EXTINF:-1 tvg-id="TA3.sk@SD",TA3
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-ta3/live_fullhd?offsetSeconds=0
 #EXTINF:-1 tvg-id="TeleviziaMocenok.sk@SD",Televízia Močenok (720p)
 https://5ca49f2417d90.streamlock.net/mocenok/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TV8.sk@SD",Televízia OSEM (576p)
@@ -88,11 +100,3 @@ http://lb.streaming.sk/tvruzinov/stream/playlist.m3u8
 https://5ca49f2417d90.streamlock.net/live/turzovka/playlist.m3u8
 #EXTINF:-1 tvg-id="VIATV.sk@SD",VIA TV
 http://88.212.15.50/live/via_tv/index.m3u8
-#EXTINF:-1 tvg-id="KechnecTV.sk@SD",Kechnec TV
-http://88.212.7.14/live/test_kechnec_avc_25p/playlist.m3u8
-#EXTINF:-1 tvg-id="MarkizaPlus1.sk@SD",Markiza +1
-http://88.212.7.14/live/test_mpjedna_hevc/playlist.m3u8
-#EXTINF:-1 tvg-id="Sport1.sk@HD",Sport 1
-http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-sport1-sk/live_fullhd
-#EXTINF:-1 tvg-id="Sport2.sk@HD",Sport 2
-http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-sport2-sk/live_fullhd

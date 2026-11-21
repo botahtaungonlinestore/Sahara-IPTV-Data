@@ -30,6 +30,8 @@ https://freem3u.xyz/api/live/play.m3u8?vid=255
 #EXTINF:-1 tvg-id="DongNaiTV2.vn@SD",Dong Nai TV 2 (720p)
 https://vtvgolive-ott3.vtvdigital.vn/live/dongnai2tv/chunklist_2.m3u8
 #EXTINF:-1 tvg-id="DongNaiTV3.vn@SD",Dong Nai TV 3 (720p)
+https://dethich.pw/dongnai3/index.m3u8
+#EXTINF:-1 tvg-id="DongNaiTV3.vn@SD",Dong Nai TV 3 (720p)
 https://tv.vietanhtv.top/vieon/vieon.php?id=dong-nai-3
 #EXTINF:-1 tvg-id="TienGiangTV.vn@SD",Đồng Tháp TV2 (540p)
 https://618b88f69e53b.streamlock.net/THDT2/thdttv2/chunklist.m3u8
@@ -37,12 +39,30 @@ https://618b88f69e53b.streamlock.net/THDT2/thdttv2/chunklist.m3u8
 http://tldigital-17th06day-tl9648290.duckdns.org/tv.m3u8
 #EXTINF:-1 tvg-id="HaTinhTV.vn@SD",Ha Tinh TV (720p)
 https://cohauw9bgpvod.vcdn.cloud/httv1/index.m3u8
+#EXTINF:-1 tvg-id="HTV1.vn@SD",HTV1 (720p)
+https://dethich.pw/htv1/index.m3u8
+#EXTINF:-1 tvg-id="HTV2.vn@SD",HTV2 (720p)
+https://dethich.pw/htv2/index.m3u8
+#EXTINF:-1 tvg-id="HTV3.vn@SD",HTV3 (720p)
+https://dethich.pw/htv3/index.m3u8
 #EXTINF:-1 tvg-id="HTV4.vn@SD",HTV4 (1080p)
 https://freem3u.xyz/api/live/play.m3u8?vid=9
+#EXTINF:-1 tvg-id="HTV4.vn@SD",HTV4 (720p)
+https://dethich.pw/htv4/index.m3u8
 #EXTINF:-1 tvg-id="HTV5.vn@HD",HTV5 (1080p)
 https://freem3u.xyz/api/live/play.m3u8?vid=151
+#EXTINF:-1 tvg-id="HTV7.vn@SD",HTV7 (720p)
+https://dethich.pw/htv7/index.m3u8
+#EXTINF:-1 tvg-id="HTV9.vn@SD",HTV9 (720p)
+https://dethich.pw/htv9/index.m3u8
 #EXTINF:-1 tvg-id="HTVSports.vn@SD",HTV Sports (1080i)
 https://vmttv.dpdns.org/tv360?id=htv-the-thao
+#EXTINF:-1 tvg-id="HTVCFamily.vn@SD",HTVC Family (720p)
+https://dethich.pw/htvcgiadinh/index.m3u8
+#EXTINF:-1 tvg-id="HTVCMovies.vn@SD",HTVC Movies (720p)
+https://dethich.pw/htvcphim/index.m3u8
+#EXTINF:-1 tvg-id="HTVCWomen.vn@SD",HTVC Women (720p)
+https://dethich.pw/htvcphunu/index.m3u8
 #EXTINF:-1 tvg-id="LangSonTV.vn@SD",Lang Son TV (720p) [Geo-blocked]
 https://stream.langsontv.vn/live/285c78da0c246524c90917842f8de03bd21/playlist.m3u8
 #EXTINF:-1 tvg-id="LaoCaiTV.vn@HD",Lào Cai TV (1080p)
@@ -57,6 +77,8 @@ https://freem3u.xyz/api/live/play.m3u8?vid=178
 https://freem3u.xyz/api/live/play.m3u8?vid=176
 #EXTINF:-1 tvg-id="ONEChannel.vn@HD",ON E Channel (1080p)
 https://freem3u.xyz/api/live/play.m3u8?vid=182
+#EXTINF:-1 tvg-id="ONInfoTV.vn@SD",ON Info TV (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=189
 #EXTINF:-1 tvg-id="ONKids.vn@SD",ON Kids (720p)
 https://freem3u.xyz/api/live/play.m3u8?vid=179
 #EXTINF:-1 tvg-id="ONLife.vn@SD",ON Life (720p)
@@ -71,6 +93,10 @@ https://freem3u.xyz/api/live/play.m3u8?vid=136
 https://vmttv.dpdns.org/tv360?id=175
 #EXTINF:-1 tvg-id="ONStyleTV.vn@SD",ON Style TV (1080p)
 https://freem3u.xyz/api/live/play.m3u8?vid=184
+#EXTINF:-1 tvg-id="ONTrendingTV.vn@SD",ON Trending TV (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=186
+#EXTINF:-1 tvg-id="ONVFamily.vn@SD",ON V Family (480p)
+https://vmttv.dpdns.org/tv360?id=187
 #EXTINF:-1 tvg-id="ONVieDramas.vn@SD",ON Vie Dramas (1080i)
 https://freem3u.xyz/api/live/play.m3u8?vid=177
 #EXTINF:-1 tvg-id="ONVieDramas.vn@SD",ON Vie Dramas (1080p)
@@ -117,17 +143,33 @@ https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/sctv20/master.m3u8
 https://live-hq.evgcdn.net/live/2851dc2c9af68834814a89e61db0faee561/chunklist.m3u8
 #EXTINF:-1 tvg-id="ThaiNguyenTV.vn@SD",Thái Nguyên TV (720p)
 https://streaming.thainguyentv.vn/hls/livestream.m3u8
-#EXTINF:-1 tvg-id="VinhLongTV5.vn@SD",Vinh Long TV 5 (1080p)
-https://freem3u.xyz/api/live/play.m3u8?vid=91
 #EXTINF:-1 tvg-id="TVBVietnam.vn@SD",TVB Vietnam (1080p)
 https://amg01868-amg01868c3-tvbanywhere-us-4491.playouts.now.amagi.tv/playlist/amg01868-tvbusa-tvbvietnam-tvbanywhereus/playlist.m3u8
 #EXTINF:-1 tvg-id="VietnamToday.vn@HD",Vietnam Today (1080p)
 https://amagi-live.ondemandkorea.com/amgplt0456.m3u8
 #EXTINF:-1 tvg-id="VietnamToday.vn@HD",Vietnam Today (1080p)
 https://live.tvon.vn/s8/hls/vntoday/index.m3u8
+#EXTINF:-1 tvg-id="VinhLongTV1.vn@SD",Vinh Long TV 1 (720p)
+https://dethich.pw/thvl1/index.m3u8
+#EXTINF:-1 tvg-id="VinhLongTV2.vn@SD",Vinh Long TV 2 (720p)
+https://dethich.pw/thvl2/index.m3u8
+#EXTINF:-1 tvg-id="VinhLongTV3.vn@SD",Vinh Long TV 3 (720p)
+https://dethich.pw/thvl3/index.m3u8
+#EXTINF:-1 tvg-id="VinhLongTV5.vn@SD",Vinh Long TV 5 (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=91
+#EXTINF:-1 tvg-id="VinhLongTV5.vn@SD",Vinh Long TV 5 (720p)
+https://dethich.pw/thvl5/index.m3u8
+#EXTINF:-1 tvg-id="VTV1.vn@HD",VTV1 HD (720p)
+https://dethich.pw/vtv1/index.m3u8
+#EXTINF:-1 tvg-id="VTV1.vn@HD",VTV1 HD (720p)
+https://luuchieu.truyenhinhso.vn/media/live/C90B082632CD4A75F4B3EDB3/index.m3u8
 #EXTINF:-1 tvg-id="VTV2.vn@HD",VTV2 HD (1080p)
 http://125hvt.ddns.net:21585/vtv2/playlist.m3u8
-#EXTINF:-1 tvg-id="ONInfoTV.vn@SD",ON Info TV (1080p)
-https://freem3u.xyz/api/live/play.m3u8?vid=189
-#EXTINF:-1 tvg-id="ONTrendingTV.vn@SD",ON Trending TV (1080p)
-https://freem3u.xyz/api/live/play.m3u8?vid=186
+#EXTINF:-1 tvg-id="VTV2.vn@HD",VTV2 HD (720p)
+https://dethich.pw/vtv2/index.m3u8
+#EXTINF:-1 tvg-id="VTV3.vn@HD",VTV3 HD (720p)
+https://dethich.pw/vtv3/index.m3u8
+#EXTINF:-1 tvg-id="VTV4.vn@HD",VTV4 HD (720p)
+https://dethich.pw/vtv4/index.m3u8
+#EXTINF:-1 tvg-id="VTV4.vn@HD",VTV4 HD (720p)
+https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv4/master.m3u8

@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AuroraMediaFilms.gt@SD",Aurora Media Films (720p)
-https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8
 #EXTINF:-1 tvg-id="BarbeTV.gt@SD",Canal 9 Barbe TV (720p) [Not 24/7]
 https://cdn.streamhispanatv.net:3549/live/barbetvlive.m3u8
 #EXTINF:-1 tvg-id="NimTV.gt@SD",Nim TV (720p) [Not 24/7]

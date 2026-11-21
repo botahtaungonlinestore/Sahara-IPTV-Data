@@ -9,6 +9,8 @@ https://live-us1.thaimomo.com/live-as/chamarin-3/playlist.m3u8
 http://news1.live14.com/stream/news1.m3u8
 #EXTINF:-1 tvg-id="BaanBaanTV73.th@SD",Baan Baan TV 73
 https://vdo.plathong.net/live8794/live8794/playlist.m3u8
+#EXTINF:-1 tvg-id="Boomerang.th@SD",Boomerang
+https://live-us1.thaimomo.com/live-as/chboomerang-2/chunklist_w135479847.m3u8
 #EXTINF:-1 tvg-id="BoonniyomTV.th@SD",Boonniyom TV (720p)
 https://live.x2.co.th/live/bntv.m3u8
 #EXTINF:-1 tvg-id="Channel5.th@SD",Channel 5 (1080p)
@@ -19,8 +21,6 @@ https://live-us1.thaimomo.com/live-as/ch5hd-2/playlist.m3u8
 https://live-us1.thaimomo.com/live-as/ch7hd-3/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel8.th@SD",Channel 8 (576p)
 https://live-us1.thaimomo.com/live-as/cheight-3/playlist.m3u8
-#EXTINF:-1 tvg-id="Channel8.th@SD",Channel 8 (1080p) [Not 24/7]
-http://usa.login.in.th:1935/ch8/ch8/playlist.m3u8
 #EXTINF:-1 tvg-id="CharoenCable37TV.th@SD",Charoen Cable 37 TV
 http://www5.cabletv.co.th/StreamToCTV/cablechannel/playlist.m3u8
 #EXTINF:-1 tvg-id="CoolChannel.th@SD",Cool Channel
@@ -127,5 +127,3 @@ https://live-us1.thaimomo.com/live-as/chworkpointt-3/playlist.m3u8
 http://3bb.engatetv.com:25461/hstn/line/147
 #EXTINF:-1 tvg-id="ZabbChannel.th@SD",Zabb Channel (720p)
 https://vdo.plathong.net/flash7057/flash7057/playlist.m3u8
-#EXTINF:-1 tvg-id="Boomerang.th@SD",Boomerang
-https://live-us1.thaimomo.com/live-as/chboomerang-2/chunklist_w135479847.m3u8

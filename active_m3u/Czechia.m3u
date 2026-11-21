@@ -22,8 +22,6 @@ http://88.212.15.50/live/test_ct24_hevc/playlist.m3u8
 http://88.212.15.50/live/test_ctsport_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="CTDecko.cz@SD",ČT:D/ČT art (1080p)
 http://88.212.15.50/live/ct_art_avc_25p/playlist.m3u8
-#EXTINF:-1 tvg-id="CurrentTimeTV.cz@SD",Current Time TV (576p)
-http://stream.mcquack.net/384/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveryChannel.cz@SD",Discovery Channel
 http://88.212.15.50/live/test_discovery_hd_hevc/playlist.m3u8
 #EXTINF:-1 tvg-id="DisneyChannel.cz@SD",Disney Channel
@@ -154,9 +152,13 @@ http://88.212.15.50/live/test_home_hevc/playlist.m3u8
 #EXTINF:-1 tvg-id="Sport1.cz@SD",Sport1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
 http://88.212.15.50/live/test_sport1_25p/playlist.m3u8
+#EXTINF:-1 tvg-id="Sport1.cz@HD",Sport1 HD
+http://88.212.7.14/live/sport1_cz_avc_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="Sport2.cz@SD",Sport2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
 http://88.212.15.50/live/test_sport_2/playlist.m3u8
+#EXTINF:-1 tvg-id="Sport2.cz@HD",Sport2 HD
+http://88.212.7.14/live/sport2_cz_avc_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="TelevizeSeznam.cz@SD",Televize Seznam (1080p)
 http://88.212.15.50/live/test_seznam_hevc_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="TLC.cz@SD",TLC
@@ -194,7 +196,3 @@ https://stream.polar.cz/vctv/vctvlive-1/playlist.m3u8
 http://88.212.15.50/live/warner_tv/index.m3u8
 #EXTINF:-1 tvg-id="CurrentTimeTV.cz@SD",Настоящее Время (1080p)
 https://rfe-ingest.akamaized.net/hls/live/2033043/tvmc05/master.m3u8
-#EXTINF:-1 tvg-id="Sport1.cz@HD",Sport1 HD
-http://88.212.7.14/live/sport1_cz_avc_25p/playlist.m3u8
-#EXTINF:-1 tvg-id="Sport2.cz@HD",Sport2 HD
-http://88.212.7.14/live/sport2_cz_avc_25p/playlist.m3u8

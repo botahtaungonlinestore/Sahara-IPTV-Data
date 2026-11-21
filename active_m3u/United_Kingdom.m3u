@@ -43,52 +43,69 @@ http://88.212.7.14/live/bbce_hun/index.m3u8
 #EXTINF:-1 tvg-id="BBCFirst.uk@Turkiye",BBC First Turkiye
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 http://88.212.7.14/live/bbc_first/index.m3u8
-#EXTINF:-1 tvg-id="BBCNews.uk@Europe",BBC News Europe (576p)
-http://stream.mcquack.net/85/index.m3u8
+#EXTINF:-1 tvg-id="BBCFour.uk@UK",BBC Four (720p) [Not 24/7]
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/bbc_four/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="BBCNews.uk@Europe",BBC News Europe (576p)
 https://stream8.cinerama.uz/1251/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="BBCNews.uk@NorthAmerica",BBC News North America (576p)
 https://tvsen1.aynaott.com/shn6jGTk/index.m3u8
 #EXTINF:-1 tvg-id="BBCNews.uk@SouthAsia",BBC News South Asia (720p)
 https://mumbai-edge.smartplaytv.in/BBCNews/index.m3u8
+#EXTINF:-1 tvg-id="BBCNews.uk@UKHD",BBC News UK HD (720p)
+https://n-5-1.eu.cdn-redge.media/livehls/oeu/mt/live/bbc_news/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="BBCOne.uk@London",BBC One (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/bbc_one/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="BBCTwo.uk@HD",BBC Two HD (720p)
+https://n-5-1.eu.cdn-redge.media/livehls/oeu/mt/live/bbc_two/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="BloombergTV.us@EMEALiveEvent",Bloomberg TV EMEA Live Event (720p)
 https://bloomberg.com/media-manifest/streams/eu-event.m3u8
 #EXTINF:-1 tvg-id="BloombergTV.us@Europe",Bloomberg TV Europe (720p)
 https://bloomberg.com/media-manifest/streams/eu.m3u8
 #EXTINF:-1 tvg-id="BritAsiaTV.uk@HD",Brit Asia TV (1080p)
 https://hls.autopo.st/hls/britasiatv/index.m3u8
-#EXTINF:-1 tvg-id="Canaf54TV.uk@SD",Canaf54 TV (480p)
-https://5caf24a595d94.streamlock.net:1937/pvyugfkzkc/pvyugfkzkc/playlist.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkCEE.uk@Hungary",Cartoon Network CEE
 http://193.33.39.108:9007/play/a00l
+#EXTINF:-1 tvg-id="CartoonNetworkCEE.uk@Bulgary",Cartoon Network CEE Bulgary
+http://213.91.179.28:8000/play/a08g
 #EXTINF:-1 tvg-id="CartoonNetworkCEE.uk@CzechRepublic",Cartoon Network CEE Czech Republic
 http://88.212.7.14/live/test_cartoon_network_tizen/playlist.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkCEE.uk@Poland",Cartoon Network CEE Poland
 http://92.114.85.87:8007/play/a009
 #EXTINF:-1 tvg-id="CartoonNetworkCEE.uk@Ukraine",Cartoon Network CEE Ukraine (576p)
 http://45.132.87.69:8080/cartoon_network/index.m3u8
+#EXTINF:-1 tvg-id="CartoonNetworkWesternEurope.uk@Portugal",Cartoon Network Western Europe Portugal (576p)
+https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F327818589842dbaee1327c
+#EXTINF:-1 tvg-id="CartoonNetworkWesternEurope.uk@Portugal",Cartoon Network Western Europe Portugal
+https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F2672740913728a31b548ec
 #EXTINF:-1 tvg-id="CartoonitoCEE.uk@SD",Cartoonito CEE
 http://193.33.39.108:9019/play/a00t
+#EXTINF:-1 tvg-id="CartoonitoCEE.uk@Bulgary",Cartoonito CEE Bulgary
+http://213.91.179.28:8000/play/a0c7
 #EXTINF:-1 tvg-id="CartoonitoCEE.uk@Czechia",Cartoonito CEE Czechia
 http://88.212.7.14/live/test_boomerang_tizen/playlist.m3u8
 #EXTINF:-1 tvg-id="CartoonitoCEE.uk@Poland",Cartoonito CEE Poland (1080p)
 http://92.114.85.87:8007/play/a008
+#EXTINF:-1 tvg-id="Channel4.uk@UK",Channel 4 (576p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/channel_4/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="ChannelS.uk@SD",Channel S (576p)
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/chsukoff.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="CNBCEurope.uk@SD",CNBC Europe (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/cnbc_europe/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="CNBCUK.uk@SD",CNBC UK (1080p) [Geo-blocked]
 https://amg01079-nbcuuk-amg01079c2-lg-gb-2030.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="CrimePlusInvestigationCEE.uk@SD",Crime + Investigation CEE
 http://88.212.7.14/live/test_cai_hevc/playlist.m3u8
-#EXTINF:-1 tvg-id="DAZN3.uk@Portugal",DAZN 3 Portugal (720p)
-http://23.237.104.106:8080/DAZN_3/index.m3u8
-#EXTINF:-1 tvg-id="DeenTV.uk@SD",Deen TV (576p)
-https://cd198.anystream.uk:9092/iqapp/d33ntv/playlist.m3u8
-#EXTINF:-1 tvg-id="DerTV.uk@SD",Der TV
-https://stream.berosat.live/hls/der-tv/der-tv.m3u8
 #EXTINF:-1 tvg-id="EnglishClubTV.uk@SD",English Club TV (576i)
 https://stream8.cinerama.uz/1442/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="ENTChannel.uk@HD",ENT Channel (720p)
 https://cdn.global.elektamedia.com/live/c7eds/ENT_Channel/SA_LIVE_hls_enc/master.m3u8
 #EXTINF:-1 tvg-id="ENTFamily.uk@HD",ENT Family (720p)
 https://cdn.global.elektamedia.com/live/c7eds/ENT_Family/SA_LIVE_hls_enc/master.m3u8
+#EXTINF:-1 tvg-id="Eurochannel.uk@SD",Eurochannel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://45.186.240.164:9000/stream/54/index.m3u8
+#EXTINF:-1 tvg-id="EurovisionSport.uk@Europe",Eurovision Sport (1080p)
+https://amg26268-amg26268c34-amgplt0018.playout.now3.amagi.tv/ts-us-e2-n1/playlist/amg26268-amg26268c34-amgplt0018/playlist.m3u8
 #EXTINF:-1 tvg-id="FaithUK.uk@SD",Faith UK (1080p)
 https://faithnow-hls.secdn.net/faithnow-c-channel/play/FaithUK.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FaithWorldTV.uk@SD",Faith World TV (1080p)
@@ -137,14 +154,14 @@ https://d1msejlow1t3l4.cloudfront.net/211125/godtv/playlist.m3u8
 https://amg01753-narrativeuk-amg01753c3-lg-gb-1833.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatmovies-lggb/playlist.m3u8
 #EXTINF:-1 tvg-id="GREATromance.uk@UK",GREAT! romance (1080p)
 https://amg01753-narrativeuk-amg01753c2-lg-gb-1832.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatchristmas-lggb/playlist.m3u8
-#EXTINF:-1 tvg-id="HalaLondon.uk@SD",Hala London (1080p)
-https://halalondon-live.ercdn.net/halalondon/halalondon.m3u8
 #EXTINF:-1 tvg-id="HellenicTV.uk@SD",Hellenic TV (720p) [Not 24/7]
 https://l5.cloudskep.com/hellenictv/htv/playlist.m3u8
 #EXTINF:-1 tvg-id="HobbyMaker.uk@SD",Hobby Maker (720p)
 https://lo3.gemporia.com/abrhobbymakerukgfx/smil:livestreamFullHD.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="HorseCountryTV.uk@SD",Horse & Country TV (1080p)
 https://hnc-free-viewlift.amagi.tv/HNC_AUSTRALIA.m3u8
+#EXTINF:-1 tvg-id="IqraBangla.uk@SD",Iqra Bangla (576p)
+https://tvsen3.aynaott.com/EuEy5mBW/index.m3u8
 #EXTINF:-1 tvg-id="IranInternational.uk@SD",Iran International (1080p)
 https://hlspackager.akamaized.net/live/DB/IRAN_INTERNATIONAL/HLS/IRAN_INTERNATIONAL.m3u8
 #EXTINF:-1 tvg-id="IranInternational.uk@SD",Iran International (720p)
@@ -159,8 +176,6 @@ https://live.playstop.me/LS-63503-4/index.m3u8
 https://iranefardalive.com/stream/live.m3u8
 #EXTINF:-1 tvg-id="JimJamEurope.uk@SD",JimJam Europe (720p)
 http://212.5.144.156:8080/jimjam/index.m3u8
-#EXTINF:-1 tvg-id="JimJamEurope.uk@SD",JimJam Europe (576p)
-http://stream.mcquack.net/150/index.m3u8
 #EXTINF:-1 tvg-id="KanshiTV.uk@SD",Kanshi TV (720p) [Not 24/7]
 https://live.kanshitv.co.uk/mobile/kanshitvkey.m3u8
 #EXTINF:-1 tvg-id="MagnavisionTV.uk@SD",Magnavision TV (720p)
@@ -224,14 +239,14 @@ https://qvcuk-live.akamaized.net/hls/live/2097112/qex/master.m3u8
 https://qvcuk-live.akamaized.net/hls/live/2097112/qst/master.m3u8
 #EXTINF:-1 tvg-id="SangatTV.uk@SD",Sangat TV (576p)
 https://mumt06.tangotv.in/qYyB8fXVSANGATTV/index.m3u8
+#EXTINF:-1 tvg-id="SkyNewsWeather.uk@SD",Sky News Weather (720p)
+https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="SpaceLivepoweredbysen.uk@SD",Space Live powered by sen (1080p)
 https://linear-1224.frequency.stream/dist/lg-uk/1224/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="StarBharat.uk@SD",Star Bharat (576p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/gb/YuppTV/UtsavBharat.m3u8
 #EXTINF:-1 tvg-id="StarPlus.uk@SD",StarPlus (576p)
 https://d1rc86nwwc9fag.cloudfront.net/260723/starplusuk_2500/chunks.m3u8
-#EXTINF:-1 tvg-id="TakbeerTV.uk@SD",Takbeer TV (720p)
-https://cd198.anystream.uk:9092/iqapp/t5kb86tv/playlist.m3u8
 #EXTINF:-1 tvg-id="talkSPORT.uk@SD",talkSPORT (1080p)
 https://af7a8b4e.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfdGFsa1NQT1JUX0hMUw/playlist.m3u8
 #EXTINF:-1 tvg-id="talkSPORT.uk@SD",talkSPORT (720p)
@@ -277,20 +292,3 @@ http://92.114.85.87:8001/play/a00x/index.m3u8
 http://195.189.60.253/118/index.m3u8
 #EXTINF:-1 tvg-id="ZeeOne.uk@UK",Zee One (1080p)
 https://4bc5d2b3.wurl.com/v1/asia_tv_limited_zeeworld_1/ohlscdn_us/V00000001/7200/HLS/playlist.m3u8
-#EXTINF:-1 tvg-id="CartoonNetworkCEE.uk@Bulgary",Cartoon Network CEE Bulgary
-http://213.91.179.28:8000/play/a08g
-#EXTINF:-1 tvg-id="CartoonitoCEE.uk@Bulgary",Cartoonito CEE Bulgary
-http://213.91.179.28:8000/play/a0c7
-#EXTINF:-1 tvg-id="CartoonNetworkCEE.uk@Germany",Cartoon Network CEE Germany
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/109/index.m3u8
-#EXTINF:-1 tvg-id="BBCNews.uk@SouthAsia",BBC News South Asia
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://103.253.74.210:7070/stream/114/index.m3u8
-#EXTINF:-1 tvg-id="MUTV.uk@SD",MUTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://103.253.74.210:7070/stream/136/index.m3u8
-#EXTINF:-1 tvg-id="DAZNF1.uk@Spain",DAZN F1
-https://tvorb.net/ZTV/6918-live.m3u8
-#EXTINF:-1 tvg-id="EurovisionSport.uk@Europe",Eurovision Sport (1080p)
-https://amg26268-amg26268c34-amgplt0018.playout.now3.amagi.tv/ts-us-e2-n1/playlist/amg26268-amg26268c34-amgplt0018/playlist.m3u8

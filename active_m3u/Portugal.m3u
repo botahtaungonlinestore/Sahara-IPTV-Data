@@ -3,6 +3,8 @@
 https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
 #EXTINF:-1 tvg-id="ARTV.pt@SD",ARTV Canal Parlamento (720p) [Not 24/7]
 https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8
+#EXTINF:-1 tvg-id="AXN.pt@SD",AXN
+https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F538838100d0590731cf6d
 #EXTINF:-1 tvg-id="AXNMovies.pt@SD",AXN Movies (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://50.7.120.34:8080/AXN_BLACK/index.m3u8
@@ -24,6 +26,8 @@ https://w2.manasat.com/iglesia-online/smil:iglesia-online.smil/playlist.m3u8
 https://w1.manasat.com/igrejaonline/smil:igrejaonline.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ManaTserkovOnlayn.pt@SD",Maná Tserkov' Onlayn (1080p) [Not 24/7]
 https://w2.manasat.com/tserkov-online/smil:tserkov-online.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Nickelodeon.pt@SD",Nickelodeon
+https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F398241518529a84217dd1f
 #EXTINF:-1 tvg-id="ONFM.pt@SD",ON FM (720p)
 https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="PortoCanal.pt@SD",Porto Canal (720p)
@@ -32,12 +36,6 @@ https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f
 https://load-balancer.azotosolutions.com/cdnedge19/smil:live19.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RFPtv.pt@SD",RFPtv (360p)
 https://video03.logicahost.com.br/rfptv/rfptv/playlist.m3u8
-#EXTINF:-1 tvg-id="RTP1.pt@HD",RTP 1 (720p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
-https://streaming-live.rtp.pt/liverepeater/rtp1HD.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RTP2.pt@HD",RTP 2 (720p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
-https://streaming-live.rtp.pt/liverepeater/rtp2HD.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTPAcores.pt@HD",RTP Açores (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/smil:rtpacoresHD.smil/playlist.m3u8
@@ -53,6 +51,8 @@ https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTPMemoria.pt@SD",RTP Memória (504p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/smil:rtpmem.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTPMundo.pt@SD",RTP Mundo (576p)
+https://n-5-2.eu.cdn-redge.media/livehls/oeu/mt/live/rtp_internacional/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="RTPMundo.pt@SD",RTP Mundo (504p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/smil:rtpi.smil/playlist.m3u8

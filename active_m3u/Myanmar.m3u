@@ -1,28 +1,22 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="FortuneTV.mm@SD",FORTUNE TV 
+#EXTINF:-1 tvg-id="FortuneTV.mm@SD",FORTUNE TV (720p)
 http://103.215.194.93:8282/hls/fortunetv/vmix.m3u8
 #EXTINF:-1 tvg-id="HluttawSD.mm@SD",Hluttaw S & D
 https://mrtvott.com/cache/MRTV-HLUTTAW/master.m3u8
-#EXTINF:-1 tvg-id="MRTVEntertainment.mm@SD",MRTV Entertainment
-https://mrtvott.com/cache/MRTV-Ent-HD/master.m3u8
-#EXTINF:-1 tvg-id="MRTVFarmer.mm@SD",MRTV Farmer
-https://mrtvott.com/cache/MRTV-FARMER/master.m3u8
 #EXTINF:-1 tvg-id="MRTVNews.mm@SD",MRTV News
 https://mrtvott.com/cache/MRTV-NEWS-HD/master.m3u8
 #EXTINF:-1 tvg-id="MRTVNRC.mm@SD",MRTV NRC
 https://mrtvott.com/cache/MRTV-NRC-HD/master.m3u8
-#EXTINF:-1 tvg-id="MRTVSports.mm@SD",MRTV Sports 
+#EXTINF:-1 tvg-id="MRTVSports.mm@SD",MRTV Sports [Not 24/7]
 https://mrtvott.com/cache/MRTV-SPORT/master.m3u8
-#EXTINF:-1 tvg-id="MWD.mm@SD",MWD 
+#EXTINF:-1 tvg-id="MWD.mm@SD",MWD (720p) [Not 24/7]
 http://203.81.84.130/hls/mwd/index.m3u8
-#EXTINF:-1 tvg-id="MWDDocumentary.mm@SD",MWD Documentary 
+#EXTINF:-1 tvg-id="MWDDocumentary.mm@SD",MWD Documentary [Geo-blocked]
 http://203.81.84.130/hls/mwd_document/index.m3u8
-#EXTINF:-1 tvg-id="MWDMovies.mm@SD",MWD Movies 
+#EXTINF:-1 tvg-id="MWDMovies.mm@SD",MWD Movies [Not 24/7]
 http://203.81.84.130/hls/mwd_movie/index.m3u8
-#EXTINF:-1 tvg-id="MWDVariety.mm@SD",MWD Variety 
+#EXTINF:-1 tvg-id="MWDVariety.mm@SD",MWD Variety (720p) [Not 24/7]
 http://203.81.84.130/hls/mwd_variety/index.m3u8
-#EXTINF:-1 tvg-id="MyanmarInternationalTV.mm@SD",Myanmar International TV
-https://mrtvott.com/cache/MITV/master.m3u8
 #EXTINF:-1 ,MAHAR TV
 https://ygncdn.com/live/mahar/720p/chunks.m3u8
 #EXTINF:-1,MAHAR E-Sports
@@ -37,4 +31,3 @@ https://live.pyoneplay.com/live/01m2sr3kyn6bztz3xk02w3t7pn/index.m3u8
 https://live.pyoneplay.com/live/01m2tfrqkdceydf6g6f48pdrmn/index.m3u8
 #EXTINF:-1 tvg-name="MRTV-4" tvg-logo="" group-title="Myanmar TV",MRTV-4
 https://live.pyoneplay.com/live/01m2sn12yc6v2enx392qj2ekqt/index.m3u8
-

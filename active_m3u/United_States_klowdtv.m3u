@@ -3,22 +3,16 @@
 https://actionhollywood-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="",Adrenaline+ (720p)
 https://a-cdn.klowdtv.com/live3/adr_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="",American Stories (720p)
-https://a-cdn.klowdtv.com/live2/asn/playlist.m3u8
 #EXTINF:-1 tvg-id="AWE.us@SD",AWE (720p)
 https://a-cdn.klowdtv.com/live1/awe_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="AWEInternational.us@SD",AWE International (720p)
 https://a-cdn.klowdtv.com/live1/aweint/playlist.m3u8
 #EXTINF:-1 tvg-id="AWEPlus.us@SD",AWE Plus (720p)
 https://a-cdn.klowdtv.com/live1/awee/playlist.m3u8
-#EXTINF:-1 tvg-id="",Beond TV (720p) [Geo-blocked]
-https://amg01681-beondtv-amg01681c1-klowdtv-us-1826.playouts.now.amagi.tv/playlist/amg01681-beondtv-beondtv-klowdtvus/playlist.m3u8
 #EXTINF:-1 tvg-id="",Beyond Paranormal (720p)
 https://a-cdn.klowdtv.com/live3/beyondparanormal_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="",Black Enterprise Streaming Television (720p)
 https://a-cdn.klowdtv.com/live3/blackenterprise_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="BratTV.us@SD",Brat TV (720p) [Geo-blocked]
-https://amg00350-amg00350c1-klowdtv-us-2536.playouts.now.amagi.tv/playlist/amg00350-bratstudiofast-brat-klowdtvus/playlist.m3u8
 #EXTINF:-1 tvg-id="CaliforniaMusicChannel.us@SD",California Music Channel (1080p)
 https://cmc-kowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="CarsTV.us@SD",Cars.TV (720p)
@@ -105,16 +99,10 @@ https://a-cdn.klowdtv.com/live2/nost_720p/playlist.m3u8
 https://a-cdn.klowdtv.com/live1/oan_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="OANPlus.us@SD",OAN Plus (720p)
 https://a-cdn.klowdtv.com/live1/oane/playlist.m3u8
-#EXTINF:-1 tvg-id="OnPatrolLive.us",On Patrol: Live (720p)
+#EXTINF:-1 tvg-id="OnPatrolLive.us@HD",On Patrol: Live (720p)
 https://a-cdn.klowdtv.com/live3/onpatrol_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="PetsTV.us@SD",Pets.TV (720p)
 https://a-cdn.klowdtv.com/live2/petstv_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="PursuitChannel.us@SD",Pursuit Channel (720p)
-https://a-cdn.klowdtv.com/live3/pursuit_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="PursuitUP.us@SD",PursuitUP (720p)
-https://a-cdn.klowdtv.com/live2/pursuitup/playlist.m3u8
-#EXTINF:-1 tvg-id="PursuitUP.us@SD",PursuitUP (720p) [Geo-blocked]
-https://pursuitup-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="QVC.us@SD",QVC Live (720p) [Not 24/7]
 https://a-cdn.klowdtv.com/live2/qvclive_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="RealAmericasVoice.us@SD",Real America's Voice (720p)
@@ -125,7 +113,7 @@ https://a-cdn.klowdtv.com/live3/realcrimeuncovered_720p/playlist.m3u8
 https://a-cdn.klowdtv.com/live2/recipetv_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="TheFirstTV.us@SD",Redseat The First (720p)
 https://a-cdn.klowdtv.com/live2/thefirst_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="ReelzFamousInfamous.us",Reelz Famous & Infamous (720p)
+#EXTINF:-1 tvg-id="ReelzFamousInfamous.us@HD",Reelz Famous & Infamous (720p)
 https://a-cdn.klowdtv.com/live3/famousandinfamous_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="RightNowTV.us@SD",RightNow TV (720p)
 https://a-cdn.klowdtv.com/live2/rightnowtv_720p/playlist.m3u8
@@ -133,8 +121,6 @@ https://a-cdn.klowdtv.com/live2/rightnowtv_720p/playlist.m3u8
 https://amg00732-salemmediagroup-salemnews-klowdtv-79zyj.amagi.tv/playlist/amg00732-salemmediagroup-salemnews-klowdtv/playlist.m3u8
 #EXTINF:-1 tvg-id="",Shooting Sports Life (720p)
 https://a-cdn.klowdtv.com/live2/ssl_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="",Smart Healthy Green Living (720p) [Geo-blocked]
-https://amg16109-shgliving-amg16109c1-klowdtv-us-2235.playouts.now.amagi.tv/playlist/amg16109-shglivingnetwork-smarthealthygreenliving-klowdtvus/playlist.m3u8
 #EXTINF:-1 tvg-id="SonyMovies.us@SD",Sony Movies (720p)
 https://a-cdn.klowdtv.com/live1/smc_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="SportsGrid.us@SD",SportsGrid (720p)
@@ -181,8 +167,6 @@ https://a-cdn.klowdtv.com/live3/cars_720p/playlist.m3u8
 https://a-cdn.klowdtv.com/live3/westernbound_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="",Wild TV (720p)
 https://a-cdn.klowdtv.com/live3/wildtv_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="WION.in@SD",WION (720p) [Geo-blocked]
-https://wion-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Wired2FishTV.us@SD",Wired2Fish (720p) [Geo-blocked]
 https://wire2fish-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="WorldPokerTour.us@US",World Poker Tour (720p)

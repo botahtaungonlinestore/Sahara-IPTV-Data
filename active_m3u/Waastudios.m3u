@@ -2,8 +2,10 @@
 #EXTM3U url-tvg="http://events.waastudios.dpdns.org:8877/api/epg/xmltv.xml" x-tvg-url="http://events.waastudios.dpdns.org:8877/api/epg/xmltv.xml"
 #EXTINF:-1 tvg-id="" tvg-name="【公告】公益免费，Telegram群组@garysclub" tvg-logo="https://cdn.nodeimage.com/i/GPbV85PSZZdWoUf4W40drVXWDJCc3PfP.webp" group-title="公告",【公告】公益免费，Telegram群组@garysclub
 http://events.waastudios.dpdns.org:8877/ch/88ed3166254e72e555a4bf161edaa0a5/raw
-#EXTINF:-1 tvg-id="eurosport.4k" tvg-name="Eurosport 4K 🇷🇸" tvg-logo="https://i.postimg.cc/g0trnwSW/Eurosport-4K.png" group-title="UHD",Eurosport 4K 🇷🇸
-http://events.waastudios.dpdns.org:8877/ch/3f616e3113fc069882055c45895a0f4a/raw
+#EXTINF:-1 tvg-id="ESPN.us" tvg-name="ESPN【4K版】🇺🇸" tvg-logo="https://i.postimg.cc/tgMZcqxG/ESPN.png" group-title="UHD",ESPN【4K版】🇺🇸
+http://events.waastudios.dpdns.org:8877/ch/2f4243b4d1cdcc8a699beb3bc57f9e04/master.m3u8
+#EXTINF:-1 tvg-id="ESPN2.us" tvg-name="ESPN 2【4K版】🇺🇸" tvg-logo="https://i.postimg.cc/mrD1VzhS/ESPN2.png" group-title="UHD",ESPN 2【4K版】🇺🇸
+http://events.waastudios.dpdns.org:8877/ch/87810719e5daf876f2e2612e548b2be8/master.m3u8
 #EXTINF:-1 tvg-id="ElevenSp.1" tvg-name="Eleven Sports 1 4K 🇵🇱" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/international/eleven-sports-1-int.png" group-title="UHD",Eleven Sports 1 4K 🇵🇱
 http://events.waastudios.dpdns.org:8877/ch/79eced5a5e8d767e0feaf6cb96cba00a/raw
 #EXTINF:-1 tvg-id="allente_se.vultra" tvg-name="V Sport UltraHD【非24小时】🇩🇰" tvg-logo="https://i.postimg.cc/QC4VcpmZ/v-sport-ultra.png" group-title="UHD",V Sport UltraHD【非24小时】🇩🇰
@@ -12,13 +14,9 @@ http://events.waastudios.dpdns.org:8877/ch/0452863f86a222f3c61b6cbc2cf08dd4/raw
 http://events.waastudios.dpdns.org:8877/ch/9ccb19bf327e1b35daf1bc391471defe/master.m3u8
 #EXTINF:-1 tvg-id="travelxp.eu" tvg-name="TravelXP 4K 欧洲台 🇷🇺" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/india/travelxp-4k-in.png" group-title="UHD",TravelXP 4K 欧洲台 🇷🇺
 http://events.waastudios.dpdns.org:8877/ch/0e33e1fff98162b2c078711135fd707c/raw
-#EXTINF:-1 tvg-id="telus.713" tvg-name="Love Nature 4K 🇨🇦" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Love_Nature_logo_%282025%29.svg/3840px-Love_Nature_logo_%282025%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="UHD",Love Nature 4K 🇨🇦
-http://events.waastudios.dpdns.org:8877/ch/6392c8408cf7b764278824e573ca2c7f/raw
-#EXTINF:-1 tvg-id="" tvg-name="Stingray Now 4K 🇨🇦" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Stingray_Now_4K.svg/3840px-Stingray_Now_4K.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="UHD",Stingray Now 4K 🇨🇦
-http://events.waastudios.dpdns.org:8877/ch/f76c48d5f16b88ebba45ca80827d50e0/raw
-#EXTINF:-1 tvg-id="eurosport.1" tvg-name="Eurosport 1" tvg-logo="https://i.postimg.cc/T1yyLxr3/Eurosport1.png" group-title="FHD",Eurosport 1
+#EXTINF:-1 tvg-id="eurosport.1" tvg-name="Eurosport 1 🇪🇺" tvg-logo="https://i.postimg.cc/T1yyLxr3/Eurosport1.png" group-title="FHD",Eurosport 1 🇪🇺
 http://events.waastudios.dpdns.org:8877/ch/acdd71c64721b47c9bd50509bcca822e/raw
-#EXTINF:-1 tvg-id="eurosport.2" tvg-name="Eurosport 2" tvg-logo="https://i.postimg.cc/jC0jD7xM/Eurosport2.png" group-title="FHD",Eurosport 2
+#EXTINF:-1 tvg-id="eurosport.2" tvg-name="Eurosport 2 🇪🇺" tvg-logo="https://i.postimg.cc/jC0jD7xM/Eurosport2.png" group-title="FHD",Eurosport 2 🇪🇺
 http://events.waastudios.dpdns.org:8877/ch/9f33b6c4806f1106e221328d8aef52f5/raw
 #EXTINF:-1 tvg-id="ee_uk.408" tvg-name="TNT Sports 1 🇬🇧" tvg-logo="https://i.postimg.cc/436M6pbc/tnt-sports-1.png" group-title="FHD",TNT Sports 1 🇬🇧
 http://events.waastudios.dpdns.org:8877/ch/149ddddc1ab1638ee4dd7e6b102cdb77/master.m3u8
@@ -52,6 +50,16 @@ http://events.waastudios.dpdns.org:8877/ch/fb38d28d4497dff6f5d49a085c225389/mast
 http://events.waastudios.dpdns.org:8877/ch/2edc599212fcc48bffe4c87625836fe4/master.m3u8
 #EXTINF:-1 tvg-id="NBCSpCali.us" tvg-name="NBC Sports California" tvg-logo="https://i.postimg.cc/jjcvBdCt/NBC-Sports-California.png" group-title="NBC系列频道",NBC Sports California
 http://events.waastudios.dpdns.org:8877/ch/fc5ce94ba3589c50ec40c5dc338e0c76/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="【4K 双杜比】英超 切尔西vs利兹联" tvg-logo="https://imageservice.disco.peacocktv.com/pcms/bd6e0c0c-dfb1-11f1-afde-6b5df9e091c4/LAND_16_9?proposition=NBCUOTT&language=eng&version=08b5fbb3-6d8e-5257-a211-dcabafa58055&territory=US" group-title="精选赛事",【4K 双杜比】英超 切尔西vs利兹联
+http://events.waastudios.dpdns.org:8877/ch/c3807584a43a021fdda6b6ff568c4bd0/raw
+#EXTINF:-1 tvg-id="" tvg-name="英超 切尔西vs利兹联 实时追踪" tvg-logo="https://i.postimg.cc/5tbdyzLp/performance-view-che-lee-v5.jpg" group-title="精选赛事",英超 切尔西vs利兹联 实时追踪
+http://events.waastudios.dpdns.org:8877/ch/33e4bd6f39c2ef9efa42d15e85d00f08/raw
+#EXTINF:-1 tvg-id="" tvg-name="英超 阿斯顿维拉vs桑德兰" tvg-logo="https://imageservice.disco.peacocktv.com/pcms/bd69d01a-dfb1-11f1-afd7-57e185701733/LAND_16_9?proposition=NBCUOTT&language=eng&version=5d0f6fd9-adcd-5512-a602-295e58b0ad86&territory=US" group-title="精选赛事",英超 阿斯顿维拉vs桑德兰
+http://events.waastudios.dpdns.org:8877/ch/781b2151dbae47d28b992beb62f557f2/raw
+#EXTINF:-1 tvg-id="" tvg-name="英超 伯恩茅斯vs诺丁汉森林" tvg-logo="https://imageservice.disco.peacocktv.com/pcms/bd778566-dfb1-11f1-a4af-23ba41200089/LAND_16_9?proposition=NBCUOTT&language=eng&version=02d20001-4a1c-51a7-99bf-86f3778c74fe&territory=US" group-title="精选赛事",英超 伯恩茅斯vs诺丁汉森林
+http://events.waastudios.dpdns.org:8877/ch/27ae8c7e28d67bdfaf8a3a34551c205c/raw
+#EXTINF:-1 tvg-id="" tvg-name="英超 考文垂vs水晶宫" tvg-logo="https://imageservice.disco.peacocktv.com/pcms/bd7a7910-dfb1-11f1-afe3-c7f45776e737/LAND_16_9?proposition=NBCUOTT&language=eng&version=c63e1fde-3728-5c52-9056-faf1eb0f2cdf&territory=US" group-title="精选赛事",英超 考文垂vs水晶宫
+http://events.waastudios.dpdns.org:8877/ch/8c932e99354affe0171cad78fd86ebcf/raw
 #EXTINF:-1 tvg-id="bein1" tvg-name="beIN Sports 1 🇸🇬" tvg-logo="https://i.postimg.cc/4yKHgxtY/638_wbg_c_693ae9bf65.png" group-title="测试频道",beIN Sports 1 🇸🇬
 http://events.waastudios.dpdns.org:8877/ch/1eb0f28d5e281c926ca6efec957f1d50/master.m3u8
 #EXTINF:-1 tvg-id="bein2" tvg-name="beIN Sports 2 🇸🇬" tvg-logo="https://i.postimg.cc/sxBGrgSB/639_wbg_c_c934cb40d8.png" group-title="测试频道",beIN Sports 2 🇸🇬
