@@ -94,6 +94,8 @@ https://59d39900ebfb8.streamlock.net/tvfamilia_270p/tvfamilia_270p/playlist.m3u8
 http://200.59.191.177:8000/play/a0le/index.m3u8
 #EXTINF:-1 tvg-id="TVes.ve@SD",TVes (1080p)
 http://45.226.205.96:48000/play/a0dn/index.m3u8
+#EXTINF:-1 tvg-id="TVes.ve@SD",TVes (1080p)
+https://vs20.live.opencaster.com/tves_5fd18b1e/index.m3u8
 #EXTINF:-1 tvg-id="TVS.ve@SD",TVS (720p)
 https://vcp10.myplaytv.com/tvs/tvs/playlist.m3u8
 #EXTINF:-1 tvg-id="UniTV.ve@SD",UniTV (720p)

@@ -53,6 +53,8 @@ https://xc.adultiptv.net/live/2lrTyxuwkL/DK6tyl781r/24.m3u8
 https://xc.adultiptv.net/live/2lrTyxuwkL/DK6tyl781r/25.m3u8
 #EXTINF:-1,Eropuls DE
 https://api.alpaca.t62a.com/hls/9108/stream0.m3u8
+#EXTINF:-1,Miami TV Jenny Live
+http://59ec5453559f0.streamlock.net:1935/JennyLive/JennyLive/playlist.m3u8
 #EXTINF:-1,Babes TV
 http://88.212.7.11/live/test_basbes_hd_hevc/playlist.m3u8
 #EXTINF:-1,Dorcel TV HD
@@ -85,6 +87,8 @@ http://live.mycamtv.com/medium.m3u8
 http://live.mycamtv.com/skinny.m3u8
 #EXTINF:-1,MyCamTV White Girls
 http://live.mycamtv.com/white.m3u8
+#EXTINF:-1,MIAMI TV - USA (+18) | HD
+https://59ec5453559f0.streamlock.net/miamitv/smil:WEB/playlist.m3u8
 #EXTINF:-1,TV Adultos Blonde (+18) | HD
 http://cdn.adultiptv.net/blonde.m3u8?PlaylistM3UCL
 #EXTINF:-1,TV Adultos Brunette (+18) | HD
@@ -189,6 +193,8 @@ http://141.95.55.143/CH743/index.m3u8
 http://live.redtraffic.xyz/interracial.m3u8
 #EXTINF:-1,Interracial Adult
 https://live.adultiptv.net/interracial.m3u8
+#EXTINF:-1,Jenny Live
+https://59ec5453559f0.streamlock.net/JennyLive/smil:ROKU/playlist.m3u8
 #EXTINF:-1,Latina
 http://live.redtraffic.xyz/latina.m3u8
 #EXTINF:-1,Latina Adult
@@ -203,6 +209,28 @@ http://live.redtraffic.xyz/livecams.m3u8
 https://adultiptv.net/livecams/stream.php?id=sc_142891067
 #EXTINF:-1,MEN'S NEC♂️
 https://streaml01cf.nxtv.jp/p-menecoch01-amni5j72tc/index1/manifest.mpd
+#EXTINF:-1,Miami TV
+http://59ec5453559f0.streamlock.net:1935/Miamitv/smil:WEB4141/chuklist.m3u8
+#EXTINF:-1,Miami TV DJ
+https://59ec5453559f0.streamlock.net/miamitvDJ/smil:56925/playlist.m3u8
+#EXTINF:-1,Miami TV Fashion
+https://59ec5453559f0.streamlock.net/miamitvfashion/smil:34256/playlist.m3u8
+#EXTINF:-1,Miami TV Gold
+https://59ec5453559f0.streamlock.net/miamitvgold/smil:19869/playlist.m3u8
+#EXTINF:-1,Miami TV Jenny Live (720p) [Not 24/7]
+https://59ec5453559f0.streamlock.net/JennyLive/JennyLive/playlist.m3u8
+#EXTINF:-1,Miami TV Live
+https://59ec5453559f0.streamlock.net/LIVE1/LIVE/playlist.m3u8
+#EXTINF:-1,Miami TV Models
+https://59ec5453559f0.streamlock.net/miamitvmodels/smil:529634/playlist.m3u8
+#EXTINF:-1,Miami TV Music
+https://59ec5453559f0.streamlock.net/miamitvmusic/smil:22596/playlist.m3u8
+#EXTINF:-1,Miami TV México
+https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexico/chunklist_w1931827340_b1896000.m3u8
+#EXTINF:-1,Miami TV Sun Beach
+http://59ec5453559f0.streamlock.net:1935/Sunbeachtv/smil:WEB/chuklist.m3u8
+#EXTINF:-1,Miami TV VIP
+https://59ec5453559f0.streamlock.net/miamitv/smil:95304/playlist.m3u8
 #EXTINF:-1,Midnight (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/Midnight.m3u8
 #EXTINF:-1,Musicpassion
@@ -237,6 +265,8 @@ http://event.vedge.infomaniak.com/livecast/event.stream/playlist.m3u8
 http://live.redtraffic.xyz/rough.m3u8
 #EXTINF:-1,RussianAdult
 https://live.adultiptv.net/russian.m3u8
+#EXTINF:-1,Setanta Sports+ ua
+http://59ec5453559f0.streamlock.net:1935/Miamitv/smil:WEB/chuklist.m3u8
 #EXTINF:-1,Stingray Pop Adult
 https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeStreams/StreamsTV-RU/stingray_pop_adult_44b0ac3d.m3u8
 #EXTINF:-1,TV Adultos Live Cams

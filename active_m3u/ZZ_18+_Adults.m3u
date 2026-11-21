@@ -1,18 +1,20 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="../Channel/Logo/Babes TV.png" group-title="Mature",Babes TV
-http://88.212.7.11/live/test_basbes_hd_hevc/playlist.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Mature",Dorcel TV HD
-http://88.212.7.11/live/test_dorcel_hd_hevc/playlist.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Mature",PENTHOUSE
-http://141.95.55.143/CH3479/index.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Mature",PENTHOUSE PASSION
-http://141.95.55.143/CH3517/index.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Mature",Redlight
-http://141.95.55.143/CH745/index.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Mature",Russian r
-http://live.redtraffic.xyz/russian.m3u8
-#EXTINF:-1 tvg-logo="" group-title="Mature",VIVID RED
-http://141.95.55.143/CH1187/index.m3u8
+#EXTINF:-1 tvg-logo="https://yt3.ggpht.com/a/AATXAJwBSHNWFeTf8OW2SmlUcpqofdnfqC72cQSLRQ=s100-c-k-c0xffffffff-no-rj-mo" group-title="Mature",Eropuls DE
+https://api.alpaca.t62a.com/hls/9108/stream0.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/WlrcyMe.png" group-title="Mature",Miami TV Jenny Live
+http://59ec5453559f0.streamlock.net:1935/JennyLive/JennyLive/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://vivaespaña.tv/user/live-tv/miamitv-latino/31" group-title="Mature",MIAMI TV - USA (+18) | HD
+https://59ec5453559f0.streamlock.net/miamitv/smil:WEB/playlist.m3u8
+#EXTINF:-1 tvg-logo=" tvg-name=" group-title="Mature",TV Adultos Blonde (+18) | HD
+http://cdn.adultiptv.net/blonde.m3u8?PlaylistM3UCL
+#EXTINF:-1 tvg-logo=" tvg-name=" group-title="Mature",TV Adultos Brunette (+18) | HD
+http://cdn.adultiptv.net/brunette.m3u8?PlaylistM3UCL
+#EXTINF:-1 tvg-logo=" tvg-name=" group-title="Mature",TV Adultos Latina (+18) | HD
+http://cdn.adultiptv.net/latina.m3u8?PlaylistM3UCL
+#EXTINF:-1 tvg-logo=" tvg-name=" group-title="Mature",TV Adultos Live Cams (+18) | HD
+http://cdn.adultiptv.net/livecams.m3u8?PlaylistM3UCL
+#EXTINF:-1 tvg-logo=" tvg-name=" group-title="Mature",TV Adultos POV (+18) | HD
+http://cdn.adultiptv.net/pov.m3u8?PlaylistM3UCL
 #EXTINF:-1 tvg-logo="" group-title="Mature",MyCamTV Arab Girls
 http://live.mycamtv.com/arab.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Mature",MyCamTV Asian Girls
@@ -31,8 +33,6 @@ http://live.mycamtv.com/medium.m3u8
 http://live.mycamtv.com/skinny.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Mature",MyCamTV White Girls
 http://live.mycamtv.com/white.m3u8
-#EXTINF:-1 tvg-logo="https://yt3.ggpht.com/a/AATXAJwBSHNWFeTf8OW2SmlUcpqofdnfqC72cQSLRQ=s100-c-k-c0xffffffff-no-rj-mo" group-title="Mature",Eropuls DE
-https://api.alpaca.t62a.com/hls/9108/stream0.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Mature",(18+) Babes TV HD
 http://zabava-htlive.cdn.ngenix.net/hls/CH_BABESTVHD/bw5000000/variant.m3u8?version=2
 #EXTINF:-1 tvg-logo="" group-title="Mature",18+ Blonde
@@ -131,6 +131,8 @@ http://141.95.55.143/CH743/index.m3u8
 http://live.redtraffic.xyz/interracial.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Mature",Interracial Adult
 https://live.adultiptv.net/interracial.m3u8
+#EXTINF:-1 tvg-logo="https://miamitv.com/images/1718228364.jpg" group-title="Mature",Jenny Live
+https://59ec5453559f0.streamlock.net/JennyLive/smil:ROKU/playlist.m3u8
 #EXTINF:-1 tvg-logo="http://epg.it999.ru/img/3195.png" group-title="Mature",Latina
 http://live.redtraffic.xyz/latina.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Mature",Latina Adult
@@ -145,6 +147,28 @@ http://live.redtraffic.xyz/livecams.m3u8
 https://adultiptv.net/livecams/stream.php?id=sc_142891067
 #EXTINF:-1 tvg-logo="https://i.imgur.com/uVe56sB.jpeg" group-title="Mature",MEN'S NEC♂️
 https://streaml01cf.nxtv.jp/p-menecoch01-amni5j72tc/index1/manifest.mpd
+#EXTINF:-1 tvg-logo="http://1.bp.blogspot.com/-E-qvJLo_j1s/UB7Jd47Ro2I/AAAAAAAAATw/qQskQfN6tQ4/s1600/miami-tv-logo-gif2_design.png" group-title="Mature",Miami TV
+http://59ec5453559f0.streamlock.net:1935/Miamitv/smil:WEB4141/chuklist.m3u8
+#EXTINF:-1 tvg-logo="https://miamitv.com/images/1720916971.jpg" group-title="Mature",Miami TV DJ
+https://59ec5453559f0.streamlock.net/miamitvDJ/smil:56925/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Fc9AdGR_d.png" group-title="Mature",Miami TV Fashion
+https://59ec5453559f0.streamlock.net/miamitvfashion/smil:34256/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://miamitv.com/images/1718230773.jpg" group-title="Mature",Miami TV Gold
+https://59ec5453559f0.streamlock.net/miamitvgold/smil:19869/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/3vsBZI3.png" group-title="Mature",Miami TV Jenny Live (720p) [Not 24/7]
+https://59ec5453559f0.streamlock.net/JennyLive/JennyLive/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://miamitv.com/images/6864282461d56_LIVE.jpg" group-title="Mature",Miami TV Live
+https://59ec5453559f0.streamlock.net/LIVE1/LIVE/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://miamitv.com/images/680a4d6de878f_Miami%20TV%20Models.jpg" group-title="Mature",Miami TV Models
+https://59ec5453559f0.streamlock.net/miamitvmodels/smil:529634/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://miamitv.com/images/680a51e802f7f_Miami%20TV%20Music.jpg" group-title="Mature",Miami TV Music
+https://59ec5453559f0.streamlock.net/miamitvmusic/smil:22596/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Mature",Miami TV México
+https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexico/chunklist_w1931827340_b1896000.m3u8
+#EXTINF:-1 tvg-logo="https://miamitvhd.com/assets/miamitv-8fcf2efe186508c88b6ebd5441452254a32c410d1d18ea7f82ffbb0d26b35271.png" group-title="Mature",Miami TV Sun Beach
+http://59ec5453559f0.streamlock.net:1935/Sunbeachtv/smil:WEB/chuklist.m3u8
+#EXTINF:-1 tvg-logo="https://miamitv.com/images/66de27ad7d27e_Miami%20TV%20VIP.jpg" group-title="Mature",Miami TV VIP
+https://59ec5453559f0.streamlock.net/miamitv/smil:95304/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Mature",Midnight (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/Midnight.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Mature",Musicpassion
@@ -177,8 +201,12 @@ http://88.212.7.11/live/test_realitykings_sd_hevc/playlist.m3u8
 http://event.vedge.infomaniak.com/livecast/event.stream/playlist.m3u8
 #EXTINF:-1 tvg-logo="http://epg.it999.ru/img/3219.png" group-title="Mature",Rough
 http://live.redtraffic.xyz/rough.m3u8
+#EXTINF:-1 tvg-logo="http://epg.it999.ru/img/3220.png" group-title="Mature",Russian
+http://live.redtraffic.xyz/russian.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Mature",RussianAdult
 https://live.adultiptv.net/russian.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Mature",Setanta Sports+ ua
+http://59ec5453559f0.streamlock.net:1935/Miamitv/smil:WEB/chuklist.m3u8
 #EXTINF:-1 tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Mature",Stingray Pop Adult
 https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeStreams/StreamsTV-RU/stingray_pop_adult_44b0ac3d.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/30HzeQe.png" group-title="Mature",TV Adultos Live Cams
@@ -197,13 +225,15 @@ https://vip4.ddyunbo.com/20210210/IjSENz6s/index.m3u8
 https://vip4.ddyunbo.com/20210209/dEzJjeSU/index.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Mature",趣味はAdult！
 https://vip2.slbfsl.com/20230312/jA8jWwWn/index.m3u8
-#EXTINF:-1 tvg-logo=" tvg-name=" group-title="Mature",TV Adultos Blonde (+18) | HD
-http://cdn.adultiptv.net/blonde.m3u8?PlaylistM3UCL
-#EXTINF:-1 tvg-logo=" tvg-name=" group-title="Mature",TV Adultos Brunette (+18) | HD
-http://cdn.adultiptv.net/brunette.m3u8?PlaylistM3UCL
-#EXTINF:-1 tvg-logo=" tvg-name=" group-title="Mature",TV Adultos Latina (+18) | HD
-http://cdn.adultiptv.net/latina.m3u8?PlaylistM3UCL
-#EXTINF:-1 tvg-logo=" tvg-name=" group-title="Mature",TV Adultos Live Cams (+18) | HD
-http://cdn.adultiptv.net/livecams.m3u8?PlaylistM3UCL
-#EXTINF:-1 tvg-logo=" tvg-name=" group-title="Mature",TV Adultos POV (+18) | HD
-http://cdn.adultiptv.net/pov.m3u8?PlaylistM3UCL
+#EXTINF:-1 tvg-logo="../Channel/Logo/Babes TV.png" group-title="Mature",Babes TV
+http://88.212.7.11/live/test_basbes_hd_hevc/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Mature",Dorcel TV HD
+http://88.212.7.11/live/test_dorcel_hd_hevc/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Mature",PENTHOUSE
+http://141.95.55.143/CH3479/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Mature",PENTHOUSE PASSION
+http://141.95.55.143/CH3517/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Mature",Redlight
+http://141.95.55.143/CH745/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Mature",VIVID RED
+http://141.95.55.143/CH1187/index.m3u8

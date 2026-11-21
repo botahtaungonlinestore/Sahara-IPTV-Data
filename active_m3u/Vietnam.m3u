@@ -55,6 +55,8 @@ https://freem3u.xyz/api/live/play.m3u8?vid=151
 https://dethich.pw/htv7/index.m3u8
 #EXTINF:-1 tvg-id="HTV9.vn@SD",HTV9 (720p)
 https://dethich.pw/htv9/index.m3u8
+#EXTINF:-1 tvg-id="HTVSports.vn@SD",HTV Sports (1080p)
+https://dethich.pw/htvthethao/index.m3u8
 #EXTINF:-1 tvg-id="HTVSports.vn@SD",HTV Sports (1080i)
 https://vmttv.dpdns.org/tv360?id=htv-the-thao
 #EXTINF:-1 tvg-id="HTVCFamily.vn@SD",HTVC Family (720p)
@@ -89,8 +91,6 @@ https://freem3u.xyz/api/live/play.m3u8?vid=181
 https://freem3u.xyz/api/live/play.m3u8?vid=185
 #EXTINF:-1 tvg-id="ONO2TV.vn@SD",ON O2TV (1080p)
 https://freem3u.xyz/api/live/play.m3u8?vid=136
-#EXTINF:-1 tvg-id="ONPhimViet.vn@SD",ON Phim Viet (1080p)
-https://vmttv.dpdns.org/tv360?id=175
 #EXTINF:-1 tvg-id="ONStyleTV.vn@SD",ON Style TV (1080p)
 https://freem3u.xyz/api/live/play.m3u8?vid=184
 #EXTINF:-1 tvg-id="ONTrendingTV.vn@SD",ON Trending TV (1080p)
@@ -155,6 +155,8 @@ https://dethich.pw/thvl1/index.m3u8
 https://dethich.pw/thvl2/index.m3u8
 #EXTINF:-1 tvg-id="VinhLongTV3.vn@SD",Vinh Long TV 3 (720p)
 https://dethich.pw/thvl3/index.m3u8
+#EXTINF:-1 tvg-id="VinhLongTV4.vn@SD",Vinh Long TV 4 (720p)
+https://dethich.pw/thvl4/index.m3u8
 #EXTINF:-1 tvg-id="VinhLongTV5.vn@SD",Vinh Long TV 5 (1080p)
 https://freem3u.xyz/api/live/play.m3u8?vid=91
 #EXTINF:-1 tvg-id="VinhLongTV5.vn@SD",Vinh Long TV 5 (720p)
@@ -173,3 +175,19 @@ https://dethich.pw/vtv3/index.m3u8
 https://dethich.pw/vtv4/index.m3u8
 #EXTINF:-1 tvg-id="VTV4.vn@HD",VTV4 HD (720p)
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv4/master.m3u8
+#EXTINF:-1 tvg-id="VTV5.vn@HD",VTV5 HD (720p)
+https://dethich.pw/vtv5/index.m3u8
+#EXTINF:-1 tvg-id="VTV5TayNamBo.vn@HD",VTV5 Tay Nam Bo HD (1080p)
+https://dethich.pw/vtv5tnb/index.m3u8
+#EXTINF:-1 tvg-id="VTV5TayNguyen.vn@HD",VTV5 Tay Nguyen HD (1080p)
+http://dethich.pw/vtv5tn/index.m3u8
+#EXTINF:-1 tvg-id="VTV6.vn@HD",VTV6 (720p)
+https://dethich.pw/vtv6/index.m3u8
+#EXTINF:-1 tvg-id="VTV7.vn@HD",VTV7 HD (720p)
+https://dethich.pw/vtv7/index.m3u8
+#EXTINF:-1 tvg-id="VTV8.vn@HD",VTV8 HD (720p)
+https://dethich.pw/vtv8/index.m3u8
+#EXTINF:-1 tvg-id="VTV9.vn@HD",VTV9 HD (720p)
+https://dethich.pw/vtv9/index.m3u8
+#EXTINF:-1 tvg-id="VTV10.vn@HD",VTV10 (720p)
+https://dethich.pw/vtv10/index.m3u8
