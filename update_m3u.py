@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""SAHARA IPTV Playlist Builder v4.1 (Fast Non-Blocking Edition).
+"""SAHARA IPTV Playlist Builder v4.2 (Fast Non-Blocking + Categories + Blocklist).
 
 Collect M3U/M3U8 playlists from configured public GitHub repositories,
-configured remote playlist URLs, and local extra_*.m3u files. Optionally
-check HTTP(S) stream endpoints, de-duplicate entries, validate generated
-playlists, and publish the complete output directory atomically.
+configured remote playlist URLs, category/18+ sources, and local extra_*.m3u
+files. Filters blocked channels, checks HTTP(S) stream endpoints, de-duplicates
+entries, validates generated playlists, and publishes atomically.
 """
 from __future__ import annotations
 
@@ -39,7 +39,7 @@ except ImportError:
 # CONFIGURATION
 # ---------------------------------------------------------------------------
 APP_NAME = "SAHARA IPTV Playlist Builder"
-APP_VERSION = "4.1.0"
+APP_VERSION = "4.2.0"
 
 
 def _env_int(name: str, default: int, minimum: int, maximum: int) -> int:
@@ -84,14 +84,43 @@ _DEFAULT_MIGU_URL = "https://migu.yang-1989.xyz/playlist.m3u"
 _DEFAULT_WAASTUDIOS_URL = "http://events.waastudios.dpdns.org:8877/sub/wDIWWCqpBc4hvIBFOXCX8ZrhPEOPCyjV/playlist.m3u"
 _DEFAULT_MYIPTV_URL = "https://github.chenc.dev/raw.githubusercontent.com/CKL1211/eric/refs/heads/master/MyIPTV.m3u"
 
+# Curated categories placed directly below Myanmar (01..04 sort before A..Z)
+# and 18+ Adults placed at the very bottom (ZZ_ sorts after all countries).
+CURATED_CATEGORY_SOURCES: list[tuple[str, str]] = [
+    ("01_အားကစားလိုင်းများ.m3u", "https://iptv-org.github.io/iptv/categories/sports.m3u"),
+    ("02_ရုပ်ရှင်လိုင်းများ.m3u", "https://iptv-org.github.io/iptv/categories/movies.m3u"),
+    ("03_ဂီတလိုင်းများ.m3u", "https://iptv-org.github.io/iptv/categories/music.m3u"),
+    ("04_သတင်းလိုင်းများ.m3u", "https://iptv-org.github.io/iptv/categories/news.m3u"),
+    # 18+ Adult M3U playlists merged into one bottom category (password-protected by app)
+    ("ZZ_18+_Adults.m3u", "https://raw.githubusercontent.com/fmhyplay/sources/main/lists/verified.m3u"),
+    ("ZZ_18+_Adults.m3u", "https://raw.githubusercontent.com/fmhyplay/sources/main/lists/adultiptv.m3u"),
+    ("ZZ_18+_Adults.m3u", "https://raw.githubusercontent.com/fmhyplay/sources/main/lists/izanami.m3u"),
+    ("ZZ_18+_Adults.m3u", "https://raw.githubusercontent.com/fmhyplay/sources/main/lists/adihashbcc.m3u"),
+    ("ZZ_18+_Adults.m3u", "https://raw.githubusercontent.com/fmhyplay/sources/main/lists/6j9.m3u"),
+]
 
-def get_custom_playlist_urls() -> dict[str, str]:
-    sources = {
-        "Migu_Playlist.m3u": os.getenv("IPTV_MIGU_URL", _DEFAULT_MIGU_URL).strip(),
-        "Waastudios.m3u": os.getenv("IPTV_WAASTUDIOS_URL", _DEFAULT_WAASTUDIOS_URL).strip(),
-        "MyIPTV.m3u": os.getenv("IPTV_MYIPTV_URL", _DEFAULT_MYIPTV_URL).strip(),
-    }
-    return {name: url for name, url in sources.items() if is_http_url(url)}
+PRESERVED_FILENAMES: frozenset[str] = frozenset(name for name, _ in CURATED_CATEGORY_SOURCES)
+
+# Channels matching any of these rules are ALWAYS excluded from every playlist.
+BLOCKED_URL_SUBSTRINGS = (
+    "dvb.no",
+    "live-stream.dvb.no",
+)
+BLOCKED_METADATA_PATTERNS = (
+    re.compile(r"dvbtv\.mm", re.IGNORECASE),
+    re.compile(r"\bdvb\s*tv\b", re.IGNORECASE),
+)
+
+
+def get_custom_playlist_sources() -> list[tuple[str, str]]:
+    """Return all configured custom, category, and adult playlist sources."""
+    sources: list[tuple[str, str]] = [
+        ("Migu_Playlist.m3u", os.getenv("IPTV_MIGU_URL", _DEFAULT_MIGU_URL).strip()),
+        ("Waastudios.m3u", os.getenv("IPTV_WAASTUDIOS_URL", _DEFAULT_WAASTUDIOS_URL).strip()),
+        ("MyIPTV.m3u", os.getenv("IPTV_MYIPTV_URL", _DEFAULT_MYIPTV_URL).strip()),
+    ]
+    sources.extend(CURATED_CATEGORY_SOURCES)
+    return [(name, url) for name, url in sources if is_http_url(url)]
 
 
 logging.basicConfig(
@@ -99,7 +128,6 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)-7s | %(message)s",
     datefmt="%H:%M:%S",
 )
-# Silence noisy urllib3 retry warnings in GitHub Actions logs
 logging.getLogger("urllib3").setLevel(logging.ERROR)
 log = logging.getLogger("sahara_iptv_builder")
 _THREAD_LOCAL = threading.local()
@@ -128,6 +156,7 @@ class RunStats:
     source_files_found: int = 0
     playlist_categories: int = 0
     channel_entries_collected: int = 0
+    blocked_entries_skipped: int = 0
     unique_urls_checked: int = 0
     active_urls: int = 0
     inactive_urls: int = 0
@@ -209,7 +238,6 @@ def get_check_session() -> requests.Session:
             "Accept": "*/*",
             "Connection": "keep-alive",
         })
-        # Do not retry dead stream servers; fail fast so 30,000+ links finish quickly.
         adapter = HTTPAdapter(
             max_retries=Retry(total=0, connect=0, read=0, redirect=2, status=0),
             pool_connections=16,
@@ -270,7 +298,7 @@ def github_json(url: str, timeout: float) -> Any:
 
 
 # ---------------------------------------------------------------------------
-# URL / COUNTRY / M3U HELPERS
+# URL / BLOCKLIST / COUNTRY / M3U HELPERS
 # ---------------------------------------------------------------------------
 def is_http_url(value: str) -> bool:
     try:
@@ -281,6 +309,24 @@ def is_http_url(value: str) -> bool:
         return not any(ord(char) < 32 for char in value)
     except (AttributeError, TypeError, ValueError):
         return False
+
+
+def is_blocked_channel(channel: dict[str, Any]) -> bool:
+    """Return True if the channel matches the permanent blocklist (e.g. DVB TV)."""
+    url = str(channel.get("url", "")).strip().lower()
+    if any(token in url for token in BLOCKED_URL_SUBSTRINGS):
+        return True
+
+    metadata = channel.get("metadata")
+    lines: list[str] = []
+    if isinstance(metadata, list):
+        lines.extend(str(item) for item in metadata)
+    extinf = channel.get("extinf")
+    if extinf:
+        lines.append(str(extinf))
+
+    combined = "\n".join(lines)
+    return any(pattern.search(combined) for pattern in BLOCKED_METADATA_PATTERNS)
 
 
 def normalize_url(url: str) -> str:
@@ -317,6 +363,9 @@ def url_key(url: str) -> str:
 
 def get_country_name(filename: str) -> str:
     safe_name = Path(filename).name
+    if safe_name in PRESERVED_FILENAMES:
+        return safe_name
+
     stem = Path(safe_name).stem
     parts = stem.split("_", 1)
     code = parts[0].lower()
@@ -593,7 +642,7 @@ def collect_all_playlists(
     source_jobs: list[dict[str, str]] = []
 
     if not args.no_custom:
-        for filename, url in get_custom_playlist_urls().items():
+        for filename, url in get_custom_playlist_sources():
             source_jobs.append({"filename": filename, "url": url, "source": "custom"})
 
     if not args.no_github:
@@ -796,7 +845,7 @@ def write_playlist(output_path: Path, channels: list[dict[str, Any]]) -> None:
             output.write("#EXTM3U\n")
             for channel in channels:
                 url = str(channel.get("url", "")).strip()
-                if not is_http_url(url):
+                if not is_http_url(url) or is_blocked_channel(channel):
                     continue
                 metadata = channel.get("metadata")
                 if not isinstance(metadata, list) or not metadata:
@@ -828,7 +877,7 @@ def group_active_playlists(
         seen: set[str] = set()
         for channel in channels:
             url = str(channel.get("url", "")).strip()
-            if not is_http_url(url):
+            if not is_http_url(url) or is_blocked_channel(channel):
                 continue
             key = url_key(url)
             result = checks.get(key)
@@ -857,6 +906,8 @@ def validate_output_directory(output_folder: Path, expected_channels: int) -> tu
             raise RuntimeError(f"playlist contains no valid channel URLs: {path.name}")
         if any(not is_http_url(str(channel.get("url", ""))) for channel in parsed):
             raise RuntimeError(f"invalid URL found in {path.name}")
+        if any(is_blocked_channel(channel) for channel in parsed):
+            raise RuntimeError(f"blocked channel found in {path.name}")
         actual_channels += len(parsed)
 
     if actual_channels != expected_channels:
@@ -1055,6 +1106,9 @@ def main(argv: list[str] | None = None) -> int:
                 url = str(channel.get("url", "")).strip()
                 if not is_http_url(url):
                     continue
+                if is_blocked_channel(channel):
+                    stats.blocked_entries_skipped += 1
+                    continue
                 key = url_key(url)
                 if key in seen_in_category:
                     continue
@@ -1067,8 +1121,12 @@ def main(argv: list[str] | None = None) -> int:
 
         stats.playlist_categories = len(playlists)
         stats.channel_entries_collected = sum(len(channels) for channels in playlists.values())
-        log.info("Collected %d channel entries across %d source categories",
-                 stats.channel_entries_collected, stats.playlist_categories)
+        log.info(
+            "Collected %d channel entries across %d source categories (blocked skipped: %d)",
+            stats.channel_entries_collected,
+            stats.playlist_categories,
+            stats.blocked_entries_skipped,
+        )
         if not playlists:
             log.error("No valid HTTP(S) channel URLs remained after parsing. Existing output was not changed.")
             return 1
@@ -1115,8 +1173,8 @@ def main(argv: list[str] | None = None) -> int:
 
         log.info("=" * 78)
         log.info("SUCCESS | playlists saved: %d | channel entries saved: %d", playlist_count, channel_count)
-        log.info("URLs: %d reachable / %d unreachable / %d unique",
-                 stats.active_urls, stats.inactive_urls, stats.unique_urls_checked)
+        log.info("URLs: %d reachable / %d unreachable / %d unique | blocked skipped: %d",
+                 stats.active_urls, stats.inactive_urls, stats.unique_urls_checked, stats.blocked_entries_skipped)
         log.info("Source errors: %d | Duration: %.2fs", stats.source_errors, stats.elapsed_seconds)
         log.info("Output published safely: %s", args.output)
         return 0
